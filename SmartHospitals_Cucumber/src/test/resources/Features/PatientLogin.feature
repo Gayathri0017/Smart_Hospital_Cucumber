@@ -1,5 +1,4 @@
 Feature: Login with the Patient Login Credentials
-  j
   
   @LoginIntoPatient
   Scenario: To check Login as patient 

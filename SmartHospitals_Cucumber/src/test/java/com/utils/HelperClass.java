@@ -1,9 +1,7 @@
 package com.utils;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
 import java.time.Duration;
 import java.util.HashMap;
 
@@ -27,7 +25,6 @@ public class HelperClass {
         }
         return driver;
     }
-
     public static void quitDriver() {
         if (driver != null) {
             driver.close();

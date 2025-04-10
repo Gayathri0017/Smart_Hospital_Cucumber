@@ -14,7 +14,6 @@ public class Hooks {
     public static void setUp() {
         HelperClass.getDriver();
     }
-
     @After
     public static void tearDown(Scenario scenario) {
         if (scenario.isFailed()) {
