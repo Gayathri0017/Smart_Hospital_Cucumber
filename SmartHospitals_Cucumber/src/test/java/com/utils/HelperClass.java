@@ -23,6 +23,7 @@ public class HelperClass {
             driver = new ChromeDriver(options);
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             driver.manage().window().maximize();
+            driver.get("https://demo.smart-hospital.in/site/login");
         }
         return driver;
     }

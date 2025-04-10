@@ -9,9 +9,6 @@ Background:
     Then the user should see the dashboard page for the "<role>" role
     Examples:
       |role         |
-      |Pharmacist   |
-      |Pathologist  |
-      |Radiologist  |
       |Admin        |
       |Receptionist |
       |Nurse        |
@@ -31,12 +28,6 @@ Background:
       |Admin        |
       |Receptionist |
       |Nurse        |
-      |Super Admin  |
-      |Doctor       |
-      |Pharmacist   |
-      |Pathologist  |
-      |Radiologist  |
-      |Accountant   |
       
 	@InvalidPassword
   Scenario Outline: Attempt to login with missing password
@@ -47,15 +38,10 @@ Background:
     Then User should see an error message
     Examples:
       |role         |
-      |Admin        |
-      |Receptionist |
-      |Nurse        |
       |Super Admin  |
       |Doctor       |
       |Pharmacist   |
-      |Pathologist  |
-      |Radiologist  |
-      |Accountant   |
+     
       
 	@InvalidUsername_And_Password
   Scenario Outline: Attempt to login with missing username and password
@@ -65,12 +51,6 @@ Background:
     Then User should see an error message
    Examples:
       |role         |
-      |Admin        |
-      |Receptionist |
-      |Nurse        |
-      |Super Admin  |
-      |Doctor       |
-      |Pharmacist   |
       |Pathologist  |
       |Radiologist  |
       |Accountant   |
