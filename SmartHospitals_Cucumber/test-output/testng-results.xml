@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
+<testng-results ignored="0" total="22" passed="16" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-11T00:37:22 IST" name="Default suite" finished-at="2025-04-11T00:39:43 IST" duration-ms="140806">
+  <suite started-at="2025-04-11T08:10:07 IST" name="Default suite" finished-at="2025-04-11T08:13:21 IST" duration-ms="193572">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-11T00:37:22 IST" name="Default test" finished-at="2025-04-11T00:39:43 IST" duration-ms="140806">
+    <test started-at="2025-04-11T08:10:07 IST" name="Default test" finished-at="2025-04-11T08:13:21 IST" duration-ms="193572">
       <class name="com.runner.RunnerClass">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:37:22 IST" name="setUpClass" finished-at="2025-04-11T00:37:23 IST" duration-ms="516" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:10:07 IST" name="setUpClass" finished-at="2025-04-11T08:10:08 IST" duration-ms="1298" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7da9b32c]]>
+                <![CDATA[org.testng.TestRunner@fceab5d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:37:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:37:40 IST" duration-ms="16668" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:10:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:10:27 IST" duration-ms="18103" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,10 +34,23 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workbook" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workbook" is null
+at com.utils.ExcelReader.getCellData(ExcelReader.java:16)
+at com.actions.DoctorActions.addPatientDetails(DoctorActions.java:36)
+at com.definitions.DoctorDefinition.doctor_fills_in_patient_details(DoctorDefinition.java:33)
+at ✽.Doctor fills in patient details(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:37:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:37:57 IST" duration-ms="17542" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:10:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:10:40 IST" duration-ms="13521" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -50,10 +63,23 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workbook" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workbook" is null
+at com.utils.ExcelReader.getCellData(ExcelReader.java:16)
+at com.actions.DoctorActions.addPatientDetails(DoctorActions.java:36)
+at com.definitions.DoctorDefinition.doctor_fills_in_patient_details(DoctorDefinition.java:33)
+at ✽.Doctor fills in patient details(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:37:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:38:10 IST" duration-ms="12793" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:10:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:10:57 IST" duration-ms="16935" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -66,10 +92,23 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workbook" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workbook" is null
+at com.utils.ExcelReader.getCellData(ExcelReader.java:16)
+at com.actions.DoctorActions.addPatientDetails1(DoctorActions.java:56)
+at com.definitions.DoctorDefinition.doctor_leaves_the_name_field_empty_in_patient_details(DoctorDefinition.java:69)
+at ✽.Doctor leaves the Name field empty in patient details(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:38:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:38:23 IST" duration-ms="13089" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:10:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:11:14 IST" duration-ms="17170" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -82,10 +121,23 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workbook" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workbook" is null
+at com.utils.ExcelReader.getCellData(ExcelReader.java:16)
+at com.actions.DoctorActions.addPatientDetails2(DoctorActions.java:69)
+at com.definitions.DoctorDefinition.doctor_leaves_the_year_field_empty_in_patient_details(DoctorDefinition.java:77)
+at ✽.Doctor leaves the Year field empty in patient details(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:38:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:38:37 IST" duration-ms="13586" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:11:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:11:28 IST" duration-ms="14143" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -98,10 +150,23 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workbook" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workbook" is null
+at com.utils.ExcelReader.getCellData(ExcelReader.java:16)
+at com.actions.DoctorActions.addPatientDetails3(DoctorActions.java:82)
+at com.definitions.DoctorDefinition.doctor_leaves_the_month_field_empty_in_patient_details(DoctorDefinition.java:85)
+at ✽.Doctor leaves the Month field empty in patient details(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:33)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:38:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:38:50 IST" duration-ms="13078" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:11:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:11:42 IST" duration-ms="13910" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -114,10 +179,23 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workbook" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workbook" is null
+at com.utils.ExcelReader.getCellData(ExcelReader.java:16)
+at com.actions.DoctorActions.addPatientDetails4(DoctorActions.java:95)
+at com.definitions.DoctorDefinition.doctor_leaves_the_day_field_empty_in_patient_details(DoctorDefinition.java:93)
+at ✽.Doctor leaves the Day field empty in patient details(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:38)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:38:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:38:54 IST" duration-ms="4298" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:11:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:11:52 IST" duration-ms="9914" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,7 +211,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:38:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:38:58 IST" duration-ms="3925" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:11:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:12:00 IST" duration-ms="7865" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -149,7 +227,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:38:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:02 IST" duration-ms="4357" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:12:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:12:08 IST" duration-ms="7508" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +243,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:07 IST" duration-ms="4219" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:12:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:12:16 IST" duration-ms="8216" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,7 +259,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:11 IST" duration-ms="3990" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:12:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:12:24 IST" duration-ms="7897" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -197,7 +275,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:15 IST" duration-ms="4064" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:12:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:12:31 IST" duration-ms="7381" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -213,7 +291,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:17 IST" duration-ms="2098" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:12:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:12:35 IST" duration-ms="3964" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -229,7 +307,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:20 IST" duration-ms="2772" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:12:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:12:39 IST" duration-ms="3940" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -245,7 +323,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:22 IST" duration-ms="2244" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:12:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:12:43 IST" duration-ms="4276" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -261,7 +339,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:25 IST" duration-ms="3018" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:12:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:12:49 IST" duration-ms="5983" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -277,7 +355,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:28 IST" duration-ms="3222" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:12:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:12:55 IST" duration-ms="5950" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -293,7 +371,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:32 IST" duration-ms="3652" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:12:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:13:02 IST" duration-ms="6436" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -309,7 +387,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:34 IST" duration-ms="2541" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:13:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:13:06 IST" duration-ms="4101" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -325,7 +403,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:37 IST" duration-ms="2780" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:13:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:13:10 IST" duration-ms="4174" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -341,7 +419,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:39 IST" duration-ms="2411" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:13:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:13:14 IST" duration-ms="4116" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -357,7 +435,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T00:39:43 IST" duration-ms="3851" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:13:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T08:13:21 IST" duration-ms="6582" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -373,7 +451,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T00:39:43 IST" name="tearDownClass" finished-at="2025-04-11T00:39:43 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T08:13:21 IST" name="tearDownClass" finished-at="2025-04-11T08:13:21 IST" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
