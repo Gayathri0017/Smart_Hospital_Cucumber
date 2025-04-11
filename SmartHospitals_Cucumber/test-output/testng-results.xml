@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="22" passed="20" failed="2" skipped="0">
+<testng-results ignored="0" total="22" passed="21" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-11T09:27:22 IST" name="Cucumber Suite" finished-at="2025-04-11T09:31:21 IST" duration-ms="238891">
+  <suite started-at="2025-04-11T15:44:10 IST" name="Default suite" finished-at="2025-04-11T15:47:08 IST" duration-ms="178834">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-11T09:27:22 IST" name="Cucumber Test" finished-at="2025-04-11T09:31:21 IST" duration-ms="238891">
+    <test started-at="2025-04-11T15:44:10 IST" name="Default test" finished-at="2025-04-11T15:47:08 IST" duration-ms="178834">
       <class name="com.runner.RunnerClass">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:27:22 IST" name="setUpClass" finished-at="2025-04-11T09:27:23 IST" duration-ms="462" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:44:10 IST" name="setUpClass" finished-at="2025-04-11T15:44:10 IST" duration-ms="656" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1530c739]]>
+                <![CDATA[org.testng.TestRunner@3b366632]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:27:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:27:39 IST" duration-ms="16562" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:44:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:10 IST" duration-ms="119521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Login with roles"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality for the Smart Hospital website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:44:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:31 IST" duration-ms="140386" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,103 +50,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found in the current frame
-  (Session info: chrome=135.0.7049.85)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7e831f2841dabec41f2cd80b7f125367, isElementEnabled {id=f.1204C8F0C498CD44840327D7B38D352E.d.31578EF6F418DD71B53BAA94AD4B8CE0.e.309}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\gayat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50519/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (7e831f2841dabec41f2cd80b7f125367)] -> id: slot]] -> xpath: .//option[normalize-space(.) = "04:00 PM - 07:00 PM"]]
-Session ID: 7e831f2841dabec41f2cd80b7f125367]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=135.0.7049.85)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7e831f2841dabec41f2cd80b7f125367, isElementEnabled {id=f.1204C8F0C498CD44840327D7B38D352E.d.31578EF6F418DD71B53BAA94AD4B8CE0.e.309}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\gayat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50519/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (7e831f2841dabec41f2cd80b7f125367)] -> id: slot]] -> xpath: .//option[normalize-space(.) = "04:00 PM - 07:00 PM"]]
-Session ID: 7e831f2841dabec41f2cd80b7f125367
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:181)
-at org.openqa.selenium.support.ui.Select.assertOptionIsEnabled(Select.java:424)
-at org.openqa.selenium.support.ui.Select.setSelected(Select.java:417)
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:133)
-at com.actions.DoctorActions.addAppointmentDetails(DoctorActions.java:133)
-at com.definitions.DoctorDefinition.doctor_fills_in_appointment_details(DoctorDefinition.java:46)
-at ✽.Doctor fills in appointment details(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:11)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:27:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:27:57 IST" duration-ms="17785" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Doctor tries to create an appointment with an expired time slot"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Manage Appointments in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:27:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:28:12 IST" duration-ms="14821" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Doctor tries to add a new patient without entering the name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Manage Appointments in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:28:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:28:29 IST" duration-ms="16857" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Doctor tries to add a new patient without entering the year"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Manage Appointments in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:28:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:28:47 IST" duration-ms="17863" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:44:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:32 IST" duration-ms="141520" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,7 +69,23 @@ at ✽.Doctor fills in appointment details(file:///C:/Users/gayat/git/Smart_Hosp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:28:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:29:09 IST" duration-ms="21974" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:44:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:37 IST" duration-ms="146718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Doctor tries to add a new patient without entering the year"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Manage Appointments in Smart Hospital"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:44:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:57 IST" duration-ms="166740" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -159,154 +98,28 @@ at ✽.Doctor fills in appointment details(file:///C:/Users/gayat/git/Smart_Hosp
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:29:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:29:16 IST" duration-ms="7672" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Login with roles"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:29:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:29:23 IST" duration-ms="6976" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Login with roles"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:29:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:29:32 IST" duration-ms="8882" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Login with roles"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:29:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:29:41 IST" duration-ms="8797" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Login with roles"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:29:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:29:47 IST" duration-ms="6425" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Login with roles"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:29:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:29:54 IST" duration-ms="6662" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Login with roles"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:29:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:29:57 IST" duration-ms="3139" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Attempt to login with missing username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:29:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:30:27 IST" duration-ms="29396" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Attempt to login with missing username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[normalize-space()='Sign In']' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[normalize-space()='Sign In']' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.actions.LoginActions.selectRole(LoginActions.java:26)
-at com.definitions.LoginDefinition.the_user_selects_the_role(LoginDefinition.java:18)
-at ✽.the user selects the role "Receptionist"(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/LoginFeature.feature:21)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Sign In']"}
+              <![CDATA[element not interactable
   (Session info: chrome=135.0.7049.85)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.30.0', revision: '509c7f17cc*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a2b9fc1b7a828b906d14d3737e41d3ac, findElement {using=xpath, value=//button[normalize-space()='Sign In']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\gayat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51140}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51140/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a2b9fc1b7a828b906d14d3737e41d3ac
+Command: [c77fa1ede408d97dcbc46547258256b3, clickElement {id=f.895A78B0B97C82DD1C06B8F73576764F.d.FDE7422441CB63005F13B648BB02DDD2.e.9638}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54729/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c77fa1ede408d97dcbc46547258256b3)] -> xpath: //a[@id="add"]]
+Session ID: c77fa1ede408d97dcbc46547258256b3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=135.0.7049.85)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c77fa1ede408d97dcbc46547258256b3, clickElement {id=f.895A78B0B97C82DD1C06B8F73576764F.d.FDE7422441CB63005F13B648BB02DDD2.e.9638}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54729/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c77fa1ede408d97dcbc46547258256b3)] -> xpath: //a[@id="add"]]
+Session ID: c77fa1ede408d97dcbc46547258256b3
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -317,27 +130,135 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy40.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 3 more
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+at com.actions.DoctorActions.clickMethod(DoctorActions.java:172)
+at com.actions.DoctorActions.addPatient(DoctorActions.java:32)
+at com.definitions.DoctorDefinition.doctor_clicks_on_new_patient_button(DoctorDefinition.java:29)
+at ✽.Doctor clicks on New Patient button(file:///C:/Users/GOWRISANKAR/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:6)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:30:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:30:30 IST" duration-ms="3139" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:44:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:37 IST" duration-ms="146948" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Doctor tries to add a new patient without entering the name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Manage Appointments in Smart Hospital"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:44:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:11 IST" duration-ms="120553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Login with roles"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality for the Smart Hospital website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:44:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:44 IST" duration-ms="154229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Doctor tries to create an appointment with an expired time slot"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Manage Appointments in Smart Hospital"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:44:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:29 IST" duration-ms="138830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Login with roles"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality for the Smart Hospital website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:44:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:29 IST" duration-ms="138895" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Login with roles"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality for the Smart Hospital website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:46:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:44 IST" duration-ms="34019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Login with roles"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality for the Smart Hospital website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:46:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:44 IST" duration-ms="33111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Login with roles"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality for the Smart Hospital website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:46:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:45 IST" duration-ms="15452" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -353,7 +274,39 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:30:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:30:38 IST" duration-ms="8028" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:46:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:45 IST" duration-ms="15545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Attempt to login with missing username"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality for the Smart Hospital website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:46:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:44 IST" duration-ms="13800" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Attempt to login with missing username"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality for the Smart Hospital website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:46:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:56 IST" duration-ms="23898" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -369,7 +322,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:30:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:30:45 IST" duration-ms="7100" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:46:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:47:00 IST" duration-ms="23382" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -385,7 +338,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:30:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:30:51 IST" duration-ms="5775" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:46:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:47:05 IST" duration-ms="27330" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -401,7 +354,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:30:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:30:54 IST" duration-ms="3640" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:46:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:56 IST" duration-ms="12608" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -417,7 +370,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:30:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:30:58 IST" duration-ms="3580" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:46:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:46:59 IST" duration-ms="14642" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -433,7 +386,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:30:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:31:02 IST" duration-ms="4080" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:46:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:47:00 IST" duration-ms="15486" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -449,7 +402,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:31:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T09:31:21 IST" duration-ms="19170" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:46:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-11T15:47:08 IST" duration-ms="23830" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -465,11 +418,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-11T09:31:21 IST" name="tearDownClass" finished-at="2025-04-11T09:31:21 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-11T15:47:08 IST" name="tearDownClass" finished-at="2025-04-11T15:47:08 IST" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.runner.RunnerClass -->
-    </test> <!-- Cucumber Test -->
-  </suite> <!-- Cucumber Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

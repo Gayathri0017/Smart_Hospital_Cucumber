@@ -1,15 +1,19 @@
 package com.utils;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
 import java.time.Duration;
 import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class HelperClass {
-    private static WebDriver driver;
+    private static ConcurrentHashMap<String, WebDriver> drivers = new ConcurrentHashMap<>();
 
     public static WebDriver getDriver() {
-        if (driver == null) {
+        String threadName = Thread.currentThread().getName();
+        if (!drivers.containsKey(threadName)) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--incognito");
             options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
@@ -18,19 +22,24 @@ public class HelperClass {
                 put("credentials_enable_service", false);
                 put("profile.password_manager_enabled", false);
             }});
-            driver = new ChromeDriver(options);
+            WebDriver driver = new ChromeDriver(options);
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             driver.manage().window().maximize();
             driver.get("https://demo.smart-hospital.in/site/login");
+            drivers.put(threadName, driver);
         }
-        return driver;
+        return drivers.get(threadName);
     }
+
     public static void quitDriver() {
-        if (driver != null) {
-            driver.close();
-            driver.quit();
-            driver = null;
+        String threadName = Thread.currentThread().getName();
+        if (drivers.containsKey(threadName)) {
+            WebDriver driver = drivers.get(threadName);
+            if (driver != null) {
+                driver.close();
+                driver.quit();
+            }
+            drivers.remove(threadName);
         }
-        
     }
 }
