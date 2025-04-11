@@ -31,7 +31,7 @@ public void addAppointment() {
 public void addPatient() {
 	clickMethod(dp.addpatient);
 }
-ExcelReader reader = new ExcelReader("D:\\SmartHospital\\Book2.xlsx");
+ExcelReader reader = new ExcelReader("src\\test\\resources\\Book2.xlsx");
 public void addPatientDetails() {
 	String name=reader.getCellData("Sheet1", 0, 0);
 	String gender= reader.getCellData("Sheet1", 0, 1);
@@ -47,7 +47,7 @@ public void addPatientDetails() {
 	sendKeysMethod(dp.day,day);
 	Select bg=new Select(dp.bloodGroup);
 	bg.selectByVisibleText(bloodgrp);
-	 String path="C:\\Users\\gayat\\Pictures\\Screenshots\\Screenshot (29).png";
+	 String path="src\\test\\resources\\patient.jpg";
 	 File file=new File(path);
 	  String absolutePath = file.getAbsolutePath();
 	    dp.uploadPhoto.sendKeys(absolutePath);
