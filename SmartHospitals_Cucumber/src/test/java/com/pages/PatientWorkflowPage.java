@@ -29,4 +29,6 @@ public class PatientWorkflowPage {
 	
 	@FindBy(xpath="//div[@class='form-bottom']/form/div[2]/span/p")
 	public WebElement passwordReq ;
+	
+//	@FindBy(xpath = "")
 }
