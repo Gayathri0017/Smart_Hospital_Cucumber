@@ -15,13 +15,11 @@ import java.time.Duration;
 public class LoginActions {
     private LoginPage loginPage;
     private WebDriverWait wait;
-   
     public LoginActions() {
     	this.loginPage = new LoginPage();
         PageFactory.initElements(HelperClass.getDriver(), loginPage);
         this.wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
     }
-
     public void selectRole(String role) {
         wait.until(ExpectedConditions.elementToBeClickable(loginPage.signInButton));
         
