@@ -1,9 +1,15 @@
 package com.actions;
 import java.io.File;
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import com.pages.DoctorWorkflowPage;
 import com.utils.ExcelReader;
@@ -110,27 +116,30 @@ public void save(){
 public void assertPatient() {
 	String name=reader.getCellData("Sheet1", 0, 0);
 	String actual=dp.nameAfterAdd.getText();
-	//Assert.assertEquals(name,actual);
 	Assert.assertTrue(actual.contains(name));
 }
 public void addAppointmentDetails() {
 	String doctor=reader.getCellData("Sheet1", 0, 6);
 	String shift=reader.getCellData("Sheet1", 0, 7);
-	//String date=reader.getCellData("Sheet1", 0, 9);
 	String slot=reader.getCellData("Sheet1", 0, 9);
 	String status=reader.getCellData("Sheet1", 0, 10);
 	String dis=reader.getCellData("Sheet1", 0, 11);
 	Select doc=new Select(dp.doc);
-	//doc.selectByVisibleText(doctor);
 	doc.selectByIndex(1);
 	Select sft=new Select(dp.shift);
 	sft.selectByVisibleText(shift);
 	dp.date.click();
 	dp.date.sendKeys(Keys.CONTROL+"a"+Keys.BACK_SPACE);
-	sendKeysMethod(dp.date,"05/10/2025  16:26:00");
+	sendKeysMethod(dp.date,"03/10/2026  16:26:00");
 	dp.date.sendKeys(Keys.ENTER);
-	Select slt=new Select(dp.slot);
-	slt.selectByVisibleText(slot);
+	try {
+	WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+	WebElement slotDd= wait.until(ExpectedConditions.presenceOfElementLocated(By.id("slot")));
+	Select s= new Select(slotDd);
+	s.selectByVisibleText(slot);
+	}catch(StaleElementReferenceException e) {
+		System.out.println(e.getMessage());
+	}
 	Select sts=new Select(dp.status);
 	sts.selectByVisibleText(status);
 	sendKeysMethod(dp.discount,dis);
@@ -138,10 +147,8 @@ public void addAppointmentDetails() {
 public void addAppointmentDetails1() {
 	String doctor=reader.getCellData("Sheet1", 1, 6);
 	String shift=reader.getCellData("Sheet1", 1, 7);
-	//String date=reader.getCellData("Sheet1", 1, 9);
 	String slot=reader.getCellData("Sheet1", 1, 9);
 	Select doc=new Select(dp.doc);
-	//doc.selectByVisibleText(doctor);
 	doc.selectByIndex(1);
 	Select sft=new Select(dp.shift);
 	sft.selectByVisibleText(shift);
@@ -149,16 +156,33 @@ public void addAppointmentDetails1() {
 	dp.date.sendKeys(Keys.CONTROL+"a"+Keys.BACK_SPACE);
 	sendKeysMethod(dp.date,"04/06/2024 12:00 AM");
 	dp.date.sendKeys(Keys.ENTER);
-	Select slt=new Select(dp.slot);
-	slt.selectByVisibleText(slot);
-//	Select sts=new Select(dp.status);
-//	sts.selectByVisibleText(status);
-//	sendKeysMethod(dp.discount,dis);
+	try {
+	    WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
+	    WebElement fresh=wait.until(ExpectedConditions.refreshed(
+	        ExpectedConditions.presenceOfElementLocated(By.id("slot"))
+	    ));
+	    Select s = new Select(fresh);
+	    s.selectByVisibleText(slot);
+	} catch (StaleElementReferenceException e) {
+	    System.out.println(e.getMessage());
+	}
 }
-public void addedPatient() {
-	String ex=dp.patient.getText();
-	String name=reader.getCellData("Sheet1", 0, 0);
-	Assert.assertTrue(ex.contains(name));
+public void addedPatient(){
+    String expected=reader.getCellData("Sheet1", 0, 0);
+    WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
+    try {
+        WebElement patientElement = wait.until(ExpectedConditions.presenceOfElementLocated(
+            By.xpath("(//tr[@class='odd'])[1]//a")
+        ));
+        String actual=patientElement.getText();
+        Assert.assertTrue(actual.contains(expected));
+    }catch(StaleElementReferenceException e) {
+        WebElement patientElement = HelperClass.getDriver().findElement(
+            By.xpath("(//tr[@class='odd'])[1]//a")
+        );
+        String actualName = patientElement.getText();
+        Assert.assertTrue(actualName.contains(expected));
+    }
 }
 public void nameRequired(String ex) {
 	String ac=dp.nameError.getText();
@@ -167,7 +191,6 @@ public void nameRequired(String ex) {
 public void saveApp() {
 	clickMethod(dp.savebtn);
 }
-
 public void clickMethod(WebElement ele) {
 	ele.click();
 }
