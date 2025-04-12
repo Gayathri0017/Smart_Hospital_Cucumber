@@ -85,58 +85,78 @@ public class PatientActions {
 	public void ClickAddAppointment() {
 		objPDP.addAppointment.click();
 	}
-	
+
 	public void AppointmentDetails() {
 		Map<String , String> details = ExcelReader.getPatientAppointmentForm("C:\\Users\\Dhanusheswaran M\\git\\Smart_Hospital_Cucumber_Project\\SmartHospitals_Cucumber\\src\\test\\resources\\PatientAppointmentData.xlsx" , "Sheet1");
-		
+
 		objPDP.date.sendKeys(details.get("Date"));
+		objPDP.date.sendKeys(Keys.CONTROL.ENTER+"a"+Keys.CONTROL.BACK_SPACE+details.get("Date"));
+		
 		System.out.println(details.get("Date"));
 		
 		String specialistName = details.get("Specialist");
+		wait.until(ExpectedConditions.visibilityOf(objPDP.specialist));
 		Select selectSpecialist = new Select(objPDP.specialist);
 		List<WebElement> specialist = selectSpecialist.getOptions();
-		for(WebElement name : specialist) {
-			if(name.getText().contains(specialistName)) {
-				name.click();
+		for(WebElement Sname : specialist) {
+			if(Sname.getText().contains(specialistName)) {
+				Sname.click();
+				System.out.println(Sname.getText());
 				break;
 			}
 		}
-		System.out.println(details.get("Specialist"));
 		
 		String doctorName = details.get("Doctor");
+		wait.until(ExpectedConditions.visibilityOf(objPDP.doctor));
 		Select selectDoctor = new Select(objPDP.doctor);
 		List<WebElement> doctor = selectDoctor.getOptions();
-		for(WebElement name : doctor) {
-			if(name.getText().contains(doctorName)) {
-				name.click();
+		for(WebElement Dname : doctor) {
+			if(Dname.getText().contains(doctorName)) {
+				Dname.click();
+				System.out.println(Dname.getText());
 				break;
 			}
 		}
-		System.out.println(details.get("Specialist"));
 		
 		String timing = details.get("Shift");
+		wait.until(ExpectedConditions.visibilityOf(objPDP.timingShift));
 		Select selectTiming = new Select(objPDP.timingShift);
 		List<WebElement> time = selectTiming.getOptions();
 		for(WebElement shift : time) {
 			if(shift.getText().contains(timing)) {
 				shift.click();
+				System.out.println(shift.getText());
 				break;
 			}
 		}
-		System.out.println(details.get("Shift"));
 		
 		String slot = details.get("Slot");
+		wait.until(ExpectedConditions.visibilityOf(objPDP.slot));
 		Select selectSlot = new Select(objPDP.slot);
 		List<WebElement> slotTiming = selectSlot.getOptions();
 		for(WebElement timeSlot : slotTiming) {
 			if(timeSlot.getText().contains(slot)) {
 				timeSlot.click();
+				System.out.println(timeSlot.getText());
 				break;
 			}
 		}
-		System.out.println(details.get("Slot"));
 		
+//		String Availableslot = details.get("AvailableSlot");
+//		Select selectAvailableSlot = new Select(objPDP.AvailableSlot);
+//		List<WebElement> AvailableslotTiming = selectAvailableSlot.getOptions();
+//		for(WebElement AvailtimeSlot : AvailableslotTiming) {
+//			if(AvailtimeSlot.getText().contains(Availableslot)) {
+//				AvailtimeSlot.click();
+//				System.out.println(AvailtimeSlot.getText());
+//				break;
+//			}
+//		}
+		
+		objPDP.AvailableSlot.click();
+		System.out.println(objPDP.AvailableSlot.getText());
 		objPDP.patientMsg.sendKeys(details.get("Message"));
 		System.out.println(details.get("Message"));
 	}
 }
+

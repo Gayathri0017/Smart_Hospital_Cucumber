@@ -32,6 +32,9 @@ public class PatientDashboardPage {
 	@FindBy(id = "shift_id")
 	public WebElement slot ;
 	
+	@FindBy(xpath = "//span[@id='slot_1']")
+	public WebElement AvailableSlot ;
+	
 	@FindBy(id = "message")
 	public WebElement patientMsg ;
 	
