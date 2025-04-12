@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="6" parallel="methods" name="Failed suite [Smart Hospital Tests]" guice-stage="DEVELOPMENT">
-  <test thread-count="6" parallel="methods" name="Login Tests(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.runner.RunnerClass">
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="1"/>
+          <include name="runScenario" invocation-numbers="0 1 3 4 5 10 11 13 14 15 16 17 18 19 20 21"/>
         </methods>
       </class> <!-- com.runner.RunnerClass -->
     </classes>
-  </test> <!-- Login Tests(failed) -->
-</suite> <!-- Failed suite [Smart Hospital Tests] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

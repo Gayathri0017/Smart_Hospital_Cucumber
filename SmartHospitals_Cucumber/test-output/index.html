@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 16 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Smart_Hospital_Tests" class="navigator-link">
-              <span class="suite-name border-passed">Smart Hospital Tests</span>
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Smart_Hospital_Tests" class="navigator-link ">
-                    <span>C:\Users\gayat\git\Smart_Hospital_Cucumber\SmartHospitals_Cucumber\testng.xml</span>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\GOWRISANKAR\AppData\Local\Temp\testng-eclipse--295344490\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Smart_Hospital_Tests" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Smart_Hospital_Tests" class="navigator-link ">
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Smart_Hospital_Tests" class="navigator-link ">
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Smart_Hospital_Tests" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Smart_Hospital_Tests" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Smart_Hospital_Tests" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,126 +92,135 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">22 methods,   22 passed</span>
+                    <span class="method-stats">22 methods, 16 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing username and password&quot;, &quot;Login functionality for the Smart Hospital w...)">runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing username and password&quot;, &quot;Login functionality for the Smart Hospital w...)">runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Doctor tries to create an appointment with an expired time slot&quot;, &quot;Manage Appointments in Smart Hos...)">runScenario("Doctor tries to create an appointment with an expired time slot", "Manage Appointments in Smart Hos...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Doctor tries to add a new patient without entering the day&quot;, &quot;Manage Appointments in Smart Hospital...)">runScenario("Doctor tries to add a new patient without entering the day", "Manage Appointments in Smart Hospital...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;To check Login as patient&quot;, &quot;Login with the Patient Login Credentials&quot;)">runScenario("To check Login as patient", "Login with the Patient Login Credentials")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Doctor tries to add a new patient without entering the year&quot;, &quot;Manage Appointments in Smart Hospita...)">runScenario("Doctor tries to add a new patient without entering the year", "Manage Appointments in Smart Hospita...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing username&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Doctor creates a new appointment for a new patient&quot;, &quot;Manage Appointments in Smart Hospital&quot;)">runScenario("Doctor creates a new appointment for a new patient", "Manage Appointments in Smart Hospital")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing username&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing password&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing password&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing password&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Doctor tries to add a new patient without entering the Month&quot;, &quot;Manage Appointments in Smart Hospit...)">runScenario("Doctor tries to add a new patient without entering the Month", "Manage Appointments in Smart Hospit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing username and password&quot;, &quot;Login functionality for the Smart Hospital w...)">runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Smart_Hospital_Tests" class="hide-methods passed suite-Smart_Hospital_Tests"> (hide)</a> <!-- hide-methods passed suite-Smart_Hospital_Tests -->
-                      <a href="#" panel-name="suite-Smart_Hospital_Tests" class="show-methods passed suite-Smart_Hospital_Tests"> (show)</a> <!-- show-methods passed suite-Smart_Hospital_Tests -->
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Smart_Hospital_Tests">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing password&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing username&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing password&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;To check Login as patient&quot;, &quot;Login with the Patient Login Credentials&quot;)">runScenario("To check Login as patient", "Login with the Patient Login Credentials")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Doctor tries to add a new patient without entering the name&quot;, &quot;Manage Appointments in Smart Hospita...)">runScenario("Doctor tries to add a new patient without entering the name", "Manage Appointments in Smart Hospita...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Doctor creates a new appointment for a new patient&quot;, &quot;Manage Appointments in Smart Hospital&quot;)">runScenario("Doctor creates a new appointment for a new patient", "Manage Appointments in Smart Hospital")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Doctor tries to add a new patient without entering the day&quot;, &quot;Manage Appointments in Smart Hospital...)">runScenario("Doctor tries to add a new patient without entering the day", "Manage Appointments in Smart Hospital...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing username and password&quot;, &quot;Login functionality for the Smart Hospital w...)">runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing username and password&quot;, &quot;Login functionality for the Smart Hospital w...)">runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing username&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Doctor tries to add a new patient without entering the Month&quot;, &quot;Manage Appointments in Smart Hospit...)">runScenario("Doctor tries to add a new patient without entering the Month", "Manage Appointments in Smart Hospit...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing username&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Doctor tries to add a new patient without entering the year&quot;, &quot;Manage Appointments in Smart Hospita...)">runScenario("Doctor tries to add a new patient without entering the year", "Manage Appointments in Smart Hospita...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing username&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Doctor tries to add a new patient without entering the name&quot;, &quot;Manage Appointments in Smart Hospita...)">runScenario("Doctor tries to add a new patient without entering the name", "Manage Appointments in Smart Hospita...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing username and password&quot;, &quot;Login functionality for the Smart Hospital w...)">runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Attempt to login with missing password&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smart_Hospital_Tests" title="com.runner.RunnerClass" class="method navigator-link" hash-for-method="runScenario(&quot;Doctor tries to create an appointment with an expired time slot&quot;, &quot;Manage Appointments in Smart Hos...)">runScenario("Doctor tries to create an appointment with an expired time slot", "Manage Appointments in Smart Hos...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Smart_Hospital_Tests -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -222,79 +231,174 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Smart_Hospital_Tests" class="panel Smart_Hospital_Tests">
-          <div class="suite-Smart_Hospital_Tests-class-passed">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.runner.RunnerClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Attempt to login with missing password&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
-                  </a> <!-- runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Attempt to login with missing password","Login functionality for the Smart Hospital website")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
                   </a> <!-- runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Verify the Login with roles","Login functionality for the Smart Hospital website")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [62b16e18c7645fd05af1e17c19d5082c, clickElement {id=f.CD07AB32CF42738AC2C7B5B06B5186A0.d.D68CA2286EE37928A360BCB821AD6574.e.357}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59749}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59749/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (62b16e18c7645fd05af1e17c19d5082c)] -&gt; xpath: //button[normalize-space()=&apos;Sign In&apos;]]
+Session ID: 62b16e18c7645fd05af1e17c19d5082c
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at com.actions.LoginActions.clickSignIn(LoginActions.java:73)
+	at com.definitions.LoginDefinition.the_user_clicks_the_sign_in_button(LoginDefinition.java:37)
+	at ✽.the user clicks the Sign In button(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/LoginFeature.feature:8)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
-                  </a> <!-- runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website") -->
+                  <a name="runScenario(&quot;Attempt to login with missing username and password&quot;, &quot;Login functionality for the Smart Hospital w...)">
+                  </a> <!-- runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify the Login with roles","Login functionality for the Smart Hospital website")</span>
+                  <span class="parameters">("Attempt to login with missing username and password","Login functionality for the Smart Hospital website")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25571ba87e3cc823d4e5729ec29089f1, get {url=https://demo.smart-hospital.in/site/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60278}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60278/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25571ba87e3cc823d4e5729ec29089f1
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.utils.HelperClass.getDriver(HelperClass.java:28)
+	at com.definitions.Hooks.setUp(Hooks.java:12)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
-                  </a> <!-- runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website") -->
+                  <a name="runScenario(&quot;Attempt to login with missing username and password&quot;, &quot;Login functionality for the Smart Hospital w...)">
+                  </a> <!-- runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify the Login with roles","Login functionality for the Smart Hospital website")</span>
+                  <span class="parameters">("Attempt to login with missing username and password","Login functionality for the Smart Hospital website")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1a3e57ecc9fffb9255e3c5cc3af943b, findElement {value=//button[normalize-space()=&apos;Sign In&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60367/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1a3e57ecc9fffb9255e3c5cc3af943b
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4465)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:669)
+	at java.base/java.lang.String.valueOf(String.java:4465)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at com.actions.LoginActions.selectRole(LoginActions.java:24)
+	at com.definitions.LoginDefinition.the_user_selects_the_role(LoginDefinition.java:16)
+	at ✽.the user selects the role &quot;Accountant&quot;(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/LoginFeature.feature:48)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Attempt to login with missing password&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
-                  </a> <!-- runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website") -->
+                  <a name="runScenario(&quot;Doctor tries to create an appointment with an expired time slot&quot;, &quot;Manage Appointments in Smart Hos...)">
+                  </a> <!-- runScenario("Doctor tries to create an appointment with an expired time slot", "Manage Appointments in Smart Hos...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Attempt to login with missing password","Login functionality for the Smart Hospital website")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;To check Login as patient&quot;, &quot;Login with the Patient Login Credentials&quot;)">
-                  </a> <!-- runScenario("To check Login as patient", "Login with the Patient Login Credentials") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("To check Login as patient","Login with the Patient Login Credentials")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Doctor creates a new appointment for a new patient&quot;, &quot;Manage Appointments in Smart Hospital&quot;)">
-                  </a> <!-- runScenario("Doctor creates a new appointment for a new patient", "Manage Appointments in Smart Hospital") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Doctor creates a new appointment for a new patient","Manage Appointments in Smart Hospital")</span>
+                  <span class="parameters">("Doctor tries to create an appointment with an expired time slot","Manage Appointments in Smart Hospital")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&quot;btn btn-primary btn-sm addappointment&quot;]&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38120aacda72be40b0bd49fa24391c22, findElement {value=//a[@class=&quot;btn btn-primary btn-sm addappointment&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59425/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38120aacda72be40b0bd49fa24391c22
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at com.actions.DoctorActions.clickMethod(DoctorActions.java:141)
+	at com.actions.DoctorActions.addAppointment(DoctorActions.java:35)
+	at com.definitions.DoctorDefinition.doctor_clicks_the_add_appointment_button(DoctorDefinition.java:27)
+	at ✽.Doctor clicks the Add Appointment button(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:5)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -305,36 +409,38 @@
                   </a> <!-- runScenario("Doctor tries to add a new patient without entering the day", "Manage Appointments in Smart Hospital...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Doctor tries to add a new patient without entering the day","Manage Appointments in Smart Hospital")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Attempt to login with missing username and password&quot;, &quot;Login functionality for the Smart Hospital w...)">
-                  </a> <!-- runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Attempt to login with missing username and password","Login functionality for the Smart Hospital website")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Attempt to login with missing username and password&quot;, &quot;Login functionality for the Smart Hospital w...)">
-                  </a> <!-- runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Attempt to login with missing username and password","Login functionality for the Smart Hospital website")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Attempt to login with missing username&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
-                  </a> <!-- runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Attempt to login with missing username","Login functionality for the Smart Hospital website")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&quot;btn btn-primary btn-sm addappointment&quot;]&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [231e24c893869cd43d481fd5f1cef34d, findElement {value=//a[@class=&quot;btn btn-primary btn-sm addappointment&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59420/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 231e24c893869cd43d481fd5f1cef34d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at com.actions.DoctorActions.clickMethod(DoctorActions.java:141)
+	at com.actions.DoctorActions.addAppointment(DoctorActions.java:35)
+	at com.definitions.DoctorDefinition.doctor_clicks_the_add_appointment_button(DoctorDefinition.java:27)
+	at ✽.Doctor clicks the Add Appointment button(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:5)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -345,26 +451,79 @@
                   </a> <!-- runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Verify the Login with roles","Login functionality for the Smart Hospital website")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [954650a1f5cc52359ba203ea889d8666, clickElement {id=f.0CC87BC8704B83D5C79AD25915CD56CF.d.E35F39B00D058D4ECB15392FD21D603E.e.357}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59750}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59750/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (954650a1f5cc52359ba203ea889d8666)] -&gt; xpath: //button[normalize-space()=&apos;Sign In&apos;]]
+Session ID: 954650a1f5cc52359ba203ea889d8666
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at com.actions.LoginActions.clickSignIn(LoginActions.java:73)
+	at com.definitions.LoginDefinition.the_user_clicks_the_sign_in_button(LoginDefinition.java:37)
+	at ✽.the user clicks the Sign In button(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/LoginFeature.feature:8)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Doctor tries to add a new patient without entering the Month&quot;, &quot;Manage Appointments in Smart Hospit...)">
-                  </a> <!-- runScenario("Doctor tries to add a new patient without entering the Month", "Manage Appointments in Smart Hospit...) -->
+                  <a name="runScenario(&quot;To check Login as patient&quot;, &quot;Login with the Patient Login Credentials&quot;)">
+                  </a> <!-- runScenario("To check Login as patient", "Login with the Patient Login Credentials") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Doctor tries to add a new patient without entering the Month","Manage Appointments in Smart Hospital")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Attempt to login with missing username&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
-                  </a> <!-- runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Attempt to login with missing username","Login functionality for the Smart Hospital website")</span>
+                  <span class="parameters">("To check Login as patient","Login with the Patient Login Credentials")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;form-bottom&apos;]/p/a&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5cef29079401a6a23e8f1367afc33709, findElement {value=//div[@class=&apos;form-bottom&apos;]/p/a, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60393}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60393/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5cef29079401a6a23e8f1367afc33709
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at com.actions.PatientActions.ClickUserLoginBtn(PatientActions.java:27)
+	at com.definitions.PatientDefinition.the_user_clicks_the_user_login(PatientDefinition.java:26)
+	at ✽.the User clicks the User Login(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/PatientLogin.feature:7)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -375,6 +534,356 @@
                   </a> <!-- runScenario("Doctor tries to add a new patient without entering the year", "Manage Appointments in Smart Hospita...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Doctor tries to add a new patient without entering the year","Manage Appointments in Smart Hospital")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4cddc659cea14b64674b5de769fb2893, clickElement {id=f.56DFDDE2CB131202F64D5593AD74DEBD.d.BA7AB20B18A255D4B7F532C6FAFB0396.e.2387}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59421}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59421/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4cddc659cea14b64674b5de769fb2893)] -&gt; xpath: (//li[@class=&quot;treeview &quot;]//span)[2]]
+Session ID: 4cddc659cea14b64674b5de769fb2893
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at com.actions.DoctorActions.clickMethod(DoctorActions.java:141)
+	at com.actions.DoctorActions.appointment(DoctorActions.java:32)
+	at com.definitions.DoctorDefinition.the_user_navigate_to_the_appointment_section(DoctorDefinition.java:23)
+	at ✽.the User navigate to the appointment section(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:4)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Attempt to login with missing username&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
+                  </a> <!-- runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Attempt to login with missing username","Login functionality for the Smart Hospital website")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71ce42a9764e488d26846c4a2aeaf7bf, findElement {value=//button[normalize-space()=&apos;Sign In&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59942}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59942/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71ce42a9764e488d26846c4a2aeaf7bf
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.actions.LoginActions.selectRole(LoginActions.java:24)
+	at com.definitions.LoginDefinition.the_user_selects_the_role(LoginDefinition.java:16)
+	at ✽.the user selects the role &quot;Receptionist&quot;(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/LoginFeature.feature:21)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Doctor creates a new appointment for a new patient&quot;, &quot;Manage Appointments in Smart Hospital&quot;)">
+                  </a> <!-- runScenario("Doctor creates a new appointment for a new patient", "Manage Appointments in Smart Hospital") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Doctor creates a new appointment for a new patient","Manage Appointments in Smart Hospital")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.actions.DoctorActions.assertPatient(DoctorActions.java:70)
+	at com.definitions.DoctorDefinition.patient_should_be_added_successfully(DoctorDefinition.java:44)
+	at ✽.Patient should be added successfully(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:10)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Attempt to login with missing username&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
+                  </a> <!-- runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Attempt to login with missing username","Login functionality for the Smart Hospital website")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe59a808787f36fd84920716fad4450f, get {url=https://demo.smart-hospital.in/site/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59964}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59964/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe59a808787f36fd84920716fad4450f
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.utils.HelperClass.getDriver(HelperClass.java:28)
+	at com.definitions.Hooks.setUp(Hooks.java:12)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Attempt to login with missing password&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
+                  </a> <!-- runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Attempt to login with missing password","Login functionality for the Smart Hospital website")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7730294d195c695adc657e6c4e2f4d18, findElement {value=//button[normalize-space()=&apos;Sign In&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60013}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60013/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7730294d195c695adc657e6c4e2f4d18
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.actions.LoginActions.selectRole(LoginActions.java:24)
+	at com.definitions.LoginDefinition.the_user_selects_the_role(LoginDefinition.java:16)
+	at ✽.the user selects the role &quot;Doctor&quot;(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/LoginFeature.feature:35)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Attempt to login with missing password&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
+                  </a> <!-- runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Attempt to login with missing password","Login functionality for the Smart Hospital website")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf4a14638b582311ed2730ba5cdf46e3, get {url=https://demo.smart-hospital.in/site/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59983/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf4a14638b582311ed2730ba5cdf46e3
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.utils.HelperClass.getDriver(HelperClass.java:28)
+	at com.definitions.Hooks.setUp(Hooks.java:12)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Attempt to login with missing password&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
+                  </a> <!-- runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Attempt to login with missing password","Login functionality for the Smart Hospital website")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [274b325888c2d8295fe63b79fb24e42a, get {url=https://demo.smart-hospital.in/site/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60074/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 274b325888c2d8295fe63b79fb24e42a
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.definitions.LoginDefinition.the_user_is_on_the_login_page(LoginDefinition.java:11)
+	at ✽.the user is on the login page(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/LoginFeature.feature:4)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Doctor tries to add a new patient without entering the Month&quot;, &quot;Manage Appointments in Smart Hospit...)">
+                  </a> <!-- runScenario("Doctor tries to add a new patient without entering the Month", "Manage Appointments in Smart Hospit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Doctor tries to add a new patient without entering the Month","Manage Appointments in Smart Hospital")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0332a7ece3a59bec0e3151b1a131db27, clickElement {id=f.B09537DFEBE1AF6B6B8BD29475219FD7.d.FA600BAF78BB1EF5003D03249FBE9E95.e.2318}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59422}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59422/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0332a7ece3a59bec0e3151b1a131db27)] -&gt; xpath: (//li[@class=&quot;treeview &quot;]//span)[2]]
+Session ID: 0332a7ece3a59bec0e3151b1a131db27
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at com.actions.DoctorActions.clickMethod(DoctorActions.java:141)
+	at com.actions.DoctorActions.appointment(DoctorActions.java:32)
+	at com.definitions.DoctorDefinition.the_user_navigate_to_the_appointment_section(DoctorDefinition.java:23)
+	at ✽.the User navigate to the appointment section(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:4)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Attempt to login with missing username and password&quot;, &quot;Login functionality for the Smart Hospital w...)">
+                  </a> <!-- runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Attempt to login with missing username and password","Login functionality for the Smart Hospital website")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a06462b9ca4ee0610d5c2aa056755100, get {url=https://demo.smart-hospital.in/site/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60115}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60115/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a06462b9ca4ee0610d5c2aa056755100
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:424)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at com.utils.HelperClass.getDriver(HelperClass.java:28)
+	at com.definitions.Hooks.setUp(Hooks.java:12)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.runner.RunnerClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Attempt to login with missing username&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
+                  </a> <!-- runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Attempt to login with missing username","Login functionality for the Smart Hospital website")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -391,10 +900,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Attempt to login with missing username&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
-                  </a> <!-- runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website") -->
+                  <a name="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
+                  </a> <!-- runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Attempt to login with missing username","Login functionality for the Smart Hospital website")</span>
+                  <span class="parameters">("Verify the Login with roles","Login functionality for the Smart Hospital website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
+                  </a> <!-- runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the Login with roles","Login functionality for the Smart Hospital website")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
+                  </a> <!-- runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the Login with roles","Login functionality for the Smart Hospital website")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -409,82 +938,42 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify the Login with roles&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
-                  </a> <!-- runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify the Login with roles","Login functionality for the Smart Hospital website")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Attempt to login with missing username and password&quot;, &quot;Login functionality for the Smart Hospital w...)">
-                  </a> <!-- runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Attempt to login with missing username and password","Login functionality for the Smart Hospital website")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Attempt to login with missing password&quot;, &quot;Login functionality for the Smart Hospital website&quot;)">
-                  </a> <!-- runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Attempt to login with missing password","Login functionality for the Smart Hospital website")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Doctor tries to create an appointment with an expired time slot&quot;, &quot;Manage Appointments in Smart Hos...)">
-                  </a> <!-- runScenario("Doctor tries to create an appointment with an expired time slot", "Manage Appointments in Smart Hos...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Doctor tries to create an appointment with an expired time slot","Manage Appointments in Smart Hospital")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Smart_Hospital_Tests-class-passed -->
-        </div> <!-- panel Smart_Hospital_Tests -->
-        <div panel-name="test-xml-Smart_Hospital_Tests" class="panel">
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\gayat\git\Smart_Hospital_Cucumber\SmartHospitals_Cucumber\testng.xml</span>
+            <span class="header-content">C:\Users\GOWRISANKAR\AppData\Local\Temp\testng-eclipse--295344490\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;6&quot; parallel=&quot;methods&quot; name=&quot;Smart Hospital Tests&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;6&quot; parallel=&quot;methods&quot; name=&quot;Login Tests&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.runner.RunnerClass&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login Tests --&gt;
-&lt;/suite&gt; &lt;!-- Smart Hospital Tests --&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Smart_Hospital_Tests" class="panel">
+        <div panel-name="testlist-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Smart Hospital Tests</span>
+            <span class="header-content">Tests for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login Tests (1 class)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Smart_Hospital_Tests" class="panel">
+        <div panel-name="group-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Smart Hospital Tests</span>
+            <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -497,15 +986,15 @@
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Smart_Hospital_Tests" class="panel">
+        <div panel-name="times-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Smart Hospital Tests</span>
+            <span class="header-content">Times for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Smart_Hospital_Tests');
-function tableData_Smart_Hospital_Tests() {
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -515,116 +1004,116 @@ data.addRows(22);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.runner.RunnerClass')
-data.setCell(0, 3, 51201);
+data.setCell(0, 3, 412580);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.runner.RunnerClass')
-data.setCell(1, 3, 44005);
+data.setCell(1, 3, 375890);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.runner.RunnerClass')
-data.setCell(2, 3, 41998);
+data.setCell(2, 3, 374796);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'com.runner.RunnerClass')
-data.setCell(3, 3, 41801);
+data.setCell(3, 3, 365039);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'com.runner.RunnerClass')
-data.setCell(4, 3, 41199);
+data.setCell(4, 3, 364059);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'com.runner.RunnerClass')
-data.setCell(5, 3, 33840);
+data.setCell(5, 3, 364050);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'com.runner.RunnerClass')
-data.setCell(6, 3, 33488);
+data.setCell(6, 3, 363748);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'com.runner.RunnerClass')
-data.setCell(7, 3, 22649);
+data.setCell(7, 3, 333741);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
 data.setCell(8, 2, 'com.runner.RunnerClass')
-data.setCell(8, 3, 20398);
+data.setCell(8, 3, 324100);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'runScenario')
 data.setCell(9, 2, 'com.runner.RunnerClass')
-data.setCell(9, 3, 20293);
+data.setCell(9, 3, 323274);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'runScenario')
 data.setCell(10, 2, 'com.runner.RunnerClass')
-data.setCell(10, 3, 20293);
+data.setCell(10, 3, 216713);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'runScenario')
 data.setCell(11, 2, 'com.runner.RunnerClass')
-data.setCell(11, 3, 20293);
+data.setCell(11, 3, 215076);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'runScenario')
 data.setCell(12, 2, 'com.runner.RunnerClass')
-data.setCell(12, 3, 15957);
+data.setCell(12, 3, 130259);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'runScenario')
 data.setCell(13, 2, 'com.runner.RunnerClass')
-data.setCell(13, 3, 15633);
+data.setCell(13, 3, 76002);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'runScenario')
 data.setCell(14, 2, 'com.runner.RunnerClass')
-data.setCell(14, 3, 15467);
+data.setCell(14, 3, 70225);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'runScenario')
 data.setCell(15, 2, 'com.runner.RunnerClass')
-data.setCell(15, 3, 14316);
+data.setCell(15, 3, 67948);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'runScenario')
 data.setCell(16, 2, 'com.runner.RunnerClass')
-data.setCell(16, 3, 13900);
+data.setCell(16, 3, 66538);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'runScenario')
 data.setCell(17, 2, 'com.runner.RunnerClass')
-data.setCell(17, 3, 11764);
+data.setCell(17, 3, 64630);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'runScenario')
 data.setCell(18, 2, 'com.runner.RunnerClass')
-data.setCell(18, 3, 11104);
+data.setCell(18, 3, 56298);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'runScenario')
 data.setCell(19, 2, 'com.runner.RunnerClass')
-data.setCell(19, 3, 10077);
+data.setCell(19, 3, 49411);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'runScenario')
 data.setCell(20, 2, 'com.runner.RunnerClass')
-data.setCell(20, 3, 9816);
+data.setCell(20, 3, 34247);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'runScenario')
 data.setCell(21, 2, 'com.runner.RunnerClass')
-data.setCell(21, 3, 9521);
-window.suiteTableData['Smart_Hospital_Tests']= { tableData: data, tableDiv: 'times-div-Smart_Hospital_Tests'}
+data.setCell(21, 3, 32500);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 minutes</span>
-              <div id="times-div-Smart_Hospital_Tests">
-              </div> <!-- times-div-Smart_Hospital_Tests -->
+              <span class="suite-total-time">Total running time: 1 hours</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Smart_Hospital_Tests" class="panel">
+        <div panel-name="reporter-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Smart Hospital Tests</span>
+            <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Smart_Hospital_Tests" class="panel">
+        <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Smart_Hospital_Tests" class="panel">
+        <div panel-name="chronological-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -632,100 +1121,132 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.runner.RunnerClass</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@2e8c1c9b)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@4a8a60bc)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Doctor creates a new appointment for a new patient", "Manage Appointments in Smart Hospital")</span>
-                <span class="method-start">495 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Doctor tries to create an appointment with an expired time slot", "Manage Appointments in Smart Hos...)</span>
-                <span class="method-start">495 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</span>
-                <span class="method-start">496 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</span>
-                <span class="method-start">496 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Doctor tries to add a new patient without entering the day", "Manage Appointments in Smart Hospital...)</span>
-                <span class="method-start">496 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Doctor tries to add a new patient without entering the Month", "Manage Appointments in Smart Hospit...)</span>
-                <span class="method-start">496 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Doctor tries to add a new patient without entering the year", "Manage Appointments in Smart Hospita...)</span>
-                <span class="method-start">496 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</span>
-                <span class="method-start">496 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">runScenario("Doctor tries to add a new patient without entering the name", "Manage Appointments in Smart Hospita...)</span>
-                <span class="method-start">496 ms</span>
+                <span class="method-start">336 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Doctor tries to add a new patient without entering the year", "Manage Appointments in Smart Hospita...)</span>
+                <span class="method-start">336 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Doctor tries to create an appointment with an expired time slot", "Manage Appointments in Smart Hos...)</span>
+                <span class="method-start">338 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Doctor tries to add a new patient without entering the day", "Manage Appointments in Smart Hospital...)</span>
+                <span class="method-start">338 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</span>
-                <span class="method-start">496 ms</span>
+                <span class="method-start">338 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Doctor creates a new appointment for a new patient", "Manage Appointments in Smart Hospital")</span>
+                <span class="method-start">338 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Doctor tries to add a new patient without entering the Month", "Manage Appointments in Smart Hospit...)</span>
+                <span class="method-start">338 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</span>
-                <span class="method-start">20802 ms</span>
+                <span class="method-start">339 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</span>
-                <span class="method-start">20803 ms</span>
+                <span class="method-start">339 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</span>
+                <span class="method-start">339 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</span>
+                <span class="method-start">32858 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify the Login with roles", "Login functionality for the Smart Hospital website")</span>
+                <span class="method-start">34591 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website")</span>
-                <span class="method-start">20804 ms</span>
+                <span class="method-start">49754 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website")</span>
-                <span class="method-start">20897 ms</span>
+                <span class="method-start">56638 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Attempt to login with missing username", "Login functionality for the Smart Hospital website")</span>
-                <span class="method-start">33989 ms</span>
+                <span class="method-start">64974 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website")</span>
-                <span class="method-start">34800 ms</span>
+                <span class="method-start">66884 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website")</span>
-                <span class="method-start">35122 ms</span>
+                <span class="method-start">76344 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Attempt to login with missing password", "Login functionality for the Smart Hospital website")</span>
-                <span class="method-start">41699 ms</span>
+                <span class="method-start">119982 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...)</span>
-                <span class="method-start">42300 ms</span>
+                <span class="method-start">130602 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...)</span>
-                <span class="method-start">42498 ms</span>
+                <span class="method-start">283601 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Attempt to login with missing username and password", "Login functionality for the Smart Hospital w...)</span>
-                <span class="method-start">43454 ms</span>
+                <span class="method-start">356135 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("To check Login as patient", "Login with the Patient Login Credentials")</span>
-                <span class="method-start">44505 ms</span>
+                <span class="method-start">358696 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">56274 ms</span>
+                <span class="method-start">768720 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
