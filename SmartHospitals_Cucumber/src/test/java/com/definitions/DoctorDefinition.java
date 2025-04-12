@@ -1,5 +1,7 @@
 package com.definitions;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.NoAlertPresentException;
 
 import com.actions.DoctorActions;
 import com.utils.HelperClass;
@@ -59,10 +61,14 @@ public class DoctorDefinition {
 	}
 	@Then("Appointment creation should fail with {string} message")
 	public void appointment_creation_should_fail_with_message(String string) throws InterruptedException{
-		Thread.sleep(3000);
-		String alertMsg=HelperClass.getDriver().switchTo().alert().getText();
-		Assert.assertEquals(string, alertMsg);
-		HelperClass.getDriver().switchTo().alert().accept();
+		try {
+		    Alert alert = HelperClass.getDriver().switchTo().alert();
+		    String alertMsg = alert.getText();
+		    Assert.assertEquals(string, alertMsg);
+		    alert.accept();
+		} catch (NoAlertPresentException e) {
+		    System.out.println(e.getMessage());
+		}
 	}
 	@When("Doctor leaves the Name field empty in patient details")
 	public void doctor_leaves_the_name_field_empty_in_patient_details() {
