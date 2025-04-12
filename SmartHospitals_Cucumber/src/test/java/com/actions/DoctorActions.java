@@ -1,9 +1,15 @@
 package com.actions;
 import java.io.File;
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import com.pages.DoctorWorkflowPage;
 import com.utils.ExcelReader;
@@ -127,10 +133,16 @@ public void addAppointmentDetails() {
 	sft.selectByVisibleText(shift);
 	dp.date.click();
 	dp.date.sendKeys(Keys.CONTROL+"a"+Keys.BACK_SPACE);
-	sendKeysMethod(dp.date,"05/10/2025  16:26:00");
+	sendKeysMethod(dp.date,"03/10/2026  16:26:00");
 	dp.date.sendKeys(Keys.ENTER);
-	Select slt=new Select(dp.slot);
-	slt.selectByVisibleText(slot);
+	try {
+	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+	WebElement slotDropdown = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("slot")));
+	Select s= new Select(slotDropdown);
+	s.selectByVisibleText(slot);
+	}catch(StaleElementReferenceException e) {
+		System.out.println(e.getMessage());
+	}
 	Select sts=new Select(dp.status);
 	sts.selectByVisibleText(status);
 	sendKeysMethod(dp.discount,dis);
@@ -151,9 +163,6 @@ public void addAppointmentDetails1() {
 	dp.date.sendKeys(Keys.ENTER);
 	Select slt=new Select(dp.slot);
 	slt.selectByVisibleText(slot);
-//	Select sts=new Select(dp.status);
-//	sts.selectByVisibleText(status);
-//	sendKeysMethod(dp.discount,dis);
 }
 public void addedPatient() {
 	String ex=dp.patient.getText();
