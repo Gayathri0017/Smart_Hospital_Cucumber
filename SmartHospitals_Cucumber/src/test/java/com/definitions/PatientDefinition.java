@@ -52,7 +52,28 @@ public void the_user_able_to_see_the_error_message_as(String error, io.cucumber.
 	                                                                                                            
 //	Assert.assertTrue(objPatientActions.getUserNameRequired().contains(error));                                 
 }                                                                                                               
-                                                                                                                
+    
+@Then("the User is able to click the my appointment button")
+public void the_user_is_able_to_click_the_my_appointment_button() {
+	objPatientActions.ClickMyAppointment();
+}
+
+@Then("the User is able to see the add appointment option")
+public void the_user_is_able_to_see_the_add_appointment_option(){
+	objPatientActions.ClickAddAppointment();
+}
+
+@Then("the User can fill the appointment form")
+public void the_user_can_fill_the_appointment_form() {
+	objPatientActions.AppointmentDetails();
+}
+
+@Then("the User should save the form for appointment")
+public void the_user_should_save_the_form_for_appointment() {
+	objPatientActions.ClickFormsubmit();
+}
+
+
                                                                                                                 
                                                                                                                 
 }                                                                                                               
