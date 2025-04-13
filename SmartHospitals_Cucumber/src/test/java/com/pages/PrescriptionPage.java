@@ -30,6 +30,10 @@ public class PrescriptionPage {
 	public WebElement search;
 	@FindBy(xpath="//div[@class=\"toast-message\"]//p")
 	public WebElement errorMsg;
-	@FindBy(xpath="//i[@class=\"fa fa-pencil\"]")
+	@FindBy(xpath="//a[@data-original-title=\"Edit\"]")
 	public WebElement edit;
+	@FindBy(xpath="//h4[text()=\"Prescription\"]")
+	public WebElement textPres;
+	@FindBy(xpath="//*[@id=\"DataTables_Table_1\"]/tbody/tr[8]/td[9]/div/a[2]")
+	public WebElement view;
 }

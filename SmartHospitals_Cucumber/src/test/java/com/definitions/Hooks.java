@@ -6,10 +6,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import com.utils.HelperClass;
-public class Hooks {
+public class Hooks{
     @Before
     public static void setUp() {
         HelperClass.getDriver();
+        HelperClass.getDriver().navigate().refresh();
     }
     @After
     public static void tearDown(Scenario scenario) {

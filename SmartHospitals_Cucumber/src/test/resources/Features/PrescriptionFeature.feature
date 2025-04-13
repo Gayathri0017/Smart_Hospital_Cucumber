@@ -2,9 +2,9 @@ Feature: Doctor add Prescription for the Feature in Smart Hospital
 Background:
 	Given Doctor is logged in to the Smart Hospital system
 	When the Doctor Navigates to the OPD section
-  And Clicks the Add Prescription
   @Negative_Prescription_Validation
 	Scenario Outline: Doctor tries to submit prescription with missing fields
+		And Clicks the Add Prescription
 	  When the doctor fills the prescription form with:
 	    |Medicine Category| Medicine  | Dose      | Dose Interval    | Dose Duration |
 	    |<Category>       | <Medicine>| <Dose>    | <Interval>       | <Duration>    |
@@ -20,6 +20,7 @@ Examples:
   
   @Positive_Prescription_Validation
   Scenario: verify the prescription feature by providing valid informations
+  		And Clicks the Add Prescription
   		Then the doctor should navigate to the Prescription Page
     	When the doctor Fill the valid Details:
     	|Finding Category| Medicine Category|Medicine|Dose Interval |Dose Duration|
@@ -27,4 +28,8 @@ Examples:
     	And Clicks Save button
     	Then the Prescription should be added in OPD Section
     	
-  
+	@Validate_Prescription_View
+	Scenario: Verify the added prescription is visible in the OPD section
+	  When the doctor Clicks the View Prescription
+	  Then the previously added prescription should be visible
+	  
