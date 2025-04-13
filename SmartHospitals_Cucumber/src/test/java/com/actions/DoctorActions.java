@@ -24,9 +24,12 @@ public class DoctorActions {
         dp.doctor.click();
         dp.signin.click();
     }
-    public void english(){
-        dp.lan.click();
-        dp.eng.click();
+    public void english() {
+        WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+        WebElement languageDropdown=wait.until(ExpectedConditions.elementToBeClickable(dp.lan));
+        languageDropdown.click();
+        WebElement englishOption=wait.until(ExpectedConditions.elementToBeClickable(dp.eng));
+        englishOption.click();
     }
     public void appointment(){
         clickMethod(dp.appointment);
@@ -131,8 +134,12 @@ public class DoctorActions {
         }
     }
     public void nameRequired(String ex) {
-        String ac=dp.nameError.getText();
-        Assert.assertEquals(ex, ac);
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+            WebElement errorElement = wait.until(ExpectedConditions.visibilityOf(dp.nameError));
+            String ac=errorElement.getText();
+            System.out.println("Expected: " + ex);
+            System.out.println("Actual: " + ac);
+            Assert.assertEquals(ac, ex);
     }
     public void saveApp() {
         clickMethod(dp.savebtn);
