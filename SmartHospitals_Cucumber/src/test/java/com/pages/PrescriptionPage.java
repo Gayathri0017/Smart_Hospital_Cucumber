@@ -28,5 +28,8 @@ public class PrescriptionPage {
 	public WebElement text;
 	@FindBy(xpath="(//input[@class=\"select2-search__field\"])[6]")
 	public WebElement search;
-	
+	@FindBy(xpath="//div[@class=\"toast-message\"]//p")
+	public WebElement errorMsg;
+	@FindBy(xpath="//i[@class=\"fa fa-pencil\"]")
+	public WebElement edit;
 }

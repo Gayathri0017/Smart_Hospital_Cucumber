@@ -1,14 +1,16 @@
 package com.definitions;
-
 import java.util.List;
 import java.util.Map;
 
+import com.actions.DoctorActions;
 import com.actions.PrescriptionActions;
+import com.utils.HelperClass;
 
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
 public class PrescriptionDefinition {
+	DoctorActions doctor = new DoctorActions();
 	PrescriptionActions pa=new PrescriptionActions();
 	@When("the Doctor Navigates to the OPD section")
 	public void the_doctor_navigates_to_the_opd_section() throws InterruptedException {
@@ -41,5 +43,23 @@ public class PrescriptionDefinition {
 	@Then("the Prescription should be added in OPD Section")
 	public void the_prescription_should_be_added_in_opd_section() {
 	    
+	}
+	@When("the doctor fills the prescription form with:")
+	public void the_doctor_fills_the_prescription_form_with(io.cucumber.datatable.DataTable dataTable) throws InterruptedException { 
+		Map<String, String> data = dataTable.asMaps().get(0);
+		    pa.selectFindingCategory(data.get("Medicine Category"));
+		    pa.selectMedicineCategory(data.get("Medicine"));
+		    pa.selectMedicine(data.get("Dose"));
+		    pa.selectDoseInterval(data.get("Dose Interval"));
+		    pa.selectDoseDuration(data.get("Dose Duration"));
+	}
+	@Then("the system should show an error {string}")
+	public void the_system_should_show_an_error(String string) {
+	   pa.assertinvalid(string);
+	}
+	@When("the doctor clicks the edit option")
+	public void the_doctor_clicks_the_edit_option() throws InterruptedException {
+	    pa.edit();
+	    Thread.sleep(1000);
 	}
 }
