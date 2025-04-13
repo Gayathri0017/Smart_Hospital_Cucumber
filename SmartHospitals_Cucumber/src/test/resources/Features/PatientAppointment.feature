@@ -1,11 +1,27 @@
 Feature: Booking appointment using patient Login
 
-@BookingAppointment
-Scenario: Appointment booking for patient
+Background:
 	Given the User is on the Login Page
   When the User clicks the User Login 
   And the User clicks the Sign In button
   Then the User is able to click the my appointment button
   And the User is able to see the add appointment option 
-  And the User can fill the appointment form 
+
+@BookingAppointment  
+Scenario: Appointment booking for patient
+	And the User can fill the appointment form 
   And the User should save the form for appointment
+  
+@BookingWithEmptyField
+Scenario: Patient booking with date as empty field
+	And the User can fill the appointment 
+	|Date					|Specialist				|Doctor							|Shift				|Timing								|AvailableTiming		|Message																																								|
+	| 						|Cardiologists		|Sansa Gomez (9008)	|Evening			|04:00 PM - 07:00 PM	|04:00 PM						|I would like to schedule a routine heart check-up to monitor my cardiovascular health.	|	
+	And the User should save the form for appointment					
+	And the User can able to see the error msg "Date field is required"
+	
+Scenario: Patient booking with specialist as empty field
+	And the User can fill the appointment 
+	|Date					|Specialist				|Doctor							|Shift				|Timing								|AvailableTiming		|Message		|
+	|07/22/2025		|Cardiologists		|Sansa Gomez (9008)	|Evening			|04:00 PM - 07:00 PM	|04:00 PM						|						|
+	And the User can able to see the error msg "Message field is required"
