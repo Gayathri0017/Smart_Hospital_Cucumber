@@ -130,6 +130,7 @@ public class PatientActions {
 	}
 	
 	public void setAvailableTime() {
+		wait.until(ExpectedConditions.visibilityOf(objPDP.AvailableSlot));
 		objPDP.AvailableSlot.click();
 	}
 	
