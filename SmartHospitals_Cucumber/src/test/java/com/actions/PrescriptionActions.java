@@ -72,6 +72,8 @@ public void save(){
 	clickMethod(pp.save);
 }
 public void edit() {
+	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+    wait.until(ExpectedConditions.visibilityOf(pp.edit));
 	clickMethod(pp.edit);
 }
 WebDriverWait w= new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
@@ -104,5 +106,21 @@ public void assertinvalid(String ex) {
 	System.out.println("Expected: " + ex);
 	System.out.println("Actual: " + act);
 	Assert.assertTrue(act.contains(ex));
+}
+public void assertPrescription(){
+	WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+    wait.until(ExpectedConditions.visibilityOf(pp.textPres));
+	String act=pp.textPres.getText();
+	String ex="Prescription";
+	System.out.println("Expected: " + ex);
+	System.out.println("Actual: " + act);
+	Assert.assertTrue(act.contains(ex));
+}
+public void view() {
+	String patientName = "Gaurav Shrivastava"; // or use their ID or OPD number if unique
+	WebElement viewBtn = HelperClass.getDriver().findElement(By.xpath("//table[@id='DataTables_Table_1']//tr[td[contains(text(),'" + patientName + "')]]//a[contains(@title, 'View Prescription')]"));
+	viewBtn.click();
+//	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+//    wait.until(ExpectedConditions.visibilityOf(pp.view));
 }
 }
