@@ -55,11 +55,23 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Login Tests</h2><table border='1' align="center">
 <tr>
+<<<<<<< HEAD
 <td>Tests passed/Failed/Skipped:</td><td>21/2/0</td>
+=======
+<td>Tests passed/Failed/Skipped:</td><td>26/2/0</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 </tr><tr>
+<<<<<<< HEAD
 <td>Started on:</td><td>Sun Apr 13 01:07:27 IST 2025</td>
+=======
+<td>Started on:</td><td>Sun Apr 13 16:16:47 IST 2025</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 </tr>
+<<<<<<< HEAD
 <tr><td>Total time:</td><td>324 seconds (324728 ms)</td>
+=======
+<tr><td>Total time:</td><td>112 seconds (112815 ms)</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,6 +88,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the year", "Manage Appointments in Smart Hospital"</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;toast-message&quot;]/p&quot;}
   (Session info: chrome=135.0.7049.85)
@@ -153,6 +166,46 @@ Session ID: 14cfcfad53ae98e9bb3cea626cf286fc
 	at ✽.Patient should be added successfully(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:18)
 </pre></div></td>
 <td>265</td>
+=======
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.actions.PrescriptionActions.assertinvalid(PrescriptionActions.java:78)
+	at com.definitions.PrescriptionDefinition.the_system_should_show_an_error(PrescriptionDefinition.java:58)
+	at ✽.the system should show an error &quot;Dose Interval field is required&quot;(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/PrescriptionFeature.feature:12)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace105959910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace105959910'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.actions.PrescriptionActions.assertinvalid(PrescriptionActions.java:78)
+	at com.definitions.PrescriptionDefinition.the_system_should_show_an_error(PrescriptionDefinition.java:58)
+	at ✽.the system should show an error &quot;Dose Interval field is required&quot;(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/PrescriptionFeature.feature:12)
+</pre></div></td>
+<td>33</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Appointment booking for patient", "Booking appointment using patient Login"</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.sendKeys(Unknown Source)
+	at com.actions.PatientActions.AppointmentDetails(PatientActions.java:92)
+	at com.definitions.PatientDefinition.the_user_can_fill_the_appointment_form(PatientDefinition.java:49)
+	at ✽.the User can fill the appointment form(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/PatientAppointment.feature:10)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace521516861", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace521516861'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.sendKeys(Unknown Source)
+	at com.actions.PatientActions.AppointmentDetails(PatientActions.java:92)
+	at com.definitions.PatientDefinition.the_user_can_fill_the_appointment_form(PatientDefinition.java:49)
+	at ✽.the User can fill the appointment form(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/PatientAppointment.feature:10)
+</pre></div></td>
+<td>19</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -164,11 +217,40 @@ Session ID: 14cfcfad53ae98e9bb3cea626cf286fc
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username", "Login functionality for the Smart Hospital website"</td>
+=======
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login with roles", "Login functionality for the Smart Hospital website"</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 <td></td>
+<<<<<<< HEAD
 <td>60</td>
+=======
+<td>25</td>
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login with roles", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>31</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>24</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login with roles", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>32</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>22</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<<<<<<< HEAD
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing password", "Login functionality for the Smart Hospital website"</td>
 <td></td>
 <td>38</td>
@@ -189,8 +271,11 @@ Session ID: 14cfcfad53ae98e9bb3cea626cf286fc
 <td>296</td>
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
+=======
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username and password", "Login functionality for the Smart Hospital website"</td>
 <td></td>
+<<<<<<< HEAD
 <td>35</td>
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
@@ -252,10 +337,14 @@ Session ID: 14cfcfad53ae98e9bb3cea626cf286fc
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Appointment booking for patient", "Booking appointment using patient Login"</td>
 <td></td>
 <td>17</td>
+=======
+<td>26</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username", "Login functionality for the Smart Hospital website"</td>
 <td></td>
+<<<<<<< HEAD
 <td>42</td>
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
@@ -267,6 +356,104 @@ Session ID: 14cfcfad53ae98e9bb3cea626cf286fc
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the Month", "Manage Appointments in Smart Hospital"</td>
 <td></td>
 <td>200</td>
+=======
+<td>76</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>33</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the year", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>76</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login with roles", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>33</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>33</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To check Login as patient", "Login with the Patient Login Credentials"</td>
+<td></td>
+<td>17</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>20</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the name", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>64</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login with roles", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>32</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username and password", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>25</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the prescription feature by providing valid informations", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>21</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the day", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>63</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login with roles", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>51</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing password", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>26</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the Month", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>63</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>23</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing password", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>25</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor creates a new appointment for a new patient", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>77</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username and password", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>14</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing password", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>21</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 </table><p>
 </body>

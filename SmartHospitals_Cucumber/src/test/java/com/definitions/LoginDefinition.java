@@ -31,7 +31,7 @@ public void user_leaves_the_field_empty(String string) {
    {
        loginActions.enterPassword();
    }
-}
+	}
     @When("the user clicks the Sign In button")
     public void the_user_clicks_the_sign_in_button() {
         loginActions.clickSignIn();
