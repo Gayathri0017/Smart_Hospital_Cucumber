@@ -30,10 +30,19 @@ public void selectMedicineCategory(String s) {
     pp.search.sendKeys(Keys.ENTER);
 }
 public void selectMedicine(String s) {
-    wait.until(ExpectedConditions.elementToBeClickable(pp.dose)).click();
-    wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
-    pp.search.sendKeys(Keys.ENTER);
+    try {
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+        WebElement dropdown = wait.until(ExpectedConditions.elementToBeClickable(pp.dose));
+        dropdown.click();
+        WebElement searchBox = wait.until(ExpectedConditions.visibilityOf(pp.search));
+        searchBox.clear();
+        searchBox.sendKeys(s);
+        searchBox.sendKeys(Keys.ENTER);
+    } catch (Exception e) {
+        System.out.println(e.getMessage());
+    }
 }
+
 public void selectDoseInterval(String s) {
     wait.until(ExpectedConditions.elementToBeClickable(pp.doseInterval)).click();
     wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);

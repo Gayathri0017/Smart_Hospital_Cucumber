@@ -1,496 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="28" passed="27" failed="1" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-13T18:49:41 IST" name="Smart Hospital Tests" finished-at="2025-04-13T18:51:04 IST" duration-ms="82953">
+  <suite started-at="2025-04-13T20:40:03 IST" name="Default suite" finished-at="2025-04-13T20:40:03 IST" duration-ms="231">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-13T18:49:41 IST" name="Login Tests" finished-at="2025-04-13T18:51:04 IST" duration-ms="82953">
+    <test started-at="2025-04-13T20:40:03 IST" name="Default test" finished-at="2025-04-13T20:40:03 IST" duration-ms="231">
       <class name="com.runner.RunnerClass">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:49:41 IST" name="setUpClass" finished-at="2025-04-13T18:49:42 IST" duration-ms="533" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T20:40:03 IST" name="setUpClass" finished-at="2025-04-13T20:40:03 IST" duration-ms="185" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5b1669c0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:49:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:34 IST" duration-ms="52247" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Doctor tries to add a new patient without entering the name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Manage Appointments in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:49:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:38 IST" duration-ms="56323" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Doctor tries to create an appointment with an expired time slot"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Manage Appointments in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:49:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:04 IST" duration-ms="22287" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Login with roles"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:49:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:33 IST" duration-ms="50971" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Doctor creates a new appointment for a new patient"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Manage Appointments in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:49:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:28 IST" duration-ms="45844" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Doctor tries to add a new patient without entering the Month"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Manage Appointments in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:49:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:32 IST" duration-ms="49841" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Doctor tries to add a new patient without entering the day"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Manage Appointments in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:49:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:03 IST" duration-ms="21756" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Login with roles"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:49:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:04 IST" duration-ms="22126" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Login with roles"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:49:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:32 IST" duration-ms="50586" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Doctor tries to add a new patient without entering the year"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Manage Appointments in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:49:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:04 IST" duration-ms="22044" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Login with roles"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:23 IST" duration-ms="19396" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Login with roles"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:22 IST" duration-ms="18281" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Login with roles"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:23 IST" duration-ms="18687" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Attempt to login with missing username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:23 IST" duration-ms="18738" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Attempt to login with missing username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:32 IST" duration-ms="10352" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Attempt to login with missing username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:42 IST" duration-ms="19059" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Attempt to login with missing password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:42 IST" duration-ms="19623" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Attempt to login with missing password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:42 IST" duration-ms="19336" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Attempt to login with missing password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:42 IST" duration-ms="14826" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Attempt to login with missing username and password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:43 IST" duration-ms="11107" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Attempt to login with missing username and password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:43 IST" duration-ms="10323" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Attempt to login with missing username and password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for the Smart Hospital website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:48 IST" duration-ms="15240" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Appointment booking for patient"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Booking appointment using patient Login"]]>
+                <![CDATA[org.testng.TestRunner@e8df99a]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
+              <![CDATA[path must exist: C:\Users\gayat\git\Smart_Hospital_Cucumber\SmartHospitals_Cucumber\src\test\resources\Features\PrescriptionFeature.feature,]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+              <![CDATA[java.lang.IllegalArgumentException: path must exist: C:\Users\gayat\git\Smart_Hospital_Cucumber\SmartHospitals_Cucumber\src\test\resources\Features\PrescriptionFeature.feature,
+at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:49)
+at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:125)
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy26.sendKeys(Unknown Source)
-at com.actions.PatientActions.AppointmentDetails(PatientActions.java:92)
-at com.definitions.PatientDefinition.the_user_can_fill_the_appointment_form(PatientDefinition.java:49)
-at ✽.the User can fill the appointment form(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/PatientAppointment.feature:10)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:47 IST" duration-ms="14727" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To check Login as patient"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login with the Patient Login Credentials"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:50:56 IST" duration-ms="21837" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Doctor tries to submit prescription with missing fields"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Doctor add Prescription for the Feature in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:51:03 IST" duration-ms="24610" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Doctor tries to submit prescription with missing fields"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Doctor add Prescription for the Feature in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:51:03 IST" duration-ms="21031" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Doctor tries to submit prescription with missing fields"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Doctor add Prescription for the Feature in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:51:04 IST" duration-ms="21640" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Doctor tries to submit prescription with missing fields"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Doctor add Prescription for the Feature in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:50:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-13T18:51:02 IST" duration-ms="19251" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["verify the prescription feature by providing valid informations"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Doctor add Prescription for the Feature in Smart Hospital"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T18:51:04 IST" name="tearDownClass" finished-at="2025-04-13T18:51:04 IST" duration-ms="195" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerClass@1bb266b3]" started-at="2025-04-13T20:40:03 IST" name="tearDownClass" finished-at="2025-04-13T20:40:03 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.runner.RunnerClass -->
-    </test> <!-- Login Tests -->
-  </suite> <!-- Smart Hospital Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
