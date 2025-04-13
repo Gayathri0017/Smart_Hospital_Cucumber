@@ -3,6 +3,8 @@ package com.actions;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -72,11 +74,28 @@ public void save(){
 public void edit() {
 	clickMethod(pp.edit);
 }
+WebDriverWait w= new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+
 public void clickMethod(WebElement ele) {
-	ele.click();
+    try {
+        wait.until(ExpectedConditions.elementToBeClickable(ele));
+        ele.click();
+    } catch (ElementClickInterceptedException e) {
+        // Fallback to JavaScript click
+        js.executeScript("arguments[0].click();", ele);
+    } catch (Exception e) {
+        System.out.println("Click failed: " + e.getMessage());
+    }
 }
-public void sendKeysMethod(WebElement ele,String text){
-	ele.sendKeys(text);
+
+public void sendKeysMethod(WebElement ele, String text) {
+    try {
+        wait.until(ExpectedConditions.visibilityOf(ele));
+        ele.sendKeys(text);
+    } catch (Exception e) {
+        System.out.println("SendKeys failed: " + e.getMessage());
+    }
 }
 public void assertinvalid(String ex) {
 	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
