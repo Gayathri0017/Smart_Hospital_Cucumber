@@ -1,9 +1,12 @@
 
 package com.definitions;                                                                                        
                                                                                                                 
+import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;                                                                                       
                                                                                                                 
 import com.actions.PatientActions;                                                                              
@@ -14,7 +17,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;                                                                                
                                                                                                                 
 public class PatientDefinition {                                                                                
-	PatientActions objPatientActions = new PatientActions();                                                    
+	PatientActions objPatientActions = new PatientActions();  
+	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
+
 	                                                                                                            
 	@Given("the User is on the Login Page")                                                            
 	public void the_user_is_on_the_login_page() {     
@@ -95,13 +100,19 @@ public void the_user_can_fill_the_appointment(io.cucumber.datatable.DataTable da
         String time = details.get("Timing");
         objPatientActions.setTime(time);
 
-        String availableTiming = details.get("AvailableTiming");
-        objPatientActions.setAvailableTime();
+        if(date == null) {
+        	wait.until(ExpectedConditions.alertIsPresent());
+        	HelperClass.getDriver().switchTo().alert().accept();
+        }
+        else {
+        	String availableTiming = details.get("AvailableTiming");
+            objPatientActions.setAvailableTime();
 
-        String message = details.get("Message");
-        objPatientActions.setMessage(message);
+            String message = details.get("Message");
+            objPatientActions.setMessage(message);
+        }
     }
-    objPatientActions.ClickFormsubmit();
+//    objPatientActions.ClickFormsubmit();
 }
 
 @Then("the User can fill the appointment form")

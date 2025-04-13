@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class PatientWorkflowPage {
 	
-	@FindBy(xpath="//div[@class='form-bottom']/p/a")
+	@FindBy(xpath="//div[@class='form-bottom']/p[1]/a[1]")
 	public WebElement userLoginBtn ;
 	
 	@FindBy(xpath="//button[@class='btn']")
