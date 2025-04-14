@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="36" passed="34" failed="2" skipped="0">
+=======
+
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
   <reporter-output>
   </reporter-output>
   <suite started-at="2025-04-14T17:44:29 IST" name="Smart Hospital Tests" finished-at="2025-04-14T17:46:42 IST" duration-ms="133017">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@1bb266b3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
     <test started-at="2025-04-14T17:44:29 IST" name="Login Tests" finished-at="2025-04-14T17:46:42 IST" duration-ms="133017">
@@ -642,6 +647,6 @@ at ✽.the User can fill the appointment(file:///C:/Users/gayat/git/Smart_Hospit
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.runner.RunnerClass -->
-    </test> <!-- Login Tests -->
-  </suite> <!-- Smart Hospital Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

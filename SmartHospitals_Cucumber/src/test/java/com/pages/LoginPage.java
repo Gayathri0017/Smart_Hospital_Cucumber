@@ -15,7 +15,6 @@ public class LoginPage {
     @FindBy(xpath = "//button[normalize-space()='Sign In']")
     public WebElement signInButton;
 
-    // Role locators with better XPath
     @FindBy(xpath = "//a[contains(text(),'Super Admin')]")
     public WebElement superAdmin;
 
