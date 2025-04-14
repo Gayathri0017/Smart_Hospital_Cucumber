@@ -62,4 +62,42 @@ public class PrescriptionDefinition {
 	    pa.edit();
 	    Thread.sleep(1000);
 	}
+	@When("the doctor Clicks the View Prescription")
+	public void the_doctor_clicks_the_view_prescription() throws InterruptedException{
+		try {
+		HelperClass.getDriver().navigate().refresh();
+		Thread.sleep(5000);
+	    pa.view();
+		}catch(Exception e) {
+			System.out.println("Prescrition not got added:"+e.getMessage());
+		}
+	}
+	@Then("the previously added prescription should be visible")
+	public void the_previously_added_prescription_should_be_visible() {
+	    pa.assertPrescription();
+	}
+	@When("the doctor clicks the Edit button of the existing prescription")
+	public void the_doctor_clicks_the_edit_button_of_the_existing_prescription() {
+	    pa.edit();
+	}
+	@When("updates the prescription details:")
+	public void updates_the_prescription_details(io.cucumber.datatable.DataTable dataTable) {
+		  List<Map<String, String>> details = dataTable.asMaps(String.class, String.class);
+		    for (Map<String, String> row : details) {
+		        String doseInterval=row.get("Dose Interval");
+		        String doseDuration=row.get("Dose Duration");
+		        pa.selectDoseDuration(doseDuration);
+		        pa.selectDoseInterval(doseDuration);
+		    }
+	}
+	@When("clicks the Update button")
+	public void clicks_the_update_button() {
+	    pa.save();
+	}
+	@Then("the Prescription should be updated")
+	public void the_prescription_should_be_updated() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
 }

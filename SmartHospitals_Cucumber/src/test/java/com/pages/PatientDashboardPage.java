@@ -17,7 +17,7 @@ public class PatientDashboardPage {
 	@FindBy(xpath = "//section[@class='content']/div/div[2]/div/div/div/a")
 	public WebElement addAppointment ;
 	
-	@FindBy(id = "dates")
+	@FindBy(name = "date")
 	public WebElement date ;
 	
 	@FindBy(id = "specialist")
@@ -41,5 +41,7 @@ public class PatientDashboardPage {
 	@FindBy(id = "formaddbtn")
 	public WebElement formSubmit ;
 	
+	@FindBy(xpath = "//*[@id=\"toast-container\"]/div/div/p[1]")
+	public WebElement FieldRequired ;
 	
 }

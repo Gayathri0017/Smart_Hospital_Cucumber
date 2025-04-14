@@ -24,6 +24,8 @@ public class ExcelReader {
     public String getCellData(String sheetName,int row,int col) {
         return workbook.getSheet(sheetName).getRow(row).getCell(col).toString();
     }
+    
+    
 	public static Map<String, String> getPatientAppointmentForm(String filePath, String sheetname) {
 		Map<String , String > appointmentData = new HashMap<>();
 		DataFormatter formatter = new DataFormatter();

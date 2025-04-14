@@ -20,9 +20,10 @@ public class DoctorActions {
         this.dp=new DoctorWorkflowPage();
         PageFactory.initElements(HelperClass.getDriver(),dp);
     }
-    public void login(){
-        dp.doctor.click();
-        dp.signin.click();
+    public void login() {
+        WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(dp.doctor)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(dp.signin)).click();
     }
     public void english() {
         WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
