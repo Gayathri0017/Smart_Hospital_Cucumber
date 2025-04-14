@@ -59,4 +59,7 @@ public class DoctorWorkflowPage {
 	public WebElement lan;
 	@FindBy(xpath="//ul[@class=\"dropdown-menu inner selectpicker\"]//li[5]")
 	public WebElement eng;
+	
+	@FindBy(xpath="//input[@id=\"custom_fields[patient][11]\"]")
+	public WebElement uhid;
 }

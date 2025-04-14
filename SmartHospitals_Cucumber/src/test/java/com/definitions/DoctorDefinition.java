@@ -1,8 +1,12 @@
 package com.definitions;
 
+import java.time.Duration;
+
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.actions.DoctorActions;
 import com.utils.HelperClass;
@@ -63,12 +67,14 @@ public class DoctorDefinition {
     @Then("Appointment creation should fail with {string} message")
     public void appointment_creation_should_fail_with_message(String message) {
         try {
-            Alert alert = HelperClass.getDriver().switchTo().alert();
-            String alertMsg = alert.getText();
-            Assert.assertEquals(message, alertMsg);
+        	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(5));
+            wait.until(ExpectedConditions.alertIsPresent());
+            Alert alert=HelperClass.getDriver().switchTo().alert();
+            String alertMsg=alert.getText();
+            Assert.assertEquals(alertMsg, message);
             alert.accept();
         } catch (NoAlertPresentException e) {
-            System.out.println(e.getMessage());
+            Assert.fail("Expected alert was not present" + message);
         }
     }
     @When("Doctor leaves the Name field empty in patient details")
@@ -102,5 +108,13 @@ public class DoctorDefinition {
     @Then("Patient creation should fails and shows {string} message")
     public void patient_creation_should_fails_and_shows_message(String message) {
         doctor.nameRequired(message);
+    }
+    @When("Doctor leaves the UFID field empty in patient details")
+    public void doctor_leaves_the_ufid_field_empty_in_patient_details() {
+    	doctor.addPatientDetailsFromRow(6, false);
+    }
+    @Then("the Patient creation should fail and show {string} message")
+    public void the_patient_creation_should_fail_and_show_message(String string) {
+        doctor.nameRequired(string);
     }
 }
