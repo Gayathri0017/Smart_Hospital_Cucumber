@@ -10,10 +10,10 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
     dryRun = false
 )
 public class RunnerClass extends AbstractTestNGCucumberTests {
-	  @Override
+	    @Override
 	    @DataProvider(parallel = true)
 	    public Object[][] scenarios() {
 	        return super.scenarios();
 	        
-	    }
+	  }
 }
