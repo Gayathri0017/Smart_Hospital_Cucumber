@@ -30,7 +30,7 @@ public class PatientPaymentDefinitions {
 		objPPPA.ClickAddPaymentBtn();
 //		objPPPA.ClickpayNowBtn();
 //		HelperClass.getDriver().switchTo().frame("__privateStripeFrame5024");
-		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("__privateStripeFrame5024"));
+//		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("__privateStripeFrame5024"));
 	}
 	
 	@Then("the User provide the invalid card details")
