@@ -64,7 +64,6 @@ public void the_doctor_provides_the_case_id_in_search_field(io.cucumber.datatabl
     List<Map<String , String>> caseiD = dataTable.asMaps(String.class , String.class);
     for(Map<String , String> Id : caseiD) {
     	objPDA.setCaseId(Id.get("caseID"));
-    	Thread.sleep(3000);
     	objPDA.ClickFirstPatient();
         objPDA.ClickDischargeBtn();
     }

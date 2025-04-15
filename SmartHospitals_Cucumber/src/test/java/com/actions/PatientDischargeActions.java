@@ -25,7 +25,7 @@ public class PatientDischargeActions {
 	}
 	
 	public void ClickFirstPatient() {
-		wait.until(ExpectedConditions.visibilityOf(objPDP.firstPatient));
+		wait.until(ExpectedConditions.elementToBeClickable(objPDP.firstPatient));
 		objPDP.firstPatient.click();
 	}
 	
