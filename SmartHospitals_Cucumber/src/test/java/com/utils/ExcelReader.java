@@ -81,7 +81,30 @@ public class ExcelReader {
         }
         return appointmentData;
     }
-
+	public static Map<String, String> getPatientAppointmentForm(String filePath, String sheetname) {
+		Map<String , String > appointmentData = new HashMap<>();
+		DataFormatter formatter = new DataFormatter();
+		
+		try {
+			File file = new File(filePath);
+			FileInputStream fileIn = new FileInputStream(file);
+			
+			XSSFWorkbook workbook = new XSSFWorkbook (fileIn);
+			XSSFSheet sheet = workbook.getSheet(sheetname);
+			
+			XSSFRow header = sheet.getRow(0);
+			XSSFRow row = sheet.getRow(1);
+			
+			for(int i = 0 ; i < header.getLastCellNum() ; i++) {
+				String head = formatter.formatCellValue(header.getCell(i));
+				String rowData = formatter.formatCellValue(row.getCell(i));
+				appointmentData.put(head, rowData);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return appointmentData;
+	}
     public void close() {
         try {
             if (workbook != null) {

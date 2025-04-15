@@ -59,14 +59,18 @@ public class PatientActions {
 	}
 	
 	public void BlankUsername() {
+		wait.until(ExpectedConditions.visibilityOf(objPatientPage.email));
+		objPatientPage.email.clear();
 		objPatientPage.email.sendKeys(Keys.CONTROL+"a"+Keys.BACK_SPACE);
 	}
 	
-	public void BlankPassword() {
-		objPatientPage.password.sendKeys(Keys.CONTROL+"a"+Keys.BACK_SPACE);
+	public void BlankPassword() {		
+		wait.until(ExpectedConditions.visibilityOf(objPatientPage.password));
+		objPatientPage.password.clear();
 	}
 	
 	public String getUserNameRequired() {
+		wait.until(ExpectedConditions.visibilityOf(objPatientPage.usernameReq));
 		return objPatientPage.usernameReq.getText();
 	}
 	
@@ -85,7 +89,66 @@ public class PatientActions {
 	public void ClickAddAppointment() {
 		objPDP.addAppointment.click();
 	}
+	
+	public void setDate(String date) {
+	    if (date != null && !date.isEmpty()) {
+	    	wait.until(ExpectedConditions.visibilityOf(objPDP.date));
+	    	objPDP.date.clear();
+	        objPDP.date.sendKeys(date);
+	    } else {
+	        objPDP.date.clear();
+	    }
 
+	}
+	
+	public void setSpecialist(String specialist) {
+		wait.until(ExpectedConditions.visibilityOf(objPDP.specialist));
+	    if (specialist != null && !specialist.isEmpty()) {
+	        Select selectSpecialist = new Select(objPDP.specialist);
+	        selectSpecialist.selectByVisibleText(specialist);
+	    } else {
+	        System.out.println("Specialist field is empty or null");
+	    }
+	}
+	
+	public void setDoctor(String doctor) {
+		wait.until(ExpectedConditions.visibilityOf(objPDP.doctor));
+		Select selectDoctor = new Select(objPDP.doctor);
+		selectDoctor.selectByVisibleText(doctor);
+	}
+	
+	public void setShift(String shift) {
+		wait.until(ExpectedConditions.visibilityOf(objPDP.timingShift));
+		Select selectTiming = new Select(objPDP.timingShift);
+		selectTiming.selectByVisibleText(shift);
+	}
+	
+	public void setTime(String slot) {
+		wait.until(ExpectedConditions.visibilityOf(objPDP.slot));
+		Select selectSlot = new Select(objPDP.slot);
+		selectSlot.selectByVisibleText(slot);
+	}
+	
+	public void setAvailableTime() {
+		
+		wait.until(ExpectedConditions.visibilityOf(objPDP.AvailableSlot));
+		objPDP.AvailableSlot.click();
+	}
+	
+	public void setMessage(String message) {
+		if(message != null && !message.isEmpty()) {
+			
+			objPDP.patientMsg.sendKeys(message);
+		}
+		else{
+			System.out.println("Message field is empty or null");
+		}
+	}
+	
+	public String getError() {
+		wait.until(ExpectedConditions.visibilityOf(objPDP.FieldRequired));
+		return objPDP.FieldRequired.getText();
+	}
 	public void AppointmentDetails() {
 		Map<String , String> details = ExcelReader.getPatientAppointmentForm("C:\\Users\\Dhanusheswaran M\\git\\Smart_Hospital_Cucumber_Project\\SmartHospitals_Cucumber\\src\\test\\resources\\PatientAppointmentData.xlsx" , "Sheet1");
 
@@ -142,17 +205,7 @@ public class PatientActions {
 			}
 		}
 		
-//		String Availableslot = details.get("AvailableSlot");
-//		Select selectAvailableSlot = new Select(objPDP.AvailableSlot);
-//		List<WebElement> AvailableslotTiming = selectAvailableSlot.getOptions();
-//		for(WebElement AvailtimeSlot : AvailableslotTiming) {
-//			if(AvailtimeSlot.getText().contains(Availableslot)) {
-//				AvailtimeSlot.click();
-//				System.out.println(AvailtimeSlot.getText());
-//				break;
-//			}
-//		}
-		
+
 		objPDP.AvailableSlot.click();
 		System.out.println(objPDP.AvailableSlot.getText());
 		objPDP.patientMsg.sendKeys(details.get("Message"));

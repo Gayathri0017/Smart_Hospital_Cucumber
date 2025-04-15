@@ -3,6 +3,8 @@ package com.actions;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -30,10 +32,19 @@ public void selectMedicineCategory(String s) {
     pp.search.sendKeys(Keys.ENTER);
 }
 public void selectMedicine(String s) {
-    wait.until(ExpectedConditions.elementToBeClickable(pp.dose)).click();
-    wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
-    pp.search.sendKeys(Keys.ENTER);
+    try {
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+        WebElement dropdown = wait.until(ExpectedConditions.elementToBeClickable(pp.dose));
+        dropdown.click();
+        WebElement searchBox = wait.until(ExpectedConditions.visibilityOf(pp.search));
+        searchBox.clear();
+        searchBox.sendKeys(s);
+        searchBox.sendKeys(Keys.ENTER);
+    } catch (Exception e) {
+        System.out.println(e.getMessage());
+    }
 }
+
 public void selectDoseInterval(String s) {
     wait.until(ExpectedConditions.elementToBeClickable(pp.doseInterval)).click();
     wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
@@ -51,6 +62,8 @@ public void addPres(){
 	clickMethod(pp.addPrescription);
 }
 public void assertPP() throws InterruptedException {
+	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+    wait.until(ExpectedConditions.visibilityOf(pp.text));
 	String ex="Add Prescription";
 	String act=pp.text.getText();
 	Assert.assertEquals(ex, act);
@@ -61,20 +74,83 @@ public void save(){
 	clickMethod(pp.save);
 }
 public void edit() {
+	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+    wait.until(ExpectedConditions.visibilityOf(pp.edit));
 	clickMethod(pp.edit);
 }
+WebDriverWait w= new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+
 public void clickMethod(WebElement ele) {
-	ele.click();
+    try {
+        wait.until(ExpectedConditions.elementToBeClickable(ele));
+        ele.click();
+    } catch (ElementClickInterceptedException e) {
+        // Fallback to JavaScript click
+        js.executeScript("arguments[0].click();", ele);
+    } catch (Exception e) {
+        System.out.println("Click failed: " + e.getMessage());
+    }
 }
-public void sendKeysMethod(WebElement ele,String text){
-	ele.sendKeys(text);
+public void sendKeysMethod(WebElement ele, String text) {
+    try {
+        wait.until(ExpectedConditions.visibilityOf(ele));
+        ele.sendKeys(text);
+    } catch (Exception e) {
+        System.out.println("SendKeys failed: " + e.getMessage());
+    }
 }
 public void assertinvalid(String ex) {
+	try {
 	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
     wait.until(ExpectedConditions.visibilityOf(pp.errorMsg));
 	String act=pp.errorMsg.getText();
 	System.out.println("Expected: " + ex);
 	System.out.println("Actual: " + act);
 	Assert.assertTrue(act.contains(ex));
+	}catch(Exception e) {
+		Assert.fail(e.getMessage());
+	}
+}
+public void assertPrescription(){
+	WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+    wait.until(ExpectedConditions.visibilityOf(pp.textPres));
+	String act=pp.textPres.getText();
+	String ex="Prescription";
+	System.out.println("Expected: " + ex);
+	System.out.println("Actual: " + act);
+	Assert.assertTrue(act.contains(ex));
+}
+public void view() {
+	String patientName = "Gaurav Shrivastava";
+	WebElement viewBtn = HelperClass.getDriver().findElement(By.xpath("//table[@id='DataTables_Table_1']//tr[td[contains(text(),'" + patientName + "')]]//a[contains(@title, 'View Prescription')]"));
+	viewBtn.click();
+//	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+//    wait.until(ExpectedConditions.visibilityOf(pp.view));
+}
+public void show() {
+	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+	wait.until(ExpectedConditions.visibilityOf(pp.show));
+	clickMethod(pp.show);
+}
+public void assertShow(String ex) {
+	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+	wait.until(ExpectedConditions.visibilityOf(pp.showText));
+	String act=pp.showText.getText();
+	Assert.assertEquals(ex,act);
+}
+public void delete(){
+	clickMethod(pp.delete);
+}
+public void assertEdit(String ex) {
+	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+	wait.until(ExpectedConditions.visibilityOf(pp.editText));
+	String act=pp.editText.getText();
+	Assert.assertEquals(ex,act);
+}
+public void editClick() {
+	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+	wait.until(ExpectedConditions.elementToBeClickable(pp.edit));
+	clickMethod(pp.edit);
 }
 }
