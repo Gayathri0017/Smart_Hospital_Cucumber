@@ -50,21 +50,23 @@ public class DoctorActions {
         String year=reader.getCellData("Sheet1", rowIndex, 2);
         String month=reader.getCellData("Sheet1", rowIndex, 3);
         String day=reader.getCellData("Sheet1", rowIndex, 4);
+        //String uhid=reader.getCellData("Sheet1", rowIndex,5);
         sendKeysMethod(dp.pName, name);
         Select gen=new Select(dp.gender);
         gen.selectByVisibleText(gender);
         sendKeysMethod(dp.year, year);
         sendKeysMethod(dp.month, month);
         sendKeysMethod(dp.day, day);
+        //sendKeysMethod(dp.uhid,uhid);
         if (uploadPhoto){
-            String bloodgrp=reader.getCellData("Sheet1", rowIndex, 5);
+            String bloodgrp=reader.getCellData("Sheet1", rowIndex, 6);
             Select bg=new Select(dp.bloodGroup);
             bg.selectByVisibleText(bloodgrp);
             File file=new File("src\\test\\resources\\patient.jpg");
             dp.uploadPhoto.sendKeys(file.getAbsolutePath());
         }
     }
-    public void save() {
+    public void save(){
         clickMethod(dp.saveBtn);
     }
     public void assertPatient() throws InterruptedException {
@@ -74,11 +76,11 @@ public class DoctorActions {
         Assert.assertTrue(actual.contains(name));
     }
     public void addAppointmentDetails() {
-        String doctor=reader.getCellData("Sheet1", 0, 6);
-        String shift=reader.getCellData("Sheet1", 0, 7);
-        String slot=reader.getCellData("Sheet1", 0, 9);
-        String status=reader.getCellData("Sheet1", 0, 10);
-        String dis=reader.getCellData("Sheet1", 0, 11);
+        String doctor=reader.getCellData("Sheet1", 0, 7);
+        String shift=reader.getCellData("Sheet1", 0, 8);
+        String slot=reader.getCellData("Sheet1", 0, 10);
+        String status=reader.getCellData("Sheet1", 0, 11);
+        String dis=reader.getCellData("Sheet1", 0, 12);
         Select doc=new Select(dp.doc);
         doc.selectByIndex(1);
         Select sft=new Select(dp.shift);
@@ -100,9 +102,9 @@ public class DoctorActions {
         sendKeysMethod(dp.discount, dis);
     }
     public void addAppointmentDetails1() {
-        String doctor=reader.getCellData("Sheet1", 1, 6);
-        String shift=reader.getCellData("Sheet1", 1, 7);
-        String slot=reader.getCellData("Sheet1", 1, 9);
+        String doctor=reader.getCellData("Sheet1", 1, 7);
+        String shift=reader.getCellData("Sheet1", 1, 8);
+        String slot=reader.getCellData("Sheet1", 1, 10);
         Select doc = new Select(dp.doc);
         doc.selectByIndex(1);
         Select sft = new Select(dp.shift);

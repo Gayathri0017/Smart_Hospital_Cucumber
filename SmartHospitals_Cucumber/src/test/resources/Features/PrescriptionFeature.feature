@@ -33,3 +33,10 @@ Examples:
 	  When the doctor Clicks the View Prescription
 	  Then the previously added prescription should be visible
 	  
+	@Verify_Delete_Patient_Option
+	Scenario: Verify the added patient can be deleted in OPD section
+		When the doctor Clicks the Show option in OPD section
+		Then the doctor should see the <"Visit Details">
+		When the doctor clicks delete option in visit details
+		Then the patient should be deleted in OPD section
+	

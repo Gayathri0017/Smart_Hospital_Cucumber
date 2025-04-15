@@ -54,7 +54,8 @@ public class PrescriptionDefinition {
 		    pa.selectDoseDuration(data.get("Dose Duration"));
 	}
 	@Then("the system should show an error {string}")
-	public void the_system_should_show_an_error(String string) {
+	public void the_system_should_show_an_error(String string) throws InterruptedException {
+		Thread.sleep(1000);
 	   pa.assertinvalid(string);
 	}
 	@When("the doctor clicks the edit option")
@@ -76,28 +77,35 @@ public class PrescriptionDefinition {
 	public void the_previously_added_prescription_should_be_visible() {
 	    pa.assertPrescription();
 	}
-	@When("the doctor clicks the Edit button of the existing prescription")
-	public void the_doctor_clicks_the_edit_button_of_the_existing_prescription() {
-	    pa.edit();
+	@When("the doctor Clicks the Show option in OPD section")
+	public void the_doctor_clicks_the_show_option_in_opd_section() {
+	   pa.show();
 	}
-	@When("updates the prescription details:")
-	public void updates_the_prescription_details(io.cucumber.datatable.DataTable dataTable) {
-		  List<Map<String, String>> details = dataTable.asMaps(String.class, String.class);
-		    for (Map<String, String> row : details) {
-		        String doseInterval=row.get("Dose Interval");
-		        String doseDuration=row.get("Dose Duration");
-		        pa.selectDoseDuration(doseDuration);
-		        pa.selectDoseInterval(doseDuration);
-		    }
+
+	@Then("the doctor should see the <{string}>")
+	public void the_doctor_should_see_the(String string) {
+	    pa.assertShow(string);
 	}
-	@When("clicks the Update button")
-	public void clicks_the_update_button() {
-	    pa.save();
+	@When("the doctor clicks delete option in visit details")
+	public void the_doctor_clicks_delete_option_in_visit_details() {
+	   try {
+		   pa.delete();
+		   HelperClass.getDriver().switchTo().alert().accept();
+	   }catch(Exception e) {
+		   System.out.println(e.getMessage());
+	   }
 	}
-	@Then("the Prescription should be updated")
-	public void the_prescription_should_be_updated() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	@Then("the patient should be deleted in OPD section")
+	public void the_patient_should_be_deleted_in_opd_section() {
+	    
+	}
+	@Then("the doctor Clicks the edit option in OPD section")
+	public void the_doctor_clicks_the_edit_option_in_opd_section() {
+		
+	}
+	@Then("the doctor should see the <{string}> Page")
+	public void the_doctor_should_see_the_page(String string) {
+	    pa.assertEdit(string);
 	}
 
 }
