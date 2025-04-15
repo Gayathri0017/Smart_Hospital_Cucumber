@@ -6,6 +6,9 @@ import com.utils.HelperClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
 
 public class AccountantActions {
     private AccountantPage accountantPage;
@@ -20,17 +23,6 @@ public class AccountantActions {
 
     public void clickSignIn() {
         accountantPage.clickSignIn();
-    }
-
-    public void verifyDashboardNavigation() {
-        try {
-            if (!accountantPage.isDashboardDisplayed()) {
-                throw new RuntimeException("Accountant dashboard not displayed. Current page: " + 
-                    HelperClass.getDriver().getCurrentUrl());
-            }
-        } catch (Exception e) {
-            throw new RuntimeException("Failed to navigate to accountant dashboard: " + e.getMessage(), e);
-        }
     }
 
     public void verifySummaryTable() {
@@ -52,9 +44,39 @@ public class AccountantActions {
             System.out.println(tableData);
             
             ExcelWriter.writeTableData(filePath, "DashboardData", 
-                accountantPage.convertTableDataToRows(tableData));
+                accountantPage.convertTableDataToRows(tableData), true);
         } catch (Exception e) {
             throw new RuntimeException("Failed to capture and store table data: " + e.getMessage(), e);
+        }
+    }
+
+    public void navigateToExpenses() {
+        accountantPage.clickExpensesMenu();
+    }
+
+    public void clickAddExpense() {
+        accountantPage.clickAddExpenseButton();
+    }
+
+    public void addNewExpense(String header, String name, String amount) {
+        accountantPage.selectExpenseHeader(header);
+        accountantPage.enterExpenseName(name);
+        accountantPage.enterExpenseAmount(amount);
+    }
+
+    public void saveExpense() {
+        accountantPage.clickSaveButton();
+    }
+
+    public void verifySuccessNotification() {
+        if (!accountantPage.isSuccessNotificationDisplayed()) {
+            throw new RuntimeException("Success notification not displayed after saving expense");
+        }
+    }
+    
+    public void isErrorNotificationDisplayed() {
+    	if (!accountantPage.isErrorNotificationDisplayed()) {
+            throw new RuntimeException("Error notification not displayed after saving expense with invalid data");
         }
     }
 }
