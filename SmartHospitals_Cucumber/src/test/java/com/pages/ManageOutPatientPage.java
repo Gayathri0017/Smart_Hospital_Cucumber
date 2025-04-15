@@ -10,11 +10,11 @@ public WebElement search;
 public WebElement ipd;
 @FindBy(xpath="//*[@id=\"form_confirm-move\"]/div/div[2]/div/div/div/div[2]/div/div[8]/div/div/select")
 public WebElement bedId;
-@FindBy(xpath="//*[@id=\"form_confirm-move\"]/div/div[2]/div/div/div/div[2]/div/div[9]/div/div/span/span[1]/span/span[2]")
+@FindBy(id ="select2-bed_no-container")
 public WebElement bedNo;
 @FindBy(xpath="//button[@class=\"btn btn-info pull-right btn-ok\"]")
 public WebElement move;
-@FindBy(xpath="(//input[@class=\"select2-search__field\"])[4]")
+@FindBy(xpath="/html/body/span[2]/span/span[1]/input")
 public WebElement input;
 @FindBy(xpath="//div[@class=\"box-header border-b mb10 pl-0 pt0\"]/h3")
 public WebElement text;

@@ -37,15 +37,19 @@ public void sendBedDetails(String id, String num) throws InterruptedException {
     Thread.sleep(3000);
     Select bed = new Select(mp.bedId);
     //bed.selectByVisibleText(id);
-    bed.selectByIndex(1);
+    bed.selectByVisibleText(id);
     try {
     WebElement bedDropdown=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='select2-bed_no-container']")));
     bedDropdown.click();
+    wait.until(ExpectedConditions.visibilityOf((mp.input)));
+    Thread.sleep(3000);
+    mp.bedNo.click();
+    mp.input.sendKeys(num);
     }catch(StaleElementReferenceException e) {
     	System.out.println(e.getMessage());
     }
-    WebElement searchInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@class=\"select2-search__field\"])[4]")));
-    searchInput.sendKeys(num);
+    Select op=new Select(mp.live);
+    op.deselectByVisibleText("No");
     mp.move.click();
     wait.until(ExpectedConditions.alertIsPresent());
     HelperClass.getDriver().switchTo().alert().accept();
