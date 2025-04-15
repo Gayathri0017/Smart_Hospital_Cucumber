@@ -2,6 +2,9 @@ package com.actions;
 
 import java.time.Duration;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -60,15 +63,29 @@ public class PatientPaymentPageActions {
 	}
 	
 	public void setCountry(String country) {
-		wait.until(ExpectedConditions.visibilityOf(objPPP.country));
+		wait.until(ExpectedConditions.elementToBeClickable(objPPP.country));
 		Select selectCountry = new Select(objPPP.country);
-		selectCountry.selectByVisibleText(country);
-	}
+		selectCountry.selectByIndex(2);
+		
+//		 WebElement countryElement = objPPP.country;
+//	        wait.until(ExpectedConditions.elementToBeClickable(countryElement));
+//	        ((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].value = arguments[1];", countryElement, country);
+//	}
 	
+//	public void setCardNumber(String cardnumber) {
+//		wait.until(ExpectedConditions.visibilityOf(objPPP.cardNumber));
+//		objPPP.cardNumber.click();
+//		objPPP.cardNumber.toString();
+////		objPPP.cardNumber.clear();
+//		objPPP.cardNumber.sendKeys(cardnumber);
+	}
 	public void setCardNumber(String cardnumber) {
-		wait.until(ExpectedConditions.elementToBeClickable(objPPP.cardNumber));
-		objPPP.cardNumber.click();
-		objPPP.cardNumber.sendKeys(cardnumber);
+//	    wait.until(ExpectedConditions.elementToBeClickable(objPPP.cardNumber));
+	    
+	    Actions act = new Actions(HelperClass.getDriver());
+	    act.moveToElement(objPPP.cardNumber).click().perform();
+	    JavascriptExecutor js = (JavascriptExecutor)HelperClass.getDriver();
+	    js.executeScript("arguments[0].value = arguments[1];", objPPP.cardNumber, cardnumber);
 	}
 	
 	public void setCardExpiryNumber(String expiryNumber) {

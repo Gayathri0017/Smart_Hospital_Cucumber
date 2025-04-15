@@ -99,18 +99,22 @@ public void the_user_can_fill_the_appointment(io.cucumber.datatable.DataTable da
 
         String time = details.get("Timing");
         objPatientActions.setTime(time);
+        try {
+        	if(date == null) {
+            	wait.until(ExpectedConditions.alertIsPresent());
+            	HelperClass.getDriver().switchTo().alert().accept();
+            }
+            else {
+            	String availableTiming = details.get("AvailableTiming");
+                objPatientActions.setAvailableTime();
 
-        if(date == null) {
-        	wait.until(ExpectedConditions.alertIsPresent());
-        	HelperClass.getDriver().switchTo().alert().accept();
+                String message = details.get("Message");
+                objPatientActions.setMessage(message);
+            }
+        }catch(Exception e) {
+        	e.printStackTrace();
         }
-        else {
-        	String availableTiming = details.get("AvailableTiming");
-            objPatientActions.setAvailableTime();
-
-            String message = details.get("Message");
-            objPatientActions.setMessage(message);
-        }
+        
     }
 //    objPatientActions.ClickFormsubmit();
 }

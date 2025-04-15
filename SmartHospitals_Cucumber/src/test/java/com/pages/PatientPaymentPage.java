@@ -23,10 +23,10 @@ public class PatientPaymentPage {
 	@FindBy(id = "submit-button")
 	public WebElement payNowBtn ;
 	
-	@FindBy(id = "Field-countryInput")
+	@FindBy(xpath ="//*[@id=\"Field-countryInput\"]")
 	public WebElement country ;
 	
-	@FindBy(id = "Field-numberInput")
+	@FindBy(css ="#Field-numberInput")
 	public WebElement cardNumber ;
 	
 	@FindBy(id = "Field-expiryInput")
@@ -35,7 +35,7 @@ public class PatientPaymentPage {
 	@FindBy(id = "Field-cvcInput")
 	public WebElement cvvNumber ;
 	
-	@FindBy(id = "Field-numberError")
+	@FindBy(xpath = "//*[@id=\"toast-container\"]/div/div")
 	public WebElement invalidNumberTxt ;
 	
 	@FindBy(id = "Field-expiryError")
