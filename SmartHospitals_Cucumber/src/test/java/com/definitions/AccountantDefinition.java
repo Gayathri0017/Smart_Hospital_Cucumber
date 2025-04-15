@@ -8,7 +8,7 @@ import io.cucumber.java.en.*;
 public class AccountantDefinition {
     private AccountantActions accountantActions;
     private AccountantPage accountantPage;
-    private String excelFilPath = "target/dashboard_data.xlsx";
+    private String excelFilePath = "target/dashboard_data.xlsx";
 
     @Given("User launches the Smart Hospital application")
     public void launchApplication() {
@@ -27,42 +27,50 @@ public class AccountantDefinition {
 
     @Then("User should see the dashboard summary table")
     public void verifySummaryTable() {
-        accountantActions.verifySummaryTable();
+        if (!accountantActions.isSummaryTableDisplayed()) {
+            throw new RuntimeException("Dashboard summary table not visible after 15 seconds");
+        }
     }
 
     @Then("User should capture and print the data from dashboard table section this should be stored in the excel for reference")
     public void captureAndStoreData() {
-    	String xpath ="/html/body/div[1]/div[1]/section/div[2]";
-        accountantActions.captureAndStoreData(xpath, excelFilPath);
+        String xpath = "/html/body/div[1]/div[1]/section/div[2]";
+        accountantActions.captureAndStoreData(xpath, excelFilePath);
     }
 
     @Then("then need enter to the Expenses")
     public void navigateToExpenses() {
-        accountantActions.navigateToExpenses();
+        accountantActions.clickExpensesMenu();
     }
 
     @Then("need click Add Expenses")
     public void clickAddExpense() {
-        accountantActions.clickAddExpense();
+        accountantActions.clickAddExpenseButton();
     }
 
     @Then("need to give the Header as {string}, name {string} and amount {string}")
     public void addNewExpense(String header, String name, String amount) {
-        accountantActions.addNewExpense(header, name, amount);
+        accountantActions.selectExpenseHeader(header);
+        accountantActions.enterExpenseName(name);
+        accountantActions.enterExpenseAmount(amount);
     }
 
     @And("the user click the save")
     public void saveExpense() {
-        accountantActions.saveExpense();
+        accountantActions.clickSaveButton();
     }
 
     @Then("need to see the asseart the success notifications")
     public void verifySuccessNotification() {
-        accountantActions.verifySuccessNotification();
+        if (!accountantActions.isSuccessNotificationDisplayed()) {
+            throw new RuntimeException("Success notification not displayed after saving expense");
+        }
     }
-    
-    @Then("need to see the asseart the error notifications")
+
+    @Then("need to see the see the error notifications")
     public void verifyErrorNotification() {
-        accountantActions.isErrorNotificationDisplayed();
+        if (!accountantActions.isErrorNotificationDisplayed()) {
+            throw new RuntimeException("Error notification not displayed after saving expense with invalid data");
+        }
     }
 }
