@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-14T13:03:56 IST" name="Default suite" finished-at="2025-04-14T13:04:05 IST" duration-ms="8637">
+  <suite started-at="2025-04-15T15:42:07 IST" name="Default suite" finished-at="2025-04-15T15:42:25 IST" duration-ms="17881">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-14T13:03:56 IST" name="Default test" finished-at="2025-04-14T13:04:05 IST" duration-ms="8637">
+    <test started-at="2025-04-15T15:42:07 IST" name="Default test" finished-at="2025-04-15T15:42:25 IST" duration-ms="17881">
       <class name="com.runner.RunnerClass">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-14T13:03:56 IST" name="setUpClass" finished-at="2025-04-14T13:03:57 IST" duration-ms="456" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-15T15:42:07 IST" name="setUpClass" finished-at="2025-04-15T15:42:08 IST" duration-ms="738" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5ef8df1e]]>
+                <![CDATA[org.testng.TestRunner@3174cb09]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-14T13:03:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-14T13:04:05 IST" duration-ms="8070" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-15T15:42:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T15:42:25 IST" duration-ms="16965" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-14T13:04:05 IST" name="tearDownClass" finished-at="2025-04-14T13:04:05 IST" duration-ms="55" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-15T15:42:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-15T15:42:23 IST" duration-ms="15509" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add New Expense with Invalid Data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Accountant Dashboard Functionalities"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.pages.AccountantPage.isErrorNotificationDisplayed()" because "this.accountantPage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.pages.AccountantPage.isErrorNotificationDisplayed()" because "this.accountantPage" is null
+at com.definitions.AccountantDefinition.verifyErrorNotification(AccountantDefinition.java:66)
+at ✽.need to see the asseart the error notifications(file:///D:/eclipse/Smart_Hospital_Cucumber1/SmartHospitals_Cucumber/src/test/resources/Features/AccountantFeature.feature:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-15T15:42:25 IST" name="tearDownClass" finished-at="2025-04-15T15:42:25 IST" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
