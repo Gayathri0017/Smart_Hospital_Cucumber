@@ -44,4 +44,6 @@ public class PatientDashboardPage {
 	@FindBy(xpath = "//*[@id=\"toast-container\"]/div/div/p[1]")
 	public WebElement FieldRequired ;
 	
+	@FindBy(xpath = "//aside[@id='alert2']/div/section/ul/li[1]//following-sibling::li[3]/a/span")
+	public WebElement ipd ;
 }
