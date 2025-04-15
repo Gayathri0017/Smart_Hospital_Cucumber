@@ -1,5 +1,16 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'Gowri' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="38" passed="29" failed="9" skipped="0">
+=======
+<testng-results ignored="0" total="36" passed="34" failed="2" skipped="0">
+
+
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+>>>>>>> branch 'Gowri' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
   <reporter-output>
   </reporter-output>
   <suite started-at="2025-04-15T09:52:05 IST" name="Default suite" finished-at="2025-04-15T09:59:25 IST" duration-ms="440027">
