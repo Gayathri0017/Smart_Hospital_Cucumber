@@ -58,14 +58,14 @@ public class PatientPaymentPageActions {
 	}
 	
 	public void ClickpayNowBtn() {
-		wait.until(ExpectedConditions.visibilityOf(objPPP.payNowBtn));
+		wait.until(ExpectedConditions.elementToBeClickable(objPPP.payNowBtn));
 		objPPP.payNowBtn.click();
 	}
 	
 	public void setCountry(String country) {
 		wait.until(ExpectedConditions.elementToBeClickable(objPPP.country));
 		Select selectCountry = new Select(objPPP.country);
-		selectCountry.selectByIndex(2);
+		selectCountry.selectByVisibleText(country);
 		
 //		 WebElement countryElement = objPPP.country;
 //	        wait.until(ExpectedConditions.elementToBeClickable(countryElement));
