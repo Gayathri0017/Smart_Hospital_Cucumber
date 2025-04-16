@@ -11,4 +11,11 @@ public WebElement name;
 public WebElement error;
 @FindBy(id="search-btn")
 public WebElement searchBtn;
+@FindBy(xpath="//table[@id=\"DataTables_Table_0\"]/tbody/tr[1]/td[1]/input")
+public WebElement chkBox;
+@FindBy(xpath="//table[@id=\"DataTables_Table_0\"]/tbody/tr[1]/td[2]/a")
+public WebElement delName;
+@FindBy(xpath="//button[@id=\"load\"]")
+public WebElement delBtn;
+
 }

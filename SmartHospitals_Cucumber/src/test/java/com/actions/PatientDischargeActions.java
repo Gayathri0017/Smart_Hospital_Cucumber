@@ -18,7 +18,6 @@ public class PatientDischargeActions {
 		objPDP = new PatientDischargePage();
 		PageFactory.initElements(HelperClass.getDriver(), objPDP);
 	}
-	
 	public void ClickIPD() {
 		wait.until(ExpectedConditions.visibilityOf(objPDP.ipd));
 		objPDP.ipd.click();

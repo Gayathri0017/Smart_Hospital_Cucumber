@@ -10,3 +10,13 @@ Background:
       | patientName | expectedResult            |
       | Dharani     | Dharani                   |
       | TestXYZ123  | No data available in table|
+
+   Scenario Outline: Verify that a searched patient can be deleted
+  When the Doctor enters "<patientName>" in the search bar
+  And clicks the search button
+  And selects the patient and clicks "Delete Selected"
+  Then the patient should no longer appear in the searched list
+	Examples:
+      | patientName |
+      | Dharani     | 
+	   
