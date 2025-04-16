@@ -36,7 +36,7 @@ public class PatientPaymentDefinitions {
 	
 	@Then("the User provide the card details")
 	public void the_user_provide_the_card_details(io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
 		objPPPA.switchFrame();
 		try {
 			
@@ -60,7 +60,8 @@ public class PatientPaymentDefinitions {
 	
 	@Then("the User clicks pay now button")
 	public void the_user_clicks_pay_now_button() throws InterruptedException {
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
+		HelperClass.getDriver().switchTo().defaultContent();
 		objPPPA.ClickpayNowBtn();
 	}
 

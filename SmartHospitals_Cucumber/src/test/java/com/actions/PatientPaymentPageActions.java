@@ -50,7 +50,13 @@ public class PatientPaymentPageActions {
 	
 	public String getPaymentAmount() {
 		wait.until(ExpectedConditions.visibilityOf(objPPP.amount));
-		return objPPP.amount.getAttribute("value");
+		String amount = null ;
+		if(objPPP.amount.getAttribute("value").equals("0")) {
+			System.out.println("No need to pay amount ");
+		}else {
+			amount =  objPPP.amount.getAttribute("value");
+		}
+		return amount;
 	}
 	
 	public void ClickAddPaymentBtn() {
@@ -69,6 +75,7 @@ public class PatientPaymentPageActions {
 	}
 	
 	public void switchFrame() {
+		wait.until(ExpectedConditions.visibilityOf(objPPP.frame));
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(objPPP.frame));
 		
 	}

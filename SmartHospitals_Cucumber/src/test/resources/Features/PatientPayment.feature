@@ -29,6 +29,14 @@ Feature: Login with the Patient Login Credentials
  	|Iceland				|4242424242424242			|5/13								|123		|
  	And the User can able to see the error message "Your card’s expiration year is in the past."
  
+ Scenario: Payment by invalid card cvv number
+
+ 	And the User provide the card details
+ 	|Country				|CardNumber						|ExpiryDate					|CVV		|
+ 	|Iceland				|4242424242424242			|5/31								|12		|
+ 	And the User clicks pay now button
+ 	And the User can able to see the error message "Your card’s security code is incomplete."
+ 	
  Scenario: Payment by Valid card details
 
  	And the User provide the card details
