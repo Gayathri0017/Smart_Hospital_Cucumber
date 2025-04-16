@@ -55,11 +55,23 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
+<<<<<<< HEAD
 <td>Tests passed/Failed/Skipped:</td><td>37/2/0</td>
+=======
+<td>Tests passed/Failed/Skipped:</td><td>29/9/0</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 </tr><tr>
+<<<<<<< HEAD
 <td>Started on:</td><td>Tue Apr 15 21:39:43 IST 2025</td>
+=======
+<td>Started on:</td><td>Tue Apr 15 09:52:05 IST 2025</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 </tr>
+<<<<<<< HEAD
 <tr><td>Total time:</td><td>141 seconds (141149 ms)</td>
+=======
+<tr><td>Total time:</td><td>440 seconds (440027 ms)</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +88,78 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the added prescription is visible in the OPD section", "Doctor add Prescription for the Feature in Smart Hospital"</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (dfe34c864997d47e85b6272d6b34e6dc)] -&gt; xpath: //h4[text()=&quot;Prescription&quot;]] (tried for 10 second(s) with 500 milliseconds interval)
+=======
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the year", "Manage Appointments in Smart Hospital"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //i[@class=&quot;fa fa-user-md ispace&quot;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.DoctorActions.login(DoctorActions.java:25)
+	at com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system(DoctorDefinition.java:20)
+	at ✽.Doctor is logged in to the Smart Hospital system(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:3)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&quot;fa fa-user-md ispace&quot;]&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\gayat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60083/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: dfe34c864997d47e85b6272d6b34e6dc
+=======
+Command: [159e41df7b26d1560efafc3d9a6a2588, findElement {value=//i[@class=&quot;fa fa-user-md ispace&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52389/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 159e41df7b26d1560efafc3d9a6a2588
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace695310176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace695310176'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //i[@class=&quot;fa fa-user-md ispace&quot;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+<<<<<<< HEAD
 	at com.actions.PrescriptionActions.assertPrescription(PrescriptionActions.java:117)
 	at com.definitions.PrescriptionDefinition.the_previously_added_prescription_should_be_visible(PrescriptionDefinition.java:78)
 	at ✽.the previously added prescription should be visible(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/PrescriptionFeature.feature:34)
 </pre></div><a href='#' onClick='toggleBox("stack-trace859845072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace859845072'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (dfe34c864997d47e85b6272d6b34e6dc)] -&gt; xpath: //h4[text()=&quot;Prescription&quot;]] (tried for 10 second(s) with 500 milliseconds interval)
+=======
+	at com.actions.DoctorActions.login(DoctorActions.java:25)
+	at com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system(DoctorDefinition.java:20)
+	at ✽.Doctor is logged in to the Smart Hospital system(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:3)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&quot;fa fa-user-md ispace&quot;]&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\gayat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60083/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: dfe34c864997d47e85b6272d6b34e6dc
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
@@ -100,7 +167,37 @@ Session ID: dfe34c864997d47e85b6272d6b34e6dc
 	at com.actions.PrescriptionActions.assertPrescription(PrescriptionActions.java:117)
 	at com.definitions.PrescriptionDefinition.the_previously_added_prescription_should_be_visible(PrescriptionDefinition.java:78)
 	at ✽.the previously added prescription should be visible(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/PrescriptionFeature.feature:34)
+=======
+Command: [159e41df7b26d1560efafc3d9a6a2588, findElement {value=//i[@class=&quot;fa fa-user-md ispace&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52389/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 159e41df7b26d1560efafc3d9a6a2588
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 </pre></div></td>
+<<<<<<< HEAD
 <td>47</td>
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
@@ -126,6 +223,497 @@ Session ID: dfe34c864997d47e85b6272d6b34e6dc
 	at ✽.the User can fill the appointment form(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/PatientAppointment.feature:12)
 </pre></div></td>
 <td>34</td>
+=======
+<td>114</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Search of patient", "Search Patient by Name In Smart Hospital"</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.85)
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8793c6fc24d3200578feeaee9cff76e8, findElement {value=//i[@class=&quot;fa fa-user-md ispace&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53316}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53316/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8793c6fc24d3200578feeaee9cff76e8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4465)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:669)
+	at java.base/java.lang.String.valueOf(String.java:4465)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at com.actions.DoctorActions.login(DoctorActions.java:25)
+	at com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system(DoctorDefinition.java:20)
+	at ✽.Doctor is logged in to the Smart Hospital system(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/SearchFeature.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1050975781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1050975781'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.85)
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8793c6fc24d3200578feeaee9cff76e8, findElement {value=//i[@class=&quot;fa fa-user-md ispace&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53316}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53316/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8793c6fc24d3200578feeaee9cff76e8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4465)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:669)
+	at java.base/java.lang.String.valueOf(String.java:4465)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at com.actions.DoctorActions.login(DoctorActions.java:25)
+	at com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system(DoctorDefinition.java:20)
+	at ✽.Doctor is logged in to the Smart Hospital system(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/SearchFeature.feature:3)
+</pre></div></td>
+<td>18</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Error Occurred, Please Try Again}
+  (Session info: chrome=135.0.7049.85): Error Occurred, Please Try Again
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8793c6fc24d3200578feeaee9cff76e8, findElement {value=(//span[@class=&quot;select2-selection__arrow&quot;])[5], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53316}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53316/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8793c6fc24d3200578feeaee9cff76e8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.actions.PrescriptionActions.selectFindingCategory(PrescriptionActions.java:25)
+	at com.definitions.PrescriptionDefinition.the_doctor_fills_the_prescription_form_with(PrescriptionDefinition.java:50)
+	at ✽.the doctor fills the prescription form with:(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/PrescriptionFeature.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1118210768", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1118210768'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Error Occurred, Please Try Again}
+  (Session info: chrome=135.0.7049.85): Error Occurred, Please Try Again
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8793c6fc24d3200578feeaee9cff76e8, findElement {value=(//span[@class=&quot;select2-selection__arrow&quot;])[5], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53316}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53316/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8793c6fc24d3200578feeaee9cff76e8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.actions.PrescriptionActions.selectFindingCategory(PrescriptionActions.java:25)
+	at com.definitions.PrescriptionDefinition.the_doctor_fills_the_prescription_form_with(PrescriptionDefinition.java:50)
+	at ✽.the doctor fills the prescription form with:(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/PrescriptionFeature.feature:8)
+</pre></div></td>
+<td>58</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login with roles", "Login functionality for the Smart Hospital website"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6d2900b62f72d3c8a87ffdd6c1eabf91, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52604}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52604/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d2900b62f72d3c8a87ffdd6c1eabf91
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:495)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:384)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:949)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:456)
+	... 8 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1472333530", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1472333530'><pre>org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6d2900b62f72d3c8a87ffdd6c1eabf91, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52604}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52604/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d2900b62f72d3c8a87ffdd6c1eabf91
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:495)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:384)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:949)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:456)
+	... 8 more
+</pre></div></td>
+<td>438</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Payment by invalid card number", "Login with the Patient Login Credentials"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: Field-numberInput&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.PatientPaymentPageActions.setCardNumber(PatientPaymentPageActions.java:69)
+	at com.definitions.PatientPaymentDefinitions.the_user_provide_the_invalid_card_details(PatientPaymentDefinitions.java:36)
+	at ✽.the User provide the invalid card details(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/PatientPayment.feature:13)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Field\-numberInput&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ae79092b43d4186163833b0dc39af31, findElement {value=Field-numberInput, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53232}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53232/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ae79092b43d4186163833b0dc39af31
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace535756647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace535756647'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: Field-numberInput&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.PatientPaymentPageActions.setCardNumber(PatientPaymentPageActions.java:69)
+	at com.definitions.PatientPaymentDefinitions.the_user_provide_the_invalid_card_details(PatientPaymentDefinitions.java:36)
+	at ✽.the User provide the invalid card details(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/PatientPayment.feature:13)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Field\-numberInput&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ae79092b43d4186163833b0dc39af31, findElement {value=Field-numberInput, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53232}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53232/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ae79092b43d4186163833b0dc39af31
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+</pre></div></td>
+<td>87</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor creates a new appointment for a new patient", "Manage Appointments in Smart Hospital"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //i[@class=&quot;fa fa-user-md ispace&quot;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.DoctorActions.login(DoctorActions.java:25)
+	at com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system(DoctorDefinition.java:20)
+	at ✽.Doctor is logged in to the Smart Hospital system(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:3)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&quot;fa fa-user-md ispace&quot;]&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f145e854c1ba26994e4bb6516ecf102, findElement {value=//i[@class=&quot;fa fa-user-md ispace&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52452/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f145e854c1ba26994e4bb6516ecf102
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1598653973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1598653973'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //i[@class=&quot;fa fa-user-md ispace&quot;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.DoctorActions.login(DoctorActions.java:25)
+	at com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system(DoctorDefinition.java:20)
+	at ✽.Doctor is logged in to the Smart Hospital system(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:3)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&quot;fa fa-user-md ispace&quot;]&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f145e854c1ba26994e4bb6516ecf102, findElement {value=//i[@class=&quot;fa fa-user-md ispace&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52452/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f145e854c1ba26994e4bb6516ecf102
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+</pre></div></td>
+<td>134</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Patient booking with date as empty field", "Booking appointment using patient Login"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53041/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a4eb775331f16234bad2018250707a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.definitions.PatientDefinition.the_user_can_fill_the_appointment(PatientDefinition.java:104)
+	at ✽.the User can fill the appointment(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/PatientAppointment.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2118619707", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2118619707'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53041/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a4eb775331f16234bad2018250707a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.definitions.PatientDefinition.the_user_can_fill_the_appointment(PatientDefinition.java:104)
+	at ✽.the User can fill the appointment(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/PatientAppointment.feature:17)
+</pre></div></td>
+<td>75</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the added prescription is visible in the OPD section", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (d3497b6f6a3ad475dd2fca104db38ec3)] -&gt; xpath: //h4[text()=&quot;Prescription&quot;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53430}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53430/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d3497b6f6a3ad475dd2fca104db38ec3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.PrescriptionActions.assertPrescription(PrescriptionActions.java:117)
+	at com.definitions.PrescriptionDefinition.the_previously_added_prescription_should_be_visible(PrescriptionDefinition.java:78)
+	at ✽.the previously added prescription should be visible(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/PrescriptionFeature.feature:34)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1760215366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1760215366'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (d3497b6f6a3ad475dd2fca104db38ec3)] -&gt; xpath: //h4[text()=&quot;Prescription&quot;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53430}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53430/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d3497b6f6a3ad475dd2fca104db38ec3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.PrescriptionActions.assertPrescription(PrescriptionActions.java:117)
+	at com.definitions.PrescriptionDefinition.the_previously_added_prescription_should_be_visible(PrescriptionDefinition.java:78)
+	at ✽.the previously added prescription should be visible(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/PrescriptionFeature.feature:34)
+</pre></div></td>
+<td>62</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Search of patient", "Search Patient by Name In Smart Hospital"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //tr[@class=&quot;odd&quot;]//td[2]/a&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.SearchActions.assertSearch(SearchActions.java:30)
+	at com.definitions.SearchDefinition.the_system_should_show_the(SearchDefinition.java:17)
+	at ✽.the system should Show the &quot;Dharani&quot;(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/SearchFeature.feature:7)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tr[@class=&quot;odd&quot;]//td[2]/a&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [60e74b823c06f31d0559011fac07dba9, findElement {value=//tr[@class=&quot;odd&quot;]//td[2]/a, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53503}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53503/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60e74b823c06f31d0559011fac07dba9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace490137272", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace490137272'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //tr[@class=&quot;odd&quot;]//td[2]/a&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.SearchActions.assertSearch(SearchActions.java:30)
+	at com.definitions.SearchDefinition.the_system_should_show_the(SearchDefinition.java:17)
+	at ✽.the system should Show the &quot;Dharani&quot;(file:///C:/Users/Dhanusheswaran%20M/git/Smart_Hospital_Cucumber_Project/SmartHospitals_Cucumber/src/test/resources/Features/SearchFeature.feature:7)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tr[@class=&quot;odd&quot;]//td[2]/a&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [60e74b823c06f31d0559011fac07dba9, findElement {value=//tr[@class=&quot;odd&quot;]//td[2]/a, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\DHANUS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53503}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53503/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60e74b823c06f31d0559011fac07dba9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+</pre></div></td>
+<td>82</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -137,8 +725,13 @@ Session ID: dfe34c864997d47e85b6272d6b34e6dc
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add New Expense and Verify", "Accountant Dashboard Functionalities"</td>
+=======
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login with roles", "Login functionality for the Smart Hospital website"</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 <td></td>
+<<<<<<< HEAD
 <td>46</td>
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
@@ -150,10 +743,39 @@ Session ID: dfe34c864997d47e85b6272d6b34e6dc
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the year", "Manage Appointments in Smart Hospital"</td>
 <td></td>
 <td>50</td>
+=======
+<td>35</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to create an appointment with an expired time slot", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>100</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username and password", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>65</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To check Login as patient", "Login with the Patient Login Credentials"</td>
+<td></td>
+<td>42</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Patient booking with specialist as empty field", "Booking appointment using patient Login"</td>
+<td></td>
+<td>35</td>
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Doctor add Prescription for the Feature in Smart Hospital"</td>
 <td></td>
+<td>76</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<<<<<<< HEAD
 <td>32</td>
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
@@ -175,10 +797,14 @@ Session ID: dfe34c864997d47e85b6272d6b34e6dc
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor creates a new appointment for a new patient", "Manage Appointments in Smart Hospital"</td>
 <td></td>
 <td>67</td>
+=======
+<td>84</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
-<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the prescription feature by providing valid informations", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To check with Invalid username for patient", "Login with the Patient Login Credentials"</td>
 <td></td>
+<<<<<<< HEAD
 <td>31</td>
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
@@ -195,16 +821,98 @@ Session ID: dfe34c864997d47e85b6272d6b34e6dc
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add New Expense with Invalid Data", "Accountant Dashboard Functionalities"</td>
 <td></td>
 <td>44</td>
+=======
+<td>45</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login with roles", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>82</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login with roles", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>72</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>35</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login with roles", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>70</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the day", "Manage Appointments in Smart Hospital"</td>
 <td></td>
+<<<<<<< HEAD
 <td>55</td>
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the name", "Manage Appointments in Smart Hospital"</td>
 <td></td>
 <td>56</td>
+=======
+<td>86</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the Month", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>100</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Appointment booking for patient", "Booking appointment using patient Login"</td>
+<td></td>
+<td>44</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>30</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing password", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>53</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the added patient can be deleted in OPD section", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>51</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the prescription feature by providing valid informations", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>58</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing password", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>66</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the name", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>99</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To check with Invalid password for patient", "Login with the Patient Login Credentials"</td>
+<td></td>
+<td>45</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add New Expense and Verify", "Accountant Dashboard Functionalities"</td>
+<td></td>
+<td>85</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing password", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>24</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing password", "Login functionality for the Smart Hospital website"</td>
@@ -234,6 +942,7 @@ Session ID: dfe34c864997d47e85b6272d6b34e6dc
 <tr>
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Doctor add Prescription for the Feature in Smart Hospital"</td>
 <td></td>
+<<<<<<< HEAD
 <td>33</td>
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 <tr>
@@ -320,6 +1029,29 @@ Session ID: dfe34c864997d47e85b6272d6b34e6dc
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Patient booking with specialist as empty field", "Booking appointment using patient Login"</td>
 <td></td>
 <td>46</td>
+=======
+<td>85</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>43</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username and password", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>62</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Login with roles", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>85</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to login with missing username and password", "Login functionality for the Smart Hospital website"</td>
+<td></td>
+<td>48</td>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 <td>com.runner.RunnerClass@1bb266b3</td></tr>
 </table><p>
 </body>
