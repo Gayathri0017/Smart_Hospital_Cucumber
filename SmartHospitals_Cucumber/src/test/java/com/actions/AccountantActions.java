@@ -3,78 +3,113 @@ package com.actions;
 import com.pages.AccountantPage;
 import com.utils.ExcelWriter;
 import com.utils.HelperClass;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class AccountantActions {
+    private WebDriver driver;
+    private WebDriverWait wait;
     private AccountantPage accountantPage;
-    private static final Logger logger=LogManager.getLogger(AccountantActions.class);
+
     public AccountantActions() {
-        this.accountantPage=new AccountantPage(HelperClass.getDriver());
-        logger.info("Initialized AccountantPage");
+        this.driver = HelperClass.getDriver();
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        this.accountantPage = new AccountantPage(driver);
     }
+
     public void selectRole(String role) {
-        logger.info("Selecting role: "+role);
-        accountantPage.selectRole(role);
+        wait.until(ExpectedConditions.elementToBeClickable(accountantPage.accountantRoleButton)).click();
     }
+
     public void clickSignIn() {
-        logger.info("Clicking Sign In button");
-        accountantPage.clickSignIn();
+        wait.until(ExpectedConditions.elementToBeClickable(accountantPage.signInButton)).click();
     }
-    public void verifySummaryTable() {
+
+    public boolean isSummaryTableDisplayed() {
         try {
-            logger.info("Verifying if summary table is displayed");
-            if (!accountantPage.isSummaryTableDisplayed()) {
-                throw new RuntimeException("Dashboard summary table not visible after 15 seconds");
-            }
+            accountantPage.dashboard.click();
+            return wait.until(ExpectedConditions.visibilityOf(accountantPage.summaryTable)).isDisplayed();
         } catch (Exception e) {
-            throw new RuntimeException("Error verifying summary table: "+e.getMessage(), e);
+            return false;
         }
     }
+
+    public void clickExpensesMenu() {
+        wait.until(ExpectedConditions.elementToBeClickable(accountantPage.expensesMenu)).click();
+    }
+
+    public void clickAddExpenseButton() {
+        wait.until(ExpectedConditions.elementToBeClickable(accountantPage.addExpenseButton)).click();
+    }
+
+    public void selectExpenseHeader(String header) {
+        Select dropdown = new Select(accountantPage.expenseHeaderDropdown);
+        dropdown.selectByVisibleText(header);
+    }
+
+    public void enterExpenseName(String name) {
+        accountantPage.expenseNameField.clear();
+        accountantPage.expenseNameField.sendKeys(name);
+    }
+
+    public void enterExpenseAmount(String amount) {
+        accountantPage.expenseAmountField.clear();
+        accountantPage.expenseAmountField.sendKeys(amount);
+    }
+
+    public void clickSaveButton() {
+        accountantPage.saveButton.click();
+    }
+
+    public boolean isSuccessNotificationDisplayed() {
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(accountantPage.successNotification)).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public List<List<String>> convertTableDataToRows(String tableData) {
+        List<List<String>> rows = new ArrayList<>();
+        String[] lines = tableData.split("\n");
+
+        for (String line : lines) {
+            if (!line.trim().isEmpty()) {
+                String[] cells = line.split("\\s{2,}");
+                rows.add(Arrays.asList(cells));
+            }
+        }
+        return rows;
+    }
+
+    public boolean isErrorNotificationDisplayed() {
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(accountantPage.errorNotification)).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
     public void captureAndStoreData(String xpath, String filePath) {
         try {
-            logger.info("Capturing table data using xpath: "+xpath);
-            WebElement table=HelperClass.getDriver().findElement(By.xpath(xpath));
-            String tableData=table.getText();
-            logger.info("Dashboard Table Data:\n"+tableData);
-            ExcelWriter.writeTableData(filePath, "DashboardData", 
-                accountantPage.convertTableDataToRows(tableData), true);
-            logger.info("Table data written to Excel at: "+filePath);
+            WebElement table = driver.findElement(By.xpath(xpath));
+            String tableData = table.getText();
+
+            System.out.println("Dashboard Table Data");
+            System.out.println(tableData);
+
+            ExcelWriter.writeTableData(filePath, "DashboardData", convertTableDataToRows(tableData), true);
         } catch (Exception e) {
-            throw new RuntimeException("Failed to capture and store table data: "+e.getMessage(), e);
+            throw new RuntimeException("Failed to capture and store table data: " + e.getMessage(), e);
         }
-    }
-    public void navigateToExpenses() {
-        logger.info("Navigating to Expenses");
-        accountantPage.clickExpensesMenu();
-    }
-    public void clickAddExpense() {
-        logger.info("Clicking Add Expense button");
-        accountantPage.clickAddExpenseButton();
-    }
-    public void addNewExpense(String header, String name, String amount) {
-        logger.info("Adding new expense - Header: "+header+", Name: "+name+", Amount: "+amount);
-        accountantPage.selectExpenseHeader(header);
-        accountantPage.enterExpenseName(name);
-        accountantPage.enterExpenseAmount(amount);
-    }
-    public void saveExpense() {
-        logger.info("Clicking Save button for expense");
-        accountantPage.clickSaveButton();
-    }
-    public void verifySuccessNotification() {
-        logger.info("Verifying success notification after saving expense");
-        if (!accountantPage.isSuccessNotificationDisplayed()) {
-            throw new RuntimeException("Success notification not displayed after saving expense");
-        }
-        logger.info("Success notification displayed");
-    }
-    public void isErrorNotificationDisplayed() {
-        logger.info("Verifying error notification after saving invalid expense");
-        if (!accountantPage.isErrorNotificationDisplayed()) {
-            throw new RuntimeException("Error notification not displayed after saving expense with invalid data");
-        }
-        logger.info("Error notification displayed");
     }
 }
