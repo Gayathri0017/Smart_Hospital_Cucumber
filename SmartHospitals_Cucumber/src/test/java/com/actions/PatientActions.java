@@ -33,10 +33,12 @@ public class PatientActions {
 	
 	
 	public void ClickUserLoginBtn() {
+		wait.until(ExpectedConditions.elementToBeClickable(objPatientPage.userLoginBtn));
 		objPatientPage.userLoginBtn.click();
 	}
 	
 	public void ClickSignInBtn() {
+		wait.until(ExpectedConditions.elementToBeClickable(objPatientPage.signInBtn));
 		objPatientPage.signInBtn.click();
 	}
 	
@@ -91,8 +93,8 @@ public class PatientActions {
 	}
 	
 	public void setDate(String date) {
+		wait.until(ExpectedConditions.visibilityOf(objPDP.date));
 	    if (date != null && !date.isEmpty()) {
-	    	wait.until(ExpectedConditions.visibilityOf(objPDP.date));
 	    	objPDP.date.clear();
 	        objPDP.date.sendKeys(date);
 	    } else {
@@ -112,13 +114,13 @@ public class PatientActions {
 	}
 	
 	public void setDoctor(String doctor) {
-		wait.until(ExpectedConditions.visibilityOf(objPDP.doctor));
+		wait.until(ExpectedConditions.elementToBeClickable(objPDP.doctor));
 		Select selectDoctor = new Select(objPDP.doctor);
 		selectDoctor.selectByVisibleText(doctor);
 	}
 	
 	public void setShift(String shift) {
-		wait.until(ExpectedConditions.visibilityOf(objPDP.timingShift));
+		wait.until(ExpectedConditions.elementToBeClickable(objPDP.timingShift));
 		Select selectTiming = new Select(objPDP.timingShift);
 		selectTiming.selectByVisibleText(shift);
 	}
@@ -131,7 +133,7 @@ public class PatientActions {
 	
 	public void setAvailableTime() {
 		
-		wait.until(ExpectedConditions.visibilityOf(objPDP.AvailableSlot));
+		wait.until(ExpectedConditions.elementToBeClickable(objPDP.AvailableSlot));
 		objPDP.AvailableSlot.click();
 	}
 	

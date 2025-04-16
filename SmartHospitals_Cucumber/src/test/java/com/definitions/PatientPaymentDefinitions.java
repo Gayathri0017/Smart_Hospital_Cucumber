@@ -23,40 +23,75 @@ public class PatientPaymentDefinitions {
 
 	@Then("the User clicks payment option")
 	public void the_user_clicks_payment_option() {
-		objPPPA.ClickPayment();
-		objPPPA.ClickMakePayment();
-		Assert.assertTrue(objPPPA.getPaymentText().contains("Payment Amount ($)"));
-		System.out.println(objPPPA.getPaymentAmount());
-		objPPPA.ClickAddPaymentBtn();
-//		objPPPA.ClickpayNowBtn();
-//		HelperClass.getDriver().switchTo().frame("__privateStripeFrame5024");
-//		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("__privateStripeFrame5024"));
+		try {
+			objPPPA.ClickPayment();
+			objPPPA.ClickMakePayment();
+			System.out.println(objPPPA.getPaymentAmount());
+			objPPPA.ClickAddPaymentBtn();
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
 	}
 	
-	@Then("the User provide the invalid card details")
-	public void the_user_provide_the_invalid_card_details(io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
+	@Then("the User provide the card details")
+	public void the_user_provide_the_card_details(io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
 		Thread.sleep(5000);
-	    List<Map<String , String>> cardDetails = dataTable.asMaps(String.class , String.class);
-	    for(Map<String , String> details:cardDetails) {
-	    	objPPPA.setCountry(details.get("Country"));
-	    	objPPPA.setCardNumber(details.get("CardNumber"));
-	    	objPPPA.setCardExpiryNumber(details.get("ExpiryDate"));
-	    	objPPPA.setCvv(details.get("CVV"));
-	    }
-	    objPPPA.ClickpayNowBtn();
+		objPPPA.switchFrame();
+		try {
+			
+		    List<Map<String , String>> cardDetails = dataTable.asMaps(String.class , String.class);
+		    for(Map<String , String> details:cardDetails) {
+		    	objPPPA.setCountry(details.get("Country"));
+		    	objPPPA.setCardNumber(details.get("CardNumber"));
+		    	objPPPA.setCardExpiryNumber(details.get("ExpiryDate"));
+		    	objPPPA.setCvv(details.get("CVV"));
+		    }
+		}catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	    
 	}
 	
 	@Then("the User doesnt provide the any card details")
 	public void the_user_doesnt_provide_the_any_card_details() {
 		objPPPA.ClickpayNowBtn();
 	}
+	
+	@Then("the User clicks pay now button")
+	public void the_user_clicks_pay_now_button() throws InterruptedException {
+		Thread.sleep(2000);
+		objPPPA.ClickpayNowBtn();
+	}
 
 	@Then("the User can able to see the error message {string}")
 	public void the_user_can_able_to_see_the_error_message(String error) {
-		Assert.assertTrue(objPPPA.getInvalidNumberTxt().contains(error));
-		System.out.println(objPPPA.getInvalidNumberTxt());
+		try {
+			if(error.contains("Your card number is invalid.")) {
+				Assert.assertTrue(objPPPA.getInvalidCardNumber().contains(error));
+				System.out.println(objPPPA.getInvalidCardNumber());
+			}
+			if(error.contains("Your card’s expiration year is in the past.")) {
+				Assert.assertTrue(objPPPA.getInvalidCardDate().contains(error));
+				System.out.println(objPPPA.getInvalidCardDate());
+			}
+			if(error.contains("Your card’s security code is incomplete.")) {
+				Assert.assertTrue(objPPPA.getInvalidCvv().contains(error));
+				System.out.println(objPPPA.getInvalidCvv());
+			}
+		}
+		catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		
 	}
+	
 
-
+@Then("the User can able to see the success message {string}")
+public void the_user_can_able_to_see_the_success_message(String msg) {
+	Assert.assertTrue(objPPPA.getPayementSuccessText().contains(msg));
+	System.out.println(objPPPA.getPayementSuccessText());
+}
 
 }

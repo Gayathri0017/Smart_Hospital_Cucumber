@@ -3,6 +3,7 @@ package com.actions;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -58,29 +59,33 @@ public class PatientPaymentPageActions {
 	}
 	
 	public void ClickpayNowBtn() {
-		wait.until(ExpectedConditions.elementToBeClickable(objPPP.payNowBtn));
-		objPPP.payNowBtn.click();
+		
+		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+		WebElement payNowButton = wait.until(ExpectedConditions.elementToBeClickable(objPPP.payNowBtn));
+
+		JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+		js.executeScript("arguments[0].click();", payNowButton);
+		
 	}
 	
+	public void switchFrame() {
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(objPPP.frame));
+		
+	}
+	
+	public String getInvalidCardNumber() {
+		wait.until(ExpectedConditions.visibilityOf(objPPP.invalidCardNumber));
+		return objPPP.invalidCardNumber.getText();
+	}
 	public void setCountry(String country) {
 		wait.until(ExpectedConditions.elementToBeClickable(objPPP.country));
 		Select selectCountry = new Select(objPPP.country);
 		selectCountry.selectByVisibleText(country);
 		
-//		 WebElement countryElement = objPPP.country;
-//	        wait.until(ExpectedConditions.elementToBeClickable(countryElement));
-//	        ((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].value = arguments[1];", countryElement, country);
-//	}
-	
-//	public void setCardNumber(String cardnumber) {
-//		wait.until(ExpectedConditions.visibilityOf(objPPP.cardNumber));
-//		objPPP.cardNumber.click();
-//		objPPP.cardNumber.toString();
-////		objPPP.cardNumber.clear();
-//		objPPP.cardNumber.sendKeys(cardnumber);
+
 	}
 	public void setCardNumber(String cardnumber) {
-//	    wait.until(ExpectedConditions.elementToBeClickable(objPPP.cardNumber));
+	    wait.until(ExpectedConditions.elementToBeClickable(objPPP.cardNumber));
 	    
 	    Actions act = new Actions(HelperClass.getDriver());
 	    act.moveToElement(objPPP.cardNumber).click().perform();
@@ -95,6 +100,7 @@ public class PatientPaymentPageActions {
 	
 	public void setCvv(String cvv) {
 		wait.until(ExpectedConditions.elementToBeClickable(objPPP.cvvNumber));
+		objPPP.cvvNumber.clear();
 		objPPP.cvvNumber.sendKeys(cvv);
 	}
 	
@@ -111,5 +117,10 @@ public class PatientPaymentPageActions {
 	public String getInvalidCvv() {
 		wait.until(ExpectedConditions.visibilityOf(objPPP.invalidCvv));
 		return objPPP.invalidCvv.getText();
+	}
+	
+	public String getPayementSuccessText() {
+		wait.until(ExpectedConditions.visibilityOf(objPPP.paymentSuccess));
+		return objPPP.paymentSuccess.getText();
 	}
 }

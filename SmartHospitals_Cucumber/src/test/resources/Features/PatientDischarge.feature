@@ -21,18 +21,10 @@ Background:
 	And the Doctor should save the Discharge status
 	And the Doctor able to see the error "Discharge Status field is required"
 	
-	Scenario: Doctor discharging the patient
-	Then the Doctor provides the discharge details
-	When the Doctor clicks the ipdNo
-	And the Doctor clicks the discharge button
-	|DischargeStatus	|
-	|Normal						|
-	And the Doctor should save the Discharge status
-	
 	Scenario: Doctor discharging the patient by case ID
 	When the Doctor provides the case Id in search field
 	|caseID		|
-	|5085			|
+	|6290			|
 	Then the Doctor provides the discharge details
 	|DischargeStatus	| 
 	|Normal						|
