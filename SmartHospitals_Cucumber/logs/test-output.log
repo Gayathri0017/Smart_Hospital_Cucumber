@@ -1954,3 +1954,1704 @@ $234,260.00
 
 Add new record or search with different criteria.
 2025-04-16 11:47:12 [TestNG-PoolService-6] INFO : Clicked View
+2025-04-16 11:56:51 [TestNG-PoolService-2] INFO : Clicking Sign In button
+2025-04-16 11:56:51 [TestNG-PoolService-3] INFO : Verifying if summary table is displayed
+2025-04-16 11:56:52 [TestNG-PoolService-10] INFO : Clicking Sign In button
+2025-04-16 11:56:52 [TestNG-PoolService-1] INFO : Verifying if summary table is displayed
+2025-04-16 11:56:52 [TestNG-PoolService-2] INFO : Verifying if summary table is displayed
+2025-04-16 11:56:53 [TestNG-PoolService-10] INFO : Checking dashboard for role: Admin
+2025-04-16 11:56:56 [TestNG-PoolService-7] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:56:56 [TestNG-PoolService-5] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:56:56 [TestNG-PoolService-8] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:56:56 [TestNG-PoolService-6] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:56:56 [TestNG-PoolService-9] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:56:56 [TestNG-PoolService-4] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:57:00 [TestNG-PoolService-3] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 11:57:01 [TestNG-PoolService-2] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 11:57:01 [TestNG-PoolService-3] INFO : Dashboard Table Data:
+OPD Income
+$8,397.60
+IPD Income
+$3,155.00
+Pharmacy Income
+$2,157.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$7,650.00
+Expenses
+$234,260.00
+2025-04-16 11:57:01 [TestNG-PoolService-2] INFO : Dashboard Table Data:
+OPD Income
+$8,397.60
+IPD Income
+$3,155.00
+Pharmacy Income
+$2,157.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$7,650.00
+Expenses
+$234,260.00
+2025-04-16 11:57:02 [TestNG-PoolService-1] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 11:57:02 [TestNG-PoolService-1] INFO : Dashboard Table Data:
+OPD Income
+$8,397.60
+IPD Income
+$3,155.00
+Pharmacy Income
+$2,157.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$7,650.00
+Expenses
+$234,260.00
+2025-04-16 11:57:06 [TestNG-PoolService-7] INFO : Switching language to English
+2025-04-16 11:57:08 [TestNG-PoolService-5] INFO : Switching language to English
+2025-04-16 11:57:09 [TestNG-PoolService-6] INFO : Switching language to English
+2025-04-16 11:57:09 [TestNG-PoolService-2] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 11:57:09 [TestNG-PoolService-2] INFO : Navigating to Expenses
+2025-04-16 11:57:09 [TestNG-PoolService-1] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 11:57:09 [TestNG-PoolService-1] INFO : Navigating to Expenses
+2025-04-16 11:57:09 [TestNG-PoolService-3] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 11:57:09 [TestNG-PoolService-3] INFO : Navigating to Expenses
+2025-04-16 11:57:09 [TestNG-PoolService-4] INFO : Switching language to English
+2025-04-16 11:57:11 [TestNG-PoolService-9] INFO : Switching language to English
+2025-04-16 11:57:11 [TestNG-PoolService-1] INFO : Clicking Add Expense button
+2025-04-16 11:57:11 [TestNG-PoolService-8] INFO : Switching language to English
+2025-04-16 11:57:12 [TestNG-PoolService-1] INFO : Adding new expense - Header: Telephone Bill, Name: Office Telephone Charges, Amount: 100.00
+2025-04-16 11:57:15 [TestNG-PoolService-2] INFO : Clicking Add Expense button
+2025-04-16 11:57:15 [TestNG-PoolService-5] INFO : Navigated to Appointment section
+2025-04-16 11:57:15 [TestNG-PoolService-7] INFO : Navigated to Appointment section
+2025-04-16 11:57:15 [TestNG-PoolService-3] INFO : Clicking Add Expense button
+2025-04-16 11:57:15 [TestNG-PoolService-5] INFO : Clicked on Add Appointment
+2025-04-16 11:57:16 [TestNG-PoolService-2] INFO : Adding new expense - Header: Telephone Bill, Name: Office Telephone Charges, Amount: -100.00
+2025-04-16 11:57:16 [TestNG-PoolService-7] INFO : Clicked on Add Appointment
+2025-04-16 11:57:17 [TestNG-PoolService-6] INFO : Navigated to Appointment section
+2025-04-16 11:57:17 [TestNG-PoolService-5] INFO : Clicked on Add Patient
+2025-04-16 11:57:18 [TestNG-PoolService-4] INFO : Navigated to Appointment section
+2025-04-16 11:57:18 [TestNG-PoolService-3] INFO : Adding new expense - Header: Telephone Bill, Name: hi, Amount: -52
+2025-04-16 11:57:18 [TestNG-PoolService-7] INFO : Clicked on Add Patient
+2025-04-16 11:57:18 [TestNG-PoolService-5] INFO : Filling patient details from Excel row: 0
+2025-04-16 11:57:18 [TestNG-PoolService-7] INFO : Filling patient details from Excel row: 3
+2025-04-16 11:57:19 [TestNG-PoolService-6] INFO : Clicked on Add Appointment
+2025-04-16 11:57:19 [TestNG-PoolService-1] INFO : Clicking Save button for expense
+2025-04-16 11:57:19 [TestNG-PoolService-4] INFO : Clicked on Add Appointment
+2025-04-16 11:57:20 [TestNG-PoolService-6] INFO : Clicked on Add Patient
+2025-04-16 11:57:20 [TestNG-PoolService-4] INFO : Clicked on Add Patient
+2025-04-16 11:57:20 [TestNG-PoolService-9] INFO : Navigated to Appointment section
+2025-04-16 11:57:20 [TestNG-PoolService-4] INFO : Filling patient details from Excel row: 0
+2025-04-16 11:57:20 [TestNG-PoolService-6] INFO : Filling patient details from Excel row: 2
+2025-04-16 11:57:21 [TestNG-PoolService-9] INFO : Clicked on Add Appointment
+2025-04-16 11:57:21 [TestNG-PoolService-1] INFO : Verifying success notification after saving expense
+2025-04-16 11:57:21 [TestNG-PoolService-3] INFO : Clicking Save button for expense
+2025-04-16 11:57:21 [TestNG-PoolService-9] INFO : Clicked on Add Patient
+2025-04-16 11:57:21 [TestNG-PoolService-9] INFO : Filling patient details from Excel row: 5
+2025-04-16 11:57:22 [TestNG-PoolService-2] INFO : Clicking Save button for expense
+2025-04-16 11:57:22 [TestNG-PoolService-3] INFO : Verifying error notification after saving invalid expense
+2025-04-16 11:57:23 [TestNG-PoolService-3] INFO : Error notification displayed
+2025-04-16 11:57:23 [TestNG-PoolService-6] INFO : Clicked Save Patient button
+2025-04-16 11:57:23 [TestNG-PoolService-7] INFO : Clicked Save Patient button
+2025-04-16 11:57:23 [TestNG-PoolService-2] INFO : Verifying error notification after saving invalid expense
+2025-04-16 11:57:24 [TestNG-PoolService-2] INFO : Error notification displayed
+2025-04-16 11:57:25 [TestNG-PoolService-9] INFO : Clicked Save Patient button
+2025-04-16 11:57:25 [TestNG-PoolService-5] INFO : Uploaded photo and selected blood group
+2025-04-16 11:57:26 [TestNG-PoolService-1] INFO : Success notification displayed
+2025-04-16 11:57:26 [TestNG-PoolService-1] INFO : Verifying if summary table is displayed
+2025-04-16 11:57:26 [TestNG-PoolService-4] INFO : Uploaded photo and selected blood group
+2025-04-16 11:57:26 [TestNG-PoolService-8] INFO : Navigated to Appointment section
+2025-04-16 11:57:26 [TestNG-PoolService-5] INFO : Clicked Save Patient button
+2025-04-16 11:57:26 [TestNG-PoolService-4] INFO : Clicked Save Patient button
+2025-04-16 11:57:26 [TestNG-PoolService-8] INFO : Clicked on Add Appointment
+2025-04-16 11:57:27 [TestNG-PoolService-6] INFO : Checking name required validation. Expected: Name field is required, Actual: Name field is required
+2025-04-16 11:57:27 [TestNG-PoolService-7] INFO : Checking name required validation. Expected: Year field is required, Actual: Year field is required
+2025-04-16 11:57:27 [TestNG-PoolService-8] INFO : Clicked on Add Patient
+2025-04-16 11:57:27 [TestNG-PoolService-8] INFO : Filling patient details from Excel row: 4
+2025-04-16 11:57:28 [TestNG-PoolService-9] INFO : Checking name required validation. Expected: Day field is required, Actual: Day field is required
+2025-04-16 11:57:29 [TestNG-PoolService-1] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 11:57:29 [TestNG-PoolService-1] INFO : Dashboard Table Data:
+OPD Income
+$8,397.60
+IPD Income
+$3,155.00
+Pharmacy Income
+$2,157.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$7,650.00
+Expenses
+$234,360.00
+2025-04-16 11:57:29 [TestNG-PoolService-8] INFO : Clicked Save Patient button
+2025-04-16 11:57:29 [TestNG-PoolService-4] INFO : Filling appointment details from Excel
+2025-04-16 11:57:29 [TestNG-PoolService-1] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 11:57:30 [TestNG-PoolService-5] INFO : Filling appointment details from Excel
+2025-04-16 11:57:30 [TestNG-PoolService-4] INFO : Appointment details filled with discount
+2025-04-16 11:57:30 [TestNG-PoolService-4] INFO : Clicked Save Appointment button
+2025-04-16 11:57:32 [TestNG-PoolService-8] INFO : Checking name required validation. Expected: Month field is required, Actual: Month field is required
+2025-04-16 11:57:37 [TestNG-PoolService-7] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:57:37 [TestNG-PoolService-6] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:57:37 [TestNG-PoolService-7] INFO : Selecting role: Accountant
+2025-04-16 11:57:37 [TestNG-PoolService-6] INFO : Selecting role: Super Admin
+2025-04-16 11:57:37 [TestNG-PoolService-2] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:57:37 [TestNG-PoolService-2] INFO : Selecting role: Admin
+2025-04-16 11:57:38 [TestNG-PoolService-7] INFO : Clicking Sign In button
+2025-04-16 11:57:39 [TestNG-PoolService-9] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:57:39 [TestNG-PoolService-9] INFO : Selecting role: Doctor
+2025-04-16 11:57:39 [TestNG-PoolService-2] INFO : Entering username
+2025-04-16 11:57:39 [TestNG-PoolService-6] INFO : Clicking Sign In button
+2025-04-16 11:57:39 [TestNG-PoolService-7] INFO : Checking dashboard for role: Accountant
+2025-04-16 11:57:39 [TestNG-PoolService-2] INFO : Clicking Sign In button
+2025-04-16 11:57:40 [TestNG-PoolService-9] INFO : Clicking Sign In button
+2025-04-16 11:57:41 [TestNG-PoolService-10] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:57:41 [TestNG-PoolService-10] INFO : Selecting role: Receptionist
+2025-04-16 11:57:42 [TestNG-PoolService-4] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:57:42 [TestNG-PoolService-4] INFO : Selecting role: Nurse
+2025-04-16 11:57:45 [TestNG-PoolService-10] INFO : Clicking Sign In button
+2025-04-16 11:57:46 [TestNG-PoolService-9] INFO : Checking dashboard for role: Doctor
+2025-04-16 11:57:46 [TestNG-PoolService-4] INFO : Entering username
+2025-04-16 11:57:46 [TestNG-PoolService-6] INFO : Checking dashboard for role: Super Admin
+2025-04-16 11:57:46 [TestNG-PoolService-3] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:57:46 [TestNG-PoolService-3] INFO : Selecting role: Nurse
+2025-04-16 11:57:50 [TestNG-PoolService-3] INFO : Clicking Sign In button
+2025-04-16 11:57:50 [TestNG-PoolService-1] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:57:50 [TestNG-PoolService-1] INFO : Selecting role: Receptionist
+2025-04-16 11:57:51 [TestNG-PoolService-5] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:57:51 [TestNG-PoolService-5] INFO : Selecting role: Super Admin
+2025-04-16 11:57:52 [TestNG-PoolService-1] INFO : Entering username
+2025-04-16 11:57:52 [TestNG-PoolService-10] INFO : Checking dashboard for role: Receptionist
+2025-04-16 11:57:52 [TestNG-PoolService-5] INFO : Entering password
+2025-04-16 11:57:53 [TestNG-PoolService-1] INFO : Clicking Sign In button
+2025-04-16 11:57:53 [TestNG-PoolService-4] INFO : Clicking Sign In button
+2025-04-16 11:57:54 [TestNG-PoolService-5] INFO : Clicking Sign In button
+2025-04-16 11:57:54 [TestNG-PoolService-8] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:57:54 [TestNG-PoolService-8] INFO : Selecting role: Doctor
+2025-04-16 11:57:55 [TestNG-PoolService-8] INFO : Entering password
+2025-04-16 11:57:56 [TestNG-PoolService-3] INFO : Checking dashboard for role: Nurse
+2025-04-16 11:57:56 [TestNG-PoolService-8] INFO : Clicking Sign In button
+2025-04-16 11:58:00 [TestNG-PoolService-2] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:58:00 [TestNG-PoolService-2] INFO : Selecting role: Pharmacist
+2025-04-16 11:58:01 [TestNG-PoolService-2] INFO : Entering password
+2025-04-16 11:58:01 [TestNG-PoolService-2] INFO : Clicking Sign In button
+2025-04-16 11:58:04 [TestNG-PoolService-10] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:58:04 [TestNG-PoolService-10] INFO : Selecting role: Radiologist
+2025-04-16 11:58:04 [TestNG-PoolService-5] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:58:04 [TestNG-PoolService-5] INFO : Selecting role: Pathologist
+2025-04-16 11:58:05 [TestNG-PoolService-7] INFO : Clicking user login button
+2025-04-16 11:58:06 [TestNG-PoolService-1] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 11:58:06 [TestNG-PoolService-1] INFO : Selecting role: Accountant
+2025-04-16 11:58:06 [TestNG-PoolService-10] INFO : Entering username
+2025-04-16 11:58:06 [TestNG-PoolService-5] INFO : Entering username
+2025-04-16 11:58:06 [TestNG-PoolService-7] INFO : Clicking sign in button
+2025-04-16 11:58:07 [TestNG-PoolService-1] INFO : Entering username
+2025-04-16 11:58:07 [TestNG-PoolService-10] INFO : Entering password
+2025-04-16 11:58:08 [TestNG-PoolService-5] INFO : Entering password
+2025-04-16 11:58:08 [TestNG-PoolService-6] INFO : Clicking user login button
+2025-04-16 11:58:09 [TestNG-PoolService-1] INFO : Entering password
+2025-04-16 11:58:09 [TestNG-PoolService-7] INFO : Clicking 'My Appointment'
+2025-04-16 11:58:09 [TestNG-PoolService-4] INFO : Clicking user login button
+2025-04-16 11:58:09 [TestNG-PoolService-10] INFO : Clicking Sign In button
+2025-04-16 11:58:10 [TestNG-PoolService-4] INFO : Clicking sign in button
+2025-04-16 11:58:10 [TestNG-PoolService-5] INFO : Clicking Sign In button
+2025-04-16 11:58:11 [TestNG-PoolService-1] INFO : Clicking Sign In button
+2025-04-16 11:58:11 [TestNG-PoolService-6] INFO : Clicking sign in button
+2025-04-16 11:58:13 [TestNG-PoolService-7] INFO : Clicking 'Add Appointment'
+2025-04-16 11:58:13 [TestNG-PoolService-6] INFO : Clicking 'My Appointment'
+2025-04-16 11:58:14 [TestNG-PoolService-7] INFO : Reading appointment details from Excel
+2025-04-16 11:58:15 [TestNG-PoolService-7] INFO : Date: 06/22/2025
+2025-04-16 11:58:16 [TestNG-PoolService-7] INFO : Specialist found and selected: Cardiologists
+2025-04-16 11:58:19 [TestNG-PoolService-10] INFO : Clicking user login button
+2025-04-16 11:58:19 [TestNG-PoolService-7] INFO : Doctor selected: Sansa Gomez (9008)
+2025-04-16 11:58:20 [TestNG-PoolService-3] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:58:21 [TestNG-PoolService-9] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:58:22 [TestNG-PoolService-4] INFO : Clicking 'My Appointment'
+2025-04-16 11:58:24 [TestNG-PoolService-8] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:58:25 [TestNG-PoolService-10] INFO : Clicking sign in button
+2025-04-16 11:58:25 [TestNG-PoolService-5] INFO : Clicking user login button
+2025-04-16 11:58:25 [TestNG-PoolService-6] INFO : Clicking 'Add Appointment'
+2025-04-16 11:58:26 [TestNG-PoolService-7] INFO : Timing shift selected: Evening
+2025-04-16 11:58:26 [TestNG-PoolService-2] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:58:28 [TestNG-PoolService-6] WARN : Date field is empty or null
+2025-04-16 11:58:28 [TestNG-PoolService-4] INFO : Clicking 'Add Appointment'
+2025-04-16 11:58:29 [TestNG-PoolService-6] INFO : Specialist selected: Cardiologists
+2025-04-16 11:58:30 [TestNG-PoolService-1] INFO : Clicking user login button
+2025-04-16 11:58:30 [TestNG-PoolService-6] INFO : Doctor selected: Sansa Gomez (9008)
+2025-04-16 11:58:31 [TestNG-PoolService-4] INFO : Date set to: 07/22/2025
+2025-04-16 11:58:31 [TestNG-PoolService-3] INFO : Switching language to English
+2025-04-16 11:58:32 [TestNG-PoolService-10] INFO : Clicking profile
+2025-04-16 11:58:34 [TestNG-PoolService-2] INFO : Switching language to English
+2025-04-16 11:58:34 [TestNG-PoolService-6] INFO : Shift selected: Evening
+2025-04-16 11:58:35 [TestNG-PoolService-7] INFO : Clicking user login button
+2025-04-16 11:58:35 [TestNG-PoolService-4] INFO : Specialist selected: Cardiologists
+2025-04-16 11:58:36 [TestNG-PoolService-6] INFO : Slot selected: 04:00 PM - 07:00 PM
+2025-04-16 11:58:37 [TestNG-PoolService-4] INFO : Doctor selected: Sansa Gomez (9008)
+2025-04-16 11:58:37 [TestNG-PoolService-1] INFO : Clicking sign in button
+2025-04-16 11:58:38 [TestNG-PoolService-4] INFO : Shift selected: Evening
+2025-04-16 11:58:39 [TestNG-PoolService-4] INFO : Slot selected: 04:00 PM - 07:00 PM
+2025-04-16 11:58:39 [TestNG-PoolService-5] INFO : Clicking sign in button
+2025-04-16 11:58:40 [TestNG-PoolService-4] INFO : Clicking form submit button
+2025-04-16 11:58:40 [TestNG-PoolService-4] INFO : Form validation error: Message field is required
+2025-04-16 11:58:40 [TestNG-PoolService-4] INFO : Form validation error: Message field is required
+2025-04-16 11:58:40 [TestNG-PoolService-8] INFO : Switching language to English
+2025-04-16 11:58:42 [TestNG-PoolService-9] INFO : Switching language to English
+2025-04-16 11:58:47 [TestNG-PoolService-6] INFO : Clicking form submit button
+2025-04-16 11:58:47 [TestNG-PoolService-6] INFO : Form validation error: Date field is required
+2025-04-16 11:58:48 [TestNG-PoolService-6] INFO : Form validation error: Date field is required
+2025-04-16 11:58:51 [TestNG-PoolService-10] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:58:51 [TestNG-PoolService-4] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:58:52 [TestNG-PoolService-5] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:58:57 [TestNG-PoolService-1] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:58:57 [TestNG-PoolService-5] INFO : Switching language to English
+2025-04-16 11:58:59 [TestNG-PoolService-2] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:59:00 [TestNG-PoolService-10] INFO : Switching language to English
+2025-04-16 11:59:01 [TestNG-PoolService-4] INFO : Switching language to English
+2025-04-16 11:59:02 [TestNG-PoolService-2] INFO : Switching language to English
+2025-04-16 11:59:04 [TestNG-PoolService-1] INFO : Switching language to English
+2025-04-16 11:59:08 [TestNG-PoolService-5] INFO : Navigated to OPD section
+2025-04-16 11:59:09 [TestNG-PoolService-9] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:59:11 [TestNG-PoolService-7] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:59:11 [TestNG-PoolService-6] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:59:13 [TestNG-PoolService-5] INFO : Clicked Add Prescription
+2025-04-16 11:59:14 [TestNG-PoolService-8] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:59:16 [TestNG-PoolService-4] INFO : Navigated to OPD section
+2025-04-16 11:59:16 [TestNG-PoolService-10] INFO : Navigated to OPD section
+2025-04-16 11:59:19 [TestNG-PoolService-3] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 11:59:19 [TestNG-PoolService-9] INFO : Switching language to English
+2025-04-16 11:59:19 [TestNG-PoolService-6] INFO : Switching language to English
+2025-04-16 11:59:20 [TestNG-PoolService-4] INFO : Clicked Add Prescription
+2025-04-16 11:59:20 [TestNG-PoolService-5] INFO : Finding category selected=Syrup
+2025-04-16 11:59:20 [TestNG-PoolService-8] INFO : Switching language to English
+2025-04-16 11:59:20 [TestNG-PoolService-10] INFO : Clicked Add Prescription
+2025-04-16 11:59:24 [TestNG-PoolService-2] INFO : Navigated to OPD section
+2025-04-16 11:59:24 [TestNG-PoolService-10] INFO : Finding category selected=Syrup
+2025-04-16 11:59:25 [TestNG-PoolService-5] INFO : Medicine category selected=Select
+2025-04-16 11:59:25 [TestNG-PoolService-4] INFO : Finding category selected=Syrup
+2025-04-16 11:59:25 [TestNG-PoolService-10] INFO : Medicine category selected=Alprovit
+2025-04-16 11:59:26 [TestNG-PoolService-3] INFO : Switching language to English
+2025-04-16 11:59:27 [TestNG-PoolService-2] INFO : Clicked Add Prescription
+2025-04-16 11:59:27 [TestNG-PoolService-5] INFO : Medicine selected=1 (CT)
+2025-04-16 11:59:28 [TestNG-PoolService-8] INFO : Entering search text: Dharani
+2025-04-16 11:59:28 [TestNG-PoolService-4] INFO : Medicine category selected=Al
+2025-04-16 11:59:28 [TestNG-PoolService-8] INFO : Searched the patient name
+2025-04-16 11:59:28 [TestNG-PoolService-8] INFO : Clicking search button
+2025-04-16 11:59:28 [TestNG-PoolService-7] INFO : Switching language to English
+2025-04-16 11:59:29 [TestNG-PoolService-10] INFO : Medicine selected=Select
+2025-04-16 11:59:30 [TestNG-PoolService-5] INFO : Dose interval selected=Only one a day
+2025-04-16 11:59:30 [TestNG-PoolService-4] INFO : Medicine selected=1
+2025-04-16 11:59:30 [TestNG-PoolService-10] INFO : Dose interval selected=Only one a day
+2025-04-16 11:59:30 [TestNG-PoolService-2] INFO : Finding category selected=Syrup
+2025-04-16 11:59:30 [TestNG-PoolService-1] INFO : Navigated to OPD section
+2025-04-16 11:59:31 [TestNG-PoolService-5] INFO : Dose duration selected=Morning
+2025-04-16 11:59:31 [TestNG-PoolService-4] INFO : Dose interval selected=Select
+2025-04-16 11:59:31 [TestNG-PoolService-10] INFO : Dose duration selected=Morning
+2025-04-16 11:59:32 [TestNG-PoolService-5] INFO : Clicked Save
+2025-04-16 11:59:32 [TestNG-PoolService-10] INFO : Clicked Save
+2025-04-16 11:59:32 [TestNG-PoolService-8] INFO : Clicked Search icon
+2025-04-16 11:59:32 [TestNG-PoolService-9] INFO : Navigated to OPD section
+2025-04-16 11:59:32 [TestNG-PoolService-6] INFO : Navigated to OPD section
+2025-04-16 11:59:32 [TestNG-PoolService-2] INFO : Medicine category selected=Alprovit
+2025-04-16 11:59:32 [TestNG-PoolService-3] INFO : Entering search text: TestXYZ123
+2025-04-16 11:59:33 [TestNG-PoolService-7] INFO : Entering search text: Dharani
+2025-04-16 11:59:34 [TestNG-PoolService-3] INFO : Searched the patient name
+2025-04-16 11:59:34 [TestNG-PoolService-3] INFO : Clicking search button
+2025-04-16 11:59:35 [TestNG-PoolService-1] INFO : Clicked Add Prescription
+2025-04-16 11:59:37 [TestNG-PoolService-3] INFO : Clicked Search icon
+2025-04-16 11:59:38 [TestNG-PoolService-4] INFO : Dose duration selected=Morning
+2025-04-16 11:59:39 [TestNG-PoolService-7] INFO : Searched the patient name
+2025-04-16 11:59:39 [TestNG-PoolService-7] INFO : Clicking search button
+2025-04-16 11:59:40 [TestNG-PoolService-4] INFO : Clicked Save
+2025-04-16 11:59:40 [TestNG-PoolService-2] INFO : Medicine selected=1  (CT)
+2025-04-16 11:59:40 [TestNG-PoolService-1] INFO : Finding category selected=Select
+2025-04-16 11:59:42 [TestNG-PoolService-9] INFO : Clicked Delete
+2025-04-16 11:59:42 [TestNG-PoolService-1] INFO : Medicine category selected=Select
+2025-04-16 11:59:42 [TestNG-PoolService-7] INFO : Clicked Search icon
+2025-04-16 11:59:42 [TestNG-PoolService-3] INFO : Expected: No data available in table, Actual: No data available in table
+
+
+
+Add new record or search with different criteria.
+2025-04-16 11:59:42 [TestNG-PoolService-7] INFO : Expected: Dharani, Actual: Dharani (1147)
+2025-04-16 11:59:42 [TestNG-PoolService-2] INFO : Dose interval selected=Only one a day
+2025-04-16 11:59:42 [TestNG-PoolService-1] INFO : Medicine selected=Select
+2025-04-16 11:59:43 [TestNG-PoolService-6] INFO : Clicked View
+2025-04-16 11:59:43 [TestNG-PoolService-2] INFO : Dose duration selected=Morning
+2025-04-16 11:59:43 [TestNG-PoolService-1] INFO : Dose interval selected=Select
+2025-04-16 11:59:43 [TestNG-PoolService-2] INFO : Clicked Save
+2025-04-16 11:59:43 [TestNG-PoolService-1] INFO : Dose duration selected=Select
+2025-04-16 11:59:44 [TestNG-PoolService-1] INFO : Clicked Save
+2025-04-16 15:11:31 [TestNG-PoolService-1] INFO : Initialized AccountantPage
+2025-04-16 15:11:31 [TestNG-PoolService-3] INFO : Initialized AccountantPage
+2025-04-16 15:11:31 [TestNG-PoolService-1] INFO : Selecting role: Accountant
+2025-04-16 15:11:31 [TestNG-PoolService-3] INFO : Selecting role: Accountant
+2025-04-16 15:11:32 [TestNG-PoolService-5] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:11:32 [TestNG-PoolService-8] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:11:32 [TestNG-PoolService-6] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:11:32 [TestNG-PoolService-9] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:11:32 [TestNG-PoolService-4] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:11:32 [TestNG-PoolService-1] INFO : Clicking Sign In button
+2025-04-16 15:11:32 [TestNG-PoolService-3] INFO : Clicking Sign In button
+2025-04-16 15:11:32 [TestNG-PoolService-10] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:11:32 [TestNG-PoolService-10] INFO : Selecting role: Admin
+2025-04-16 15:11:33 [TestNG-PoolService-7] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:11:33 [TestNG-PoolService-2] INFO : Initialized AccountantPage
+2025-04-16 15:11:33 [TestNG-PoolService-2] INFO : Selecting role: Accountant
+2025-04-16 15:11:33 [TestNG-PoolService-10] INFO : Clicking Sign In button
+2025-04-16 15:11:34 [TestNG-PoolService-2] INFO : Clicking Sign In button
+2025-04-16 15:11:36 [TestNG-PoolService-1] INFO : Verifying if summary table is displayed
+2025-04-16 15:11:36 [TestNG-PoolService-3] INFO : Verifying if summary table is displayed
+2025-04-16 15:11:37 [TestNG-PoolService-1] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 15:11:38 [TestNG-PoolService-3] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 15:11:38 [TestNG-PoolService-1] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$10,150.00
+Expenses
+$234,460.00
+2025-04-16 15:11:38 [TestNG-PoolService-3] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$10,150.00
+Expenses
+$234,460.00
+2025-04-16 15:11:39 [TestNG-PoolService-1] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 15:11:39 [TestNG-PoolService-3] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 15:11:39 [TestNG-PoolService-1] INFO : Navigating to Expenses
+2025-04-16 15:11:39 [TestNG-PoolService-3] INFO : Navigating to Expenses
+2025-04-16 15:11:39 [TestNG-PoolService-9] INFO : Switching language to English
+2025-04-16 15:11:40 [TestNG-PoolService-3] INFO : Clicking Add Expense button
+2025-04-16 15:11:40 [TestNG-PoolService-1] INFO : Clicking Add Expense button
+2025-04-16 15:11:40 [TestNG-PoolService-2] INFO : Verifying if summary table is displayed
+2025-04-16 15:11:40 [TestNG-PoolService-1] INFO : Adding new expense - Header: Telephone Bill, Name: Office Telephone Charges, Amount: 100.00
+2025-04-16 15:11:40 [TestNG-PoolService-3] INFO : Adding new expense - Header: Telephone Bill, Name: hi, Amount: -52
+2025-04-16 15:11:40 [TestNG-PoolService-10] INFO : Checking dashboard for role: Admin
+2025-04-16 15:11:41 [TestNG-PoolService-2] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 15:11:41 [TestNG-PoolService-2] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$10,150.00
+Expenses
+$234,460.00
+2025-04-16 15:11:41 [TestNG-PoolService-3] INFO : Clicking Save button for expense
+2025-04-16 15:11:41 [TestNG-PoolService-1] INFO : Clicking Save button for expense
+2025-04-16 15:11:41 [TestNG-PoolService-5] INFO : Switching language to English
+2025-04-16 15:11:41 [TestNG-PoolService-6] INFO : Switching language to English
+2025-04-16 15:11:41 [TestNG-PoolService-2] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 15:11:41 [TestNG-PoolService-2] INFO : Navigating to Expenses
+2025-04-16 15:11:41 [TestNG-PoolService-3] INFO : Verifying error notification after saving invalid expense
+2025-04-16 15:11:41 [TestNG-PoolService-1] INFO : Verifying success notification after saving expense
+2025-04-16 15:11:41 [TestNG-PoolService-3] INFO : Error notification displayed
+2025-04-16 15:11:42 [TestNG-PoolService-1] INFO : Success notification displayed
+2025-04-16 15:11:42 [TestNG-PoolService-1] INFO : Verifying if summary table is displayed
+2025-04-16 15:11:42 [TestNG-PoolService-4] INFO : Switching language to English
+2025-04-16 15:11:42 [TestNG-PoolService-8] INFO : Switching language to English
+2025-04-16 15:11:42 [TestNG-PoolService-2] INFO : Clicking Add Expense button
+2025-04-16 15:11:42 [TestNG-PoolService-2] INFO : Adding new expense - Header: Telephone Bill, Name: Office Telephone Charges, Amount: -100.00
+2025-04-16 15:11:42 [TestNG-PoolService-1] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 15:11:42 [TestNG-PoolService-1] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$10,150.00
+Expenses
+$234,560.00
+2025-04-16 15:11:43 [TestNG-PoolService-1] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 15:11:44 [TestNG-PoolService-7] INFO : Switching language to English
+2025-04-16 15:11:44 [TestNG-PoolService-9] INFO : Navigated to Appointment section
+2025-04-16 15:11:44 [TestNG-PoolService-9] INFO : Clicked on Add Appointment
+2025-04-16 15:11:45 [TestNG-PoolService-9] INFO : Clicked on Add Patient
+2025-04-16 15:11:45 [TestNG-PoolService-9] INFO : Filling patient details from Excel row: 5
+2025-04-16 15:11:46 [TestNG-PoolService-6] INFO : Navigated to Appointment section
+2025-04-16 15:11:46 [TestNG-PoolService-5] INFO : Navigated to Appointment section
+2025-04-16 15:11:46 [TestNG-PoolService-9] INFO : Clicked Save Patient button
+2025-04-16 15:11:46 [TestNG-PoolService-4] INFO : Navigated to Appointment section
+2025-04-16 15:11:46 [TestNG-PoolService-8] INFO : Navigated to Appointment section
+2025-04-16 15:11:46 [TestNG-PoolService-5] INFO : Clicked on Add Appointment
+2025-04-16 15:11:46 [TestNG-PoolService-6] INFO : Clicked on Add Appointment
+2025-04-16 15:11:47 [TestNG-PoolService-4] INFO : Clicked on Add Appointment
+2025-04-16 15:11:47 [TestNG-PoolService-8] INFO : Clicked on Add Appointment
+2025-04-16 15:11:47 [TestNG-PoolService-5] INFO : Clicked on Add Patient
+2025-04-16 15:11:47 [TestNG-PoolService-5] INFO : Filling patient details from Excel row: 0
+2025-04-16 15:11:47 [TestNG-PoolService-4] INFO : Clicked on Add Patient
+2025-04-16 15:11:47 [TestNG-PoolService-4] INFO : Filling patient details from Excel row: 0
+2025-04-16 15:11:48 [TestNG-PoolService-6] INFO : Clicked on Add Patient
+2025-04-16 15:11:48 [TestNG-PoolService-6] INFO : Filling patient details from Excel row: 2
+2025-04-16 15:11:48 [TestNG-PoolService-8] INFO : Clicked on Add Patient
+2025-04-16 15:11:48 [TestNG-PoolService-8] INFO : Filling patient details from Excel row: 4
+2025-04-16 15:11:49 [TestNG-PoolService-7] INFO : Navigated to Appointment section
+2025-04-16 15:11:49 [TestNG-PoolService-3] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:11:49 [TestNG-PoolService-3] INFO : Selecting role: Nurse
+2025-04-16 15:11:49 [TestNG-PoolService-9] INFO : Checking name required validation. Expected: Day field is required, Actual: Day field is required
+2025-04-16 15:11:49 [TestNG-PoolService-7] INFO : Clicked on Add Appointment
+2025-04-16 15:11:49 [TestNG-PoolService-3] INFO : Clicking Sign In button
+2025-04-16 15:11:50 [TestNG-PoolService-7] INFO : Clicked on Add Patient
+2025-04-16 15:11:50 [TestNG-PoolService-7] INFO : Filling patient details from Excel row: 3
+2025-04-16 15:11:50 [TestNG-PoolService-5] INFO : Uploaded photo and selected blood group
+2025-04-16 15:11:50 [TestNG-PoolService-6] INFO : Clicked Save Patient button
+2025-04-16 15:11:51 [TestNG-PoolService-4] INFO : Uploaded photo and selected blood group
+2025-04-16 15:11:51 [TestNG-PoolService-5] INFO : Clicked Save Patient button
+2025-04-16 15:11:51 [TestNG-PoolService-8] INFO : Clicked Save Patient button
+2025-04-16 15:11:51 [TestNG-PoolService-4] INFO : Clicked Save Patient button
+2025-04-16 15:11:53 [TestNG-PoolService-7] INFO : Clicked Save Patient button
+2025-04-16 15:11:53 [TestNG-PoolService-3] INFO : Checking dashboard for role: Nurse
+2025-04-16 15:11:53 [TestNG-PoolService-1] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:11:53 [TestNG-PoolService-1] INFO : Selecting role: Super Admin
+2025-04-16 15:11:54 [TestNG-PoolService-6] INFO : Checking name required validation. Expected: Name field is required, Actual: Name field is required
+2025-04-16 15:11:54 [TestNG-PoolService-4] INFO : Filling appointment details from Excel
+2025-04-16 15:11:55 [TestNG-PoolService-5] INFO : Filling appointment details from Excel
+2025-04-16 15:11:55 [TestNG-PoolService-1] INFO : Clicking Sign In button
+2025-04-16 15:11:55 [TestNG-PoolService-8] INFO : Checking name required validation. Expected: Month field is required, Actual: Month field is required
+2025-04-16 15:11:55 [TestNG-PoolService-2] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:11:55 [TestNG-PoolService-2] INFO : Selecting role: Doctor
+2025-04-16 15:11:55 [TestNG-PoolService-1] INFO : Checking dashboard for role: Super Admin
+2025-04-16 15:11:56 [TestNG-PoolService-10] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:11:56 [TestNG-PoolService-10] INFO : Selecting role: Receptionist
+2025-04-16 15:11:56 [TestNG-PoolService-7] INFO : Checking name required validation. Expected: Year field is required, Actual: Year field is required
+2025-04-16 15:11:56 [TestNG-PoolService-2] INFO : Clicking Sign In button
+2025-04-16 15:11:57 [TestNG-PoolService-10] INFO : Clicking Sign In button
+2025-04-16 15:11:57 [TestNG-PoolService-10] INFO : Checking dashboard for role: Receptionist
+2025-04-16 15:11:58 [TestNG-PoolService-4] INFO : Appointment details filled with discount
+2025-04-16 15:11:58 [TestNG-PoolService-4] INFO : Clicked Save Appointment button
+2025-04-16 15:11:59 [TestNG-PoolService-2] INFO : Checking dashboard for role: Doctor
+2025-04-16 15:12:02 [TestNG-PoolService-3] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:12:02 [TestNG-PoolService-3] INFO : Selecting role: Accountant
+2025-04-16 15:12:03 [TestNG-PoolService-3] INFO : Clicking Sign In button
+2025-04-16 15:12:03 [TestNG-PoolService-9] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:12:03 [TestNG-PoolService-9] INFO : Selecting role: Nurse
+2025-04-16 15:12:03 [TestNG-PoolService-4] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:12:03 [TestNG-PoolService-4] INFO : Selecting role: Doctor
+2025-04-16 15:12:04 [TestNG-PoolService-5] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:12:04 [TestNG-PoolService-5] INFO : Selecting role: Super Admin
+2025-04-16 15:12:04 [TestNG-PoolService-9] INFO : Entering username
+2025-04-16 15:12:04 [TestNG-PoolService-4] INFO : Entering password
+2025-04-16 15:12:05 [TestNG-PoolService-9] INFO : Clicking Sign In button
+2025-04-16 15:12:05 [TestNG-PoolService-3] INFO : Checking dashboard for role: Accountant
+2025-04-16 15:12:05 [TestNG-PoolService-4] INFO : Clicking Sign In button
+2025-04-16 15:12:05 [TestNG-PoolService-5] INFO : Entering password
+2025-04-16 15:12:05 [TestNG-PoolService-6] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:12:05 [TestNG-PoolService-6] INFO : Selecting role: Receptionist
+2025-04-16 15:12:06 [TestNG-PoolService-7] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:12:06 [TestNG-PoolService-7] INFO : Selecting role: Admin
+2025-04-16 15:12:06 [TestNG-PoolService-5] INFO : Clicking Sign In button
+2025-04-16 15:12:07 [TestNG-PoolService-6] INFO : Entering username
+2025-04-16 15:12:07 [TestNG-PoolService-7] INFO : Entering username
+2025-04-16 15:12:07 [TestNG-PoolService-6] INFO : Clicking Sign In button
+2025-04-16 15:12:07 [TestNG-PoolService-7] INFO : Clicking Sign In button
+2025-04-16 15:12:09 [TestNG-PoolService-8] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:12:09 [TestNG-PoolService-8] INFO : Selecting role: Pathologist
+2025-04-16 15:12:10 [TestNG-PoolService-1] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:12:10 [TestNG-PoolService-1] INFO : Selecting role: Pharmacist
+2025-04-16 15:12:10 [TestNG-PoolService-8] INFO : Entering username
+2025-04-16 15:12:10 [TestNG-PoolService-8] INFO : Entering password
+2025-04-16 15:12:11 [TestNG-PoolService-1] INFO : Entering password
+2025-04-16 15:12:11 [TestNG-PoolService-8] INFO : Clicking Sign In button
+2025-04-16 15:12:11 [TestNG-PoolService-1] INFO : Clicking Sign In button
+2025-04-16 15:12:14 [TestNG-PoolService-10] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:12:14 [TestNG-PoolService-10] INFO : Selecting role: Radiologist
+2025-04-16 15:12:15 [TestNG-PoolService-10] INFO : Entering username
+2025-04-16 15:12:15 [TestNG-PoolService-4] INFO : Clicking user login button
+2025-04-16 15:12:16 [TestNG-PoolService-2] INFO : Clicking user login button
+2025-04-16 15:12:16 [TestNG-PoolService-10] INFO : Entering password
+2025-04-16 15:12:16 [TestNG-PoolService-9] INFO : Clicking user login button
+2025-04-16 15:12:16 [TestNG-PoolService-5] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:12:17 [TestNG-PoolService-10] INFO : Clicking Sign In button
+2025-04-16 15:12:18 [TestNG-PoolService-9] INFO : Clicking sign in button
+2025-04-16 15:12:19 [TestNG-PoolService-2] INFO : Clicking sign in button
+2025-04-16 15:12:19 [TestNG-PoolService-4] INFO : Clicking sign in button
+2025-04-16 15:12:20 [TestNG-PoolService-5] INFO : Switching language to English
+2025-04-16 15:12:22 [TestNG-PoolService-2] INFO : Clicking 'My Appointment'
+2025-04-16 15:12:24 [TestNG-PoolService-2] INFO : Clicking 'Add Appointment'
+2025-04-16 15:12:24 [TestNG-PoolService-9] INFO : Clicking 'My Appointment'
+2025-04-16 15:12:24 [TestNG-PoolService-4] INFO : Clicking 'My Appointment'
+2025-04-16 15:12:24 [TestNG-PoolService-3] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:12:24 [TestNG-PoolService-3] INFO : Selecting role: Accountant
+2025-04-16 15:12:25 [TestNG-PoolService-3] INFO : Entering username
+2025-04-16 15:12:25 [TestNG-PoolService-2] WARN : Date field is empty or null
+2025-04-16 15:12:26 [TestNG-PoolService-9] INFO : Clicking 'Add Appointment'
+2025-04-16 15:12:26 [TestNG-PoolService-6] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:12:26 [TestNG-PoolService-4] INFO : Clicking 'Add Appointment'
+2025-04-16 15:12:26 [TestNG-PoolService-3] INFO : Entering password
+2025-04-16 15:12:26 [TestNG-PoolService-9] INFO : Reading appointment details from Excel
+2025-04-16 15:12:26 [TestNG-PoolService-2] INFO : Specialist selected: Cardiologists
+2025-04-16 15:12:27 [TestNG-PoolService-3] INFO : Clicking Sign In button
+2025-04-16 15:12:27 [TestNG-PoolService-2] INFO : Doctor selected: Sansa Gomez (9008)
+2025-04-16 15:12:27 [TestNG-PoolService-9] INFO : Date: 06/22/2025
+2025-04-16 15:12:27 [TestNG-PoolService-4] INFO : Date set to: 07/22/2025
+2025-04-16 15:12:27 [TestNG-PoolService-2] INFO : Shift selected: Evening
+2025-04-16 15:12:28 [TestNG-PoolService-9] INFO : Specialist found and selected: Cardiologists
+2025-04-16 15:12:28 [TestNG-PoolService-4] INFO : Specialist selected: Cardiologists
+2025-04-16 15:12:28 [TestNG-PoolService-2] INFO : Slot selected: 04:00 PM - 07:00 PM
+2025-04-16 15:12:29 [TestNG-PoolService-4] INFO : Doctor selected: Sansa Gomez (9008)
+2025-04-16 15:12:29 [TestNG-PoolService-9] INFO : Doctor selected: Sansa Gomez (9008)
+2025-04-16 15:12:29 [TestNG-PoolService-4] INFO : Shift selected: Evening
+2025-04-16 15:12:29 [TestNG-PoolService-9] INFO : Timing shift selected: Evening
+2025-04-16 15:12:29 [TestNG-PoolService-4] INFO : Slot selected: 04:00 PM - 07:00 PM
+2025-04-16 15:12:29 [TestNG-PoolService-9] INFO : Slot selected: 04:00 PM - 07:00 PM
+2025-04-16 15:12:30 [TestNG-PoolService-4] INFO : Available time clicked: 04:15 PM
+2025-04-16 15:12:30 [TestNG-PoolService-4] WARN : Message field is empty or null
+2025-04-16 15:12:30 [TestNG-PoolService-4] INFO : Clicking form submit button
+2025-04-16 15:12:30 [TestNG-PoolService-9] INFO : Available slot clicked: 04:15 PM
+2025-04-16 15:12:30 [TestNG-PoolService-9] INFO : Message: I would like to schedule a routine heart check-up to monitor my cardiovascular health.
+2025-04-16 15:12:30 [TestNG-PoolService-9] INFO : Clicking form submit button
+2025-04-16 15:12:30 [TestNG-PoolService-4] INFO : Form validation error: Message field is required
+2025-04-16 15:12:30 [TestNG-PoolService-4] INFO : Form validation error: Message field is required
+2025-04-16 15:12:31 [TestNG-PoolService-6] INFO : Switching language to English
+2025-04-16 15:12:31 [TestNG-PoolService-8] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:12:31 [TestNG-PoolService-7] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:12:33 [TestNG-PoolService-1] INFO : Clicking user login button
+2025-04-16 15:12:34 [TestNG-PoolService-1] INFO : Clicking sign in button
+2025-04-16 15:12:36 [TestNG-PoolService-10] INFO : Clicking user login button
+2025-04-16 15:12:37 [TestNG-PoolService-1] INFO : Clicking profile
+2025-04-16 15:12:38 [TestNG-PoolService-7] INFO : Switching language to English
+2025-04-16 15:12:38 [TestNG-PoolService-8] INFO : Switching language to English
+2025-04-16 15:12:38 [TestNG-PoolService-3] INFO : Clicking user login button
+2025-04-16 15:12:39 [TestNG-PoolService-2] INFO : Clicking form submit button
+2025-04-16 15:12:39 [TestNG-PoolService-10] INFO : Clicking sign in button
+2025-04-16 15:12:39 [TestNG-PoolService-9] INFO : Clicking user login button
+2025-04-16 15:12:40 [TestNG-PoolService-2] INFO : Form validation error: Date field is required
+2025-04-16 15:12:41 [TestNG-PoolService-2] INFO : Form validation error: Date field is required
+2025-04-16 15:12:41 [TestNG-PoolService-5] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:12:42 [TestNG-PoolService-9] INFO : Clicking sign in button
+2025-04-16 15:12:44 [TestNG-PoolService-3] INFO : Clicking sign in button
+2025-04-16 15:12:45 [TestNG-PoolService-5] INFO : Switching language to English
+2025-04-16 15:12:46 [TestNG-PoolService-9] INFO : Clicking profile
+2025-04-16 15:12:48 [TestNG-PoolService-4] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:12:51 [TestNG-PoolService-5] INFO : Navigated to OPD section
+2025-04-16 15:12:53 [TestNG-PoolService-5] INFO : Clicked Add Prescription
+2025-04-16 15:12:54 [TestNG-PoolService-6] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:12:55 [TestNG-PoolService-4] INFO : Switching language to English
+2025-04-16 15:12:55 [TestNG-PoolService-1] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:12:56 [TestNG-PoolService-2] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:12:56 [TestNG-PoolService-5] INFO : Finding category selected=Select
+2025-04-16 15:12:57 [TestNG-PoolService-7] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:12:58 [TestNG-PoolService-3] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:12:58 [TestNG-PoolService-5] INFO : Medicine category selected=Select
+2025-04-16 15:13:00 [TestNG-PoolService-5] INFO : Medicine selected=Select
+2025-04-16 15:13:01 [TestNG-PoolService-2] INFO : Switching language to English
+2025-04-16 15:13:02 [TestNG-PoolService-5] INFO : Dose interval selected=Select
+2025-04-16 15:13:02 [TestNG-PoolService-7] INFO : Switching language to English
+2025-04-16 15:13:02 [TestNG-PoolService-6] INFO : Switching language to English
+2025-04-16 15:13:02 [TestNG-PoolService-4] INFO : Navigated to OPD section
+2025-04-16 15:13:02 [TestNG-PoolService-3] INFO : Switching language to English
+2025-04-16 15:13:03 [TestNG-PoolService-5] INFO : Dose duration selected=Select
+2025-04-16 15:13:03 [TestNG-PoolService-1] INFO : Switching language to English
+2025-04-16 15:13:04 [TestNG-PoolService-5] INFO : Clicked Save
+2025-04-16 15:13:04 [TestNG-PoolService-10] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:13:04 [TestNG-PoolService-4] INFO : Clicked Add Prescription
+2025-04-16 15:13:06 [TestNG-PoolService-4] INFO : Finding category selected=Syrup
+2025-04-16 15:13:07 [TestNG-PoolService-2] INFO : Navigated to OPD section
+2025-04-16 15:13:07 [TestNG-PoolService-4] INFO : Medicine category selected=Al
+2025-04-16 15:13:08 [TestNG-PoolService-7] INFO : Navigated to OPD section
+2025-04-16 15:13:09 [TestNG-PoolService-6] INFO : Navigated to OPD section
+2025-04-16 15:13:09 [TestNG-PoolService-3] INFO : Navigated to OPD section
+2025-04-16 15:13:09 [TestNG-PoolService-10] INFO : Switching language to English
+2025-04-16 15:13:09 [TestNG-PoolService-4] INFO : Medicine selected=1
+2025-04-16 15:13:10 [TestNG-PoolService-7] INFO : Clicked Add Prescription
+2025-04-16 15:13:10 [TestNG-PoolService-1] INFO : Navigated to OPD section
+2025-04-16 15:13:11 [TestNG-PoolService-4] INFO : Dose interval selected=Select
+2025-04-16 15:13:11 [TestNG-PoolService-6] INFO : Clicked Add Prescription
+2025-04-16 15:13:11 [TestNG-PoolService-2] INFO : Clicked Delete
+2025-04-16 15:13:12 [TestNG-PoolService-4] INFO : Dose duration selected=Morning
+2025-04-16 15:13:12 [TestNG-PoolService-1] INFO : Clicked Add Prescription
+2025-04-16 15:13:12 [TestNG-PoolService-4] INFO : Clicked Save
+2025-04-16 15:13:12 [TestNG-PoolService-7] INFO : Finding category selected=Syrup
+2025-04-16 15:13:13 [TestNG-PoolService-7] INFO : Medicine category selected=Select
+2025-04-16 15:13:13 [TestNG-PoolService-6] INFO : Finding category selected=Syrup
+2025-04-16 15:13:13 [TestNG-PoolService-7] INFO : Medicine selected=1 (CT)
+2025-04-16 15:13:13 [TestNG-PoolService-6] INFO : Medicine category selected=Alprovit
+2025-04-16 15:13:13 [TestNG-PoolService-10] INFO : Entering search text: Dharani
+2025-04-16 15:13:13 [TestNG-PoolService-1] INFO : Finding category selected=Syrup
+2025-04-16 15:13:14 [TestNG-PoolService-10] INFO : Searched the patient name
+2025-04-16 15:13:14 [TestNG-PoolService-10] INFO : Clicking search button
+2025-04-16 15:13:14 [TestNG-PoolService-7] INFO : Dose interval selected=Only one a day
+2025-04-16 15:13:14 [TestNG-PoolService-10] INFO : Clicked Search icon
+2025-04-16 15:13:14 [TestNG-PoolService-6] INFO : Medicine selected=1  (CT)
+2025-04-16 15:13:14 [TestNG-PoolService-1] INFO : Medicine category selected=Alprovit
+2025-04-16 15:13:14 [TestNG-PoolService-7] INFO : Dose duration selected=Morning
+2025-04-16 15:13:14 [TestNG-PoolService-10] INFO : Expected: Dharani, Actual: Dharani (1147)
+2025-04-16 15:13:15 [TestNG-PoolService-7] INFO : Clicked Save
+2025-04-16 15:13:15 [TestNG-PoolService-6] INFO : Dose interval selected=Only one a day
+2025-04-16 15:13:15 [TestNG-PoolService-1] INFO : Medicine selected=Select
+2025-04-16 15:13:16 [TestNG-PoolService-6] INFO : Dose duration selected=Morning
+2025-04-16 15:13:16 [TestNG-PoolService-1] INFO : Dose interval selected=Only one a day
+2025-04-16 15:13:16 [TestNG-PoolService-6] INFO : Clicked Save
+2025-04-16 15:13:16 [TestNG-PoolService-3] INFO : Clicked View
+2025-04-16 15:13:17 [TestNG-PoolService-1] INFO : Dose duration selected=Morning
+2025-04-16 15:13:17 [TestNG-PoolService-2] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:13:17 [TestNG-PoolService-1] INFO : Clicked Save
+2025-04-16 15:13:17 [TestNG-PoolService-8] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:13:20 [TestNG-PoolService-2] INFO : Switching language to English
+2025-04-16 15:13:21 [TestNG-PoolService-8] INFO : Switching language to English
+2025-04-16 15:13:24 [TestNG-PoolService-2] INFO : Entering search text: Dharani
+2025-04-16 15:13:24 [TestNG-PoolService-2] INFO : Searched the patient name
+2025-04-16 15:13:24 [TestNG-PoolService-2] INFO : Clicking search button
+2025-04-16 15:13:24 [TestNG-PoolService-2] INFO : Clicked Search icon
+2025-04-16 15:13:25 [TestNG-PoolService-8] INFO : Entering search text: TestXYZ123
+2025-04-16 15:13:25 [TestNG-PoolService-8] INFO : Searched the patient name
+2025-04-16 15:13:25 [TestNG-PoolService-8] INFO : Clicking search button
+2025-04-16 15:13:25 [TestNG-PoolService-8] INFO : Clicked Search icon
+2025-04-16 15:13:26 [TestNG-PoolService-8] INFO : Expected: No data available in table, Actual: No data available in table
+
+
+
+Add new record or search with different criteria.
+2025-04-16 15:42:03 [TestNG-PoolService-3] INFO : Initialized AccountantPage
+2025-04-16 15:42:03 [TestNG-PoolService-2] INFO : Initialized AccountantPage
+2025-04-16 15:42:03 [TestNG-PoolService-3] INFO : Selecting role: Accountant
+2025-04-16 15:42:03 [TestNG-PoolService-2] INFO : Selecting role: Accountant
+2025-04-16 15:42:03 [TestNG-PoolService-1] INFO : Initialized AccountantPage
+2025-04-16 15:42:03 [TestNG-PoolService-1] INFO : Selecting role: Accountant
+2025-04-16 15:42:04 [TestNG-PoolService-2] INFO : Clicking Sign In button
+2025-04-16 15:42:04 [TestNG-PoolService-3] INFO : Clicking Sign In button
+2025-04-16 15:42:04 [TestNG-PoolService-1] INFO : Clicking Sign In button
+2025-04-16 15:42:06 [TestNG-PoolService-2] INFO : Verifying if summary table is displayed
+2025-04-16 15:42:06 [TestNG-PoolService-1] INFO : Verifying if summary table is displayed
+2025-04-16 15:42:07 [TestNG-PoolService-8] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:42:07 [TestNG-PoolService-9] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:42:07 [TestNG-PoolService-10] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:42:07 [TestNG-PoolService-7] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:42:20 [TestNG-PoolService-1] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 15:42:24 [TestNG-PoolService-3] INFO : Verifying if summary table is displayed
+2025-04-16 15:42:24 [TestNG-PoolService-8] INFO : Switching language to English
+2025-04-16 15:42:24 [TestNG-PoolService-2] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 15:42:24 [TestNG-PoolService-2] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$14,650.00
+Expenses
+$234,560.00
+2025-04-16 15:42:24 [TestNG-PoolService-1] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$14,650.00
+Expenses
+$234,560.00
+2025-04-16 15:42:27 [TestNG-PoolService-3] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 15:42:27 [TestNG-PoolService-3] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$14,650.00
+Expenses
+$234,560.00
+2025-04-16 15:42:27 [TestNG-PoolService-7] INFO : Switching language to English
+2025-04-16 15:42:28 [TestNG-PoolService-9] INFO : Switching language to English
+2025-04-16 15:42:30 [TestNG-PoolService-10] INFO : Switching language to English
+2025-04-16 15:42:31 [TestNG-PoolService-8] INFO : Navigated to Appointment section
+2025-04-16 15:42:32 [TestNG-PoolService-8] INFO : Clicked on Add Appointment
+2025-04-16 15:42:32 [TestNG-PoolService-8] INFO : Clicked on Add Patient
+2025-04-16 15:42:33 [TestNG-PoolService-8] INFO : Filling patient details from Excel row: 0
+2025-04-16 15:42:35 [TestNG-PoolService-2] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 15:42:35 [TestNG-PoolService-3] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 15:42:35 [TestNG-PoolService-3] INFO : Navigating to Expenses
+2025-04-16 15:42:35 [TestNG-PoolService-2] INFO : Navigating to Expenses
+2025-04-16 15:42:35 [TestNG-PoolService-1] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 15:42:35 [TestNG-PoolService-1] INFO : Navigating to Expenses
+2025-04-16 15:42:36 [TestNG-PoolService-8] INFO : Uploaded photo and selected blood group
+2025-04-16 15:42:36 [TestNG-PoolService-7] INFO : Navigated to Appointment section
+2025-04-16 15:42:37 [TestNG-PoolService-8] INFO : Clicked Save Patient button
+2025-04-16 15:42:37 [TestNG-PoolService-5] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:42:38 [TestNG-PoolService-7] INFO : Clicked on Add Appointment
+2025-04-16 15:42:40 [TestNG-PoolService-7] INFO : Clicked on Add Patient
+2025-04-16 15:42:40 [TestNG-PoolService-7] INFO : Filling patient details from Excel row: 0
+2025-04-16 15:42:41 [TestNG-PoolService-8] INFO : Filling appointment details from Excel
+2025-04-16 15:42:41 [TestNG-PoolService-9] INFO : Navigated to Appointment section
+2025-04-16 15:42:42 [TestNG-PoolService-9] INFO : Clicked on Add Appointment
+2025-04-16 15:42:42 [TestNG-PoolService-5] INFO : Switching language to English
+2025-04-16 15:42:43 [TestNG-PoolService-9] INFO : Clicked on Add Patient
+2025-04-16 15:42:43 [TestNG-PoolService-9] INFO : Filling patient details from Excel row: 2
+2025-04-16 15:42:45 [TestNG-PoolService-7] INFO : Uploaded photo and selected blood group
+2025-04-16 15:42:46 [TestNG-PoolService-10] INFO : Navigated to Appointment section
+2025-04-16 15:42:46 [TestNG-PoolService-7] INFO : Clicked Save Patient button
+2025-04-16 15:42:46 [TestNG-PoolService-9] INFO : Clicked Save Patient button
+2025-04-16 15:42:47 [TestNG-PoolService-1] INFO : Clicking Add Expense button
+2025-04-16 15:42:49 [TestNG-PoolService-7] INFO : Filling appointment details from Excel
+2025-04-16 15:42:50 [TestNG-PoolService-10] INFO : Clicked on Add Appointment
+2025-04-16 15:42:51 [TestNG-PoolService-9] INFO : Checking name required validation. Expected: Name field is required, Actual: Name field is required
+2025-04-16 15:42:51 [TestNG-PoolService-1] INFO : Adding new expense - Header: Telephone Bill, Name: Office Telephone Charges, Amount: 100.00
+2025-04-16 15:42:51 [TestNG-PoolService-2] INFO : Clicking Add Expense button
+2025-04-16 15:42:53 [TestNG-PoolService-10] INFO : Clicked on Add Patient
+2025-04-16 15:42:53 [TestNG-PoolService-10] INFO : Filling patient details from Excel row: 3
+2025-04-16 15:42:53 [TestNG-PoolService-2] INFO : Adding new expense - Header: Telephone Bill, Name: Office Telephone Charges, Amount: -100.00
+2025-04-16 15:42:55 [TestNG-PoolService-1] INFO : Clicking Save button for expense
+2025-04-16 15:42:55 [TestNG-PoolService-5] INFO : Navigated to Appointment section
+2025-04-16 15:42:55 [TestNG-PoolService-10] INFO : Clicked Save Patient button
+2025-04-16 15:42:55 [TestNG-PoolService-1] INFO : Verifying success notification after saving expense
+2025-04-16 15:42:55 [TestNG-PoolService-3] INFO : Clicking Add Expense button
+2025-04-16 15:42:56 [TestNG-PoolService-5] INFO : Clicked on Add Appointment
+2025-04-16 15:42:57 [TestNG-PoolService-1] INFO : Success notification displayed
+2025-04-16 15:42:57 [TestNG-PoolService-2] INFO : Clicking Save button for expense
+2025-04-16 15:42:57 [TestNG-PoolService-1] INFO : Verifying if summary table is displayed
+2025-04-16 15:42:57 [TestNG-PoolService-5] INFO : Clicked on Add Patient
+2025-04-16 15:42:57 [TestNG-PoolService-5] INFO : Filling patient details from Excel row: 4
+2025-04-16 15:42:57 [TestNG-PoolService-2] INFO : Verifying error notification after saving invalid expense
+2025-04-16 15:42:57 [TestNG-PoolService-3] INFO : Adding new expense - Header: Telephone Bill, Name: hi, Amount: -52
+2025-04-16 15:42:57 [TestNG-PoolService-2] INFO : Error notification displayed
+2025-04-16 15:42:59 [TestNG-PoolService-10] INFO : Checking name required validation. Expected: Year field is required, Actual: Year field is required
+2025-04-16 15:42:59 [TestNG-PoolService-1] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 15:42:59 [TestNG-PoolService-1] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,660.00
+2025-04-16 15:42:59 [TestNG-PoolService-3] INFO : Clicking Save button for expense
+2025-04-16 15:43:00 [TestNG-PoolService-5] INFO : Clicked Save Patient button
+2025-04-16 15:43:00 [TestNG-PoolService-3] INFO : Verifying error notification after saving invalid expense
+2025-04-16 15:43:00 [TestNG-PoolService-3] INFO : Error notification displayed
+2025-04-16 15:43:00 [TestNG-PoolService-7] INFO : Appointment details filled with discount
+2025-04-16 15:43:00 [TestNG-PoolService-7] INFO : Clicked Save Appointment button
+2025-04-16 15:43:03 [TestNG-PoolService-5] INFO : Checking name required validation. Expected: Month field is required, Actual: Month field is required
+2025-04-16 15:43:03 [TestNG-PoolService-1] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 15:43:07 [TestNG-PoolService-4] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:43:07 [TestNG-PoolService-6] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:43:07 [TestNG-PoolService-6] INFO : Selecting role: Admin
+2025-04-16 15:43:08 [TestNG-PoolService-6] INFO : Clicking Sign In button
+2025-04-16 15:43:08 [TestNG-PoolService-6] INFO : Checking dashboard for role: Admin
+2025-04-16 15:43:11 [TestNG-PoolService-4] INFO : Switching language to English
+2025-04-16 15:43:15 [TestNG-PoolService-5] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:43:15 [TestNG-PoolService-5] INFO : Selecting role: Receptionist
+2025-04-16 15:43:19 [TestNG-PoolService-8] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:43:19 [TestNG-PoolService-8] INFO : Selecting role: Accountant
+2025-04-16 15:43:20 [TestNG-PoolService-1] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:43:21 [TestNG-PoolService-1] INFO : Selecting role: Receptionist
+2025-04-16 15:43:23 [TestNG-PoolService-5] INFO : Clicking Sign In button
+2025-04-16 15:43:24 [TestNG-PoolService-10] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:43:24 [TestNG-PoolService-10] INFO : Selecting role: Doctor
+2025-04-16 15:43:28 [TestNG-PoolService-4] INFO : Navigated to Appointment section
+2025-04-16 15:43:28 [TestNG-PoolService-8] INFO : Clicking Sign In button
+2025-04-16 15:43:29 [TestNG-PoolService-1] INFO : Entering username
+2025-04-16 15:43:30 [TestNG-PoolService-7] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:43:30 [TestNG-PoolService-3] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:43:30 [TestNG-PoolService-3] INFO : Selecting role: Nurse
+2025-04-16 15:43:30 [TestNG-PoolService-7] INFO : Selecting role: Nurse
+2025-04-16 15:43:31 [TestNG-PoolService-10] INFO : Clicking Sign In button
+2025-04-16 15:43:32 [TestNG-PoolService-9] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:43:32 [TestNG-PoolService-9] INFO : Selecting role: Super Admin
+2025-04-16 15:43:32 [TestNG-PoolService-2] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:43:32 [TestNG-PoolService-2] INFO : Selecting role: Admin
+2025-04-16 15:43:34 [TestNG-PoolService-1] INFO : Clicking Sign In button
+2025-04-16 15:43:34 [TestNG-PoolService-7] INFO : Entering username
+2025-04-16 15:43:34 [TestNG-PoolService-4] INFO : Clicked on Add Appointment
+2025-04-16 15:43:35 [TestNG-PoolService-3] INFO : Clicking Sign In button
+2025-04-16 15:43:36 [TestNG-PoolService-7] INFO : Clicking Sign In button
+2025-04-16 15:43:36 [TestNG-PoolService-9] INFO : Clicking Sign In button
+2025-04-16 15:43:36 [TestNG-PoolService-4] INFO : Clicked on Add Patient
+2025-04-16 15:43:39 [TestNG-PoolService-8] INFO : Checking dashboard for role: Accountant
+2025-04-16 15:43:40 [TestNG-PoolService-4] INFO : Filling patient details from Excel row: 5
+2025-04-16 15:43:40 [TestNG-PoolService-2] INFO : Entering username
+2025-04-16 15:43:40 [TestNG-PoolService-5] INFO : Checking dashboard for role: Receptionist
+2025-04-16 15:43:42 [TestNG-PoolService-10] INFO : Checking dashboard for role: Doctor
+2025-04-16 15:43:43 [TestNG-PoolService-2] INFO : Clicking Sign In button
+2025-04-16 15:43:44 [TestNG-PoolService-3] INFO : Checking dashboard for role: Nurse
+2025-04-16 15:43:45 [TestNG-PoolService-9] INFO : Checking dashboard for role: Super Admin
+2025-04-16 15:43:47 [TestNG-PoolService-4] INFO : Clicked Save Patient button
+2025-04-16 15:43:49 [TestNG-PoolService-6] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:43:49 [TestNG-PoolService-6] INFO : Selecting role: Super Admin
+2025-04-16 15:43:49 [TestNG-PoolService-6] INFO : Entering password
+2025-04-16 15:43:49 [TestNG-PoolService-6] INFO : Clicking Sign In button
+2025-04-16 15:43:50 [TestNG-PoolService-4] INFO : Checking name required validation. Expected: Day field is required, Actual: Day field is required
+2025-04-16 15:43:55 [TestNG-PoolService-10] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:43:55 [TestNG-PoolService-10] INFO : Selecting role: Pharmacist
+2025-04-16 15:43:57 [TestNG-PoolService-2] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:43:57 [TestNG-PoolService-2] INFO : Selecting role: Pathologist
+2025-04-16 15:43:58 [TestNG-PoolService-7] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:43:58 [TestNG-PoolService-7] INFO : Selecting role: Radiologist
+2025-04-16 15:43:58 [TestNG-PoolService-10] INFO : Entering password
+2025-04-16 15:44:00 [TestNG-PoolService-7] INFO : Entering username
+2025-04-16 15:44:00 [TestNG-PoolService-2] INFO : Entering username
+2025-04-16 15:44:02 [TestNG-PoolService-10] INFO : Clicking Sign In button
+2025-04-16 15:44:03 [TestNG-PoolService-1] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:44:03 [TestNG-PoolService-1] INFO : Selecting role: Accountant
+2025-04-16 15:44:04 [TestNG-PoolService-2] INFO : Entering password
+2025-04-16 15:44:05 [TestNG-PoolService-7] INFO : Entering password
+2025-04-16 15:44:07 [TestNG-PoolService-5] INFO : Clicking user login button
+2025-04-16 15:44:07 [TestNG-PoolService-8] INFO : Clicking user login button
+2025-04-16 15:44:07 [TestNG-PoolService-3] INFO : Clicking user login button
+2025-04-16 15:44:07 [TestNG-PoolService-7] INFO : Clicking Sign In button
+2025-04-16 15:44:07 [TestNG-PoolService-1] INFO : Entering username
+2025-04-16 15:44:08 [TestNG-PoolService-2] INFO : Clicking Sign In button
+2025-04-16 15:44:09 [TestNG-PoolService-8] INFO : Clicking sign in button
+2025-04-16 15:44:11 [TestNG-PoolService-5] INFO : Clicking sign in button
+2025-04-16 15:44:11 [TestNG-PoolService-1] INFO : Entering password
+2025-04-16 15:44:14 [TestNG-PoolService-3] INFO : Clicking sign in button
+2025-04-16 15:44:14 [TestNG-PoolService-9] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:44:14 [TestNG-PoolService-9] INFO : Selecting role: Doctor
+2025-04-16 15:44:17 [TestNG-PoolService-1] INFO : Clicking Sign In button
+2025-04-16 15:44:17 [TestNG-PoolService-9] INFO : Entering password
+2025-04-16 15:44:18 [TestNG-PoolService-3] INFO : Clicking 'My Appointment'
+2025-04-16 15:44:19 [TestNG-PoolService-8] INFO : Clicking 'My Appointment'
+2025-04-16 15:44:19 [TestNG-PoolService-9] INFO : Clicking Sign In button
+2025-04-16 15:44:20 [TestNG-PoolService-5] INFO : Clicking 'My Appointment'
+2025-04-16 15:44:21 [TestNG-PoolService-8] INFO : Clicking 'Add Appointment'
+2025-04-16 15:44:22 [TestNG-PoolService-8] INFO : Reading appointment details from Excel
+2025-04-16 15:44:22 [TestNG-PoolService-3] INFO : Clicking 'Add Appointment'
+2025-04-16 15:44:23 [TestNG-PoolService-5] INFO : Clicking 'Add Appointment'
+2025-04-16 15:44:24 [TestNG-PoolService-3] WARN : Date field is empty or null
+2025-04-16 15:44:24 [TestNG-PoolService-8] INFO : Date: 06/22/2025
+2025-04-16 15:44:25 [TestNG-PoolService-5] INFO : Date set to: 07/22/2025
+2025-04-16 15:44:25 [TestNG-PoolService-3] INFO : Specialist selected: Cardiologists
+2025-04-16 15:44:25 [TestNG-PoolService-8] INFO : Specialist found and selected: Cardiologists
+2025-04-16 15:44:25 [TestNG-PoolService-5] INFO : Specialist selected: Cardiologists
+2025-04-16 15:44:25 [TestNG-PoolService-3] INFO : Doctor selected: Sansa Gomez (9008)
+2025-04-16 15:44:25 [TestNG-PoolService-8] INFO : Doctor selected: Sansa Gomez (9008)
+2025-04-16 15:44:26 [TestNG-PoolService-5] INFO : Doctor selected: Sansa Gomez (9008)
+2025-04-16 15:44:26 [TestNG-PoolService-8] INFO : Timing shift selected: Evening
+2025-04-16 15:44:26 [TestNG-PoolService-3] INFO : Shift selected: Evening
+2025-04-16 15:44:26 [TestNG-PoolService-5] INFO : Shift selected: Evening
+2025-04-16 15:44:27 [TestNG-PoolService-8] INFO : Slot selected: 04:00 PM - 07:00 PM
+2025-04-16 15:44:27 [TestNG-PoolService-3] INFO : Slot selected: 04:00 PM - 07:00 PM
+2025-04-16 15:44:27 [TestNG-PoolService-5] INFO : Slot selected: 04:00 PM - 07:00 PM
+2025-04-16 15:44:27 [TestNG-PoolService-8] INFO : Available slot clicked: 04:15 PM
+2025-04-16 15:44:28 [TestNG-PoolService-5] INFO : Available time clicked: 04:15 PM
+2025-04-16 15:44:28 [TestNG-PoolService-5] WARN : Message field is empty or null
+2025-04-16 15:44:28 [TestNG-PoolService-8] INFO : Message: I would like to schedule a routine heart check-up to monitor my cardiovascular health.
+2025-04-16 15:44:28 [TestNG-PoolService-8] INFO : Clicking form submit button
+2025-04-16 15:44:28 [TestNG-PoolService-5] INFO : Clicking form submit button
+2025-04-16 15:44:28 [TestNG-PoolService-6] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:44:29 [TestNG-PoolService-4] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:44:29 [TestNG-PoolService-5] INFO : Form validation error: Message field is required
+2025-04-16 15:44:29 [TestNG-PoolService-5] INFO : Form validation error: Message field is required
+2025-04-16 15:44:35 [TestNG-PoolService-6] INFO : Switching language to English
+2025-04-16 15:44:35 [TestNG-PoolService-4] INFO : Switching language to English
+2025-04-16 15:44:37 [TestNG-PoolService-3] INFO : Clicking form submit button
+2025-04-16 15:44:43 [TestNG-PoolService-3] INFO : Form validation error: Date field is required
+2025-04-16 15:44:43 [TestNG-PoolService-2] INFO : Clicking user login button
+2025-04-16 15:44:43 [TestNG-PoolService-9] INFO : Clicking user login button
+2025-04-16 15:44:44 [TestNG-PoolService-3] INFO : Form validation error: Date field is required
+2025-04-16 15:44:44 [TestNG-PoolService-7] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:44:50 [TestNG-PoolService-9] INFO : Clicking sign in button
+2025-04-16 15:44:53 [TestNG-PoolService-10] INFO : Clicking user login button
+2025-04-16 15:44:54 [TestNG-PoolService-5] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:44:55 [TestNG-PoolService-1] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:45:00 [TestNG-PoolService-2] INFO : Clicking sign in button
+2025-04-16 15:45:02 [TestNG-PoolService-8] INFO : Clicking user login button
+2025-04-16 15:45:08 [TestNG-PoolService-10] INFO : Clicking sign in button
+2025-04-16 15:45:11 [TestNG-PoolService-9] INFO : Clicking profile
+2025-04-16 15:45:14 [TestNG-PoolService-7] INFO : Switching language to English
+2025-04-16 15:45:14 [TestNG-PoolService-10] INFO : Clicking profile
+2025-04-16 15:45:16 [TestNG-PoolService-5] INFO : Switching language to English
+2025-04-16 15:45:19 [TestNG-PoolService-8] INFO : Clicking sign in button
+2025-04-16 15:45:20 [TestNG-PoolService-1] INFO : Switching language to English
+2025-04-16 15:45:27 [TestNG-PoolService-3] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:45:27 [TestNG-PoolService-1] INFO : Navigated to OPD section
+2025-04-16 15:45:28 [TestNG-PoolService-1] INFO : Clicked Add Prescription
+2025-04-16 15:45:31 [TestNG-PoolService-1] INFO : Finding category selected=Select
+2025-04-16 15:45:31 [TestNG-PoolService-3] INFO : Switching language to English
+2025-04-16 15:45:33 [TestNG-PoolService-1] INFO : Medicine category selected=Select
+2025-04-16 15:45:33 [TestNG-PoolService-9] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:45:34 [TestNG-PoolService-2] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:45:35 [TestNG-PoolService-8] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:45:36 [TestNG-PoolService-1] INFO : Medicine selected=Select
+2025-04-16 15:45:37 [TestNG-PoolService-1] INFO : Dose interval selected=Select
+2025-04-16 15:45:39 [TestNG-PoolService-9] INFO : Switching language to English
+2025-04-16 15:45:39 [TestNG-PoolService-1] INFO : Dose duration selected=Select
+2025-04-16 15:45:40 [TestNG-PoolService-3] INFO : Navigated to OPD section
+2025-04-16 15:45:40 [TestNG-PoolService-1] INFO : Clicked Save
+2025-04-16 15:45:41 [TestNG-PoolService-3] INFO : Clicked Add Prescription
+2025-04-16 15:45:43 [TestNG-PoolService-3] INFO : Finding category selected=Syrup
+2025-04-16 15:45:44 [TestNG-PoolService-2] INFO : Switching language to English
+2025-04-16 15:45:44 [TestNG-PoolService-3] INFO : Medicine category selected=Al
+2025-04-16 15:45:44 [TestNG-PoolService-8] INFO : Switching language to English
+2025-04-16 15:45:45 [TestNG-PoolService-9] INFO : Navigated to OPD section
+2025-04-16 15:45:46 [TestNG-PoolService-3] INFO : Medicine selected=1
+2025-04-16 15:45:48 [TestNG-PoolService-4] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:45:49 [TestNG-PoolService-9] INFO : Clicked Add Prescription
+2025-04-16 15:45:49 [TestNG-PoolService-3] INFO : Dose interval selected=Select
+2025-04-16 15:45:52 [TestNG-PoolService-6] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:45:52 [TestNG-PoolService-5] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:45:59 [TestNG-PoolService-7] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:45:59 [TestNG-PoolService-3] INFO : Dose duration selected=Morning
+2025-04-16 15:46:03 [TestNG-PoolService-3] INFO : Clicked Save
+2025-04-16 15:46:03 [TestNG-PoolService-5] INFO : Switching language to English
+2025-04-16 15:46:06 [TestNG-PoolService-2] INFO : Navigated to OPD section
+2025-04-16 15:46:08 [TestNG-PoolService-9] INFO : Finding category selected=Syrup
+2025-04-16 15:46:08 [TestNG-PoolService-6] INFO : Switching language to English
+2025-04-16 15:46:09 [TestNG-PoolService-4] INFO : Switching language to English
+2025-04-16 15:46:09 [TestNG-PoolService-8] INFO : Navigated to OPD section
+2025-04-16 15:46:09 [TestNG-PoolService-2] INFO : Clicked Add Prescription
+2025-04-16 15:46:10 [TestNG-PoolService-9] INFO : Medicine category selected=Alprovit
+2025-04-16 15:46:11 [TestNG-PoolService-8] INFO : Clicked Add Prescription
+2025-04-16 15:46:11 [TestNG-PoolService-9] INFO : Medicine selected=1  (CT)
+2025-04-16 15:46:12 [TestNG-PoolService-2] INFO : Finding category selected=Syrup
+2025-04-16 15:46:13 [TestNG-PoolService-9] INFO : Dose interval selected=Only one a day
+2025-04-16 15:46:13 [TestNG-PoolService-2] INFO : Medicine category selected=Select
+2025-04-16 15:46:13 [TestNG-PoolService-8] INFO : Finding category selected=Syrup
+2025-04-16 15:46:13 [TestNG-PoolService-5] INFO : Entering search text: TestXYZ123
+2025-04-16 15:46:13 [TestNG-PoolService-9] INFO : Dose duration selected=Morning
+2025-04-16 15:46:13 [TestNG-PoolService-5] INFO : Searched the patient name
+2025-04-16 15:46:13 [TestNG-PoolService-5] INFO : Clicking search button
+2025-04-16 15:46:14 [TestNG-PoolService-2] INFO : Medicine selected=1 (CT)
+2025-04-16 15:46:14 [TestNG-PoolService-7] INFO : Switching language to English
+2025-04-16 15:46:14 [TestNG-PoolService-8] INFO : Medicine category selected=Alprovit
+2025-04-16 15:46:14 [TestNG-PoolService-9] INFO : Clicked Save
+2025-04-16 15:46:15 [TestNG-PoolService-2] INFO : Dose interval selected=Only one a day
+2025-04-16 15:46:16 [TestNG-PoolService-5] INFO : Clicked Search icon
+2025-04-16 15:46:16 [TestNG-PoolService-8] INFO : Medicine selected=Select
+2025-04-16 15:46:16 [TestNG-PoolService-5] INFO : Expected: No data available in table, Actual: No data available in table
+
+
+
+Add new record or search with different criteria.
+2025-04-16 15:46:17 [TestNG-PoolService-4] INFO : Navigated to OPD section
+2025-04-16 15:46:17 [TestNG-PoolService-2] INFO : Dose duration selected=Morning
+2025-04-16 15:46:18 [TestNG-PoolService-6] INFO : Navigated to OPD section
+2025-04-16 15:46:18 [TestNG-PoolService-8] INFO : Dose interval selected=Only one a day
+2025-04-16 15:46:18 [TestNG-PoolService-2] INFO : Clicked Save
+2025-04-16 15:46:18 [TestNG-PoolService-7] INFO : Entering search text: Dharani
+2025-04-16 15:46:19 [TestNG-PoolService-7] INFO : Searched the patient name
+2025-04-16 15:46:19 [TestNG-PoolService-7] INFO : Clicking search button
+2025-04-16 15:46:19 [TestNG-PoolService-1] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:46:20 [TestNG-PoolService-7] INFO : Clicked Search icon
+2025-04-16 15:46:20 [TestNG-PoolService-8] INFO : Dose duration selected=Morning
+2025-04-16 15:46:21 [TestNG-PoolService-8] INFO : Clicked Save
+2025-04-16 15:46:21 [TestNG-PoolService-4] INFO : Clicked Delete
+2025-04-16 15:46:21 [TestNG-PoolService-7] INFO : Expected: Dharani, Actual: Dharani (1147)
+2025-04-16 15:46:24 [TestNG-PoolService-1] INFO : Switching language to English
+2025-04-16 15:46:26 [TestNG-PoolService-6] INFO : Clicked View
+2025-04-16 15:46:28 [TestNG-PoolService-1] INFO : Entering search text: Dharani
+2025-04-16 15:46:28 [TestNG-PoolService-1] INFO : Searched the patient name
+2025-04-16 15:46:28 [TestNG-PoolService-1] INFO : Clicking search button
+2025-04-16 15:46:28 [TestNG-PoolService-1] INFO : Clicked Search icon
+2025-04-16 15:50:48 [TestNG-PoolService-1] INFO : Verifying if summary table is displayed
+2025-04-16 15:50:54 [TestNG-PoolService-2] INFO : Verifying if summary table is displayed
+2025-04-16 15:50:55 [TestNG-PoolService-1] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 15:50:55 [TestNG-PoolService-1] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,660.00
+2025-04-16 15:50:56 [TestNG-PoolService-8] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:50:56 [TestNG-PoolService-10] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:50:56 [TestNG-PoolService-9] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:50:56 [TestNG-PoolService-7] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:50:56 [TestNG-PoolService-2] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 15:50:57 [TestNG-PoolService-3] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 15:50:57 [TestNG-PoolService-2] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,660.00
+2025-04-16 15:50:57 [TestNG-PoolService-3] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,660.00
+2025-04-16 15:50:57 [TestNG-PoolService-3] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 15:50:57 [TestNG-PoolService-2] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 15:50:57 [TestNG-PoolService-1] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 15:50:57 [TestNG-PoolService-2] INFO : Navigating to Expenses
+2025-04-16 15:50:57 [TestNG-PoolService-3] INFO : Navigating to Expenses
+2025-04-16 15:50:57 [TestNG-PoolService-1] INFO : Navigating to Expenses
+2025-04-16 15:50:59 [TestNG-PoolService-3] INFO : Clicking Add Expense button
+2025-04-16 15:50:59 [TestNG-PoolService-2] INFO : Clicking Add Expense button
+2025-04-16 15:50:59 [TestNG-PoolService-1] INFO : Clicking Add Expense button
+2025-04-16 15:51:00 [TestNG-PoolService-3] INFO : Adding new expense - Header: Telephone Bill, Name: hi, Amount: -52
+2025-04-16 15:51:01 [TestNG-PoolService-1] INFO : Adding new expense - Header: Telephone Bill, Name: Office Telephone Charges, Amount: 100.00
+2025-04-16 15:51:02 [TestNG-PoolService-2] INFO : Adding new expense - Header: Telephone Bill, Name: Office Telephone Charges, Amount: -100.00
+2025-04-16 15:51:02 [TestNG-PoolService-8] INFO : Switching language to English
+2025-04-16 15:51:04 [TestNG-PoolService-1] INFO : Clicking Save button for expense
+2025-04-16 15:51:05 [TestNG-PoolService-3] INFO : Clicking Save button for expense
+2025-04-16 15:51:05 [TestNG-PoolService-1] INFO : Verifying success notification after saving expense
+2025-04-16 15:51:06 [TestNG-PoolService-3] INFO : Verifying error notification after saving invalid expense
+2025-04-16 15:51:06 [TestNG-PoolService-2] INFO : Clicking Save button for expense
+2025-04-16 15:51:06 [TestNG-PoolService-3] INFO : Error notification displayed
+2025-04-16 15:51:07 [TestNG-PoolService-2] INFO : Verifying error notification after saving invalid expense
+2025-04-16 15:51:07 [TestNG-PoolService-1] INFO : Success notification displayed
+2025-04-16 15:51:07 [TestNG-PoolService-1] INFO : Verifying if summary table is displayed
+2025-04-16 15:51:07 [TestNG-PoolService-2] INFO : Error notification displayed
+2025-04-16 15:51:07 [TestNG-PoolService-10] INFO : Switching language to English
+2025-04-16 15:51:08 [TestNG-PoolService-9] INFO : Switching language to English
+2025-04-16 15:51:08 [TestNG-PoolService-7] INFO : Switching language to English
+2025-04-16 15:51:08 [TestNG-PoolService-1] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 15:51:08 [TestNG-PoolService-1] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,760.00
+2025-04-16 15:51:09 [TestNG-PoolService-1] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 15:51:09 [TestNG-PoolService-8] INFO : Navigated to Appointment section
+2025-04-16 15:51:09 [TestNG-PoolService-8] INFO : Clicked on Add Appointment
+2025-04-16 15:51:10 [TestNG-PoolService-8] INFO : Clicked on Add Patient
+2025-04-16 15:51:10 [TestNG-PoolService-8] INFO : Filling patient details from Excel row: 0
+2025-04-16 15:51:11 [TestNG-PoolService-8] INFO : Uploaded photo and selected blood group
+2025-04-16 15:51:11 [TestNG-PoolService-8] INFO : Clicked Save Patient button
+2025-04-16 15:51:12 [TestNG-PoolService-10] INFO : Navigated to Appointment section
+2025-04-16 15:51:12 [TestNG-PoolService-9] INFO : Navigated to Appointment section
+2025-04-16 15:51:13 [TestNG-PoolService-10] INFO : Clicked on Add Appointment
+2025-04-16 15:51:13 [TestNG-PoolService-9] INFO : Clicked on Add Appointment
+2025-04-16 15:51:13 [TestNG-PoolService-7] INFO : Navigated to Appointment section
+2025-04-16 15:51:13 [TestNG-PoolService-10] INFO : Clicked on Add Patient
+2025-04-16 15:51:13 [TestNG-PoolService-10] INFO : Filling patient details from Excel row: 3
+2025-04-16 15:51:13 [TestNG-PoolService-7] INFO : Clicked on Add Appointment
+2025-04-16 15:51:13 [TestNG-PoolService-9] INFO : Clicked on Add Patient
+2025-04-16 15:51:13 [TestNG-PoolService-9] INFO : Filling patient details from Excel row: 2
+2025-04-16 15:51:14 [TestNG-PoolService-7] INFO : Clicked on Add Patient
+2025-04-16 15:51:14 [TestNG-PoolService-7] INFO : Filling patient details from Excel row: 0
+2025-04-16 15:51:15 [TestNG-PoolService-8] INFO : Filling appointment details from Excel
+2025-04-16 15:51:16 [TestNG-PoolService-9] INFO : Clicked Save Patient button
+2025-04-16 15:51:16 [TestNG-PoolService-10] INFO : Clicked Save Patient button
+2025-04-16 15:51:16 [TestNG-PoolService-7] INFO : Uploaded photo and selected blood group
+2025-04-16 15:51:16 [TestNG-PoolService-7] INFO : Clicked Save Patient button
+2025-04-16 15:51:18 [TestNG-PoolService-6] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:51:19 [TestNG-PoolService-3] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:51:19 [TestNG-PoolService-9] INFO : Checking name required validation. Expected: Name field is required, Actual: Name field is required
+2025-04-16 15:51:19 [TestNG-PoolService-7] INFO : Filling appointment details from Excel
+2025-04-16 15:51:21 [TestNG-PoolService-10] INFO : Checking name required validation. Expected: Year field is required, Actual: Year field is required
+2025-04-16 15:51:22 [TestNG-PoolService-4] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:51:22 [TestNG-PoolService-4] INFO : Selecting role: Admin
+2025-04-16 15:51:25 [TestNG-PoolService-5] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:51:25 [TestNG-PoolService-5] INFO : Selecting role: Receptionist
+2025-04-16 15:51:25 [TestNG-PoolService-4] INFO : Clicking Sign In button
+2025-04-16 15:51:27 [TestNG-PoolService-2] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:51:27 [TestNG-PoolService-2] INFO : Selecting role: Nurse
+2025-04-16 15:51:29 [TestNG-PoolService-1] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:51:30 [TestNG-PoolService-5] INFO : Clicking Sign In button
+2025-04-16 15:51:30 [TestNG-PoolService-2] INFO : Clicking Sign In button
+2025-04-16 15:51:30 [TestNG-PoolService-1] INFO : Selecting role: Super Admin
+2025-04-16 15:51:31 [TestNG-PoolService-5] INFO : Checking dashboard for role: Receptionist
+2025-04-16 15:51:31 [TestNG-PoolService-1] INFO : Clicking Sign In button
+2025-04-16 15:51:31 [TestNG-PoolService-4] INFO : Checking dashboard for role: Admin
+2025-04-16 15:51:32 [TestNG-PoolService-7] INFO : Appointment details filled with discount
+2025-04-16 15:51:33 [TestNG-PoolService-7] INFO : Clicked Save Appointment button
+2025-04-16 15:51:33 [TestNG-PoolService-2] INFO : Checking dashboard for role: Nurse
+2025-04-16 15:51:34 [TestNG-PoolService-3] INFO : Switching language to English
+2025-04-16 15:51:34 [TestNG-PoolService-6] INFO : Switching language to English
+2025-04-16 15:51:35 [TestNG-PoolService-1] INFO : Checking dashboard for role: Super Admin
+2025-04-16 15:51:39 [TestNG-PoolService-3] INFO : Navigated to Appointment section
+2025-04-16 15:51:39 [TestNG-PoolService-6] INFO : Navigated to Appointment section
+2025-04-16 15:51:40 [TestNG-PoolService-3] INFO : Clicked on Add Appointment
+2025-04-16 15:51:41 [TestNG-PoolService-2] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:51:41 [TestNG-PoolService-2] INFO : Selecting role: Nurse
+2025-04-16 15:51:41 [TestNG-PoolService-4] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:51:42 [TestNG-PoolService-4] INFO : Selecting role: Admin
+2025-04-16 15:51:42 [TestNG-PoolService-8] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:51:42 [TestNG-PoolService-8] INFO : Selecting role: Receptionist
+2025-04-16 15:51:42 [TestNG-PoolService-6] INFO : Clicked on Add Appointment
+2025-04-16 15:51:42 [TestNG-PoolService-3] INFO : Clicked on Add Patient
+2025-04-16 15:51:42 [TestNG-PoolService-3] INFO : Filling patient details from Excel row: 4
+2025-04-16 15:51:44 [TestNG-PoolService-10] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:51:44 [TestNG-PoolService-10] INFO : Selecting role: Accountant
+2025-04-16 15:51:44 [TestNG-PoolService-6] INFO : Clicked on Add Patient
+2025-04-16 15:51:44 [TestNG-PoolService-6] INFO : Filling patient details from Excel row: 5
+2025-04-16 15:51:45 [TestNG-PoolService-2] INFO : Entering username
+2025-04-16 15:51:46 [TestNG-PoolService-4] INFO : Entering username
+2025-04-16 15:51:46 [TestNG-PoolService-8] INFO : Entering username
+2025-04-16 15:51:47 [TestNG-PoolService-7] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:51:47 [TestNG-PoolService-7] INFO : Selecting role: Super Admin
+2025-04-16 15:51:47 [TestNG-PoolService-9] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:51:47 [TestNG-PoolService-9] INFO : Selecting role: Doctor
+2025-04-16 15:51:47 [TestNG-PoolService-10] INFO : Clicking Sign In button
+2025-04-16 15:51:48 [TestNG-PoolService-2] INFO : Clicking Sign In button
+2025-04-16 15:51:48 [TestNG-PoolService-8] INFO : Clicking Sign In button
+2025-04-16 15:51:48 [TestNG-PoolService-4] INFO : Clicking Sign In button
+2025-04-16 15:51:48 [TestNG-PoolService-7] INFO : Entering password
+2025-04-16 15:51:49 [TestNG-PoolService-3] INFO : Clicked Save Patient button
+2025-04-16 15:51:50 [TestNG-PoolService-9] INFO : Clicking Sign In button
+2025-04-16 15:51:51 [TestNG-PoolService-9] INFO : Checking dashboard for role: Doctor
+2025-04-16 15:51:51 [TestNG-PoolService-6] INFO : Clicked Save Patient button
+2025-04-16 15:51:51 [TestNG-PoolService-7] INFO : Clicking Sign In button
+2025-04-16 15:51:52 [TestNG-PoolService-10] INFO : Checking dashboard for role: Accountant
+2025-04-16 15:51:52 [TestNG-PoolService-3] INFO : Checking name required validation. Expected: Month field is required, Actual: Month field is required
+2025-04-16 15:51:54 [TestNG-PoolService-6] INFO : Checking name required validation. Expected: Day field is required, Actual: Day field is required
+2025-04-16 15:51:56 [TestNG-PoolService-5] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:51:56 [TestNG-PoolService-5] INFO : Selecting role: Doctor
+2025-04-16 15:51:56 [TestNG-PoolService-1] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:51:56 [TestNG-PoolService-1] INFO : Selecting role: Pharmacist
+2025-04-16 15:51:57 [TestNG-PoolService-5] INFO : Entering password
+2025-04-16 15:51:57 [TestNG-PoolService-1] INFO : Entering password
+2025-04-16 15:51:57 [TestNG-PoolService-5] INFO : Clicking Sign In button
+2025-04-16 15:51:57 [TestNG-PoolService-1] INFO : Clicking Sign In button
+2025-04-16 15:52:02 [TestNG-PoolService-2] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:52:02 [TestNG-PoolService-2] INFO : Selecting role: Accountant
+2025-04-16 15:52:03 [TestNG-PoolService-2] INFO : Entering username
+2025-04-16 15:52:04 [TestNG-PoolService-2] INFO : Entering password
+2025-04-16 15:52:04 [TestNG-PoolService-8] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:52:04 [TestNG-PoolService-8] INFO : Selecting role: Radiologist
+2025-04-16 15:52:04 [TestNG-PoolService-9] INFO : Clicking user login button
+2025-04-16 15:52:05 [TestNG-PoolService-4] INFO : Clicking user login button
+2025-04-16 15:52:05 [TestNG-PoolService-2] INFO : Clicking Sign In button
+2025-04-16 15:52:06 [TestNG-PoolService-8] INFO : Entering username
+2025-04-16 15:52:07 [TestNG-PoolService-7] INFO : Clicking user login button
+2025-04-16 15:52:07 [TestNG-PoolService-10] INFO : Initialized LoginPage and WebDriverWait
+2025-04-16 15:52:07 [TestNG-PoolService-10] INFO : Selecting role: Pathologist
+2025-04-16 15:52:08 [TestNG-PoolService-4] INFO : Clicking sign in button
+2025-04-16 15:52:08 [TestNG-PoolService-9] INFO : Clicking sign in button
+2025-04-16 15:52:09 [TestNG-PoolService-8] INFO : Entering password
+2025-04-16 15:52:09 [TestNG-PoolService-10] INFO : Entering username
+2025-04-16 15:52:09 [TestNG-PoolService-7] INFO : Clicking sign in button
+2025-04-16 15:52:09 [TestNG-PoolService-8] INFO : Clicking Sign In button
+2025-04-16 15:52:10 [TestNG-PoolService-10] INFO : Entering password
+2025-04-16 15:52:11 [TestNG-PoolService-7] INFO : Clicking 'My Appointment'
+2025-04-16 15:52:12 [TestNG-PoolService-9] INFO : Clicking 'My Appointment'
+2025-04-16 15:52:12 [TestNG-PoolService-4] INFO : Clicking 'My Appointment'
+2025-04-16 15:52:12 [TestNG-PoolService-10] INFO : Clicking Sign In button
+2025-04-16 15:52:14 [TestNG-PoolService-9] INFO : Clicking 'Add Appointment'
+2025-04-16 15:52:14 [TestNG-PoolService-4] INFO : Clicking 'Add Appointment'
+2025-04-16 15:52:15 [TestNG-PoolService-9] INFO : Reading appointment details from Excel
+2025-04-16 15:52:15 [TestNG-PoolService-7] INFO : Clicking 'Add Appointment'
+2025-04-16 15:52:16 [TestNG-PoolService-7] WARN : Date field is empty or null
+2025-04-16 15:52:16 [TestNG-PoolService-4] INFO : Date set to: 07/22/2025
+2025-04-16 15:52:16 [TestNG-PoolService-7] INFO : Specialist selected: Cardiologists
+2025-04-16 15:52:16 [TestNG-PoolService-4] INFO : Specialist selected: Cardiologists
+2025-04-16 15:52:16 [TestNG-PoolService-9] INFO : Date: 06/22/2025
+2025-04-16 15:52:16 [TestNG-PoolService-7] INFO : Doctor selected: Sansa Gomez (9008)
+2025-04-16 15:52:17 [TestNG-PoolService-7] INFO : Shift selected: Evening
+2025-04-16 15:52:17 [TestNG-PoolService-4] INFO : Doctor selected: Sansa Gomez (9008)
+2025-04-16 15:52:17 [TestNG-PoolService-9] INFO : Specialist found and selected: Cardiologists
+2025-04-16 15:52:17 [TestNG-PoolService-7] INFO : Slot selected: 04:00 PM - 07:00 PM
+2025-04-16 15:52:18 [TestNG-PoolService-4] INFO : Shift selected: Evening
+2025-04-16 15:52:18 [TestNG-PoolService-9] INFO : Doctor selected: Sansa Gomez (9008)
+2025-04-16 15:52:19 [TestNG-PoolService-4] INFO : Slot selected: 04:00 PM - 07:00 PM
+2025-04-16 15:52:19 [TestNG-PoolService-6] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:52:19 [TestNG-PoolService-3] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:52:20 [TestNG-PoolService-4] INFO : Available time clicked: 04:15 PM
+2025-04-16 15:52:20 [TestNG-PoolService-4] WARN : Message field is empty or null
+2025-04-16 15:52:20 [TestNG-PoolService-9] INFO : Timing shift selected: Evening
+2025-04-16 15:52:20 [TestNG-PoolService-4] INFO : Clicking form submit button
+2025-04-16 15:52:20 [TestNG-PoolService-4] INFO : Form validation error: Message field is required
+2025-04-16 15:52:21 [TestNG-PoolService-4] INFO : Form validation error: Message field is required
+2025-04-16 15:52:21 [TestNG-PoolService-9] INFO : Slot selected: 04:00 PM - 07:00 PM
+2025-04-16 15:52:22 [TestNG-PoolService-9] INFO : Available slot clicked: 04:15 PM
+2025-04-16 15:52:23 [TestNG-PoolService-9] INFO : Message: I would like to schedule a routine heart check-up to monitor my cardiovascular health.
+2025-04-16 15:52:23 [TestNG-PoolService-9] INFO : Clicking form submit button
+2025-04-16 15:52:23 [TestNG-PoolService-6] INFO : Switching language to English
+2025-04-16 15:52:23 [TestNG-PoolService-3] INFO : Switching language to English
+2025-04-16 15:52:24 [TestNG-PoolService-5] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:52:24 [TestNG-PoolService-1] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:52:28 [TestNG-PoolService-7] INFO : Clicking form submit button
+2025-04-16 15:52:28 [TestNG-PoolService-5] INFO : Switching language to English
+2025-04-16 15:52:28 [TestNG-PoolService-1] INFO : Switching language to English
+2025-04-16 15:52:28 [TestNG-PoolService-7] INFO : Form validation error: Date field is required
+2025-04-16 15:52:29 [TestNG-PoolService-7] INFO : Form validation error: Date field is required
+2025-04-16 15:52:31 [TestNG-PoolService-2] INFO : Clicking user login button
+2025-04-16 15:52:32 [TestNG-PoolService-2] INFO : Clicking sign in button
+2025-04-16 15:52:32 [TestNG-PoolService-8] INFO : Clicking user login button
+2025-04-16 15:52:33 [TestNG-PoolService-2] INFO : Clicking profile
+2025-04-16 15:52:35 [TestNG-PoolService-8] INFO : Clicking sign in button
+2025-04-16 15:52:40 [TestNG-PoolService-10] INFO : Clicking user login button
+2025-04-16 15:52:42 [TestNG-PoolService-10] INFO : Clicking sign in button
+2025-04-16 15:52:43 [TestNG-PoolService-4] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:52:43 [TestNG-PoolService-9] INFO : Clicking user login button
+2025-04-16 15:52:45 [TestNG-PoolService-9] INFO : Clicking sign in button
+2025-04-16 15:52:45 [TestNG-PoolService-9] INFO : Clicking profile
+2025-04-16 15:52:48 [TestNG-PoolService-4] INFO : Switching language to English
+2025-04-16 15:52:50 [TestNG-PoolService-2] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:52:52 [TestNG-PoolService-8] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:52:55 [TestNG-PoolService-6] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:52:59 [TestNG-PoolService-2] INFO : Switching language to English
+2025-04-16 15:53:00 [TestNG-PoolService-4] INFO : Navigated to OPD section
+2025-04-16 15:53:00 [TestNG-PoolService-7] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:53:02 [TestNG-PoolService-4] INFO : Clicked Add Prescription
+2025-04-16 15:53:03 [TestNG-PoolService-8] INFO : Switching language to English
+2025-04-16 15:53:04 [TestNG-PoolService-6] INFO : Switching language to English
+2025-04-16 15:53:05 [TestNG-PoolService-7] INFO : Switching language to English
+2025-04-16 15:53:08 [TestNG-PoolService-4] INFO : Finding category selected=Select
+2025-04-16 15:53:09 [TestNG-PoolService-10] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:53:11 [TestNG-PoolService-5] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:53:17 [TestNG-PoolService-2] INFO : Navigated to OPD section
+2025-04-16 15:53:17 [TestNG-PoolService-3] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:53:18 [TestNG-PoolService-8] INFO : Navigated to OPD section
+2025-04-16 15:53:20 [TestNG-PoolService-8] INFO : Clicked Add Prescription
+2025-04-16 15:53:22 [TestNG-PoolService-4] INFO : Medicine category selected=Select
+2025-04-16 15:53:24 [TestNG-PoolService-10] INFO : Switching language to English
+2025-04-16 15:53:24 [TestNG-PoolService-2] INFO : Clicked Add Prescription
+2025-04-16 15:53:25 [TestNG-PoolService-5] INFO : Switching language to English
+2025-04-16 15:53:26 [TestNG-PoolService-8] INFO : Finding category selected=Syrup
+2025-04-16 15:53:26 [TestNG-PoolService-4] INFO : Medicine selected=Select
+2025-04-16 15:53:27 [TestNG-PoolService-7] INFO : Navigated to OPD section
+2025-04-16 15:53:28 [TestNG-PoolService-2] INFO : Finding category selected=Syrup
+2025-04-16 15:53:28 [TestNG-PoolService-8] INFO : Medicine category selected=Al
+2025-04-16 15:53:28 [TestNG-PoolService-6] INFO : Navigated to OPD section
+2025-04-16 15:53:28 [TestNG-PoolService-4] INFO : Dose interval selected=Select
+2025-04-16 15:53:29 [TestNG-PoolService-3] INFO : Switching language to English
+2025-04-16 15:53:29 [TestNG-PoolService-2] INFO : Medicine category selected=Alprovit
+2025-04-16 15:53:29 [TestNG-PoolService-8] INFO : Medicine selected=1
+2025-04-16 15:53:30 [TestNG-PoolService-4] INFO : Dose duration selected=Select
+2025-04-16 15:53:30 [TestNG-PoolService-6] INFO : Clicked Add Prescription
+2025-04-16 15:53:30 [TestNG-PoolService-8] INFO : Dose interval selected=Select
+2025-04-16 15:53:30 [TestNG-PoolService-2] INFO : Medicine selected=Select
+2025-04-16 15:53:30 [TestNG-PoolService-4] INFO : Clicked Save
+2025-04-16 15:53:32 [TestNG-PoolService-8] INFO : Dose duration selected=Morning
+2025-04-16 15:53:33 [TestNG-PoolService-2] INFO : Dose interval selected=Only one a day
+2025-04-16 15:53:33 [TestNG-PoolService-8] INFO : Clicked Save
+2025-04-16 15:53:34 [TestNG-PoolService-6] INFO : Finding category selected=Syrup
+2025-04-16 15:53:35 [TestNG-PoolService-10] INFO : Navigated to OPD section
+2025-04-16 15:53:35 [TestNG-PoolService-3] INFO : Entering search text: Dharani
+2025-04-16 15:53:35 [TestNG-PoolService-3] INFO : Searched the patient name
+2025-04-16 15:53:35 [TestNG-PoolService-3] INFO : Clicking search button
+2025-04-16 15:53:36 [TestNG-PoolService-6] INFO : Medicine category selected=Select
+2025-04-16 15:53:36 [TestNG-PoolService-7] INFO : Clicked View
+2025-04-16 15:53:36 [TestNG-PoolService-5] INFO : Navigated to OPD section
+2025-04-16 15:53:37 [TestNG-PoolService-3] INFO : Clicked Search icon
+2025-04-16 15:53:37 [TestNG-PoolService-2] INFO : Dose duration selected=Morning
+2025-04-16 15:53:37 [TestNG-PoolService-10] INFO : Clicked Add Prescription
+2025-04-16 15:53:37 [TestNG-PoolService-6] INFO : Medicine selected=1 (CT)
+2025-04-16 15:53:38 [TestNG-PoolService-2] INFO : Clicked Save
+2025-04-16 15:53:38 [TestNG-PoolService-3] INFO : Expected: Dharani, Actual: Dharani (1147)
+2025-04-16 15:53:39 [TestNG-PoolService-6] INFO : Dose interval selected=Only one a day
+2025-04-16 15:53:40 [TestNG-PoolService-5] INFO : Clicked Delete
+2025-04-16 15:53:40 [TestNG-PoolService-10] INFO : Finding category selected=Syrup
+2025-04-16 15:53:40 [TestNG-PoolService-6] INFO : Dose duration selected=Morning
+2025-04-16 15:53:40 [TestNG-PoolService-6] INFO : Clicked Save
+2025-04-16 15:53:41 [TestNG-PoolService-10] INFO : Medicine category selected=Alprovit
+2025-04-16 15:53:42 [TestNG-PoolService-1] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:53:42 [TestNG-PoolService-10] INFO : Medicine selected=1  (CT)
+2025-04-16 15:53:43 [TestNG-PoolService-10] INFO : Dose interval selected=Only one a day
+2025-04-16 15:53:44 [TestNG-PoolService-10] INFO : Dose duration selected=Morning
+2025-04-16 15:53:44 [TestNG-PoolService-10] INFO : Clicked Save
+2025-04-16 15:53:46 [TestNG-PoolService-1] INFO : Switching language to English
+2025-04-16 15:53:46 [TestNG-PoolService-4] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 15:53:50 [TestNG-PoolService-1] INFO : Entering search text: TestXYZ123
+2025-04-16 15:53:50 [TestNG-PoolService-1] INFO : Searched the patient name
+2025-04-16 15:53:50 [TestNG-PoolService-1] INFO : Clicking search button
+2025-04-16 15:53:50 [TestNG-PoolService-1] INFO : Clicked Search icon
+2025-04-16 15:53:50 [TestNG-PoolService-4] INFO : Switching language to English
+2025-04-16 15:53:50 [TestNG-PoolService-1] INFO : Expected: No data available in table, Actual: No data available in table
+
+
+
+Add new record or search with different criteria.
+2025-04-16 15:53:54 [TestNG-PoolService-4] INFO : Entering search text: Dharani
+2025-04-16 15:53:54 [TestNG-PoolService-4] INFO : Searched the patient name
+2025-04-16 15:53:54 [TestNG-PoolService-4] INFO : Clicking search button
+2025-04-16 15:53:54 [TestNG-PoolService-4] INFO : Clicked Search icon
+2025-04-16 16:00:24 [main] INFO : Initialized AccountantPage
+2025-04-16 16:00:24 [main] INFO : Selecting role: Accountant
+2025-04-16 16:00:24 [main] INFO : Clicking Sign In button
+2025-04-16 16:00:24 [main] INFO : Verifying if summary table is displayed
+2025-04-16 16:00:26 [main] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 16:00:26 [main] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,760.00
+2025-04-16 16:00:29 [main] INFO : Initialized AccountantPage
+2025-04-16 16:00:29 [main] INFO : Selecting role: Accountant
+2025-04-16 16:00:29 [main] INFO : Clicking Sign In button
+2025-04-16 16:00:29 [main] INFO : Verifying if summary table is displayed
+2025-04-16 16:00:31 [main] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 16:00:31 [main] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,760.00
+2025-04-16 16:00:33 [main] INFO : Initialized AccountantPage
+2025-04-16 16:00:33 [main] INFO : Selecting role: Accountant
+2025-04-16 16:00:33 [main] INFO : Clicking Sign In button
+2025-04-16 16:00:33 [main] INFO : Verifying if summary table is displayed
+2025-04-16 16:00:35 [main] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 16:00:35 [main] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,760.00
+2025-04-16 16:00:59 [main] INFO : Initialized AccountantPage
+2025-04-16 16:00:59 [main] INFO : Selecting role: Accountant
+2025-04-16 16:00:59 [main] INFO : Clicking Sign In button
+2025-04-16 16:01:00 [main] INFO : Verifying if summary table is displayed
+2025-04-16 16:01:01 [main] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 16:01:01 [main] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,760.00
+2025-04-16 16:01:04 [main] INFO : Initialized AccountantPage
+2025-04-16 16:01:04 [main] INFO : Selecting role: Accountant
+2025-04-16 16:01:04 [main] INFO : Clicking Sign In button
+2025-04-16 16:01:05 [main] INFO : Verifying if summary table is displayed
+2025-04-16 16:01:06 [main] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 16:01:06 [main] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,760.00
+2025-04-16 16:01:09 [main] INFO : Initialized AccountantPage
+2025-04-16 16:01:09 [main] INFO : Selecting role: Accountant
+2025-04-16 16:01:09 [main] INFO : Clicking Sign In button
+2025-04-16 16:01:09 [main] INFO : Verifying if summary table is displayed
+2025-04-16 16:01:11 [main] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 16:01:11 [main] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,760.00
+2025-04-16 16:01:51 [main] INFO : Initialized AccountantPage
+2025-04-16 16:01:51 [main] INFO : Selecting role: Accountant
+2025-04-16 16:01:51 [main] INFO : Clicking Sign In button
+2025-04-16 16:01:51 [main] INFO : Verifying if summary table is displayed
+2025-04-16 16:01:53 [main] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 16:01:53 [main] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,760.00
+2025-04-16 16:01:53 [main] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 16:01:53 [main] INFO : Navigating to Expenses
+2025-04-16 16:01:54 [main] INFO : Clicking Add Expense button
+2025-04-16 16:01:54 [main] INFO : Adding new expense - Header: Telephone Bill, Name: Office Telephone Charges, Amount: 100.00
+2025-04-16 16:01:54 [main] INFO : Clicking Save button for expense
+2025-04-16 16:01:55 [main] INFO : Verifying success notification after saving expense
+2025-04-16 16:01:55 [main] INFO : Success notification displayed
+2025-04-16 16:01:55 [main] INFO : Verifying if summary table is displayed
+2025-04-16 16:01:55 [main] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 16:01:55 [main] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,860.00
+2025-04-16 16:01:55 [main] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 16:01:57 [main] INFO : Initialized AccountantPage
+2025-04-16 16:01:57 [main] INFO : Selecting role: Accountant
+2025-04-16 16:01:57 [main] INFO : Clicking Sign In button
+2025-04-16 16:01:57 [main] INFO : Verifying if summary table is displayed
+2025-04-16 16:01:59 [main] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 16:01:59 [main] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,860.00
+2025-04-16 16:01:59 [main] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 16:01:59 [main] INFO : Navigating to Expenses
+2025-04-16 16:01:59 [main] INFO : Clicking Add Expense button
+2025-04-16 16:01:59 [main] INFO : Adding new expense - Header: Telephone Bill, Name: Office Telephone Charges, Amount: -100.00
+2025-04-16 16:02:00 [main] INFO : Clicking Save button for expense
+2025-04-16 16:02:00 [main] INFO : Verifying error notification after saving invalid expense
+2025-04-16 16:02:00 [main] INFO : Error notification displayed
+2025-04-16 16:02:02 [main] INFO : Initialized AccountantPage
+2025-04-16 16:02:02 [main] INFO : Selecting role: Accountant
+2025-04-16 16:02:02 [main] INFO : Clicking Sign In button
+2025-04-16 16:02:02 [main] INFO : Verifying if summary table is displayed
+2025-04-16 16:02:04 [main] INFO : Capturing table data using xpath: /html/body/div[1]/div[1]/section/div[2]
+2025-04-16 16:02:04 [main] INFO : Dashboard Table Data:
+OPD Income
+$8,028.00
+IPD Income
+$3,155.00
+Pharmacy Income
+$1,977.31
+Pathology Income
+$1,969.08
+Radiology Income
+$2,135.80
+Blood Bank Income
+$1,794.00
+Ambulance Income
+$1,535.25
+General Income
+$16,150.00
+Expenses
+$234,860.00
+2025-04-16 16:02:04 [main] INFO : Table data written to Excel at: target/dashboard_data.xlsx
+2025-04-16 16:02:04 [main] INFO : Navigating to Expenses
+2025-04-16 16:02:04 [main] INFO : Clicking Add Expense button
+2025-04-16 16:02:04 [main] INFO : Adding new expense - Header: Telephone Bill, Name: hi, Amount: -52
