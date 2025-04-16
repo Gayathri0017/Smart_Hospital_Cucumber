@@ -3655,3 +3655,354 @@ $234,860.00
 2025-04-16 16:02:04 [main] INFO : Navigating to Expenses
 2025-04-16 16:02:04 [main] INFO : Clicking Add Expense button
 2025-04-16 16:02:04 [main] INFO : Adding new expense - Header: Telephone Bill, Name: hi, Amount: -52
+2025-04-16 18:46:56 [main] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 18:46:59 [main] INFO : Switching language to English
+2025-04-16 18:47:10 [main] INFO : Clicking on Doctor and Sign In buttons
+2025-04-16 18:47:14 [main] INFO : Switching language to English
+2025-04-16 19:00:10 [main] INFO : Userlogin button clicked
+2025-04-16 19:00:10 [main] INFO : driver window switched
+2025-04-16 19:00:11 [main] INFO : SignIn button clicked
+2025-04-16 19:00:13 [main] INFO : profile clicked
+2025-04-16 19:00:13 [main] INFO : Verifing the profile
+2025-04-16 19:00:17 [main] INFO : Userlogin button clicked
+2025-04-16 19:00:17 [main] INFO : driver window switched
+2025-04-16 19:00:19 [main] INFO : blank username provided
+2025-04-16 19:00:19 [main] INFO : SignIn button clicked
+2025-04-16 19:01:02 [main] INFO : Userlogin button clicked
+2025-04-16 19:01:02 [main] INFO : driver window switched
+2025-04-16 19:01:03 [main] INFO : blank password provided
+2025-04-16 19:01:04 [main] INFO : SignIn button clicked
+2025-04-16 20:56:36 [main] INFO : User login button clicked
+2025-04-16 20:56:36 [main] INFO : Driver window switched
+2025-04-16 20:56:38 [main] INFO : Sign-in button clicked
+2025-04-16 20:56:40 [main] INFO : My Appointment option clicked
+2025-04-16 20:56:40 [main] INFO : Adding the appointment
+2025-04-16 20:56:41 [main] INFO : Date field provided from Excel/nDate:06-22-2025
+2025-04-16 20:56:42 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 20:56:42 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 20:56:42 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 20:56:42 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 20:57:07 [main] INFO : User login button clicked
+2025-04-16 20:57:07 [main] INFO : Driver window switched
+2025-04-16 20:57:08 [main] INFO : Sign-in button clicked
+2025-04-16 20:57:11 [main] INFO : My Appointment option clicked
+2025-04-16 20:57:11 [main] INFO : Adding the appointment
+2025-04-16 20:57:12 [main] INFO : Date field provided
+2025-04-16 20:57:12 [main] INFO : Specialist field provided
+2025-04-16 20:57:12 [main] INFO : Doctor field provided
+2025-04-16 20:57:12 [main] INFO : Timing shift field provided
+2025-04-16 20:57:12 [main] INFO : Slot provided
+2025-04-16 20:57:13 [main] INFO : Form submitted
+2025-04-16 20:57:13 [main] INFO : Field required error message retrieved
+2025-04-16 20:57:13 [main] INFO : Field required error message retrieved
+2025-04-16 20:58:09 [main] INFO : User login button clicked
+2025-04-16 20:58:09 [main] INFO : Driver window switched
+2025-04-16 20:58:11 [main] INFO : Sign-in button clicked
+2025-04-16 20:58:13 [main] INFO : My Appointment option clicked
+2025-04-16 20:58:13 [main] INFO : Adding the appointment
+2025-04-16 20:58:15 [main] INFO : Date field provided from Excel/nDate:06-22-2025
+2025-04-16 20:58:15 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 20:58:15 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 20:58:15 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 20:58:15 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 20:58:40 [main] INFO : User login button clicked
+2025-04-16 20:58:40 [main] INFO : Driver window switched
+2025-04-16 20:58:41 [main] INFO : Sign-in button clicked
+2025-04-16 20:58:44 [main] INFO : My Appointment option clicked
+2025-04-16 20:58:44 [main] INFO : Adding the appointment
+2025-04-16 20:58:44 [main] INFO : Date field provided
+2025-04-16 20:58:45 [main] INFO : Specialist field provided
+2025-04-16 20:58:45 [main] INFO : Doctor field provided
+2025-04-16 20:58:45 [main] INFO : Timing shift field provided
+2025-04-16 20:58:45 [main] INFO : Slot provided
+2025-04-16 20:58:46 [main] INFO : Form submitted
+2025-04-16 20:58:46 [main] INFO : Field required error message retrieved
+2025-04-16 20:58:46 [main] INFO : Field required error message retrieved
+2025-04-16 20:59:42 [main] INFO : User login button clicked
+2025-04-16 20:59:42 [main] INFO : Driver window switched
+2025-04-16 20:59:44 [main] INFO : Sign-in button clicked
+2025-04-16 20:59:47 [main] INFO : My Appointment option clicked
+2025-04-16 20:59:47 [main] INFO : Adding the appointment
+2025-04-16 20:59:48 [main] INFO : Date field provided
+2025-04-16 20:59:48 [main] INFO : Specialist field provided
+2025-04-16 20:59:48 [main] INFO : Doctor field provided
+2025-04-16 20:59:49 [main] INFO : Timing shift field provided
+2025-04-16 20:59:49 [main] INFO : Slot provided
+2025-04-16 20:59:50 [main] INFO : Form submitted
+2025-04-16 20:59:50 [main] INFO : Field required error message retrieved
+2025-04-16 20:59:50 [main] INFO : Field required error message retrieved
+2025-04-16 21:00:18 [main] INFO : User login button clicked
+2025-04-16 21:00:19 [main] INFO : Driver window switched
+2025-04-16 21:00:20 [main] INFO : Sign-in button clicked
+2025-04-16 21:00:22 [main] INFO : My Appointment option clicked
+2025-04-16 21:00:22 [main] INFO : Adding the appointment
+2025-04-16 21:00:23 [main] INFO : Date field provided
+2025-04-16 21:00:23 [main] INFO : Specialist field provided
+2025-04-16 21:00:24 [main] INFO : Doctor field provided
+2025-04-16 21:00:24 [main] INFO : Timing shift field provided
+2025-04-16 21:00:24 [main] INFO : Slot provided
+2025-04-16 21:00:24 [main] INFO : Form submitted
+2025-04-16 21:00:25 [main] INFO : Field required error message retrieved
+2025-04-16 21:00:25 [main] INFO : Field required error message retrieved
+2025-04-16 21:00:49 [main] INFO : User login button clicked
+2025-04-16 21:00:49 [main] INFO : Driver window switched
+2025-04-16 21:00:50 [main] INFO : Sign-in button clicked
+2025-04-16 21:00:53 [main] INFO : My Appointment option clicked
+2025-04-16 21:00:53 [main] INFO : Adding the appointment
+2025-04-16 21:00:55 [main] INFO : Date field provided from Excel
+Date:06-22-2025
+2025-04-16 21:00:55 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:00:55 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:00:55 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:00:55 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 21:04:29 [main] INFO : User login button clicked
+2025-04-16 21:04:29 [main] INFO : Driver window switched
+2025-04-16 21:04:31 [main] INFO : Sign-in button clicked
+2025-04-16 21:04:33 [main] INFO : My Appointment option clicked
+2025-04-16 21:04:34 [main] INFO : Adding the appointment
+2025-04-16 21:04:35 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:04:35 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:04:36 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:04:36 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:04:36 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 21:06:15 [main] INFO : User login button clicked
+2025-04-16 21:06:15 [main] INFO : Driver window switched
+2025-04-16 21:06:17 [main] INFO : Sign-in button clicked
+2025-04-16 21:06:19 [main] INFO : My Appointment option clicked
+2025-04-16 21:06:19 [main] INFO : Adding the appointment
+2025-04-16 21:06:21 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:06:21 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:06:21 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:06:21 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:06:22 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 21:14:24 [main] INFO : User login button clicked
+2025-04-16 21:14:24 [main] INFO : Driver window switched
+2025-04-16 21:14:26 [main] INFO : Sign-in button clicked
+2025-04-16 21:14:28 [main] INFO : My Appointment option clicked
+2025-04-16 21:14:29 [main] INFO : Adding the appointment
+2025-04-16 21:14:30 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:14:31 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:14:31 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:14:31 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:14:32 [main] INFO : Message field provided from Excel : I would like to schedule a routine heart check-up to monitor my cardiovascular health.
+2025-04-16 21:15:22 [main] INFO : User login button clicked
+2025-04-16 21:15:22 [main] INFO : Driver window switched
+2025-04-16 21:15:24 [main] INFO : Sign-in button clicked
+2025-04-16 21:15:26 [main] INFO : My Appointment option clicked
+2025-04-16 21:15:26 [main] INFO : Adding the appointment
+2025-04-16 21:15:28 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:15:28 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:15:28 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:15:28 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:15:29 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 21:16:37 [main] INFO : User login button clicked
+2025-04-16 21:16:37 [main] INFO : Driver window switched
+2025-04-16 21:16:38 [main] INFO : Sign-in button clicked
+2025-04-16 21:16:41 [main] INFO : My Appointment option clicked
+2025-04-16 21:16:41 [main] INFO : Adding the appointment
+2025-04-16 21:16:43 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:16:43 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:17:15 [main] INFO : User login button clicked
+2025-04-16 21:17:15 [main] INFO : Driver window switched
+2025-04-16 21:17:16 [main] INFO : Sign-in button clicked
+2025-04-16 21:17:19 [main] INFO : My Appointment option clicked
+2025-04-16 21:17:19 [main] INFO : Adding the appointment
+2025-04-16 21:17:21 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:17:21 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:17:21 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:17:21 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:17:22 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 21:19:09 [main] INFO : User login button clicked
+2025-04-16 21:19:09 [main] INFO : Driver window switched
+2025-04-16 21:19:18 [main] INFO : Sign-in button clicked
+2025-04-16 21:19:19 [main] INFO : My Appointment option clicked
+2025-04-16 21:19:19 [main] INFO : Adding the appointment
+2025-04-16 21:19:21 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:19:21 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:19:21 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:19:21 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:19:21 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 21:22:45 [main] INFO : User login button clicked
+2025-04-16 21:22:45 [main] INFO : Driver window switched
+2025-04-16 21:22:47 [main] INFO : Sign-in button clicked
+2025-04-16 21:22:50 [main] INFO : My Appointment option clicked
+2025-04-16 21:22:50 [main] INFO : Adding the appointment
+2025-04-16 21:22:51 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:22:52 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:22:52 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:22:52 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:23:22 [main] INFO : User login button clicked
+2025-04-16 21:23:22 [main] INFO : Driver window switched
+2025-04-16 21:23:23 [main] INFO : Sign-in button clicked
+2025-04-16 21:23:26 [main] INFO : My Appointment option clicked
+2025-04-16 21:23:26 [main] INFO : Adding the appointment
+2025-04-16 21:23:27 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:23:28 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:23:28 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:23:28 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:23:28 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 21:24:21 [main] INFO : User login button clicked
+2025-04-16 21:24:21 [main] INFO : Driver window switched
+2025-04-16 21:24:23 [main] INFO : Sign-in button clicked
+2025-04-16 21:24:25 [main] INFO : My Appointment option clicked
+2025-04-16 21:24:25 [main] INFO : Adding the appointment
+2025-04-16 21:24:27 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:24:27 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:24:27 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:24:28 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:24:28 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 21:26:06 [main] INFO : User login button clicked
+2025-04-16 21:26:06 [main] INFO : Driver window switched
+2025-04-16 21:26:08 [main] INFO : Sign-in button clicked
+2025-04-16 21:26:11 [main] INFO : My Appointment option clicked
+2025-04-16 21:26:11 [main] INFO : Adding the appointment
+2025-04-16 21:26:13 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:26:13 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:26:13 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:26:13 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:26:14 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 21:27:50 [main] INFO : User login button clicked
+2025-04-16 21:27:50 [main] INFO : Driver window switched
+2025-04-16 21:27:51 [main] INFO : Sign-in button clicked
+2025-04-16 21:27:54 [main] INFO : My Appointment option clicked
+2025-04-16 21:27:54 [main] INFO : Adding the appointment
+2025-04-16 21:27:55 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:27:56 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:27:56 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:27:56 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:27:56 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 21:27:57 [main] INFO : Available slot clicked
+2025-04-16 21:27:57 [main] INFO : Message field provided from Excel : I would like to schedule a routine heart check-up to monitor my cardiovascular health.
+2025-04-16 21:27:57 [main] INFO : Form submitted
+2025-04-16 21:28:29 [main] INFO : User login button clicked
+2025-04-16 21:28:29 [main] INFO : Driver window switched
+2025-04-16 21:28:30 [main] INFO : Sign-in button clicked
+2025-04-16 21:28:33 [main] INFO : My Appointment option clicked
+2025-04-16 21:28:33 [main] INFO : Adding the appointment
+2025-04-16 21:28:35 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:28:35 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:28:35 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:28:35 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:28:36 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 21:28:37 [main] INFO : Available slot clicked
+2025-04-16 21:28:37 [main] INFO : Message field provided from Excel : I would like to schedule a routine heart check-up to monitor my cardiovascular health.
+2025-04-16 21:28:37 [main] INFO : Form submitted
+2025-04-16 21:28:40 [main] INFO : User login button clicked
+2025-04-16 21:28:40 [main] INFO : Driver window switched
+2025-04-16 21:28:42 [main] INFO : Sign-in button clicked
+2025-04-16 21:28:45 [main] INFO : My Appointment option clicked
+2025-04-16 21:28:45 [main] INFO : Adding the appointment
+2025-04-16 21:28:45 [main] INFO : Date field provided
+2025-04-16 21:28:45 [main] INFO : Specialist field provided
+2025-04-16 21:28:46 [main] INFO : Doctor field provided
+2025-04-16 21:28:46 [main] INFO : Timing shift field provided
+2025-04-16 21:28:46 [main] INFO : Slot provided
+2025-04-16 21:28:47 [main] INFO : Form submitted
+2025-04-16 21:28:47 [main] INFO : Field required error message retrieved
+2025-04-16 21:28:47 [main] INFO : Field required error message retrieved
+2025-04-16 21:28:51 [main] INFO : User login button clicked
+2025-04-16 21:28:51 [main] INFO : Driver window switched
+2025-04-16 21:28:52 [main] INFO : Sign-in button clicked
+2025-04-16 21:28:55 [main] INFO : My Appointment option clicked
+2025-04-16 21:28:55 [main] INFO : Adding the appointment
+2025-04-16 21:28:55 [main] INFO : Date field provided
+2025-04-16 21:28:56 [main] INFO : Specialist field provided
+2025-04-16 21:28:56 [main] INFO : Doctor field provided
+2025-04-16 21:28:56 [main] INFO : Timing shift field provided
+2025-04-16 21:28:56 [main] INFO : Slot provided
+2025-04-16 21:28:57 [main] INFO : Available time provided
+2025-04-16 21:28:57 [main] INFO : Message field is empty or null
+2025-04-16 21:28:57 [main] INFO : Form submitted
+2025-04-16 21:28:57 [main] INFO : Field required error message retrieved
+2025-04-16 21:28:57 [main] INFO : Field required error message retrieved
+2025-04-16 21:52:14 [main] INFO : User login button clicked
+2025-04-16 21:52:14 [main] INFO : Driver window switched
+2025-04-16 21:52:15 [main] INFO : Sign-in button clicked
+2025-04-16 21:52:18 [main] INFO : My Appointment option clicked
+2025-04-16 21:52:18 [main] INFO : Adding the appointment
+2025-04-16 21:52:20 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:52:20 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:52:24 [main] INFO : User login button clicked
+2025-04-16 21:52:25 [main] INFO : Driver window switched
+2025-04-16 21:52:26 [main] INFO : Sign-in button clicked
+2025-04-16 21:52:28 [main] INFO : My Appointment option clicked
+2025-04-16 21:52:29 [main] INFO : Adding the appointment
+2025-04-16 21:52:29 [main] INFO : Date field provided
+2025-04-16 21:52:29 [main] INFO : Specialist field provided
+2025-04-16 21:52:30 [main] INFO : Doctor field provided
+2025-04-16 21:52:30 [main] INFO : Timing shift field provided
+2025-04-16 21:52:30 [main] INFO : Slot provided
+2025-04-16 21:52:31 [main] INFO : Form submitted
+2025-04-16 21:52:31 [main] INFO : Field required error message retrieved
+2025-04-16 21:52:31 [main] INFO : Field required error message retrieved
+2025-04-16 21:52:35 [main] INFO : User login button clicked
+2025-04-16 21:52:35 [main] INFO : Driver window switched
+2025-04-16 21:52:36 [main] INFO : Sign-in button clicked
+2025-04-16 21:52:39 [main] INFO : My Appointment option clicked
+2025-04-16 21:52:39 [main] INFO : Adding the appointment
+2025-04-16 21:52:39 [main] INFO : Date field provided
+2025-04-16 21:52:40 [main] INFO : Specialist field provided
+2025-04-16 21:52:40 [main] INFO : Doctor field provided
+2025-04-16 21:52:40 [main] INFO : Timing shift field provided
+2025-04-16 21:52:40 [main] INFO : Slot provided
+2025-04-16 21:52:41 [main] INFO : Available time provided
+2025-04-16 21:52:41 [main] INFO : Message field is empty or null
+2025-04-16 21:52:41 [main] INFO : Form submitted
+2025-04-16 21:52:41 [main] INFO : Field required error message retrieved
+2025-04-16 21:52:41 [main] INFO : Field required error message retrieved
+2025-04-16 21:53:12 [main] INFO : User login button clicked
+2025-04-16 21:53:12 [main] INFO : Driver window switched
+2025-04-16 21:53:14 [main] INFO : Sign-in button clicked
+2025-04-16 21:53:16 [main] INFO : My Appointment option clicked
+2025-04-16 21:53:16 [main] INFO : Adding the appointment
+2025-04-16 21:53:18 [main] INFO : Date field provided from Excel
+Date:06/22/2025
+2025-04-16 21:53:18 [main] INFO : Specialist selected from dropdown : Cardiologists
+2025-04-16 21:53:18 [main] INFO : Doctor selected from dropdown : Sansa Gomez (9008)
+2025-04-16 21:53:19 [main] INFO : Timing shift selected from dropdown : Evening
+2025-04-16 21:53:19 [main] INFO : Slot selected from dropdown : 04:00 PM - 07:00 PM
+2025-04-16 21:53:20 [main] INFO : Available slot clicked
+2025-04-16 21:53:20 [main] INFO : Message field provided from Excel : I would like to schedule a routine heart check-up to monitor my cardiovascular health.
+2025-04-16 21:53:20 [main] INFO : Form submitted
+2025-04-16 21:53:23 [main] INFO : User login button clicked
+2025-04-16 21:53:24 [main] INFO : Driver window switched
+2025-04-16 21:53:25 [main] INFO : Sign-in button clicked
+2025-04-16 21:53:27 [main] INFO : My Appointment option clicked
+2025-04-16 21:53:27 [main] INFO : Adding the appointment
+2025-04-16 21:53:28 [main] INFO : Date field provided
+2025-04-16 21:53:28 [main] INFO : Specialist field provided
+2025-04-16 21:53:28 [main] INFO : Doctor field provided
+2025-04-16 21:53:29 [main] INFO : Timing shift field provided
+2025-04-16 21:53:29 [main] INFO : Slot provided
+2025-04-16 21:53:30 [main] INFO : Form submitted
+2025-04-16 21:53:30 [main] INFO : Field required error message retrieved
+2025-04-16 21:53:30 [main] INFO : Field required error message retrieved
+2025-04-16 21:53:33 [main] INFO : User login button clicked
+2025-04-16 21:53:33 [main] INFO : Driver window switched
+2025-04-16 21:53:35 [main] INFO : Sign-in button clicked
+2025-04-16 21:53:37 [main] INFO : My Appointment option clicked
+2025-04-16 21:53:37 [main] INFO : Adding the appointment
+2025-04-16 21:53:38 [main] INFO : Date field provided
+2025-04-16 21:53:38 [main] INFO : Specialist field provided
+2025-04-16 21:53:38 [main] INFO : Doctor field provided
+2025-04-16 21:53:39 [main] INFO : Timing shift field provided
+2025-04-16 21:53:39 [main] INFO : Slot provided
+2025-04-16 21:53:39 [main] INFO : Available time provided
+2025-04-16 21:53:39 [main] INFO : Message field is empty or null
+2025-04-16 21:53:39 [main] INFO : Form submitted
+2025-04-16 21:53:39 [main] INFO : Field required error message retrieved
+2025-04-16 21:53:40 [main] INFO : Field required error message retrieved
