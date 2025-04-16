@@ -42,10 +42,10 @@ public class PatientPaymentDefinitions {
 			
 		    List<Map<String , String>> cardDetails = dataTable.asMaps(String.class , String.class);
 		    for(Map<String , String> details:cardDetails) {
-		    	objPPPA.setCountry(details.get("Country"));
 		    	objPPPA.setCardNumber(details.get("CardNumber"));
 		    	objPPPA.setCardExpiryNumber(details.get("ExpiryDate"));
 		    	objPPPA.setCvv(details.get("CVV"));
+		    	objPPPA.setCountry(details.get("Country"));
 		    }
 		}catch (Exception e) {
 			System.out.println(e.getMessage());
