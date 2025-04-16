@@ -67,7 +67,7 @@ public class AccountantDefinition {
         }
     }
 
-    @Then("need to see the see the error notifications")
+    @Then("need to see the asseart the error notifications")
     public void verifyErrorNotification() {
         if (!accountantActions.isErrorNotificationDisplayed()) {
             throw new RuntimeException("Error notification not displayed after saving expense with invalid data");
