@@ -74,6 +74,6 @@
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.runner.RunnerClass -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

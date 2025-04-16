@@ -10,11 +10,11 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class HelperClass {
     private static ConcurrentHashMap<String, WebDriver> drivers = new ConcurrentHashMap<>();
-
     public static WebDriver getDriver() {
         String threadName = Thread.currentThread().getName();
         if (!drivers.containsKey(threadName)) {
             ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless");
             options.addArguments("--incognito");
             options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
             options.setExperimentalOption("useAutomationExtension", false);

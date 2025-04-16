@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 13 22:17:59 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>80 seconds (80787 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the added prescription is visible in the OPD section", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (a91629b64b202fb78f7995588c71ea8d)] -&gt; xpath: //h4[text()=&quot;Prescription&quot;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\gayat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53109/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a91629b64b202fb78f7995588c71ea8d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.PrescriptionActions.assertPrescription(PrescriptionActions.java:110)
+	at com.definitions.PrescriptionDefinition.the_previously_added_prescription_should_be_visible(PrescriptionDefinition.java:72)
+	at ✽.the previously added prescription should be visible(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/PrescriptionFeature.feature:34)
+</pre></div><a href='#' onClick='toggleBox("stack-trace732696719", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace732696719'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (a91629b64b202fb78f7995588c71ea8d)] -&gt; xpath: //h4[text()=&quot;Prescription&quot;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\gayat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53109/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a91629b64b202fb78f7995588c71ea8d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.PrescriptionActions.assertPrescription(PrescriptionActions.java:110)
+	at com.definitions.PrescriptionDefinition.the_previously_added_prescription_should_be_visible(PrescriptionDefinition.java:72)
+	at ✽.the previously added prescription should be visible(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/PrescriptionFeature.feature:34)
+</pre></div></td>
+<td>25</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor creates a new appointment for a new patient", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>58</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the name", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>55</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the Month", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>55</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>54</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to create an appointment with an expired time slot", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>57</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>58</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the year", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>51</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>57</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the prescription feature by providing valid informations", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>19</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the day", "Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>56</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>55</td>
+<td>com.runner.RunnerClass@1bb266b3</td></tr>
+</table><p>
+</body>
+</html>

@@ -214,4 +214,3 @@ public class PatientActions {
 		System.out.println(details.get("Message"));
 	}
 }
-
