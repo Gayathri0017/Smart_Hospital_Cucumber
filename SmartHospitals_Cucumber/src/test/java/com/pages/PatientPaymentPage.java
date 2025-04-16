@@ -38,10 +38,18 @@ public class PatientPaymentPage {
 	@FindBy(xpath = "//*[@id=\"toast-container\"]/div/div")
 	public WebElement invalidNumberTxt ;
 	
+	@FindBy(id = "Field-numberError")
+	public WebElement invalidCardNumber ;
+	
 	@FindBy(id = "Field-expiryError")
 	public WebElement invalidCardDate ;
 	
 	@FindBy(id ="Field-cvcError")
 	public WebElement invalidCvv ;
 	
+	@FindBy(xpath = "//iframe[contains(@src,'stripe.com')]")
+	public WebElement frame ;
+	
+	@FindBy(xpath = "/html/body/div[1]/div[1]/section[2]/div/div")
+	public WebElement paymentSuccess ;
 }
