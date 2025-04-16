@@ -8,22 +8,22 @@ import org.openqa.selenium.support.PageFactory;
 public class AccountantPage {
     private WebDriver driver;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div/div/div[1]/div/div[2]/div[3]/a[1]")
+    @FindBy(xpath = " (//a[@class=\"btn btn-primary width50\"])[5]")
     public WebElement accountantRoleButton;
-
-    @FindBy(css = "button.btn[type='submit']")
+   
+    @FindBy(xpath = "//*[@class=\"btn\"]")
     public WebElement signInButton;
 
     @FindBy(xpath = "//h2[contains(text(),'Accountant Dashboard')]")
     public WebElement dashboardTitle;
 
-    @FindBy(xpath = "//*[@id=\"sibe-box\"]/ul[2]/li[1]/a")
+    @FindBy(xpath = "(//*[@href=\"https://demo.smart-hospital.in/admin/admin/dashboard\"])[2]")
     public WebElement dashboard;
 
     @FindBy(xpath = "/html/body/div[1]/div[1]/section/div[2]")
     public WebElement summaryTable;
 
-    @FindBy(xpath = "/html/body/div[1]/div[1]/section/div[2]/div[9]/div/a/div")
+    @FindBy(xpath = "//*[@class=\"info-box-content\"]")
     public WebElement expensesMenu;
 
     @FindBy(css = "a.btn.btn-primary")
@@ -41,7 +41,7 @@ public class AccountantPage {
     @FindBy(id = "addexpensebtn")
     public WebElement saveButton;
 
-    @FindBy(xpath = "//*[@id='toast-container']/div/div")
+    @FindBy(xpath = "//*[@class=\"toast toast-success\"]")
     public WebElement successNotification;
 
     @FindBy(xpath = "//*[@id=\"toast-container\"]/div/div")
