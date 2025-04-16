@@ -127,11 +127,8 @@ public class AccountantActions {
         try {
             WebElement table = driver.findElement(By.xpath(xpath));
             String tableData = table.getText();
-
             log.info("Captured dashboard table data");
-            System.out.println("Dashboard Table Data");
             System.out.println(tableData);
-
             ExcelWriter.writeTableData(filePath, "DashboardData", convertTableDataToRows(tableData), true);
             log.info("Stored dashboard table data to Excel at: " + filePath);
         } catch (Exception e) {
