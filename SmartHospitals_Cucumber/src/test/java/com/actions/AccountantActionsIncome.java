@@ -17,7 +17,7 @@ public class AccountantActionsIncome {
     private WebDriverWait wait;
     private AccountantPageIncome accountantPageIncome;
     private static final Logger log = LogManager.getLogger(AccountantActionsIncome.class);
-
+//constructor 
     public AccountantActionsIncome() {
         this.driver = HelperClass.getDriver();
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
