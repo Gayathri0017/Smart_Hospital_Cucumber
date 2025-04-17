@@ -32,7 +32,7 @@ public class PatientDischargeActions {
         }
     }
     
-    public void ClickFirstPatient() {
+    public void ClickFirstPatient() {	// clicking the first patient that we have searched by the id
         try {
            wait.until(ExpectedConditions.elementToBeClickable(objPDP.firstPatient));
            objPDP.firstPatient.click();
@@ -42,7 +42,7 @@ public class PatientDischargeActions {
         }
     }
     
-    public void setCaseId(String id) {
+    public void setCaseId(String id) {		// providing the case id of the patient to discharge 
         try {
            wait.until(ExpectedConditions.elementToBeClickable(objPDP.searchField));
            objPDP.searchField.sendKeys(id + Keys.CONTROL + "a" + Keys.BACK_SPACE + Keys.ENTER);
@@ -52,7 +52,7 @@ public class PatientDischargeActions {
         }
     }
     
-    public String getPatientID() {
+    public String getPatientID() {		// returning the patient id for ensuring the patient has discharged
         try {
            wait.until(ExpectedConditions.visibilityOf(objPDP.dischargePatientName));
            String patientId = objPDP.dischargePatientName.getText();
@@ -84,7 +84,7 @@ public class PatientDischargeActions {
         }
     }
     
-    public void setDischargeStatus(String status) {
+    public void setDischargeStatus(String status) {		// providing the discharge status as normal or death or referal
         try {
            wait.until(ExpectedConditions.visibilityOf(objPDP.dischargeStatus));
            objPDP.dischargeStatus.sendKeys(status);
@@ -104,8 +104,7 @@ public class PatientDischargeActions {
         }
     }
     
-    public String getError() {
-       
+    public String getError() {		// getting the error message as required field       
            return objPDP.error.getText();
         
     }

@@ -64,7 +64,7 @@ public class PatientActions {
         }
     }
 
-    public String getProfileRole() {
+    public String getProfileRole() {// retriving the profile role
         try {
             wait.until(ExpectedConditions.visibilityOf(objPDP.verifyProfile));
             log.info("Verifying the profile");
@@ -75,7 +75,7 @@ public class PatientActions {
         }
     }
 
-    public void SwitchTab() {
+    public void SwitchTab() {	//switching new tab for the userlogin that is created during the instance 
         try {
             Set<String> Allwindows = HelperClass.getDriver().getWindowHandles();
             Iterator<String> it = Allwindows.iterator();
@@ -109,7 +109,7 @@ public class PatientActions {
         }
     }
 
-    public String getUserNameRequired() {
+    public String getUserNameRequired() {		
         try {
             wait.until(ExpectedConditions.visibilityOf(objPatientPage.usernameReq));
             log.info("Username required message retrieved");
@@ -157,7 +157,7 @@ public class PatientActions {
         }
     }
 
-    public void setDate(String date) {
+    public void setDate(String date) {		//inserting the date for the appointment
         try {
             wait.until(ExpectedConditions.visibilityOf(objPDP.date));
             if (date != null && !date.isEmpty()) {
@@ -172,7 +172,7 @@ public class PatientActions {
         }
     }
 
-    public void setSpecialist(String specialist) {
+    public void setSpecialist(String specialist) {		//choosing the specialist for the treatment
         try {
             wait.until(ExpectedConditions.visibilityOf(objPDP.specialist));
             if (specialist != null && !specialist.isEmpty()) {
@@ -187,7 +187,7 @@ public class PatientActions {
         }
     }
 
-    public void setDoctor(String doctor) {
+    public void setDoctor(String doctor) {		//choosing the concern doctor for the appointment
         try {
             wait.until(ExpectedConditions.elementToBeClickable(objPDP.doctor));
             Select selectDoctor = new Select(objPDP.doctor);
@@ -198,7 +198,7 @@ public class PatientActions {
         }
     }
 
-    public void setShift(String shift) {
+    public void setShift(String shift) {		// selecting the shift for the appointment
         try {
             wait.until(ExpectedConditions.elementToBeClickable(objPDP.timingShift));
             Select selectTiming = new Select(objPDP.timingShift);
@@ -209,7 +209,7 @@ public class PatientActions {
         }
     }
 
-    public void setTime(String slot) {
+    public void setTime(String slot) {		//selecting the slot timing 
         try {
             wait.until(ExpectedConditions.visibilityOf(objPDP.slot));
             Select selectSlot = new Select(objPDP.slot);
@@ -220,7 +220,7 @@ public class PatientActions {
         }
     }
 
-    public void setAvailableTime() {
+    public void setAvailableTime() {		//choosing the available time for the doctor's shift
         try {
             wait.until(ExpectedConditions.visibilityOf(objPDP.AvailableSlot));
             wait.until(ExpectedConditions.elementToBeClickable(objPDP.AvailableSlot));
@@ -231,7 +231,7 @@ public class PatientActions {
         }
     }
 
-    public void setMessage(String message) {
+    public void setMessage(String message) {		// providing the message as details of the patient condition
         try {
             if (message != null && !message.isEmpty()) {
                 objPDP.patientMsg.sendKeys(message);
@@ -243,7 +243,7 @@ public class PatientActions {
         }
     }
 
-    public String getError() {
+    public String getError() {		 // getting error message
         try {
             wait.until(ExpectedConditions.visibilityOf(objPDP.FieldRequired));
             log.info("Field required error message retrieved");
@@ -254,7 +254,7 @@ public class PatientActions {
         }
     }
 
-    public void AppointmentDetails() {
+    public void AppointmentDetails() {		// providing the appointment details from the excelreader class
         try {
             Map<String, String> details = ExcelReader.getPatientAppointmentForm("src/test/resources/PatientAppointmentData.xlsx", "Sheet1");
 
