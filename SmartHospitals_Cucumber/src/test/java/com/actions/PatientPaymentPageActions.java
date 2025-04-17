@@ -61,19 +61,16 @@ public class PatientPaymentPageActions {
     }
 
     public String getPaymentText() {
-        try {
+        
             wait.until(ExpectedConditions.visibilityOf(objPPP.paymentText));
             String paymentText = objPPP.paymentText.getText();
             log.info("Payment text retrieved: ", paymentText);
             return paymentText;
-        } catch (Exception e) {
-            log.error("Failed to get payment text : ", e);
-            return null;
-        }
+        
     }
 
     public String getPaymentAmount() {
-        try {
+        
             wait.until(ExpectedConditions.visibilityOf(objPPP.amount));
             String amount = null;
             if (!objPPP.amount.getAttribute("value").equals("0")) {
@@ -81,10 +78,7 @@ public class PatientPaymentPageActions {
             }
             log.info("Payment amount retrieved: ", amount);
             return amount;
-        } catch (Exception e) {
-            log.error("Failed to get payment amount : ", e);
-            return null;
-        }
+        
     }
 
     public void ClickAddPaymentBtn() {
@@ -121,15 +115,12 @@ public class PatientPaymentPageActions {
     }
 
     public String getInvalidCardNumber() {
-        try {
+       
             wait.until(ExpectedConditions.visibilityOf(objPPP.invalidCardNumber));
             String invalidCardNumber = objPPP.invalidCardNumber.getText();
             log.info("Invalid card number text retrieved: {}", invalidCardNumber);
             return invalidCardNumber;
-        } catch (Exception e) {
-            log.error("Failed to get invalid card number text : ", e);
-            return null;
-        }
+        
     }
 
     public void setCountry(String country) {
@@ -179,50 +170,38 @@ public class PatientPaymentPageActions {
     }
 
     public String getInvalidNumberTxt() {
-        try {
+       
             wait.until(ExpectedConditions.visibilityOf(objPPP.invalidNumberTxt));
             String invalidNumberTxt = objPPP.invalidNumberTxt.getText();
             log.info("Invalid number text retrieved : ", invalidNumberTxt);
             return invalidNumberTxt;
-        } catch (Exception e) {
-            log.error("Failed to get invalid number text : ", e);
-            return null;
-        }
+        
     }
 
     public String getInvalidCardDate() {
-        try {
+        
             wait.until(ExpectedConditions.visibilityOf(objPPP.invalidCardDate));
             String invalidCardDate = objPPP.invalidCardDate.getText();
             log.info("Invalid card date text retrieved : ", invalidCardDate);
             return invalidCardDate;
-        } catch (Exception e) {
-            log.error("Failed to get invalid card date text : ", e);
-            return null;
-        }
+        
     }
 
     public String getInvalidCvv() {
-        try {
+        
             wait.until(ExpectedConditions.visibilityOf(objPPP.invalidCvv));
             String invalidCvv = objPPP.invalidCvv.getText();
             log.info("Invalid CVV text retrieved : ", invalidCvv);
             return invalidCvv;
-        } catch (Exception e) {
-            log.error("Failed to get invalid CVV text : ", e);
-            return null;
-        }
+        
     }
 
     public String getPayementSuccessText() {
-        try {
+       
             wait.until(ExpectedConditions.visibilityOf(objPPP.paymentSuccess));
             String paymentSuccessText = objPPP.paymentSuccess.getText();
             log.info("Payment success text retrieved : ", paymentSuccessText);
             return paymentSuccessText;
-        } catch (Exception e) {
-            log.error("Failed to get payment success text : ", e);
-            return null;
-        }
+        
     }
 }
