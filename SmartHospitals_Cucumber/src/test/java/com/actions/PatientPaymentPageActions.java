@@ -60,7 +60,7 @@ public class PatientPaymentPageActions {
         }
     }
 
-    public String getPaymentText() {
+    public String getPaymentText() {		// get the amount text for asserting
         
             wait.until(ExpectedConditions.visibilityOf(objPPP.paymentText));
             String paymentText = objPPP.paymentText.getText();
@@ -69,7 +69,7 @@ public class PatientPaymentPageActions {
         
     }
 
-    public String getPaymentAmount() {
+    public String getPaymentAmount() {		// get the amount that the patient have to pay
         
             wait.until(ExpectedConditions.visibilityOf(objPPP.amount));
             String amount = null;
@@ -104,7 +104,7 @@ public class PatientPaymentPageActions {
         }
     }
 
-    public void switchFrame() {
+    public void switchFrame() {		// switching the frame for entering the car details for the payment
         try {
             wait.until(ExpectedConditions.visibilityOf(objPPP.frame));
             wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(objPPP.frame));
@@ -114,7 +114,7 @@ public class PatientPaymentPageActions {
         }
     }
 
-    public String getInvalidCardNumber() {
+    public String getInvalidCardNumber() {		// get the invalid card number text
        
             wait.until(ExpectedConditions.visibilityOf(objPPP.invalidCardNumber));
             String invalidCardNumber = objPPP.invalidCardNumber.getText();
@@ -134,7 +134,7 @@ public class PatientPaymentPageActions {
         }
     }
 
-    public void setCardNumber(String cardnumber) {
+    public void setCardNumber(String cardnumber) {		
         try {
             wait.until(ExpectedConditions.elementToBeClickable(objPPP.cardNumber));
 
@@ -169,7 +169,7 @@ public class PatientPaymentPageActions {
         }
     }
 
-    public String getInvalidNumberTxt() {
+    public String getInvalidNumberTxt() {		// getting the invalid number text
        
             wait.until(ExpectedConditions.visibilityOf(objPPP.invalidNumberTxt));
             String invalidNumberTxt = objPPP.invalidNumberTxt.getText();
@@ -178,7 +178,7 @@ public class PatientPaymentPageActions {
         
     }
 
-    public String getInvalidCardDate() {
+    public String getInvalidCardDate() {		// getting the invalid card date text
         
             wait.until(ExpectedConditions.visibilityOf(objPPP.invalidCardDate));
             String invalidCardDate = objPPP.invalidCardDate.getText();
@@ -187,7 +187,7 @@ public class PatientPaymentPageActions {
         
     }
 
-    public String getInvalidCvv() {
+    public String getInvalidCvv() {		// getting the invalid cvv text
         
             wait.until(ExpectedConditions.visibilityOf(objPPP.invalidCvv));
             String invalidCvv = objPPP.invalidCvv.getText();
@@ -196,7 +196,7 @@ public class PatientPaymentPageActions {
         
     }
 
-    public String getPayementSuccessText() {
+    public String getPayementSuccessText() {		//getting the payment success text message
        
             wait.until(ExpectedConditions.visibilityOf(objPPP.paymentSuccess));
             String paymentSuccessText = objPPP.paymentSuccess.getText();
