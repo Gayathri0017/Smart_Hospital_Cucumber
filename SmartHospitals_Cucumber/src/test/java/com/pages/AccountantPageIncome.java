@@ -9,10 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 public class AccountantPageIncome {
     private WebDriver driver;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div/div/div[1]/div/div[2]/div[3]/a[1]")
+    @FindBy(xpath = " (//a[@class=\"btn btn-primary width50\"])[5]")
     public WebElement accountantRoleButton;
-
-    @FindBy(css = "button.btn[type='submit']")
+   
+    @FindBy(xpath = "//*[@class=\"btn\"]")
     public WebElement signInButton;
 
     @FindBy(xpath = "(//a[@href=\"https://demo.smart-hospital.in/admin/patient/search\"])[2]")
@@ -35,8 +35,8 @@ public class AccountantPageIncome {
 
     @FindBy(id = "add_incomebtn")
     public WebElement saveButton;
-    
-    @FindBy(xpath = "//*[@id=\"toast-container\"]/div/div/p")
+    // //*[@id=\"toast-container\"]/div/div/p
+    @FindBy(id = "toast-container")
     public WebElement errorNotification;
 
     @FindBy(xpath = "(//td[@class=\" dt-body-right\"])[1]")

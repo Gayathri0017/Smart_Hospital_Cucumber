@@ -1,4 +1,4 @@
-Feature: Login with the Patient Login Credentials
+Feature: Payment features
   
   Background: 
     Given the User is on the Login Page

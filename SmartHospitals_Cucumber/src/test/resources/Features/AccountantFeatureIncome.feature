@@ -15,11 +15,10 @@ Background:
     
   @InvalidInput
 Scenario: Add New Income with Invalid Data
-    And the user enters the Header as "Invalid Header", name as "Dr.s.Hari", and amount as "-100.00"
-    And the user clicks the save button
-    Then the user should see an error notification
-    
-  @InvalidWithoutAnyData
-Scenario: Add New Income with No Data
+     When the user enters the following income details:
+    |header					|name |amount |
+    |Telephone Bill	|			|100.00 |
+    |Telephone Bill	|hi		|-52  	|
+    |								|			|				|
     And the user clicks the save button
     Then the user should see an error notification

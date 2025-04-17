@@ -1,6 +1,11 @@
 package com.definitions;
 
+import java.util.List;
+import java.util.Map;
+
 import com.actions.AccountantActionsIncome;
+
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 
 public class AccountantDefinitionIncome {
@@ -32,11 +37,29 @@ public class AccountantDefinitionIncome {
         accountantActionsIncome.clickAddIncome();
     }
 
+    @When("the user enters the following income details:")
+    public void enterIncomeDetailsFromDataTable(DataTable dataTable) {
+    	List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+
+    	for (Map<String, String> row : data) {
+    	    String header = row.get("header");
+    	    String name = row.get("name");
+    	    String amount = row.get("amount");
+
+    	    header = (header == null || header.equalsIgnoreCase("[empty]")) ? "" : header;
+    	    name = (name == null || name.equalsIgnoreCase("[empty]")) ? "" : name;
+    	    amount = (amount == null || amount.equalsIgnoreCase("[empty]")) ? "" : amount;
+
+    	    accountantActionsIncome.enterIncomeDetails(header, name, amount);
+    	}
+
+    }
+
     @Then("the user enters the Header as {string}, name as {string}, and amount as {string}")
     public void enterIncomeDetails(String header, String name, String amount) {
         accountantActionsIncome.enterIncomeDetails(header, name, amount);
     }
-
+    
     @Then("the user clicks the save button")
     public void clickSave() {
         accountantActionsIncome.clickSave();
@@ -44,8 +67,7 @@ public class AccountantDefinitionIncome {
 
     @Then("the user verifies that the new income is added to the table")
     public void verifyIncomeAdded() {
-        // Assuming the amount is passed from the previous step
-        String amount = "1500.00"; // Replace with the actual amount from the previous step
+        String amount = "1500.00"; 
         accountantActionsIncome.verifyIncomeAdded(amount);
     }
     

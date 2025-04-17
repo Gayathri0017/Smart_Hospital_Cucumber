@@ -34,7 +34,7 @@ public class AccountantDefinition {
 
     @Then("User should capture and print the data from dashboard table section this should be stored in the excel for reference")
     public void captureAndStoreData() {
-        String xpath = "/html/body/div[1]/div[1]/section/div[2]";
+        String xpath = "(//div[@class=\"row\"])[2]";
         accountantActions.captureAndStoreData(xpath, excelFilePath);
     }
 
