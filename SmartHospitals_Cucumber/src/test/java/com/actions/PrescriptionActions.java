@@ -24,6 +24,7 @@ public PrescriptionActions() {
 	PageFactory.initElements(HelperClass.getDriver(),pp);
 }
 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+//Select catogory 
 public void selectFindingCategory(String s) {
     wait.until(ExpectedConditions.elementToBeClickable(pp.medicineCat)).click();
     wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);

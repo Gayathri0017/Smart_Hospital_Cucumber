@@ -15,8 +15,8 @@ public class ExcelReader {
     Workbook workbook;
     public ExcelReader(String path){
         try {
-            FileInputStream fis = new FileInputStream(new File(path));
-            workbook=WorkbookFactory.create(fis);
+            FileInputStream fis=new FileInputStream(new File(path));
+            workbook=WorkbookFactory.create(fis); //support both xls,xlsx
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -24,8 +24,6 @@ public class ExcelReader {
     public String getCellData(String sheetName,int row,int col) {
         return workbook.getSheet(sheetName).getRow(row).getCell(col).toString();
     }
-    
-    
 	public static Map<String, String> getPatientAppointmentForm(String filePath, String sheetname) {
 		Map<String , String > appointmentData = new HashMap<>();
 		DataFormatter formatter = new DataFormatter();
