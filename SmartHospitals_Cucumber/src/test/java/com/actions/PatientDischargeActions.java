@@ -105,11 +105,8 @@ public class PatientDischargeActions {
     }
     
     public String getError() {
-        try {
+       
            return objPDP.error.getText();
-        } catch (Exception e) {
-           log.error("Failed to get error message : ", e);
-           return null;
-        }
+        
     }
 }
