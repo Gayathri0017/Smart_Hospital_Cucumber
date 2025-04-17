@@ -14,12 +14,12 @@ Background:
     Then the user verifies that the new income is added to the table
     
   @InvalidInput
-Scenario: Add New Income with Invalid Data
-    And the user enters the Header as "Invalid Header", name as "Dr.s.Hari", and amount as "-100.00"
+Scenario Outline: Add New Income with Invalid Data
+    And the user enters the Header as "<header>", name as "<name>", and amount as "<amount>"
     And the user clicks the save button
     Then the user should see an error notification
-    
-  @InvalidWithoutAnyData
-Scenario: Add New Income with No Data
-    And the user clicks the save button
-    Then the user should see an error notification
+    Examples:
+      |header          |name|amount       |
+      |Telephone Bill  |    |100.00      |
+      |Telephone Bill  |hi  |-52|
+      |   |   |   |

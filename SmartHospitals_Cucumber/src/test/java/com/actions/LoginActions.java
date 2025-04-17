@@ -79,10 +79,10 @@ public class LoginActions {
         logger.info("Checking dashboard for role: "+role);
         try {
             if (role.equalsIgnoreCase("Pharmacist") || role.equalsIgnoreCase("Pathologist") || role.equalsIgnoreCase("Radiologist")) {
-                wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"alert\"]/nav/div[2]/div/div/ul/li[5]/a")));
-                WebElement profileLink=HelperClass.getDriver().findElement(By.xpath("//*[@id=\"alert\"]/nav/div[2]/div/div/ul/li[5]/a"));
+                wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class=\"dropdown-toggle\"]")));
+                WebElement profileLink=HelperClass.getDriver().findElement(By.xpath("//*[@class=\"dropdown-toggle\"]"));
                 profileLink.click();
-                WebElement roleNameElement=HelperClass.getDriver().findElement(By.xpath("//*[@id=\"alert\"]/nav/div[2]/div/div/ul/li[5]/ul/li/div/div[2]/h5"));
+                WebElement roleNameElement=HelperClass.getDriver().findElement(By.xpath("//*[@class=\"sstopuser-test\"]/child::h5"));
                 name=roleNameElement.getText();
             } else if (role.equalsIgnoreCase("Admin") || 
                        role.equalsIgnoreCase("Receptionist") || 
@@ -90,11 +90,12 @@ public class LoginActions {
                        role.equalsIgnoreCase("Super Admin") || 
                        role.equalsIgnoreCase("Doctor") || 
                        role.equalsIgnoreCase("Accountant")) {
-                wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"alert\"]/nav/div[2]/div/div/ul/li[6]/a")));
-                WebElement profileLink=HelperClass.getDriver().findElement(By.xpath("//*[@id=\"alert\"]/nav/div[2]/div/div/ul/li[6]/a"));
+            																		
+                wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class=\"dropdown-toggle\"]")));
+                WebElement profileLink=HelperClass.getDriver().findElement(By.xpath("//*[@class=\"dropdown-toggle\"]"));
                 profileLink.click();
                 Thread.sleep(1000);
-                WebElement roleNameElement=HelperClass.getDriver().findElement(By.xpath("//*[@id=\"alert\"]/nav/div[2]/div/div/ul/li[6]/ul/li/div/div[2]/h5"));
+                WebElement roleNameElement=HelperClass.getDriver().findElement(By.xpath("//*[@class=\"sstopuser-test\"]/child::h5"));
                 name=roleNameElement.getText();
             }
             return name.contains(role);

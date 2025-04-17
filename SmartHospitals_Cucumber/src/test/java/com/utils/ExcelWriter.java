@@ -17,6 +17,7 @@ public class ExcelWriter {
         try {
             File file = new File(filePath);
             if (file.exists()) {
+            	//opening existing workbook and sheet
                 try (FileInputStream fis = new FileInputStream(file)) {
                     workbook = new XSSFWorkbook(fis);
                     sheet = workbook.getSheet(sheetName);
@@ -25,10 +26,11 @@ public class ExcelWriter {
                     }
                 }
             } else {
+            	//creating the sheet if not exist means
                 workbook = new XSSFWorkbook();
                 sheet = workbook.createSheet(sheetName);
             }
-
+            	//finding the columns existing in the excel
             int maxColumns = 0;
             for (Row row : sheet) {
                 if (row.getPhysicalNumberOfCells() > maxColumns) {
@@ -46,14 +48,14 @@ public class ExcelWriter {
                 } else {
                     newRow = sheet.createRow(i);
                 }
-
+                //adding new cell in the row 
                 List<String> rowData = data.get(i);
                 for (int j = 0; j < rowData.size(); j++) {
                     Cell newCell = newRow.createCell(maxColumns + j);
                     newCell.setCellValue(rowData.get(j));
                 }
             }
-
+            //writing all the workbook to the file 
             try (FileOutputStream fos = new FileOutputStream(filePath)) {
                 workbook.write(fos);
             }
