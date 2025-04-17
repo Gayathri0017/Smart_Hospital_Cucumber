@@ -24,11 +24,7 @@ Background:
 	Scenario: Doctor discharging the patient by case ID
 	When the Doctor provides the case Id in search field
 	|caseID		|
-<<<<<<< HEAD
-	|6291			|
-=======
 	|6914			|
->>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
 	Then the Doctor provides the discharge details
 	|DischargeStatus	| 
 	|Normal						|
