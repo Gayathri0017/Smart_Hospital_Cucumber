@@ -1,27 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+=======
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2025-04-16T20:51:20 IST" name="Default suite" finished-at="2025-04-16T20:51:34 IST" duration-ms="13461">
+=======
+  <suite started-at="2025-04-16T15:09:01 IST" name="Default suite" finished-at="2025-04-16T15:09:20 IST" duration-ms="18515">
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
+<<<<<<< HEAD
     <test started-at="2025-04-16T20:51:20 IST" name="Default test" finished-at="2025-04-16T20:51:34 IST" duration-ms="13461">
+=======
+    <test started-at="2025-04-16T15:09:01 IST" name="Default test" finished-at="2025-04-16T15:09:20 IST" duration-ms="18515">
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
       <class name="com.runner.RunnerClass">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-16T20:51:20 IST" name="setUpClass" finished-at="2025-04-16T20:51:21 IST" duration-ms="672" status="PASS">
+=======
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-16T15:09:01 IST" name="setUpClass" finished-at="2025-04-16T15:09:02 IST" duration-ms="478" status="PASS">
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[org.testng.TestRunner@3b55dd15]]>
+=======
+                <![CDATA[org.testng.TestRunner@7adbd080]]>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-16T20:51:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-16T20:51:29 IST" duration-ms="8413" status="FAIL">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-16T15:09:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-16T15:09:19 IST" duration-ms="16993" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add New Income with No Data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Accountant Income Functionalities"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-16T15:09:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-16T15:09:17 IST" duration-ms="15487" status="PASS">
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
           <params>
             <param index="0">
               <value>
@@ -66,7 +106,27 @@ at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-16T20:51:29 IST" name="tearDownClass" finished-at="2025-04-16T20:51:34 IST" duration-ms="4302" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-16T15:09:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-16T15:09:20 IST" duration-ms="17875" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add New Income with Invalid Data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Accountant Income Functionalities"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerClass@76f2bbc1]" started-at="2025-04-16T15:09:20 IST" name="tearDownClass" finished-at="2025-04-16T15:09:20 IST" duration-ms="101" status="PASS">
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

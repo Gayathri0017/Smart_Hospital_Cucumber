@@ -23,6 +23,6 @@ Scenario: Patient booking with date as empty field
 Scenario: Patient booking with specialist as empty field
 	And the User can fill the appointment 
 	|Date					|Specialist				|Doctor							|Shift				|Timing								|AvailableTiming		|Message		|
-	|07/22/2025		|Cardiologists		|Sansa Gomez (9008)	|Evening			|04:00 PM - 07:00 PM	|04:00 PM						|						|
+	|08/18/2025		|Cardiologists		|Sansa Gomez (9008)	|Evening			|04:00 PM - 07:00 PM	|04:00 PM						|						|
 	And the User should save the form for appointment	
 	And the User can able to see the error msg "Message field is required"

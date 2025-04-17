@@ -23,7 +23,7 @@ public class AccountantActions {
     private WebDriverWait wait;
     private AccountantPage accountantPage;
     private static final Logger log = LogManager.getLogger(AccountantActions.class);
-
+//constructor
     public AccountantActions() {
         this.driver = HelperClass.getDriver();
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -96,13 +96,14 @@ public class AccountantActions {
             return false;
         }
     }
-
+//converting to the table data
     public List<List<String>> convertTableDataToRows(String tableData) {
         List<List<String>> rows = new ArrayList<>();
         String[] lines = tableData.split("\n");
 
         for (String line : lines) {
             if (!line.trim().isEmpty()) {
+            	//if there is 2 or more space it will split
                 String[] cells = line.split("\\s{2,}");
                 rows.add(Arrays.asList(cells));
             }
