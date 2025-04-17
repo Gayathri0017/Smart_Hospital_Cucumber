@@ -24,7 +24,7 @@ Background:
 	Scenario: Doctor discharging the patient by case ID
 	When the Doctor provides the case Id in search field
 	|caseID		|
-	|6290			|
+	|6914			|
 	Then the Doctor provides the discharge details
 	|DischargeStatus	| 
 	|Normal						|
