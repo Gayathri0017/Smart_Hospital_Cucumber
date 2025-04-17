@@ -15,12 +15,10 @@ public class PrescriptionDefinition {
 	@When("the Doctor Navigates to the OPD section")
 	public void the_doctor_navigates_to_the_opd_section() throws InterruptedException {
 	   pa.OPDSection();
-	   Thread.sleep(1000);
 	}
 	@When("Clicks the Add Prescription")
 	public void clicks_the_add_prescription() throws InterruptedException {
 	    pa.addPres();
-	    Thread.sleep(1000);
 	}
 	@Then("the doctor should navigate to the Prescription Page")
 	public void the_doctor_should_navigate_to_the_prescription_page() throws InterruptedException {
@@ -55,19 +53,17 @@ public class PrescriptionDefinition {
 	}
 	@Then("the system should show an error {string}")
 	public void the_system_should_show_an_error(String string) throws InterruptedException {
-		Thread.sleep(1000);
 	   pa.assertinvalid(string);
 	}
 	@When("the doctor clicks the edit option")
 	public void the_doctor_clicks_the_edit_option() throws InterruptedException {
 	    pa.edit();
-	    Thread.sleep(1000);
 	}
 	@When("the doctor Clicks the View Prescription")
 	public void the_doctor_clicks_the_view_prescription() throws InterruptedException{
 		try {
 		HelperClass.getDriver().navigate().refresh();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 	    pa.view();
 		}catch(Exception e) {
 			System.out.println("Prescrition not got added:"+e.getMessage());
