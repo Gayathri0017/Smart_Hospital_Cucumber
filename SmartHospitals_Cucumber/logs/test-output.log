@@ -4006,3 +4006,199 @@ Date:06/22/2025
 2025-04-16 21:53:39 [main] INFO : Form submitted
 2025-04-16 21:53:39 [main] INFO : Field required error message retrieved
 2025-04-16 21:53:40 [main] INFO : Field required error message retrieved
+2025-04-17 10:26:40 [TestNG-PoolService-1] INFO : Initialized AccountantActions
+2025-04-17 10:26:40 [TestNG-PoolService-3] INFO : Initialized AccountantActions
+2025-04-17 10:26:40 [TestNG-PoolService-2] INFO : Initialized AccountantActions
+2025-04-17 10:26:41 [TestNG-PoolService-2] INFO : Selected role: Accountant
+2025-04-17 10:26:41 [TestNG-PoolService-3] INFO : Selected role: Accountant
+2025-04-17 10:26:41 [TestNG-PoolService-1] INFO : Selected role: Accountant
+2025-04-17 10:26:41 [TestNG-PoolService-3] INFO : Clicked Sign In button
+2025-04-17 10:26:41 [TestNG-PoolService-2] INFO : Clicked Sign In button
+2025-04-17 10:26:46 [TestNG-PoolService-1] INFO : Clicked Sign In button
+2025-04-17 10:26:47 [TestNG-PoolService-3] INFO : Summary table displayed: true
+2025-04-17 10:26:49 [TestNG-PoolService-1] INFO : Summary table displayed: true
+2025-04-17 10:26:49 [TestNG-PoolService-1] INFO : Captured dashboard table data
+2025-04-17 10:26:49 [TestNG-PoolService-1] INFO : Converted table data to rows with 18 entries
+2025-04-17 10:26:49 [TestNG-PoolService-3] INFO : Clicked Expenses menu
+2025-04-17 10:26:49 [TestNG-PoolService-2] INFO : Summary table displayed: true
+2025-04-17 10:26:50 [TestNG-PoolService-2] INFO : Clicked Expenses menu
+2025-04-17 10:26:50 [TestNG-PoolService-1] INFO : Stored dashboard table data to Excel at: target/dashboard_data.xlsx
+2025-04-17 10:26:51 [TestNG-PoolService-1] INFO : Clicked Expenses menu
+2025-04-17 10:27:40 [TestNG-PoolService-3] INFO : Initialized AccountantActions
+2025-04-17 10:27:40 [TestNG-PoolService-1] INFO : Initialized AccountantActions
+2025-04-17 10:27:40 [TestNG-PoolService-2] INFO : Initialized AccountantActions
+2025-04-17 10:27:41 [TestNG-PoolService-1] INFO : Selected role: Accountant
+2025-04-17 10:27:41 [TestNG-PoolService-3] INFO : Selected role: Accountant
+2025-04-17 10:27:41 [TestNG-PoolService-2] INFO : Selected role: Accountant
+2025-04-17 10:27:41 [TestNG-PoolService-1] INFO : Clicked Sign In button
+2025-04-17 10:27:41 [TestNG-PoolService-3] INFO : Clicked Sign In button
+2025-04-17 10:27:47 [TestNG-PoolService-2] INFO : Clicked Sign In button
+2025-04-17 10:27:48 [TestNG-PoolService-2] INFO : Summary table displayed: true
+2025-04-17 10:27:48 [TestNG-PoolService-3] INFO : Summary table displayed: true
+2025-04-17 10:27:49 [TestNG-PoolService-2] INFO : Clicked Expenses menu
+2025-04-17 10:27:49 [TestNG-PoolService-1] INFO : Summary table displayed: true
+2025-04-17 10:27:49 [TestNG-PoolService-1] INFO : Captured dashboard table data
+2025-04-17 10:27:49 [TestNG-PoolService-1] INFO : Converted table data to rows with 18 entries
+2025-04-17 10:27:49 [TestNG-PoolService-3] INFO : Clicked Expenses menu
+2025-04-17 10:27:51 [TestNG-PoolService-1] INFO : Stored dashboard table data to Excel at: target/dashboard_data.xlsx
+2025-04-17 10:27:51 [TestNG-PoolService-1] INFO : Clicked Expenses menu
+2025-04-17 10:32:37 [TestNG-PoolService-1] INFO : Initialized AccountantActions
+2025-04-17 10:32:37 [TestNG-PoolService-2] INFO : Initialized AccountantActions
+2025-04-17 10:32:37 [TestNG-PoolService-3] INFO : Initialized AccountantActions
+2025-04-17 10:32:37 [TestNG-PoolService-1] INFO : Selected role: Accountant
+2025-04-17 10:32:37 [TestNG-PoolService-3] INFO : Selected role: Accountant
+2025-04-17 10:32:37 [TestNG-PoolService-2] INFO : Selected role: Accountant
+2025-04-17 10:32:37 [TestNG-PoolService-1] INFO : Clicked Sign In button
+2025-04-17 10:32:37 [TestNG-PoolService-2] INFO : Clicked Sign In button
+2025-04-17 10:32:38 [TestNG-PoolService-3] INFO : Clicked Sign In button
+2025-04-17 10:32:45 [TestNG-PoolService-3] INFO : Summary table displayed: true
+2025-04-17 10:32:45 [TestNG-PoolService-1] INFO : Summary table displayed: true
+2025-04-17 10:32:45 [TestNG-PoolService-2] INFO : Summary table displayed: true
+2025-04-17 10:32:45 [TestNG-PoolService-1] INFO : Captured dashboard table data
+2025-04-17 10:32:45 [TestNG-PoolService-1] INFO : Converted table data to rows with 18 entries
+2025-04-17 10:32:45 [TestNG-PoolService-3] INFO : Clicked Expenses menu
+2025-04-17 10:32:45 [TestNG-PoolService-2] INFO : Clicked Expenses menu
+2025-04-17 10:32:46 [TestNG-PoolService-1] INFO : Stored dashboard table data to Excel at: target/dashboard_data.xlsx
+2025-04-17 10:32:46 [TestNG-PoolService-1] INFO : Clicked Expenses menu
+2025-04-17 10:37:18 [TestNG-PoolService-2] INFO : Initialized AccountantActions
+2025-04-17 10:37:18 [TestNG-PoolService-1] INFO : Initialized AccountantActions
+2025-04-17 10:37:18 [TestNG-PoolService-3] INFO : Initialized AccountantActions
+2025-04-17 10:37:19 [TestNG-PoolService-2] INFO : Selected role: Accountant
+2025-04-17 10:37:19 [TestNG-PoolService-1] INFO : Selected role: Accountant
+2025-04-17 10:37:19 [TestNG-PoolService-3] INFO : Selected role: Accountant
+2025-04-17 10:37:24 [TestNG-PoolService-2] INFO : Clicked Sign In button
+2025-04-17 10:37:25 [TestNG-PoolService-3] INFO : Clicked Sign In button
+2025-04-17 10:37:25 [TestNG-PoolService-1] INFO : Clicked Sign In button
+2025-04-17 10:37:25 [TestNG-PoolService-2] INFO : Summary table displayed: true
+2025-04-17 10:37:26 [TestNG-PoolService-3] INFO : Summary table displayed: true
+2025-04-17 10:37:26 [TestNG-PoolService-1] INFO : Summary table displayed: true
+2025-04-17 10:37:26 [TestNG-PoolService-1] INFO : Captured dashboard table data
+2025-04-17 10:37:26 [TestNG-PoolService-1] INFO : Converted table data to rows with 18 entries
+2025-04-17 10:37:26 [TestNG-PoolService-2] INFO : Clicked Expenses menu
+2025-04-17 10:37:26 [TestNG-PoolService-3] INFO : Clicked Expenses menu
+2025-04-17 10:37:26 [TestNG-PoolService-2] INFO : Clicked Add Expense button
+2025-04-17 10:37:27 [TestNG-PoolService-3] INFO : Clicked Add Expense button
+2025-04-17 10:37:27 [TestNG-PoolService-2] INFO : Selected Expense Header: Telephone Bill
+2025-04-17 10:37:28 [TestNG-PoolService-1] INFO : Stored dashboard table data to Excel at: target/dashboard_data.xlsx
+2025-04-17 10:37:28 [TestNG-PoolService-1] INFO : Clicked Expenses menu
+2025-04-17 10:37:29 [TestNG-PoolService-1] INFO : Clicked Add Expense button
+2025-04-17 10:37:29 [TestNG-PoolService-1] INFO : Selected Expense Header: Telephone Bill
+2025-04-17 10:39:21 [TestNG-PoolService-1] INFO : Initialized AccountantActions
+2025-04-17 10:39:21 [TestNG-PoolService-3] INFO : Initialized AccountantActions
+2025-04-17 10:39:21 [TestNG-PoolService-2] INFO : Initialized AccountantActions
+2025-04-17 10:39:21 [TestNG-PoolService-2] INFO : Selected role: Accountant
+2025-04-17 10:39:21 [TestNG-PoolService-3] INFO : Selected role: Accountant
+2025-04-17 10:39:21 [TestNG-PoolService-1] INFO : Selected role: Accountant
+2025-04-17 10:39:21 [TestNG-PoolService-1] INFO : Clicked Sign In button
+2025-04-17 10:39:21 [TestNG-PoolService-2] INFO : Clicked Sign In button
+2025-04-17 10:39:27 [TestNG-PoolService-3] INFO : Clicked Sign In button
+2025-04-17 10:39:28 [TestNG-PoolService-2] INFO : Summary table displayed: true
+2025-04-17 10:39:28 [TestNG-PoolService-1] INFO : Summary table displayed: true
+2025-04-17 10:39:28 [TestNG-PoolService-1] INFO : Captured dashboard table data
+2025-04-17 10:39:28 [TestNG-PoolService-1] INFO : Converted table data to rows with 18 entries
+2025-04-17 10:39:28 [TestNG-PoolService-3] INFO : Summary table displayed: true
+2025-04-17 10:39:29 [TestNG-PoolService-2] INFO : Clicked Expenses menu
+2025-04-17 10:39:29 [TestNG-PoolService-2] INFO : Clicked Add Expense button
+2025-04-17 10:39:29 [TestNG-PoolService-2] INFO : Selected Expense Header: Telephone Bill
+2025-04-17 10:39:29 [TestNG-PoolService-3] INFO : Clicked Expenses menu
+2025-04-17 10:39:29 [TestNG-PoolService-3] INFO : Clicked Add Expense button
+2025-04-17 10:39:29 [TestNG-PoolService-3] INFO : Selected Expense Header: Telephone Bill
+2025-04-17 10:39:30 [TestNG-PoolService-1] INFO : Stored dashboard table data to Excel at: target/dashboard_data.xlsx
+2025-04-17 10:39:30 [TestNG-PoolService-1] INFO : Clicked Expenses menu
+2025-04-17 10:39:31 [TestNG-PoolService-1] INFO : Clicked Add Expense button
+2025-04-17 10:39:31 [TestNG-PoolService-1] INFO : Selected Expense Header: Telephone Bill
+2025-04-17 10:41:22 [TestNG-PoolService-1] INFO : Initialized AccountantActions
+2025-04-17 10:41:22 [TestNG-PoolService-3] INFO : Initialized AccountantActions
+2025-04-17 10:41:22 [TestNG-PoolService-2] INFO : Initialized AccountantActions
+2025-04-17 10:41:22 [TestNG-PoolService-1] INFO : Selected role: Accountant
+2025-04-17 10:41:22 [TestNG-PoolService-2] INFO : Selected role: Accountant
+2025-04-17 10:41:22 [TestNG-PoolService-3] INFO : Selected role: Accountant
+2025-04-17 10:41:23 [TestNG-PoolService-1] INFO : Clicked Sign In button
+2025-04-17 10:41:23 [TestNG-PoolService-2] INFO : Clicked Sign In button
+2025-04-17 10:41:28 [TestNG-PoolService-3] INFO : Clicked Sign In button
+2025-04-17 10:41:29 [TestNG-PoolService-1] INFO : Summary table displayed: true
+2025-04-17 10:41:29 [TestNG-PoolService-1] INFO : Captured dashboard table data
+2025-04-17 10:41:29 [TestNG-PoolService-1] INFO : Converted table data to rows with 18 entries
+2025-04-17 10:41:29 [TestNG-PoolService-2] INFO : Summary table displayed: true
+2025-04-17 10:41:30 [TestNG-PoolService-3] INFO : Summary table displayed: true
+2025-04-17 10:41:30 [TestNG-PoolService-2] INFO : Clicked Expenses menu
+2025-04-17 10:41:30 [TestNG-PoolService-2] INFO : Clicked Add Expense button
+2025-04-17 10:41:30 [TestNG-PoolService-3] INFO : Clicked Expenses menu
+2025-04-17 10:41:30 [TestNG-PoolService-2] INFO : Selected Expense Header: Telephone Bill
+2025-04-17 10:41:30 [TestNG-PoolService-1] INFO : Stored dashboard table data to Excel at: target/dashboard_data.xlsx
+2025-04-17 10:41:30 [TestNG-PoolService-3] INFO : Clicked Add Expense button
+2025-04-17 10:41:31 [TestNG-PoolService-3] INFO : Selected Expense Header: Telephone Bill
+2025-04-17 10:41:31 [TestNG-PoolService-1] INFO : Clicked Expenses menu
+2025-04-17 10:41:31 [TestNG-PoolService-1] INFO : Clicked Add Expense button
+2025-04-17 10:41:32 [TestNG-PoolService-1] INFO : Selected Expense Header: Telephone Bill
+2025-04-17 10:44:44 [TestNG-PoolService-3] INFO : Initialized AccountantActions
+2025-04-17 10:44:44 [TestNG-PoolService-1] INFO : Initialized AccountantActions
+2025-04-17 10:44:44 [TestNG-PoolService-2] INFO : Initialized AccountantActions
+2025-04-17 10:44:44 [TestNG-PoolService-1] INFO : Selected role: Accountant
+2025-04-17 10:44:44 [TestNG-PoolService-2] INFO : Selected role: Accountant
+2025-04-17 10:44:44 [TestNG-PoolService-3] INFO : Selected role: Accountant
+2025-04-17 10:44:45 [TestNG-PoolService-1] INFO : Clicked Sign In button
+2025-04-17 10:44:45 [TestNG-PoolService-3] INFO : Clicked Sign In button
+2025-04-17 10:44:45 [TestNG-PoolService-2] INFO : Clicked Sign In button
+2025-04-17 10:44:50 [TestNG-PoolService-1] INFO : Summary table displayed: true
+2025-04-17 10:44:50 [TestNG-PoolService-1] INFO : Captured dashboard table data
+2025-04-17 10:44:50 [TestNG-PoolService-1] INFO : Converted table data to rows with 18 entries
+2025-04-17 10:44:51 [TestNG-PoolService-3] INFO : Summary table displayed: true
+2025-04-17 10:44:51 [TestNG-PoolService-2] INFO : Summary table displayed: true
+2025-04-17 10:44:51 [TestNG-PoolService-3] INFO : Clicked Expenses menu
+2025-04-17 10:44:52 [TestNG-PoolService-3] INFO : Clicked Add Expense button
+2025-04-17 10:44:52 [TestNG-PoolService-1] INFO : Stored dashboard table data to Excel at: target/dashboard_data.xlsx
+2025-04-17 10:44:52 [TestNG-PoolService-3] INFO : Selected Expense Header: Telephone Bill
+2025-04-17 10:44:52 [TestNG-PoolService-2] INFO : Clicked Expenses menu
+2025-04-17 10:44:53 [TestNG-PoolService-3] INFO : Entered Expense Name: hi
+2025-04-17 10:44:53 [TestNG-PoolService-1] INFO : Clicked Expenses menu
+2025-04-17 10:44:53 [TestNG-PoolService-3] INFO : Entered Expense Amount: -52
+2025-04-17 10:44:53 [TestNG-PoolService-2] INFO : Clicked Add Expense button
+2025-04-17 10:44:53 [TestNG-PoolService-1] INFO : Clicked Add Expense button
+2025-04-17 10:44:53 [TestNG-PoolService-3] INFO : Clicked Save button
+2025-04-17 10:44:53 [TestNG-PoolService-3] INFO : Error notification displayed: true
+2025-04-17 10:44:53 [TestNG-PoolService-2] INFO : Selected Expense Header: Telephone Bill
+2025-04-17 10:44:53 [TestNG-PoolService-2] INFO : Entered Expense Name: Office Telephone Charges
+2025-04-17 10:44:53 [TestNG-PoolService-2] INFO : Entered Expense Amount: -100.00
+2025-04-17 10:44:54 [TestNG-PoolService-2] INFO : Clicked Save button
+2025-04-17 10:44:54 [TestNG-PoolService-2] INFO : Error notification displayed: true
+2025-04-17 10:46:02 [TestNG-PoolService-1] INFO : Initialized AccountantActions
+2025-04-17 10:46:02 [TestNG-PoolService-1] INFO : Selected role: Accountant
+2025-04-17 10:46:02 [TestNG-PoolService-1] INFO : Clicked Sign In button
+2025-04-17 10:46:03 [TestNG-PoolService-3] INFO : Initialized AccountantActions
+2025-04-17 10:46:03 [TestNG-PoolService-2] INFO : Initialized AccountantActions
+2025-04-17 10:46:03 [TestNG-PoolService-3] INFO : Selected role: Accountant
+2025-04-17 10:46:03 [TestNG-PoolService-2] INFO : Selected role: Accountant
+2025-04-17 10:46:03 [TestNG-PoolService-3] INFO : Clicked Sign In button
+2025-04-17 10:46:03 [TestNG-PoolService-2] INFO : Clicked Sign In button
+2025-04-17 10:46:06 [TestNG-PoolService-1] INFO : Summary table displayed: true
+2025-04-17 10:46:06 [TestNG-PoolService-1] INFO : Captured dashboard table data
+2025-04-17 10:46:06 [TestNG-PoolService-1] INFO : Converted table data to rows with 18 entries
+2025-04-17 10:46:07 [TestNG-PoolService-1] INFO : Stored dashboard table data to Excel at: target/dashboard_data.xlsx
+2025-04-17 10:46:08 [TestNG-PoolService-1] INFO : Clicked Expenses menu
+2025-04-17 10:46:08 [TestNG-PoolService-1] INFO : Clicked Add Expense button
+2025-04-17 10:46:09 [TestNG-PoolService-1] INFO : Selected Expense Header: Telephone Bill
+2025-04-17 10:46:09 [TestNG-PoolService-1] INFO : Entered Expense Name: Office Telephone Charges
+2025-04-17 10:46:09 [TestNG-PoolService-1] INFO : Entered Expense Amount: 100.00
+2025-04-17 10:46:09 [TestNG-PoolService-1] INFO : Clicked Save button
+2025-04-17 10:46:09 [TestNG-PoolService-2] INFO : Summary table displayed: true
+2025-04-17 10:46:10 [TestNG-PoolService-1] INFO : Success notification displayed: true
+2025-04-17 10:46:09 [TestNG-PoolService-3] INFO : Summary table displayed: true
+2025-04-17 10:46:11 [TestNG-PoolService-2] INFO : Clicked Expenses menu
+2025-04-17 10:46:11 [TestNG-PoolService-3] INFO : Clicked Expenses menu
+2025-04-17 10:46:11 [TestNG-PoolService-1] INFO : Summary table displayed: true
+2025-04-17 10:46:11 [TestNG-PoolService-1] INFO : Captured dashboard table data
+2025-04-17 10:46:11 [TestNG-PoolService-1] INFO : Converted table data to rows with 18 entries
+2025-04-17 10:46:11 [TestNG-PoolService-2] INFO : Clicked Add Expense button
+2025-04-17 10:46:11 [TestNG-PoolService-3] INFO : Clicked Add Expense button
+2025-04-17 10:46:11 [TestNG-PoolService-1] INFO : Stored dashboard table data to Excel at: target/dashboard_data.xlsx
+2025-04-17 10:46:12 [TestNG-PoolService-2] INFO : Selected Expense Header: Telephone Bill
+2025-04-17 10:46:12 [TestNG-PoolService-3] INFO : Selected Expense Header: Telephone Bill
+2025-04-17 10:46:12 [TestNG-PoolService-3] INFO : Entered Expense Name: hi
+2025-04-17 10:46:12 [TestNG-PoolService-2] INFO : Entered Expense Name: Office Telephone Charges
+2025-04-17 10:46:12 [TestNG-PoolService-3] INFO : Entered Expense Amount: -52
+2025-04-17 10:46:12 [TestNG-PoolService-2] INFO : Entered Expense Amount: -100.00
+2025-04-17 10:46:12 [TestNG-PoolService-3] INFO : Clicked Save button
+2025-04-17 10:46:12 [TestNG-PoolService-2] INFO : Clicked Save button
+2025-04-17 10:46:12 [TestNG-PoolService-3] INFO : Error notification displayed: true
+2025-04-17 10:46:12 [TestNG-PoolService-2] INFO : Error notification displayed: true

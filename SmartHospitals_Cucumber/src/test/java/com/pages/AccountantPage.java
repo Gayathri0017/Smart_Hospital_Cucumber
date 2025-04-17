@@ -23,19 +23,19 @@ public class AccountantPage {
     @FindBy(xpath = "/html/body/div[1]/div[1]/section/div[2]")
     public WebElement summaryTable;
 
-    @FindBy(xpath = "//*[@class=\"info-box-content\"]")
+    @FindBy(xpath = "(//*[@class=\"info-box-content\"])[9]")
     public WebElement expensesMenu;
 
-    @FindBy(css = "a.btn.btn-primary")
+    @FindBy(xpath = "//*[@class=\"btn btn-primary btn-sm addexpense\"]")
     public WebElement addExpenseButton;
 
-    @FindBy(id = "exp_head_id")
+    @FindBy(xpath = "//*[@id=\"exp_head_id\"]")
     public WebElement expenseHeaderDropdown;
 
-    @FindBy(id = "name")
+    @FindBy(xpath = "//*[@id=\"name\"]")
     public WebElement expenseNameField;
 
-    @FindBy(id = "amount")
+    @FindBy(xpath = "//*[@id=\"amount\"]")
     public WebElement expenseAmountField;
 
     @FindBy(id = "addexpensebtn")
