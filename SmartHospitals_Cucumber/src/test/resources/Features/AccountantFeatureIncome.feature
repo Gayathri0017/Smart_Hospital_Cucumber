@@ -14,12 +14,11 @@ Background:
     Then the user verifies that the new income is added to the table
     
   @InvalidInput
-Scenario Outline: Add New Income with Invalid Data
-    And the user enters the Header as "<header>", name as "<name>", and amount as "<amount>"
+Scenario: Add New Income with Invalid Data
+     When the user enters the following income details:
+    |header					|name |amount |
+    |Telephone Bill	|			|100.00 |
+    |Telephone Bill	|hi		|-52  	|
+    |								|			|				|
     And the user clicks the save button
     Then the user should see an error notification
-    Examples:
-      |header          |name|amount       |
-      |Telephone Bill  |    |100.00      |
-      |Telephone Bill  |hi  |-52|
-      |   |   |   |
