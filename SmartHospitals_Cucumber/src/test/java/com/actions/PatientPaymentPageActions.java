@@ -144,6 +144,9 @@ public class PatientPaymentPageActions {
                  js.executeScript("arguments[0].value = arguments[1];", objPPP.cardNumber, cardnumber);
                  log.info("Card number passed : ", cardnumber);
         	}
+        	else {
+        		log.error("Card number is invalid : "+cardnumber);
+        	}
         } catch (Exception e) {
             log.error("Failed to set card number : ", e);
         }
