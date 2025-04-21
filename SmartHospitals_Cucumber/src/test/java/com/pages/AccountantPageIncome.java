@@ -9,13 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 public class AccountantPageIncome {
     private WebDriver driver;
 
-    @FindBy(xpath = "(//*[@class=\"btn btn-primary width50\"])[5]")
+    @FindBy(xpath = "//a[contains(text(),'Accountant')]")
     public WebElement accountantRoleButton;
    
     @FindBy(xpath = "//*[@class=\"btn\"]")
     public WebElement signInButton;
 
-    @FindBy(xpath = "(//*[@class=\"sidebar-menu verttop\"]/child :: li[14]")
+    @FindBy(xpath = "(//*[@href=\"https://demo.smart-hospital.in/admin/patient/search\"])[2]")
     public WebElement financeSection;
 
     @FindBy(xpath = "(//*[@href=\"https://demo.smart-hospital.in/admin/income\"])[2]")
