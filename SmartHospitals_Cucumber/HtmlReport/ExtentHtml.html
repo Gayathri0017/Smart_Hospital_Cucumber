@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Apr 21, 2025 01:05:54 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Apr 21, 2025 02:29:29 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -65,7 +64,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -77,6 +76,7 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@InvalidInput</a></li>
 					<li><a href='#'>@ValidInput</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -119,12 +119,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
-                    <span class='strong'>0</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>1</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
-                    1</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -137,12 +137,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'>
-                    <span class='strong'>0</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>3</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
-                    1</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -157,14 +157,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='58%'>
-                    <span class='strong'>7</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>30</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='8%'>
-                    1</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='33%'>
-                    4</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -185,11 +185,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Accountant Dashboard Functionalities</span>
-						<span class='test-time'>Apr 21, 2025 01:05:55 pm</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-time'>Apr 21, 2025 02:29:31 pm</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -199,11 +199,11 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 07.491</span>
+	<span class='duration right label'>00 00 15.668</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Add New Expense and Verify</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Add New Expense and Verify</div>
 	</div>
 	
 	
@@ -212,92 +212,170 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='4' class='node given Pass' status='Pass'>
+		<li test-id='10' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.AccountantDefinition.launchApplication())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User launches the Smart Hospital application</div>
 
 
 		</li>
-		<li test-id='5' class='node when Pass' status='Pass'>
+		<li test-id='12' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.AccountantDefinition.selectRole(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user selects role "Accountant"</div>
 
 
 		</li>
-		<li test-id='6' class='node and Pass' status='Pass'>
+		<li test-id='15' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.AccountantDefinition.clickSignIn())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Sign In buttons</div>
 
 
 		</li>
-		<li test-id='7' class='node then Pass' status='Pass'>
+		<li test-id='20' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.AccountantDefinition.verifySummaryTable())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see the dashboard summary table</div>
 
 
 		</li>
-		<li test-id='8' class='node and Pass' status='Pass'>
+		<li test-id='23' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.AccountantDefinition.captureAndStoreData())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should capture and print the data from dashboard table section this should be stored in the excel for reference</div>
 
 
 		</li>
-		<li test-id='9' class='node and Pass' status='Pass'>
+		<li test-id='28' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.AccountantDefinition.navigateToExpenses())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And then need enter to the Expenses</div>
 
 
 		</li>
-		<li test-id='10' class='node then Pass' status='Pass'>
+		<li test-id='35' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.definitions.AccountantDefinition.clickAddExpense())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then need click Add Expenses</div>
 
 
 		</li>
-		<li test-id='11' class='node then Fail' status='Fail'>
-			<div class="step-name" title="(com.definitions.AccountantDefinition.addNewExpense(java.lang.String,java.lang.String,java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then need to give the Header as "Telephone Bill", name "Office Telephone Charges" and amount "100.00"</div>
+		<li test-id='36' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinition.addNewExpense(java.lang.String,java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then need to give the Header as "Telephone Bill", name "Office Telephone Charges" and amount "100.00"</div>
 
 
-					<textarea disabled class="code-block">org.openqa.selenium.JavascriptException: javascript error: aruguments is not defined
-  (Session info: chrome=135.0.7049.96)
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cd791ccedf6cc63e2a5460bc729b0d11, executeScript {script=aruguments[0].value=aruguments[1];, args=[{element-6066-11e4-a52e-4f735466cecf=f.96EC8C5AE540B89F0BF5B4A19B2AAD69.d.8AD57853C7E02997C9658311B1BC61F5.e.234}, Office Telephone Charges]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63808/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cd791ccedf6cc63e2a5460bc729b0d11
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
-	at com.actions.AccountantActions.enterExpenseName(AccountantActions.java:75)
-	at com.definitions.AccountantDefinition.addNewExpense(AccountantDefinition.java:54)
-	at ✽.need to give the Header as "Telephone Bill", name "Office Telephone Charges" and amount "100.00"(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/AccountantFeatureExpenses.feature:14)
-</textarea>
 		</li>
-		<li test-id='12' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.definitions.AccountantDefinition.saveExpense())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And the user click the save</div>
+		<li test-id='37' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinition.saveExpense())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the save</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='13' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.definitions.AccountantDefinition.verifySuccessNotification())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then need to see the asseart the success notifications</div>
+		<li test-id='38' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinition.verifySuccessNotification())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then need to see the asseart the success notifications</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='14' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.definitions.AccountantDefinition.verifySummaryTable())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User should see the dashboard summary table</div>
+		<li test-id='39' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinition.verifySummaryTable())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see the dashboard summary table</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='15' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.definitions.AccountantDefinition.captureAndStoreData())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User should capture and print the data from dashboard table section this should be stored in the excel for reference</div>
+		<li test-id='40' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinition.captureAndStoreData())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User should capture and print the data from dashboard table section this should be stored in the excel for reference</div>
 
 
-					<div class="node-step">Step skipped</div>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='3' status='pass'>
+
+	<span class='duration right label'>00 00 13.453</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Add New Expense with Invalid Data</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>header</td><td>name</td><td>amount</td></tr><tr><td>Telephone Bill</td><td>Office Telephone Charges</td><td>-100.00</td></tr><tr><td>Telephone Bill</td><td>hi</td><td>-52</td></tr></table><br><br><table class='markup-table table '><tr><td>header</td><td>name</td><td>amount</td></tr><tr><td>Telephone Bill</td><td>Office Telephone Charges</td><td>-100.00</td></tr><tr><td>Telephone Bill</td><td>hi</td><td>-52</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='4' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Add New Expense with Invalid Data</div>
+
+				<div class='category-list'>
+						<span class='category label'>@InvalidInput</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='9' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.launchApplication()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User launches the Smart Hospital application</h6>
+
+				</li>
+				<li test-id='14' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.selectRole(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user selects role "Accountant"</h6>
+
+				</li>
+				<li test-id='17' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.clickSignIn()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Sign In buttons</h6>
+
+				</li>
+				<li test-id='19' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.verifySummaryTable()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see the dashboard summary table</h6>
+
+				</li>
+				<li test-id='21' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.navigateToExpenses()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And then need enter to the Expenses</h6>
+
+				</li>
+				<li test-id='24' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.clickAddExpense()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then need click Add Expenses</h6>
+
+				</li>
+				<li test-id='26' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.addNewExpense(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then need to give the Header as "Telephone Bill", name "Office Telephone Charges" and amount "-100.00"</h6>
+
+				</li>
+				<li test-id='30' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.saveExpense()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the save</h6>
+
+				</li>
+				<li test-id='32' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.verifyErrorNotification()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then need to see the asseart the error notifications</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='5' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Add New Expense with Invalid Data</div>
+
+				<div class='category-list'>
+						<span class='category label'>@InvalidInput</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='11' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.launchApplication()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User launches the Smart Hospital application</h6>
+
+				</li>
+				<li test-id='13' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.selectRole(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user selects role "Accountant"</h6>
+
+				</li>
+				<li test-id='16' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.clickSignIn()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Sign In buttons</h6>
+
+				</li>
+				<li test-id='18' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.verifySummaryTable()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should see the dashboard summary table</h6>
+
+				</li>
+				<li test-id='22' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.navigateToExpenses()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And then need enter to the Expenses</h6>
+
+				</li>
+				<li test-id='25' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.clickAddExpense()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then need click Add Expenses</h6>
+
+				</li>
+				<li test-id='27' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.addNewExpense(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then need to give the Header as "Telephone Bill", name "hi" and amount "-52"</h6>
+
+				</li>
+				<li test-id='29' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.saveExpense()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the save</h6>
+
+				</li>
+				<li test-id='31' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.definitions.AccountantDefinition.verifyErrorNotification()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then need to see the asseart the error notifications</h6>
+
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
@@ -345,15 +423,15 @@ Session ID: cd791ccedf6cc63e2a5460bc729b0d11
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@ValidInput</span>
+						<span class='category-name'>@InvalidInput</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -367,9 +445,47 @@ Session ID: cd791ccedf6cc63e2a5460bc729b0d11
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 21, 2025 01:05:55 pm</td>
+										<td>Apr 21, 2025 02:29:31 pm</td>
+										<td class='linked' test-id='4'>Add New Expense with Invalid Data</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 21, 2025 02:29:31 pm</td>
+										<td class='linked' test-id='5'>Add New Expense with Invalid Data</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ValidInput</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 21, 2025 02:29:31 pm</td>
 										<td class='linked' test-id='2'>Add New Expense and Verify</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -385,84 +501,7 @@ Session ID: cd791ccedf6cc63e2a5460bc729b0d11
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.JavascriptException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Apr 21, 2025 01:06:02 pm</td>
-										<td class='linked' test-id='11'>Then need to give the Header as "Telephone Bill", name "Office Telephone Charges" and amount "100.00"</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.JavascriptException: javascript error: aruguments is not defined
-  (Session info: chrome=135.0.7049.96)
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cd791ccedf6cc63e2a5460bc729b0d11, executeScript {script=aruguments[0].value=aruguments[1];, args=[{element-6066-11e4-a52e-4f735466cecf=f.96EC8C5AE540B89F0BF5B4A19B2AAD69.d.8AD57853C7E02997C9658311B1BC61F5.e.234}, Office Telephone Charges]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63808/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cd791ccedf6cc63e2a5460bc729b0d11
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
-	at com.actions.AccountantActions.enterExpenseName(AccountantActions.java:75)
-	at com.definitions.AccountantDefinition.addNewExpense(AccountantDefinition.java:54)
-	at ✽.need to give the Header as "Telephone Bill", name "Office Telephone Charges" and amount "100.00"(file:///D:/eclipse/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/AccountantFeatureExpenses.feature:14)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -476,31 +515,31 @@ Session ID: cd791ccedf6cc63e2a5460bc729b0d11
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>12</div>
+					<div class='panel-lead'>30</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 21, 2025 01:05:54 pm</div>
+					<div class='panel-lead'>Apr 21, 2025 02:29:29 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 21, 2025 01:06:03 pm</div>
+			 		<div class='panel-lead'>Apr 21, 2025 02:29:47 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 08.578</div>
+					<div class='panel-lead'>00 00 17.432</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -536,12 +575,21 @@ Session ID: cd791ccedf6cc63e2a5460bc729b0d11
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@ValidInput</td>
+							<td>@InvalidInput</td>
+							<td>2</td>
 							<td>0</td>
-							<td>1</td>
 							<td>0</td>
 							<td>
-									0%
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@ValidInput</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
 							</td>
 						</tr>
 					</table>
@@ -556,34 +604,34 @@ Session ID: cd791ccedf6cc63e2a5460bc729b0d11
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 1,
-				passChild: 0,
-				failChild: 1,
+				childCount: 3,
+				passChild: 3,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 12,
-				passGrandChild: 7,
-				failGrandChild: 1,
+				grandChildCount: 30,
+				passGrandChild: 30,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 4,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Accountant Dashboard Functionalities":7.493
+			        "Accountant Dashboard Functionalities":15.672
 			};
 		</script>
 		
