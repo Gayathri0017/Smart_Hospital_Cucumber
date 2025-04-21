@@ -37,10 +37,11 @@ Feature: Payment features
  	And the User clicks pay now button
  	And the User can able to see the error message "Your card’s security code is incomplete."
  	
+ 	@InvalidPaymentDetails
  Scenario: Payment by Valid card details
 
  	And the User provide the card details
  	|Country				|CardNumber						|ExpiryDate					|CVV		|
- 	|Iceland				|4242424242424242			|5/31								|123		|
+ 	|Iceland				|4242424242424241			|5/31								|123		|
  	And the User clicks pay now button
  	And the User can able to see the success message "Thank you for your payment"
