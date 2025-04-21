@@ -33,7 +33,7 @@ public class LoginPage {
     @FindBy(xpath = "(//a[.//i[@class=\"fas fa-mortar-pestle ispace\"]]/following-sibling::a)[2]")
     public WebElement radiologist;
 
-    @FindBy(xpath = "//*[@class=\"btn btn-primary width50\"]/child :: *[@class=\"fa fa-calculator ispace\"]")
+    @FindBy(xpath = "(//*[@class=\"btn btn-primary width50\"])[5]")
     public WebElement accountant;
 
     @FindBy(xpath = "//a[.//i[@class=\"fa fa-calculator ispace\"]]/following-sibling::a[1]")
