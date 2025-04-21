@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class AccountantPage {
     private WebDriver driver;
 // (//a[@class=\"btn btn-primary width50\"])[5]
-    @FindBy(xpath = "//*[@class=\"btn btn-primary width50\"]/child :: *[@class =\"fa fa-calculator ispace\"]")
+    @FindBy(xpath = "(//*[@class=\"btn btn-primary width50\"])[5]")
     public WebElement accountantRoleButton;
    
     @FindBy(xpath = "//*[@class=\"btn\"]")
