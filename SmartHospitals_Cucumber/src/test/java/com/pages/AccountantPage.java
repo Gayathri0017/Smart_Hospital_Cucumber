@@ -20,7 +20,7 @@ public class AccountantPage {
     @FindBy(xpath = "(//*[@class=\"treeview active\"]")
     public WebElement dashboard;
 
-    @FindBy(xpath = "//div[@class=\"content-wrapper\"]/child :: *[@class=\"content\"] / child :: div[2]")
+    @FindBy(xpath = "(//*[@class=\"row\"])[2]")
     public WebElement summaryTable;
 
     @FindBy(xpath = "(//*[@class=\"info-box-content\"])[9]")
