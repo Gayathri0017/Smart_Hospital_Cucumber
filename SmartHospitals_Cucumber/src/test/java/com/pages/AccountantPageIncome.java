@@ -9,19 +9,19 @@ import org.openqa.selenium.support.PageFactory;
 public class AccountantPageIncome {
     private WebDriver driver;
 
-    @FindBy(xpath = " (//a[@class=\"btn btn-primary width50\"])[5]")
+    @FindBy(xpath = "(//*[@class=\"btn btn-primary width50\"])[5]")
     public WebElement accountantRoleButton;
    
     @FindBy(xpath = "//*[@class=\"btn\"]")
     public WebElement signInButton;
 
-    @FindBy(xpath = "(//a[@href=\"https://demo.smart-hospital.in/admin/patient/search\"])[2]")
+    @FindBy(xpath = "(//*[@class=\"sidebar-menu verttop\"]/child :: li[14]")
     public WebElement financeSection;
 
     @FindBy(xpath = "(//*[@href=\"https://demo.smart-hospital.in/admin/income\"])[2]")
     public WebElement incomeButton;
 
-    @FindBy(css = "a.btn.btn-primary")
+    @FindBy(xpath = "//*[@class=\"box-tools pull-right\"]/child :: a")
     public WebElement addIncomeButton;
 
     @FindBy(id = "inc_head_id")

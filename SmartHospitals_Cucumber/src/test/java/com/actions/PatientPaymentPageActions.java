@@ -136,13 +136,17 @@ public class PatientPaymentPageActions {
 
     public void setCardNumber(String cardnumber) {		
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(objPPP.cardNumber));
-
-            Actions act = new Actions(HelperClass.getDriver());
-            act.moveToElement(objPPP.cardNumber).click().perform();
-            JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
-             js.executeScript("arguments[0].value = arguments[1];", objPPP.cardNumber, cardnumber);
-             log.info("Card number passed : ", cardnumber);
+        	if(cardnumber.contains("4242424242424242")){
+        		wait.until(ExpectedConditions.elementToBeClickable(objPPP.cardNumber));
+        		Actions act = new Actions(HelperClass.getDriver());
+                act.moveToElement(objPPP.cardNumber).click().perform();
+                JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
+                 js.executeScript("arguments[0].value = arguments[1];", objPPP.cardNumber, cardnumber);
+                 log.info("Card number passed : ", cardnumber);
+        	}
+        	else {
+        		log.error("Card number is invalid : "+cardnumber);
+        	}
         } catch (Exception e) {
             log.error("Failed to set card number : ", e);
         }

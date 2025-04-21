@@ -7,8 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AccountantPage {
     private WebDriver driver;
-
-    @FindBy(xpath = " (//a[@class=\"btn btn-primary width50\"])[5]")
+// (//a[@class=\"btn btn-primary width50\"])[5]
+    @FindBy(xpath = "(//*[@class=\"btn btn-primary width50\"])[5]")
     public WebElement accountantRoleButton;
    
     @FindBy(xpath = "//*[@class=\"btn\"]")
@@ -17,10 +17,10 @@ public class AccountantPage {
     @FindBy(xpath = "//h2[contains(text(),'Accountant Dashboard')]")
     public WebElement dashboardTitle;
 
-    @FindBy(xpath = "(//*[@href=\"https://demo.smart-hospital.in/admin/admin/dashboard\"])[2]")
+    @FindBy(xpath = "(//*[@class=\"treeview active\"]")
     public WebElement dashboard;
 
-    @FindBy(xpath = "/html/body/div[1]/div[1]/section/div[2]")
+    @FindBy(xpath = "(//*[@class=\"row\"])[2]")
     public WebElement summaryTable;
 
     @FindBy(xpath = "(//*[@class=\"info-box-content\"])[9]")

@@ -4,6 +4,8 @@ Background:
     Given the User navigate to the appointment section
     When Doctor clicks the Add Appointment button
     And Doctor clicks on New Patient button
+    
+    
   Scenario: Doctor creates a new appointment for a new patient
     And Doctor fills in patient details
     And Doctor clicks the save button
