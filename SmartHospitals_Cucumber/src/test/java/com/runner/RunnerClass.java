@@ -6,6 +6,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 
     features = {"src\\test\\resources\\Features\\LoginFeature.feature"},
     glue = {"com.definitions", "com.utils"},
+	tags="@InvalidUserName",
     plugin = {"pretty", "html:target/cucumber-reports.html" , "json:target/cucumber-reports/reports.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",},
     monochrome = true,
     dryRun = false
