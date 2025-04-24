@@ -118,7 +118,7 @@ public class PatientPaymentPageActions {
        
             wait.until(ExpectedConditions.visibilityOf(objPPP.invalidCardNumber));
             String invalidCardNumber = objPPP.invalidCardNumber.getText();
-            log.info("Invalid card number text retrieved: {}", invalidCardNumber);
+            log.info("Invalid card number text retrieved: ", invalidCardNumber);
             return invalidCardNumber;
         
     }
@@ -128,7 +128,7 @@ public class PatientPaymentPageActions {
             wait.until(ExpectedConditions.elementToBeClickable(objPPP.country));
             Select selectCountry = new Select(objPPP.country);
             selectCountry.selectByVisibleText(country);
-            log.info("Country set to: {}", country);
+            log.info("Country :", country);
         } catch (Exception e) {
             log.error("Failed to set country : ", e);
         }
@@ -153,13 +153,13 @@ public class PatientPaymentPageActions {
     }
 
     public void setCardExpiryNumber(String expiryNumber) {
-        try {
+//        try {
             wait.until(ExpectedConditions.elementToBeClickable(objPPP.cardExpiryNumber));
             objPPP.cardExpiryNumber.sendKeys(expiryNumber);
             log.info("Card expiry number passed : ", expiryNumber);
-        } catch (Exception e) {
-            log.error("Failed to set card expiry number", e);
-        }
+//        } catch (Exception e) {
+//            log.error("Failed to set card expiry number", e);
+//        }
     }
 
     public void setCvv(String cvv) {
@@ -173,10 +173,10 @@ public class PatientPaymentPageActions {
         }
     }
 
-    public String getInvalidNumberTxt() {		// getting the invalid number text
+    public String getInvalidTxt() {		// getting the invalid number text
        
-            wait.until(ExpectedConditions.visibilityOf(objPPP.invalidNumberTxt));
-            String invalidNumberTxt = objPPP.invalidNumberTxt.getText();
+            wait.until(ExpectedConditions.visibilityOf(objPPP.invalidTxt));
+            String invalidNumberTxt = objPPP.invalidTxt.getText();
             log.info("Invalid number text retrieved : ", invalidNumberTxt);
             return invalidNumberTxt;
         
