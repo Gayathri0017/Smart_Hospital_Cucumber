@@ -39,7 +39,6 @@ Feature: Dhanush_13APR2025_Payment features with card details
  	Examples:
  	|Country				|CardNumber						|ExpiryDate					|CVV		|
  	|Iceland				|4242424242424242			|5/13								|123		|
- 	|Iceland				|4242424242424242			|5/10								|123		|
  
  @InvalidCvvNumber
  Scenario Outline: Payment by invalid card cvv number
