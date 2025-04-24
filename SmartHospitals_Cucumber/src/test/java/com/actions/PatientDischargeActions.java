@@ -34,7 +34,8 @@ public class PatientDischargeActions {
     
     public void ClickFirstPatient() {	// clicking the first patient that we have searched by the id
 //        try {
-           wait.until(ExpectedConditions.elementToBeClickable(objPDP.firstPatient));
+    	   
+           wait.until(ExpectedConditions.visibilityOf(objPDP.firstPatient));
            objPDP.firstPatient.click();
            log.info("First patient record clicked");
 //        } catch (Exception e) {
@@ -42,14 +43,13 @@ public class PatientDischargeActions {
 //        }
     }
     
-    public void setCaseId(String id) {		// providing the case id of the patient to discharge 
-//        try {
+    public void setCaseId(String id) throws InterruptedException {		// providing the case id of the patient to discharge 
+
            wait.until(ExpectedConditions.elementToBeClickable(objPDP.searchField));
-           objPDP.searchField.sendKeys(id + Keys.CONTROL + "a" + Keys.BACK_SPACE + Keys.ENTER);
+           objPDP.searchField.sendKeys(id + Keys.CONTROL.ENTER);
+           Thread.sleep(3000);
            log.info("Case ID passsed : ", id);
-//        } catch (Exception e) {
-//           log.error("Failed to set case ID : ", e);
-//        }
+
     }
     
     public String getPatientID() {		// returning the patient id for ensuring the patient has discharged
@@ -103,7 +103,7 @@ public class PatientDischargeActions {
 //           log.error("Failed to click discharge save button : ", e);
 //        }
     }
-    
+   
     public String getError() {		// getting the error message as required field       
            return objPDP.error.getText();
         
