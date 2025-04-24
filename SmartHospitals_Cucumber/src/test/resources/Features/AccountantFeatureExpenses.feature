@@ -1,4 +1,4 @@
-Feature: Gowri_11&12Apr_2025Accountant Dashboard Functionalities
+Feature: Gowri_11&13Apr_2025Accountant Dashboard Functionalities
 Background: 
     Given User launches the Smart Hospital application
     When the user selects role "Accountant"
