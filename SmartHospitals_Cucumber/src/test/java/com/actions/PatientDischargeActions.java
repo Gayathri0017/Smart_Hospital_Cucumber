@@ -108,4 +108,10 @@ public class PatientDischargeActions {
            return objPDP.error.getText();
         
     }
+    public String getNoDataAvail() {
+    	return objPDP.NodataAvailable.getText();
+    }
+    public boolean getNoDataAvailIsDisplayed() {
+    	return objPDP.NodataAvailable.isDisplayed();
+    }
 }
