@@ -54,6 +54,7 @@ public class AccountantDefinition {
         accountantActions.enterExpenseName(name);
         accountantActions.enterExpenseAmount(amount);
     }
+    
 
     @And("the user click the save")
     public void saveExpense() {

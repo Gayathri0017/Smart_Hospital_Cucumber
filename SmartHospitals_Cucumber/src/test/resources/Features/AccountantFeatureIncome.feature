@@ -1,4 +1,4 @@
-Feature: Accountant Income Functionalities
+Feature: Gowri_14APR2025_Accountant_Income_Functionalities
 
 Background:
     Given User launches Smart Hospital website

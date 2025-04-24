@@ -35,8 +35,8 @@ public class PatientPaymentPage {
 	@FindBy(id = "Field-cvcInput")
 	public WebElement cvvNumber ;
 	
-	@FindBy(xpath = "//*[@id=\"toast-container\"]/div/div")
-	public WebElement invalidNumberTxt ;
+	@FindBy(xpath = "//*[@id='toast-container']/div/div")
+	public WebElement invalidTxt ;
 	
 	@FindBy(id = "Field-numberError")
 	public WebElement invalidCardNumber ;

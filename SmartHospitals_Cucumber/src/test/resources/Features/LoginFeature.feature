@@ -1,4 +1,4 @@
-Feature: Login functionality for the Smart Hospital website
+Feature: Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website
 
 Background:
   Given the user is on the login page
@@ -15,6 +15,9 @@ Background:
       |Super Admin  |
       |Doctor       |
       |Accountant   |
+      |Pharmacist   |
+      |Pathologist  |
+      |Radiologist  |
       
    @InvalidUserName
   Scenario Outline: Attempt to login with missing username

@@ -8,8 +8,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
     		"src\\test\\resources\\Features\\DoctorFeature.feature"
     		},
     glue = {"com.definitions", "com.utils"},
-    
-    plugin = {"pretty","json:target/cucumber-reports/reports.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",},
+    plugin = {"pretty", "json:target/cucumber-reports/reports.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
     monochrome = true,
     dryRun = false
 )
