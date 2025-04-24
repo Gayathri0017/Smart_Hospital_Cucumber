@@ -100,6 +100,7 @@ public void the_user_can_fill_the_appointment(io.cucumber.datatable.DataTable da
         objPatientActions.setTime(time);
         
         if(date==null) {
+        	wait.until(ExpectedConditions.alertIsPresent());
         	HelperClass.getDriver().switchTo().alert().accept();
         }
 
