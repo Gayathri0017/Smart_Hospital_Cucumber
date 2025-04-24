@@ -1,4 +1,3 @@
-
 package com.definitions;                                                                                        
                                                                                                                 
 import java.time.Duration;
@@ -99,25 +98,19 @@ public void the_user_can_fill_the_appointment(io.cucumber.datatable.DataTable da
 
         String time = details.get("Timing");
         objPatientActions.setTime(time);
-        try {
-        	if(date == null) {
-            	wait.until(ExpectedConditions.alertIsPresent());
-            	HelperClass.getDriver().switchTo().alert().accept();
-            }
-            else {
-            	String availableTiming = details.get("AvailableTiming");
-                objPatientActions.setAvailableTime();
-
-                String message = details.get("Message");
-                objPatientActions.setMessage(message);
-            }
-        }catch(Exception e) {
-        	e.printStackTrace();
+        
+        if(date==null) {
+        	HelperClass.getDriver().switchTo().alert().accept();
         }
+
+        
+        objPatientActions.setAvailableTime();
+        String message = details.get("Message");
+        objPatientActions.setMessage(message);
         
     }
-//    objPatientActions.ClickFormsubmit();
 }
+
 
 @Then("the User can fill the appointment form")
 public void the_user_can_fill_the_appointment_form() {
@@ -135,7 +128,11 @@ public void the_user_can_able_to_see_the_error_msg(String error) {
 	Assert.assertTrue(objPatientActions.getError().contains(error));
 	System.out.println(objPatientActions.getError());
 }
-
+@Then("the User is able see the success message {string}")
+public void the_user_is_able_see_the_success_message(String successMsg) {
+	Assert.assertTrue(objPatientActions.getSuccessMsg().contains(successMsg));
+	System.out.println(objPatientActions.getSuccessMsg());
+}
                                                                                                                 
                                                                                                                 
-}                                                                                                               
+}

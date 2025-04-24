@@ -65,16 +65,22 @@ public class AccountantActions {
     }
 
     public void selectExpenseHeader(String header) {
-    	wait.until(ExpectedConditions.visibilityOf(accountantPage.expenseHeaderDropdown));
+    	       try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        wait.until(ExpectedConditions.visibilityOf(accountantPage.expenseHeaderDropdown));
         Select dropdown = new Select(accountantPage.expenseHeaderDropdown);
         dropdown.selectByVisibleText(header);
         log.info("Selected Expense Header: " + header);
     }
 
     public void enterExpenseName(String name) {
-    	//JavascriptExecutor obj = (JavascriptExecutor) HelperClass.getDriver() ;
-    	//obj.executeScript("aruguments[0].value=aruguments[1];", accountantPage.expenseNameField,name);
-    	accountantPage.expenseNameField.sendKeys(name);
+    	JavascriptExecutor obj = (JavascriptExecutor) HelperClass.getDriver() ;
+    	obj.executeScript("aruguments[0].value=aruguments[1];", accountantPage.expenseNameField,name);
+    	//accountantPage.expenseNameField.sendKeys(name);
         log.info("Entered Expense Name: " + name);
     }
 

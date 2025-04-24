@@ -58,6 +58,7 @@ public class AccountantDefinitionIncome {
     @Then("the user enters the Header as {string}, name as {string}, and amount as {string}")
     public void enterIncomeDetails(String header, String name, String amount) {
         accountantActionsIncome.enterIncomeDetails(header, name, amount);
+        int amt=Integer.parseInt(amount);
     }
     
     @Then("the user clicks the save button")
