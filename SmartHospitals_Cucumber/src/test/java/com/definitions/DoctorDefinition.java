@@ -1,11 +1,10 @@
 package com.definitions;
 import java.time.Duration;
-
-import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.actions.DoctorActions;
 import com.utils.HelperClass;

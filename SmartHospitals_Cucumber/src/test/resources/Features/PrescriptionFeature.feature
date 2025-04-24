@@ -1,4 +1,4 @@
-Feature: Doctor add Prescription for the Feature in Smart Hospital
+Feature: Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital
 Background:
 	Given Doctor is logged in to the Smart Hospital system
 	When the Doctor Navigates to the OPD section

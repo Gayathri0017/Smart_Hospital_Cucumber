@@ -1,6 +1,7 @@
-Feature: Search Patient by Name In Smart Hospital
+Feature: Gayathri_09APR2025_Search Patient by Name In Smart Hospital
 Background:
-    Given Doctor is logged in to the Smart Hospital system
+  Given Doctor is logged in to the Smart Hospital system
+  @Verify_Search
   Scenario Outline: Verify the Search of patient
     When the Doctor enters "<patientName>" in the search bar
     And clicks the search button
@@ -11,6 +12,7 @@ Background:
       | Dharani     | Dharani                   |
       | TestXYZ123  | No data available in table|
 
+  @Delete_patient
   Scenario Outline: Verify that a searched patient can be deleted
   When the Doctor enters "<patientName>" in the search bar
   And clicks the search button

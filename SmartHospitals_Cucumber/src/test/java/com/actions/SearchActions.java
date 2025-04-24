@@ -53,6 +53,7 @@ public class SearchActions {
 	public void clickDelete() {
 		clickmethod(sp.delBtn);
 	}
+	
 	public void sendKeysMethod(WebElement ele,String val) {
 		ele.sendKeys(val);
 	}
