@@ -4,7 +4,7 @@ import org.testng.annotations.DataProvider;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 
-    features = {"src\\test\\resources\\Features\\PatientAppointment.feature"},
+    features = {"src\\test\\resources\\Features\\PatientPayment.feature"},
     glue = {"com.definitions", "com.utils"},
     plugin = {"pretty", "json:target/cucumber-reports/reports.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
     monochrome = true,
