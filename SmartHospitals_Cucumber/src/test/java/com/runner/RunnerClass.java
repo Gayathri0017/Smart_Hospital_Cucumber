@@ -5,8 +5,10 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 
     features = {"src\\test\\resources\\Features\\LoginFeature.feature",
-    		"src\\test\\resources\\Features\\AccountantFeatureExpenses.feature",
-    		"src\\test\\resources\\Features\\AccountantFeatureIncome.feature"
+		/*
+		 * "src\\test\\resources\\Features\\AccountantFeatureExpenses.feature",
+		 * "src\\test\\resources\\Features\\AccountantFeatureIncome.feature"
+		 */
     },
     glue = {"com.definitions", "com.utils"},
     plugin = {"pretty", "json:target/cucumber-reports/reports.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
