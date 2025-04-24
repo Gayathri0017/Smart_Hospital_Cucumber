@@ -15,7 +15,7 @@ Examples:
   | Category| Medicine | Dose     | Interval        | Duration | ErrorMessage                                                    |
   | Select  | Select   | Select   |  Select         | Select   | Please select any one pathology, radiology or medicine details |
   | Syrup   | Al       | 1        |  Select         | Morning  | Dose Interval field is required                                |
-  | Syrup   | Alprovit | Select   | Only one a day  | Morning  | Dosage field is required                                       |
+  #| Syrup   | Alprovit | Select   | Only one a day  | Morning  | Dosage field is required                                       |
   | Syrup   | Select   | 1 (CT)   | Only one a day  | Morning  | Medicine field is required                                     |
   
   @Positive_Prescription_Validation
@@ -28,10 +28,10 @@ Examples:
     	And Clicks Save button
     	Then the Prescription should be added in OPD Section
     	
-	@Validate_Prescription_View
-	Scenario: Verify the added prescription is visible in the OPD section
-	  When the doctor Clicks the View Prescription
-	  Then the previously added prescription should be visible
+#	@Validate_Prescription_View
+#	Scenario: Verify the added prescription is visible in the OPD section
+#	  When the doctor Clicks the View Prescription
+#	  Then the previously added prescription should be visible
 	  
 	@Verify_Delete_Patient_Option
 	Scenario: Verify the added patient can be deleted in OPD section

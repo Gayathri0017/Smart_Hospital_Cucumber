@@ -9,7 +9,7 @@ Background:
 
     Examples:
       | patientName | expectedResult            |
-      | Dharani     | Dharani                   |
+      | Ellie Groves| Ellie Groves              |
       | TestXYZ123  | No data available in table|
 
   @Delete_patient
@@ -20,5 +20,5 @@ Background:
   Then the patient should no longer appear in the searched list
 	Examples:
       | patientName |
-      | Dharani     | 
+      | Ellie Groves| 
 	   
