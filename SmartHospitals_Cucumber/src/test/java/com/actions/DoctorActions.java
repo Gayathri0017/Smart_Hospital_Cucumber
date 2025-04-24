@@ -23,18 +23,21 @@ public class DoctorActions {
         this.dp=new DoctorWorkflowPage();
         PageFactory.initElements(HelperClass.getDriver(), dp);
     }
+    //login as doctor
     public void login() {
         WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
         log.info("Clicking on Doctor and Sign In buttons");
         wait.until(ExpectedConditions.elementToBeClickable(dp.doctor)).click();
         wait.until(ExpectedConditions.elementToBeClickable(dp.signin)).click();
     }
+    //switch the language to English
     public void english() {
         WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
         log.info("Switching language to English");
         wait.until(ExpectedConditions.elementToBeClickable(dp.lan)).click();
         wait.until(ExpectedConditions.elementToBeClickable(dp.eng)).click();
     }
+    
     public void appointment() {
         clickMethod(dp.appointment);
         log.info("Navigated to Appointment section");
@@ -43,10 +46,12 @@ public class DoctorActions {
         clickMethod(dp.addAppointment);
         log.info("Clicked on Add Appointment");
     }
+    //Add Patient Details
     public void addPatient() {
         clickMethod(dp.addpatient);
         log.info("Clicked on Add Patient");
     }
+    //Create Appointment for patient
     public void addPatientDetails() {
         addPatientDetailsFromRow(0, true);
     }

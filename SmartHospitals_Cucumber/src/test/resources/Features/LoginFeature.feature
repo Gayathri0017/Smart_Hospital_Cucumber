@@ -1,4 +1,4 @@
-Feature: Gowri_09&10Apr_2025_Login_functionality_for_the Smart_Hospital_website
+Feature: Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website
 
 Background:
   Given the user is on the login page

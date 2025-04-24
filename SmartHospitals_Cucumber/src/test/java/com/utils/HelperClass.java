@@ -1,13 +1,10 @@
 package com.utils;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
-
 public class HelperClass {
     private static ConcurrentHashMap<String, WebDriver> drivers = new ConcurrentHashMap<>();
     public static WebDriver getDriver() {

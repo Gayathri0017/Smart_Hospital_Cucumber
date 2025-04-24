@@ -1,5 +1,4 @@
-Feature: Gowri_14&15Apr_2025_Accountant_Income_Functionalities
-
+Feature: Gowri_14APR2025_Accountant_Income_Functionalities
 Background:
     Given User launches Smart Hospital website
     When the user selects "Accountant" role
@@ -21,4 +20,4 @@ Scenario: Add New Income with Invalid Data
     |Telephone Bill	|hi		|-52  	|
     |								|			|				|
     And the user clicks the save button
-    Then the user should see an error notification
+   Then the user should see an error notification

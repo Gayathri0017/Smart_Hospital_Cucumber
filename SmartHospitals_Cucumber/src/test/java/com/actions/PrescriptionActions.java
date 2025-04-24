@@ -24,6 +24,7 @@ public PrescriptionActions() {
 	PageFactory.initElements(HelperClass.getDriver(),pp);
 }
 WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+//Select catogory 
 public void selectFindingCategory(String s) {
     wait.until(ExpectedConditions.elementToBeClickable(pp.medicineCat)).click();
     wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
@@ -91,24 +92,6 @@ public void edit() {
 }
 WebDriverWait w= new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 JavascriptExecutor js=(JavascriptExecutor) HelperClass.getDriver();
-public void clickMethod(WebElement ele) {
-    try {
-        wait.until(ExpectedConditions.elementToBeClickable(ele));
-        ele.click();
-    } catch (ElementClickInterceptedException e) {
-        js.executeScript("arguments[0].click();", ele);
-    } catch (Exception e) {
-        System.out.println("Click failed: " + e.getMessage());
-    }
-}
-public void sendKeysMethod(WebElement ele, String text) {
-    try {
-        wait.until(ExpectedConditions.visibilityOf(ele));
-        ele.sendKeys(text);
-    } catch (Exception e) {
-        System.out.println("SendKeys failed: " + e.getMessage());
-    }
-}
 public void assertinvalid(String ex) {
 	try {
 	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
@@ -161,5 +144,23 @@ public void editClick() {
 	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 	wait.until(ExpectedConditions.elementToBeClickable(pp.edit));
 	clickMethod(pp.edit);
+}
+public void clickMethod(WebElement ele) {
+    try {
+        wait.until(ExpectedConditions.elementToBeClickable(ele));
+        ele.click();
+    } catch (ElementClickInterceptedException e) {
+        js.executeScript("arguments[0].click();", ele);
+    } catch (Exception e) {
+        System.out.println("Click failed: " + e.getMessage());
+    }
+}
+public void sendKeysMethod(WebElement ele, String text) {
+    try {
+        wait.until(ExpectedConditions.visibilityOf(ele));
+        ele.sendKeys(text);
+    } catch (Exception e) {
+        System.out.println("SendKeys failed: " + e.getMessage());
+    }
 }
 }
