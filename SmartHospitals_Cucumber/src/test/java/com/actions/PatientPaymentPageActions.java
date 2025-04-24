@@ -31,33 +31,33 @@ public class PatientPaymentPageActions {
     }
 
     public void ClickIpd() {
-        try {
+//        try {
             wait.until(ExpectedConditions.visibilityOf(objPDP.ipd));
             objPDP.ipd.click();
             log.info("IPD button clicked");
-        } catch (Exception e) {
-            log.error("Failed to click IPD button : ", e);
-        }
+//        } catch (Exception e) {
+//            log.error("Failed to click IPD button : ", e);
+//        }
     }
 
     public void ClickPayment() {
-        try {
+//        try {
             wait.until(ExpectedConditions.visibilityOf(objPPP.payment));
             objPPP.payment.click();
             log.info("Payment button clicked");
-        } catch (Exception e) {
-            log.error("Failed to click payment button : ", e);
-        }
+//        } catch (Exception e) {
+//            log.error("Failed to click payment button : ", e);
+//        }
     }
 
     public void ClickMakePayment() {
-        try {
+//        try {
             wait.until(ExpectedConditions.visibilityOf(objPPP.makePayment));
             objPPP.makePayment.click();
             log.info("Make payment button clicked");
-        } catch (Exception e) {
-            log.error("Failed to click make payment button : ", e);
-        }
+//        } catch (Exception e) {
+//            log.error("Failed to click make payment button : ", e);
+//        }
     }
 
     public String getPaymentText() {		// get the amount text for asserting
@@ -82,36 +82,36 @@ public class PatientPaymentPageActions {
     }
 
     public void ClickAddPaymentBtn() {
-        try {
+//        try {
             wait.until(ExpectedConditions.visibilityOf(objPPP.addPaymentBtn));
             objPPP.addPaymentBtn.click();
             log.info("Add payment button clicked");
-        } catch (Exception e) {
-            log.error("Failed to click add payment button : ", e);
-        }
+//        } catch (Exception e) {
+//            log.error("Failed to click add payment button : ", e);
+//        }
     }
 
     public void ClickpayNowBtn() {
-        try {
+//        try {
             WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
             WebElement payNowButton = wait.until(ExpectedConditions.elementToBeClickable(objPPP.payNowBtn));
 
             JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
              js.executeScript("arguments[0].click();", payNowButton);
              log.info("Pay now button clicked");
-        } catch (Exception e) {
-            log.error("Failed to click pay now button : ", e);
-        }
+//        } catch (Exception e) {
+//            log.error("Failed to click pay now button : ", e);
+//        }
     }
 
     public void switchFrame() {		// switching the frame for entering the car details for the payment
-        try {
+//        try {
             wait.until(ExpectedConditions.visibilityOf(objPPP.frame));
             wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(objPPP.frame));
             log.info("Switched to frame");
-        } catch (Exception e) {
-            log.error("Failed to switch frame : ", e);
-        }
+//        } catch (Exception e) {
+//            log.error("Failed to switch frame : ", e);
+//        }
     }
 
     public String getInvalidCardNumber() {		// get the invalid card number text
@@ -124,18 +124,18 @@ public class PatientPaymentPageActions {
     }
 
     public void setCountry(String country) {
-        try {
+//        try {
             wait.until(ExpectedConditions.elementToBeClickable(objPPP.country));
             Select selectCountry = new Select(objPPP.country);
             selectCountry.selectByVisibleText(country);
             log.info("Country :", country);
-        } catch (Exception e) {
-            log.error("Failed to set country : ", e);
-        }
+//        } catch (Exception e) {
+//            log.error("Failed to set country : ", e);
+//        }
     }
 
     public void setCardNumber(String cardnumber) {		
-        try {
+//        try {
         	if(cardnumber.contains("4242424242424242")){
         		wait.until(ExpectedConditions.elementToBeClickable(objPPP.cardNumber));
         		Actions act = new Actions(HelperClass.getDriver());
@@ -147,9 +147,9 @@ public class PatientPaymentPageActions {
         	else {
         		log.error("Card number is invalid : "+cardnumber);
         	}
-        } catch (Exception e) {
-            log.error("Failed to set card number : ", e);
-        }
+//        } catch (Exception e) {
+//            log.error("Failed to set card number : ", e);
+//        }
     }
 
     public void setCardExpiryNumber(String expiryNumber) {
@@ -163,14 +163,14 @@ public class PatientPaymentPageActions {
     }
 
     public void setCvv(String cvv) {
-        try {
+//        try {
             wait.until(ExpectedConditions.elementToBeClickable(objPPP.cvvNumber));
             objPPP.cvvNumber.clear();
             objPPP.cvvNumber.sendKeys(cvv);
             log.info("CVV passed : ", cvv);
-        } catch (Exception e) {
-            log.error("Failed to set CVV : ", e);
-        }
+//        } catch (Exception e) {
+//            log.error("Failed to set CVV : ", e);
+//        }
     }
 
     public String getInvalidTxt() {		// getting the invalid number text

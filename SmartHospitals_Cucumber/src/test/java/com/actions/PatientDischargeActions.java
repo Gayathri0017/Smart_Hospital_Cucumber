@@ -23,85 +23,85 @@ public class PatientDischargeActions {
     }
     
     public void ClickIPD() {
-        try {
+//        try {
            wait.until(ExpectedConditions.visibilityOf(objPDP.ipd));
            objPDP.ipd.click();
            log.info("IPD button clicked");
-        } catch (Exception e) {
-           log.error("Failed to click IPD button", e);
-        }
+//        } catch (Exception e) {
+//           log.error("Failed to click IPD button", e);
+//        }
     }
     
     public void ClickFirstPatient() {	// clicking the first patient that we have searched by the id
-        try {
+//        try {
            wait.until(ExpectedConditions.elementToBeClickable(objPDP.firstPatient));
            objPDP.firstPatient.click();
            log.info("First patient record clicked");
-        } catch (Exception e) {
-           log.error("Failed to click first patient record", e);
-        }
+//        } catch (Exception e) {
+//           log.error("Failed to click first patient record", e);
+//        }
     }
     
     public void setCaseId(String id) {		// providing the case id of the patient to discharge 
-        try {
+//        try {
            wait.until(ExpectedConditions.elementToBeClickable(objPDP.searchField));
            objPDP.searchField.sendKeys(id + Keys.CONTROL + "a" + Keys.BACK_SPACE + Keys.ENTER);
            log.info("Case ID passsed : ", id);
-        } catch (Exception e) {
-           log.error("Failed to set case ID : ", e);
-        }
+//        } catch (Exception e) {
+//           log.error("Failed to set case ID : ", e);
+//        }
     }
     
     public String getPatientID() {		// returning the patient id for ensuring the patient has discharged
-        try {
+//        try {
            wait.until(ExpectedConditions.visibilityOf(objPDP.dischargePatientName));
            String patientId = objPDP.dischargePatientName.getText();
            log.info("Retrieved patient ID: ", patientId);
            return patientId;
-        } catch (Exception e) {
-           log.error("Failed to get patient ID : ", e);
-           return null;
-        }
+//        } catch (Exception e) {
+//           log.error("Failed to get patient ID : ", e);
+//           return null;
+//        }
     }
     
     public void ClickDischargeBtn() {
-        try {
+//        try {
            wait.until(ExpectedConditions.visibilityOf(objPDP.dischargeIcon));
            objPDP.dischargeIcon.click();
            log.info("Discharge button clicked");
-        } catch (Exception e) {
-           log.error("Failed to click discharge button : ", e);
-        }
+//        } catch (Exception e) {
+//           log.error("Failed to click discharge button : ", e);
+//        }
     }
     
     public void setDischargeDate() {
-        try {
+//        try {
            wait.until(ExpectedConditions.visibilityOf(objPDP.dischargeDate));
            objPDP.dischargeDate.click();
            log.info("Discharge date field clicked");
-        } catch (Exception e) {
-           log.error("Failed to click discharge date field : ", e);
-        }
+//        } catch (Exception e) {
+//           log.error("Failed to click discharge date field : ", e);
+//        }
     }
     
     public void setDischargeStatus(String status) {		// providing the discharge status as normal or death or referal
-        try {
+//        try {
            wait.until(ExpectedConditions.visibilityOf(objPDP.dischargeStatus));
            objPDP.dischargeStatus.sendKeys(status);
            log.info("Discharge status set to: {}", status);
-        } catch (Exception e) {
-           log.error("Failed to set discharge status : ", e);
-        }
+//        } catch (Exception e) {
+//           log.error("Failed to set discharge status : ", e);
+//        }
     }
     
     public void ClickDischargeSaveBtn() {
-        try {
+//        try {
            wait.until(ExpectedConditions.visibilityOf(objPDP.dischargeSaveBtn));
            objPDP.dischargeSaveBtn.click();
            log.info("Discharge save button clicked");
-        } catch (Exception e) {
-           log.error("Failed to click discharge save button : ", e);
-        }
+//        } catch (Exception e) {
+//           log.error("Failed to click discharge save button : ", e);
+//        }
     }
     
     public String getError() {		// getting the error message as required field       
