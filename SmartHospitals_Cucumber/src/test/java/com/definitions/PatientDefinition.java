@@ -4,6 +4,8 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;                                                                                       
@@ -15,7 +17,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;                                                                                
 import io.cucumber.java.en.When;                                                                                
                                                                                                                 
-public class PatientDefinition {                                                                                
+public class PatientDefinition {      
+	private static final Logger log = LogManager.getLogger(PatientDefinition.class);
 	PatientActions objPatientActions = new PatientActions();  
 	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(),Duration.ofSeconds(10));
 
@@ -39,8 +42,14 @@ public class PatientDefinition {
                                                                                                                 
 	@Then("the User is directed to the patient dashboard")                                                      
 	public void the_user_is_directed_to_the_patient_dashboard() {                                               
-		objPatientActions.ClickProfile();                                                                       
-		Assert.assertTrue(objPatientActions.getProfileRole().contains("Patient"));                              
+		objPatientActions.ClickProfile();                     
+		try {
+			Assert.assertTrue(objPatientActions.getProfileRole().contains("Patient"));  
+			log.info("Assert gets passed in profile verification for patient");
+		}catch(Exception e) {
+			log.error("Assert gets failed in profile verification for patient");
+			throw e;
+		}
 	}                                                                                                           
 	                                                                                                            
                                                                                                                 
@@ -58,11 +67,23 @@ public void the_user_provides_invalid_password() {
 public void the_user_able_to_see_the_error_message_as(String error, io.cucumber.datatable.DataTable dataTable) {
 	List<Map<String , String>> errormsg = dataTable.asMaps();
 	for(Map<String , String> message:errormsg) {
-		if(message.containsKey("Username field is required")) {			
-			Assert.assertTrue(objPatientActions.getUserNameRequired().contains(message.get("errormsg")));
+		if(message.containsKey("Username field is required")) {	
+			try {
+				Assert.assertTrue(objPatientActions.getUserNameRequired().contains(message.get("errormsg")));
+				log.info("Assert gets passed in username required ");
+			}catch (Exception e) {
+				log.error("Assert gets failed in username required ");
+				throw e;
+			}
 		}
 		if(message.containsKey("Password field is required")) {
-			Assert.assertTrue(objPatientActions.getPasswordRequired().contains(message.get("errormsg")));
+			try {
+				Assert.assertTrue(objPatientActions.getPasswordRequired().contains(message.get("errormsg")));
+				log.info("Assert gets passed in password required ");
+			}catch (Exception e) {
+				log.error("Assert gets failed in password required ");
+				throw e;
+			}
 			
 		}
 		
@@ -126,13 +147,23 @@ public void the_user_should_save_the_form_for_appointment() {
 
 @Then("the User can able to see the error msg {string}")
 public void the_user_can_able_to_see_the_error_msg(String error) {
-	Assert.assertTrue(objPatientActions.getError().contains(error));
-	System.out.println(objPatientActions.getError());
+	try {
+		Assert.assertTrue(objPatientActions.getError().contains(error));
+		System.out.println(objPatientActions.getError());
+	}catch (Exception e) {
+		log.error("Assert gets failed in error message ");
+		throw e;
+	}
 }
 @Then("the User is able see the success message {string}")
 public void the_user_is_able_see_the_success_message(String successMsg) {
-	Assert.assertTrue(objPatientActions.getSuccessMsg().contains(successMsg));
-	System.out.println(objPatientActions.getSuccessMsg());
+	try {
+		Assert.assertTrue(objPatientActions.getSuccessMsg().contains(successMsg));
+		System.out.println(objPatientActions.getSuccessMsg());
+	}catch (Exception e) {
+		log.error("Assert gets failed in success message ");
+		throw e;
+	}
 }
                                                                                                                 
                                                                                                                 
