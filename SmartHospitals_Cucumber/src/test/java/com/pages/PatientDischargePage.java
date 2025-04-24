@@ -32,4 +32,7 @@ public class PatientDischargePage {
 	
 	@FindBy(xpath = "//div[@id='DataTables_Table_0_filter']/label/input")
 	public WebElement searchField ;
+	
+	@FindBy(xpath = "//tr[@class='odd']/td/div")
+	public WebElement NodataAvailable ;
 }
