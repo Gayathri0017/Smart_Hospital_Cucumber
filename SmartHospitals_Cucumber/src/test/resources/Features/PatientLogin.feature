@@ -1,4 +1,4 @@
-Feature: Login with the Patient Login Credentials
+Feature: Dhanush_09APR2025_Login with the Patient Login Credentials
   
   Background: 
     Given the User is on the Login Page
@@ -19,7 +19,7 @@ Feature: Login with the Patient Login Credentials
   |errormsg										|
   |Username field is required	|
   
-  @LoginWithInvalidUsername
+  @LoginWithInvalidPassword
   Scenario: To check with Invalid password for patient
   
   When the User Provides invalid Password

@@ -67,16 +67,16 @@ public class PatientPaymentDefinitions {
 	public void the_user_can_able_to_see_the_error_message(String error) {
 		try {
 			if(error.contains("Your card number is invalid.")) {
-				Assert.assertTrue(objPPPA.getInvalidCardNumber().contains(error));
-				System.out.println(objPPPA.getInvalidCardNumber());
+				System.out.println(objPPPA.getInvalidTxt());
+				Assert.assertTrue(objPPPA.getInvalidTxt().contains(error));
 			}
 			if(error.contains("Your card’s expiration year is in the past.")) {
-				Assert.assertTrue(objPPPA.getInvalidCardDate().contains(error));
-				System.out.println(objPPPA.getInvalidCardDate());
+				System.out.println(objPPPA.getInvalidTxt());
+				Assert.assertTrue(objPPPA.getInvalidTxt().contains(error));
 			}
 			if(error.contains("Your card’s security code is incomplete.")) {
-				Assert.assertTrue(objPPPA.getInvalidCvv().contains(error));
-				System.out.println(objPPPA.getInvalidCvv());
+				System.out.println(objPPPA.getInvalidTxt());
+				Assert.assertTrue(objPPPA.getInvalidTxt().contains(error));
 			}
 		}
 		catch(Exception e) {
