@@ -4,8 +4,8 @@ import org.testng.annotations.DataProvider;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 
-    features = {//"src\\test\\resources\\Features\\LoginFeature.feature",
-    		//"src\\test\\resources\\Features\\AccountantFeatureExpenses.feature",
+    features = {"src\\test\\resources\\Features\\LoginFeature.feature",
+    		"src\\test\\resources\\Features\\AccountantFeatureExpenses.feature",
     		"src\\test\\resources\\Features\\AccountantFeatureIncome.feature"
     },
     glue = {"com.definitions", "com.utils"},
