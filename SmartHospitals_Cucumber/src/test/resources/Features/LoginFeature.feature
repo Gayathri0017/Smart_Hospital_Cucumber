@@ -15,7 +15,7 @@ Background:
       |Super Admin  |
       |Doctor       |
       |Accountant   |
-      
+      |Radiologist  |
    @InvalidUserName
   Scenario Outline: Attempt to login with missing username
    When the user selects the role "<role>"
