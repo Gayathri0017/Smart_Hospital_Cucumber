@@ -101,7 +101,9 @@ public void assertinvalid(String ex) {
 	System.out.println("Actual: " + act);
 	Assert.assertTrue(act.contains(ex));
 	}catch(Exception e) {
-		Assert.fail(e.getMessage());
+		//Assert.fail(e.getMessage());
+		System.out.println(e.getMessage());
+		throw e;
 	}
 }
 public void assertPrescription(){

@@ -28,10 +28,10 @@ Examples:
     	And Clicks Save button
     	Then the Prescription should be added in OPD Section
     	
-#	@Validate_Prescription_View
-#	Scenario: Verify the added prescription is visible in the OPD section
-#	  When the doctor Clicks the View Prescription
-#	  Then the previously added prescription should be visible
+	@Validate_Prescription_View
+	Scenario: Verify the added prescription is visible in the OPD section
+	  When the doctor Clicks the View Prescription
+	  Then the previously added prescription should be visible
 	  
 	@Verify_Delete_Patient_Option
 	Scenario: Verify the added patient can be deleted in OPD section
