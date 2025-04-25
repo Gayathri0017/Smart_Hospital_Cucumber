@@ -26,21 +26,19 @@ public class PatientPaymentDefinitions {
 
 	@Then("the User clicks payment option")
 	public void the_user_clicks_payment_option() {
-//		try {
+
 			objPPPA.ClickPayment();
 			objPPPA.ClickMakePayment();
 			System.out.println(objPPPA.getPaymentAmount());
 			objPPPA.ClickAddPaymentBtn();
-//		}catch(Exception e) {
-//			System.out.println(e.getMessage());
-//		}
+
 		
 	}
 	
 	@Then("the User provide the card details")
 	public void the_user_provide_the_card_details(io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
 		objPPPA.switchFrame();
-//		try {
+
 			
 		    List<Map<String , String>> cardDetails = dataTable.asMaps(String.class , String.class);
 		    for(Map<String , String> details:cardDetails) {
@@ -49,9 +47,7 @@ public class PatientPaymentDefinitions {
 		    	objPPPA.setCvv(details.get("CVV"));
 		    	objPPPA.setCountry(details.get("Country"));
 		    }
-//		}catch (Exception e) {
-//			System.out.println(e.getMessage());
-//		}
+
 	    
 	}
 	
