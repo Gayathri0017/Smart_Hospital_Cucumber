@@ -123,7 +123,7 @@ public class DoctorActions {
         try {
             WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
             WebElement fresh=wait.until(ExpectedConditions.refreshed(
-                    ExpectedConditions.presenceOfElementLocated(By.id("slot"))));
+            ExpectedConditions.presenceOfElementLocated(By.id("slot"))));
             new Select(fresh).selectByVisibleText(slot);
         } catch (StaleElementReferenceException e) {
         	System.out.println(e.getMessage());
