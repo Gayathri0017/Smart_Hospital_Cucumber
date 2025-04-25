@@ -15,7 +15,7 @@ import com.utils.HelperClass;
 public class PatientDischargeActions {
     private static final Logger log = LogManager.getLogger(PatientDischargeActions.class);
     PatientDischargePage objPDP = null;
-    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
     
     public PatientDischargeActions() {
         objPDP = new PatientDischargePage();
