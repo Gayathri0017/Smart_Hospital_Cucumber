@@ -65,6 +65,13 @@ public class AccountantActions {
     }
 
     public void selectExpenseHeader(String header) {
+    	       try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        wait.until(ExpectedConditions.visibilityOf(accountantPage.expenseHeaderDropdown));
         Select dropdown = new Select(accountantPage.expenseHeaderDropdown);
         dropdown.selectByVisibleText(header);
         log.info("Selected Expense Header: " + header);

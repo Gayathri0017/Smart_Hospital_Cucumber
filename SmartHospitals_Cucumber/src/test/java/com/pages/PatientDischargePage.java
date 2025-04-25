@@ -12,7 +12,7 @@ public class PatientDischargePage {
 	@FindBy(xpath = "//table[@id='DataTables_Table_0']/tbody/tr[1]/td/a")
 	public WebElement firstPatient ;
 	
-	@FindBy(xpath = "//div[@id=\"overview\"]/div/div[1]/div[1]/h3")
+	@FindBy(xpath = "//div[@id='overview']/div/div[1]/div[1]/h3")
 	public WebElement dischargePatientName ;
 	
 	@FindBy(xpath = "//*[@id=\"overview\"]/div/div[1]/div[1]/div/div/a[3]/i")

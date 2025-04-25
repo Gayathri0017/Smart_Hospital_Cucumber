@@ -12,6 +12,7 @@ Background:
 Scenario: Appointment booking for patient
 	And the User can fill the appointment form 
   And the User should save the form for appointment
+  And the User is able see the success message "Record Saved Successfully"
   
 @BookingWithDateEmptyField
 Scenario Outline: Patient booking with date as empty field

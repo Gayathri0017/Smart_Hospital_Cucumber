@@ -3,6 +3,8 @@ package com.definitions;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
 import com.actions.PatientDischargeActions;
@@ -12,6 +14,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class PatientDischargeDefinition {
+	private static final Logger log = LogManager.getLogger(PatientDischargeDefinition.class);
 	PatientDischargeActions objPDA = new PatientDischargeActions() ;
 	
 	@Given("the Doctor Navigates to the IPD section")
@@ -54,8 +57,14 @@ public void the_doctor_provides_only_discharge_date() {
 
 @Then("the Doctor able to see the error {string}")
 public void the_doctor_able_to_see_the_error(String error) {
-	System.out.println("----------------"+objPDA.getError());
-	Assert.assertTrue(objPDA.getError().contains(error));
+	try {
+		Assert.assertTrue(objPDA.getError().contains(error));
+		System.out.println("----------------"+objPDA.getError());
+		log.info("Assert gets passed in error message for empty field ");
+	}catch (Exception e) {
+		log.error("Assert gets failed in error message for empty field ");
+		throw e;
+	}
 }
 
 
@@ -64,9 +73,6 @@ public void the_doctor_provides_the_case_id_in_search_field(io.cucumber.datatabl
     List<Map<String , String>> caseiD = dataTable.asMaps(String.class , String.class);
     for(Map<String , String> Id : caseiD) {
     	objPDA.setCaseId(Id.get("caseID"));
-    	if(objPDA.getNoDataAvailIsDisplayed()) {
-    		System.out.println(objPDA.getNoDataAvail());
-    	}
     	objPDA.ClickFirstPatient();
         objPDA.ClickDischargeBtn();
     }

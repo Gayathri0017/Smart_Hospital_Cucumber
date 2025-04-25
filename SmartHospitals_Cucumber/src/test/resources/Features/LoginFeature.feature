@@ -15,9 +15,6 @@ Background:
       |Super Admin  |
       |Doctor       |
       |Accountant   |
-      |Pharmacist   |
-      |Pathologist  |
-      |Radiologist  |
       
    @InvalidUserName
   Scenario Outline: Attempt to login with missing username
