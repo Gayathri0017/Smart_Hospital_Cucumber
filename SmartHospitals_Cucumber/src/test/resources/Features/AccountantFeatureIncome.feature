@@ -8,7 +8,9 @@ Background:
     
   @ValidInput
   Scenario: Add New Income and Verify
-    And the user enters the Header as "Hospital charge", name as "Dr.S.Ramkumar", and amount as "1500.00"
+    When the user enters the following income details:
+    |header					|name               |amount |
+    |Telephone Bill	|Dr.S.Ramkumar			|1500.00 |
     And the user clicks the save button
     Then the user verifies that the new income is added to the table
     

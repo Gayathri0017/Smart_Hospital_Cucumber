@@ -68,7 +68,7 @@ public class AccountantDefinitionIncome {
 
     @Then("the user verifies that the new income is added to the table")
     public void verifyIncomeAdded() {
-        String amount = "1500.00"; 
+        String amount = "200.00"; 
         accountantActionsIncome.verifyIncomeAdded(amount);
     }
     
