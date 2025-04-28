@@ -107,9 +107,18 @@ public void assertinvalid(String ex) {
 	}
 }
 public void assertPrescription(){
-	WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+	WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
     wait.until(ExpectedConditions.visibilityOf(pp.textPres));
 	String act=pp.textPres.getText();
+	String ex="Prescription";
+	System.out.println("Expected: " + ex);
+	System.out.println("Actual: " + act);
+	Assert.assertTrue(act.contains(ex));
+}
+public void assertManual(){
+	WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
+    wait.until(ExpectedConditions.visibilityOf(pp.verifyManual));
+	String act=pp.verifyManual.getText();
 	String ex="Prescription";
 	System.out.println("Expected: " + ex);
 	System.out.println("Actual: " + act);
@@ -164,5 +173,8 @@ public void sendKeysMethod(WebElement ele, String text) {
     } catch (Exception e) {
         System.out.println("SendKeys failed: " + e.getMessage());
     }
+}
+public void viewPres() {
+	clickMethod(pp.manualP);
 }
 }

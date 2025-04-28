@@ -103,5 +103,13 @@ public class PrescriptionDefinition {
 	public void the_doctor_should_see_the_page(String string) {
 	    pa.assertEdit(string);
 	}
+	@When("the doctor Clicks the Manual Prescription")
+	public void the_doctor_clicks_the_manual_prescription() {
+	    pa.viewPres();
+	}
+	@Then("the previously added manual prescription should be visible")
+	public void the_previously_added_manual_prescription_should_be_visible() {
+	    pa.assertManual();
+	}
 
 }
