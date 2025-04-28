@@ -33,6 +33,11 @@ Examples:
 	  When the doctor Clicks the View Prescription
 	  Then the previously added prescription should be visible
 	  
+	@Validate_ManualPrescription_View
+	Scenario: Verify the Manual prescription is accessible
+	  When the doctor Clicks the Manual Prescription
+	  Then the previously added manual prescription should be visible
+	  
 	@Verify_Delete_Patient_Option
 	Scenario: Verify the added patient can be deleted in OPD section
 		When the doctor Clicks the Show option in OPD section

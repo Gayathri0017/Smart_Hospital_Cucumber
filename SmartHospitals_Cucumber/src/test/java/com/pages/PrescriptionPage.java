@@ -44,4 +44,8 @@ public class PrescriptionPage {
 	public WebElement showText;
 	@FindBy(xpath="//*[@id=\"visitformedit\"]/div[1]/div/h4")
 	public WebElement editText;
+	@FindBy(xpath="//div[@class=\"white-space-nowrap\"]/a[3]")
+	public WebElement manualP;
+	@FindBy(xpath="(//h4[text()='Prescription'])[2]")
+	public WebElement verifyManual;
 }
