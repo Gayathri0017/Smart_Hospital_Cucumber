@@ -49,4 +49,7 @@ public class PatientDashboardPage {
 	
 	@FindBy(xpath = "//*[@id='toast-container']/div/div")
 	public WebElement successMsg ;
+	
+	@FindBy(css = "#myModal>div>div #formadd>div>div>.alert")
+	public WebElement appointNotAvail ;
 }

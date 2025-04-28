@@ -13,6 +13,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -27,7 +28,7 @@ public class PatientActions {
     private static final Logger log = LogManager.getLogger(PatientActions.class);
     PatientWorkflowPage objPatientPage = null;
     PatientDashboardPage objPDP = null;
-    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
 
     public PatientActions() {
         objPatientPage = new PatientWorkflowPage();
@@ -196,8 +197,12 @@ public class PatientActions {
 
             wait.until(ExpectedConditions.visibilityOf(objPDP.AvailableSlot));
             wait.until(ExpectedConditions.elementToBeClickable(objPDP.AvailableSlot));
-            objPDP.AvailableSlot.click();
+//            objPDP.AvailableSlot.click();
+            Actions act = new Actions(HelperClass.getDriver());
+            act.scrollToElement(objPDP.AvailableSlot).click();
+            act.click(objPDP.AvailableSlot);
             log.info("Available time provided");
+            
 
     }
     
@@ -210,6 +215,8 @@ public class PatientActions {
     public void setMessage(String message) {		// providing the message as details of the patient condition
 
     	wait.until(ExpectedConditions.elementToBeClickable(objPDP.patientMsg));
+    	Actions act = new Actions(HelperClass.getDriver());
+    	act.scrollToElement(objPDP.patientMsg).click();
     	objPDP.patientMsg.click();
             if (message != null && !message.isEmpty()) {
                 objPDP.patientMsg.sendKeys(message);
@@ -230,7 +237,10 @@ public class PatientActions {
     public String getSuccessMsg() {
     	return objPDP.successMsg.getText();
     }
-
+    
+    public String getAppointmentnotAvail() {
+    	return objPDP.appointNotAvail.getText();
+    }
     public void AppointmentDetails() {		// providing the appointment details from the excelreader class
 
             Map<String, String> details = ExcelReader.getPatientAppointmentForm("src/test/resources/PatientAppointmentData.xlsx", "Sheet1");
@@ -295,7 +305,9 @@ public class PatientActions {
                 }
             }
             
-            
+            if(details.get("Date") == null) {
+            	alert();
+            }
             wait.until(ExpectedConditions.visibilityOf(objPDP.AvailableSlot));
             wait.until(ExpectedConditions.elementToBeClickable(objPDP.AvailableSlot));
             objPDP.AvailableSlot.click();

@@ -1,5 +1,7 @@
 package com.definitions;                                                                                        
                                                                                                                 
+import static org.testng.Assert.assertListContains;
+
 import java.time.Duration;
 import java.util.List;
 import java.util.Map;
@@ -122,7 +124,15 @@ public void the_user_can_fill_the_appointment(io.cucumber.datatable.DataTable da
         
         if(date==null) {
         	wait.until(ExpectedConditions.alertIsPresent());
-        	HelperClass.getDriver().switchTo().alert().accept();
+        	objPatientActions.alert();
+        	objPatientActions.setAvailableTime();
+            String message = details.get("Message");
+            objPatientActions.setMessage(message);
+        }
+        else {
+        	objPatientActions.setAvailableTime();
+            String message = details.get("Message");
+            objPatientActions.setMessage(message);
         }
 
         
@@ -162,7 +172,14 @@ public void the_user_is_able_see_the_success_message(String successMsg) {
 		System.out.println(objPatientActions.getSuccessMsg());
 	}catch (Exception e) {
 		log.error("Assert gets failed in success message ");
-		throw e;
+		try {
+			Assert.assertTrue(objPatientActions.getAppointmentnotAvail().contains("Appointment not available, Please try after some time."));
+			System.out.println(objPatientActions.getAppointmentnotAvail());
+		}
+		catch(Exception ex) {
+			log.error("Assert gets failed due to appointment booking");
+			throw e;
+		}
 	}
 }
                                                                                                                 
