@@ -94,9 +94,16 @@ public class PatientPaymentDefinitions {
 					throw e;
 				}
 			}
-		
-		
-		
+			if(error.contains("Your card number is incomplete.")) {
+				try {
+					System.out.println(objPPPA.getInvalidTxt());
+					Assert.assertTrue(objPPPA.getInvalidTxt().contains(error));
+					log.info("Assert gets passed in invalid card number ");
+				}catch (Exception e) {
+					log.error("Assert gets failed in invalid card number ");
+					throw e;
+				}
+			}
 	}
 	
 
