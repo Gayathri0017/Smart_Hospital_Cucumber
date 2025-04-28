@@ -42,8 +42,8 @@ public class PatientDischargeActions {
     public void setCaseId(String id) throws InterruptedException {		// providing the case id of the patient to discharge 
 
            wait.until(ExpectedConditions.elementToBeClickable(objPDP.searchField));
-           objPDP.searchField.sendKeys(id + Keys.CONTROL.ENTER);
-           Thread.sleep(3000);
+           objPDP.searchField.sendKeys(id );
+//           Thread.sleep(3000);
            log.info("Case ID passsed : ", id);
 
     }
