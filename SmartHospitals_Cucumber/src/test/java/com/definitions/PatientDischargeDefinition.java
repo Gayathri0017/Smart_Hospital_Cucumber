@@ -26,6 +26,7 @@ public class PatientDischargeDefinition {
 	public void the_doctor_clicks_the_ipd_no() {
 //		System.out.println("This patient is discharged:" +objPDA.getPatientID());
 		objPDA.ClickFirstPatient();
+		System.out.println("-------------discharged the patient : "+objPDA.getPatientID());
 	}
 	
 
@@ -74,6 +75,7 @@ public void the_doctor_provides_the_case_id_in_search_field(io.cucumber.datatabl
     for(Map<String , String> Id : caseiD) {
     	objPDA.setCaseId(Id.get("caseID"));
     	objPDA.ClickFirstPatient();
+//    	System.out.println("-------------discharged the patient : "+objPDA.getPatientID());
         objPDA.ClickDischargeBtn();
     }
     
@@ -84,10 +86,14 @@ public void the_doctor_provides_the_case_id_in_search_field(io.cucumber.datatabl
 @Then("the Doctor should save the Discharge status")
 public void the_doctor_should_save_the_discharge_status() {
 	objPDA.ClickDischargeSaveBtn();
-	System.out.println("-------------discharged the patient : "+objPDA.getPatientID());
+	
+	
 }
 
 
-
-
+@Then("the Doctor provides discharge date and status as {string}")
+public void the_doctor_provides_discharge_date_and_status_as(String status) {
+	objPDA.setDischargeDate();
+	objPDA.setDischargeStatus(status);
+	}
 }

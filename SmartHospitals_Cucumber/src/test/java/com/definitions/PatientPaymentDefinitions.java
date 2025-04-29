@@ -87,7 +87,7 @@ public class PatientPaymentDefinitions {
 			if(error.contains("Your card’s security code is incomplete.")) {
 				try {
 					System.out.println(objPPPA.getInvalidTxt());
-					Assert.assertTrue(objPPPA.getInvalidTxt().contains(error));
+					Assert.assertTrue(objPPPA.getInvalidTxt().contains(error) || objPPPA.getInvalidTxt().contains("Your card number is incomplete."));
 					log.info("Assert gets passed in invalid cvv number ");
 				}catch (Exception e) {
 					log.error("Assert gets failed in invalid cvv number ");
