@@ -21,7 +21,7 @@ public class PatientPaymentPageActions {
     private static final Logger log = LogManager.getLogger(PatientPaymentPageActions.class);
     PatientPaymentPage objPPP = null;
     PatientDashboardPage objPDP = null;
-    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
 
     public PatientPaymentPageActions() {
         objPPP = new PatientPaymentPage();
