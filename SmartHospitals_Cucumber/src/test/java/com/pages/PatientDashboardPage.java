@@ -1,5 +1,7 @@
 package com.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -52,4 +54,28 @@ public class PatientDashboardPage {
 	
 	@FindBy(css = "#myModal>div>div #formadd>div>div>.alert")
 	public WebElement appointNotAvail ;
+	
+	@FindBy(xpath="//div[@class='wrapper']/div[1]/section/div/div[2]/preceding-sibling::div/div/div/div[1]/following-sibling::div/ul/li[1]/a")
+	public WebElement patientid ;
+	
+	@FindBy(xpath="//div[@class='wrapper']/div[1]/section/div/div[2]/preceding-sibling::div/div/div/div[1]/following-sibling::div/ul/li[1]/following-sibling::li[1]/a")
+	public WebElement patientMaritalStatus ;
+	
+	@FindBy(xpath="//div[@class='wrapper']/div[1]/section/div/div[2]/preceding-sibling::div/div/div/div[1]/following-sibling::div/ul/li[1]/following-sibling::li[2]/a")
+	public WebElement patientEmail ;
+	
+	@FindBy(xpath="//div[@class='wrapper']/div[1]/section/div/div[2]/preceding-sibling::div/div/div/div[1]/following-sibling::div/ul/li[1]/following-sibling::li[3]/a")
+	public WebElement patientAge ;
+	
+	@FindBy(xpath="//div[@class='wrapper']/div[1]/section/div/div[2]/preceding-sibling::div/div/div/div[1]/following-sibling::div/ul/li[1]/following-sibling::li[4]/a")
+	public WebElement patientGender ;
+	
+	@FindBy(xpath="//div[@class='wrapper']/div[1]/section/div/div[2]/preceding-sibling::div/div/div/div[1]/following-sibling::div/ul/li[1]/following-sibling::li[5]/a")
+	public WebElement patientPhone ;
+	
+	@FindBy(xpath="//div[@class='wrapper']/div[1]/section/div/div[2]/preceding-sibling::div/div/div/div[1]/following-sibling::div/ul/li[1]/following-sibling::li[6]/a")
+	public WebElement patientAddress ;
+	
+	@FindBy(xpath="//div[@class='wrapper']/div[1]/section/div/div[2]/preceding-sibling::div/div/div/div[1]/following-sibling::div/ul/li[1]/following-sibling::li[7]/a")
+	public WebElement patientGuardianName ;
 }
