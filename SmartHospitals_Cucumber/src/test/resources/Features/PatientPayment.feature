@@ -25,7 +25,7 @@ Feature: Dhanush_13APR2025_Payment features with card details
  	
  	Examples:
  	|Country				|CardNumber						|ExpiryDate					|CVV		|
- 	|Iceland				|4242424242424240			|5/31								|123		|
+ 	|Iceland				|4242424242424240			|05/31							|123		|
  	
  @InvalidExpiryDate
  Scenario Outline: Payment by invalid card expiry date
@@ -38,7 +38,7 @@ Feature: Dhanush_13APR2025_Payment features with card details
  	
  	Examples:
  	|Country				|CardNumber						|ExpiryDate					|CVV		|
- 	|Iceland				|4242424242424242			|5/13								|123		|
+ 	|Iceland				|4242424242424242			|05/13							|123		|
  
  @InvalidCvvNumber
  Scenario Outline: Payment by invalid card cvv number
@@ -50,6 +50,6 @@ Feature: Dhanush_13APR2025_Payment features with card details
  	And the User can able to see the error message "Your card’s security code is incomplete."
  	Examples:
  	|Country				|CardNumber						|ExpiryDate					|CVV		|
- 	|Iceland				|4242424242424242			|5/31								|12			|
- 	|Iceland				|4242424242424242			|5/31								|45			|
+ 	|Iceland				|4242424242424242			|05/31							|12			|
+ 	|Iceland				|4242424242424242			|05/31							|45			|
  	
