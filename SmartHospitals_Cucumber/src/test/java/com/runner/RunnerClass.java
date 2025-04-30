@@ -7,7 +7,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
     features = {"src\\test\\resources\\Features\\SearchFeature.feature",
     		"src\\test\\resources\\Features\\DoctorFeature.feature",
     		"src\\test\\resources\\Features\\PrescriptionFeature.feature",
-    		//"src\\test\\resources\\Features\\MessagingFeature.feature"
+    		"src\\test\\resources\\Features\\MessageFeature.feature"
 	       },
     glue = {"com.definitions", "com.utils"},
     plugin = {"pretty","json:target/cucumber-reports/reports.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
