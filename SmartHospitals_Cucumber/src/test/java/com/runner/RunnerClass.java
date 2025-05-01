@@ -4,9 +4,9 @@ import org.testng.annotations.DataProvider;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 
-    features = {"src\\test\\resources\\Features\\transactionReportDownlode.feature"},
+    features = {"src\\test\\resources\\Features\\verifing_Social_media_link.feature"},
     glue = {"com.definitions", "com.utils"},
-    plugin = {"pretty", "json:target/cucumber-reports/reports.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+    plugin = {"pretty","json:target/cucumber-reports/reports.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
     monochrome = true,
     dryRun = false
 )
