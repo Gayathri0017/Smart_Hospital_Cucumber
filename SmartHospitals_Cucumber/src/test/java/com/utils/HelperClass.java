@@ -15,7 +15,7 @@ public class HelperClass {
         if (!drivers.containsKey(threadName)) {
             ChromeOptions options = new ChromeOptions();
 //            options.addArguments("--headless");
-//            options.addArguments("--incognito");
+            options.addArguments("--incognito");
             options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
             options.setExperimentalOption("useAutomationExtension", false);
             options.setExperimentalOption("prefs", new HashMap<String, Object>() {{
