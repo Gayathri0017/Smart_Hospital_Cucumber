@@ -18,4 +18,8 @@ public WebElement content;
 public WebElement sendBtn;
 @FindBy(xpath="//div[@class=\"alert alert-success\"]")
 public WebElement success;
+@FindBy(xpath="//*[@id=\"form1\"]/div/div[2]/div/div[1]/div[1]/span/p")
+public WebElement error;
+@FindBy(xpath="//i[@class=\"fa fa-trash\"]")
+public WebElement del;
 }

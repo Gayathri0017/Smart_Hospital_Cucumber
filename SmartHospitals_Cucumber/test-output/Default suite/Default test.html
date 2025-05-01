@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 24 12:40:20 IST 2025</td>
+<td>Started on:</td><td>Wed Apr 30 11:08:36 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>30 seconds (30868 ms)</td>
+<tr><td>Total time:</td><td>81 seconds (81057 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,77 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to create an appointment with an expired time slot", "Gayathri_09APR2025_Manage Appointments in Smart Hospital"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;text&quot; id=&quot;datetimepicker&quot; name=&quot;date&quot; class=&quot;form-control datetime&quot;&gt; is not clickable at point (1444, 154). Other element would receive the click: &lt;input type=&quot;text&quot; name=&quot;guardian_name&quot; placeholder=&quot;&quot; value=&quot;&quot; class=&quot;form-control&quot;&gt;
-  (Session info: chrome=135.0.7049.96)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [73dd0694467f9b82835fe60a96e4fd3a, clickElement {id=f.98869E5945512A7F1AAEF56977E85C83.d.A7007107AB75643330D9D12753BF7395.e.197}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\gayat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60570}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60570/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (73dd0694467f9b82835fe60a96e4fd3a)] -&gt; xpath: //input[@id=&quot;datetimepicker&quot;]]
-Session ID: 73dd0694467f9b82835fe60a96e4fd3a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at com.actions.DoctorActions.addAppointmentDetails1(DoctorActions.java:119)
-	at com.definitions.DoctorDefinition.doctor_fills_expired_time_for_appointment(DoctorDefinition.java:62)
-	at ✽.Doctor fills Expired time for appointment(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:21)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1229249955", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1229249955'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;text&quot; id=&quot;datetimepicker&quot; name=&quot;date&quot; class=&quot;form-control datetime&quot;&gt; is not clickable at point (1444, 154). Other element would receive the click: &lt;input type=&quot;text&quot; name=&quot;guardian_name&quot; placeholder=&quot;&quot; value=&quot;&quot; class=&quot;form-control&quot;&gt;
-  (Session info: chrome=135.0.7049.96)
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [73dd0694467f9b82835fe60a96e4fd3a, clickElement {id=f.98869E5945512A7F1AAEF56977E85C83.d.A7007107AB75643330D9D12753BF7395.e.197}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\gayat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60570}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60570/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (73dd0694467f9b82835fe60a96e4fd3a)] -&gt; xpath: //input[@id=&quot;datetimepicker&quot;]]
-Session ID: 73dd0694467f9b82835fe60a96e4fd3a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at com.actions.DoctorActions.addAppointmentDetails1(DoctorActions.java:119)
-	at com.definitions.DoctorDefinition.doctor_fills_expired_time_for_appointment(DoctorDefinition.java:62)
-	at ✽.Doctor fills Expired time for appointment(file:///C:/Users/gayat/git/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/DoctorFeature.feature:21)
-</pre></div></td>
-<td>22</td>
-<td>com.runner.RunnerClass@306cf3ea</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -147,29 +76,89 @@ Session ID: 73dd0694467f9b82835fe60a96e4fd3a
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor creates a new appointment for a new patient", "Gayathri_09APR2025_Manage Appointments in Smart Hospital"</td>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital"</td>
 <td></td>
-<td>28</td>
+<td>56</td>
 <td>com.runner.RunnerClass@306cf3ea</td></tr>
 <tr>
-<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the year", "Gayathri_09APR2025_Manage Appointments in Smart Hospital"</td>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the added patient can be deleted in OPD section", "Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital"</td>
 <td></td>
-<td>21</td>
+<td>19</td>
 <td>com.runner.RunnerClass@306cf3ea</td></tr>
 <tr>
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the Month", "Gayathri_09APR2025_Manage Appointments in Smart Hospital"</td>
 <td></td>
-<td>26</td>
+<td>54</td>
 <td>com.runner.RunnerClass@306cf3ea</td></tr>
 <tr>
-<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the day", "Gayathri_09APR2025_Manage Appointments in Smart Hospital"</td>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to create an appointment with an expired time slot", "Gayathri_09APR2025_Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>55</td>
+<td>com.runner.RunnerClass@306cf3ea</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Search of patient", "Gayathri_09APR2025_Search Patient by Name In Smart Hospital"</td>
 <td></td>
 <td>20</td>
 <td>com.runner.RunnerClass@306cf3ea</td></tr>
 <tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that a searched patient can be deleted", "Gayathri_09APR2025_Search Patient by Name In Smart Hospital"</td>
+<td></td>
+<td>19</td>
+<td>com.runner.RunnerClass@306cf3ea</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the year", "Gayathri_09APR2025_Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>54</td>
+<td>com.runner.RunnerClass@306cf3ea</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Search of patient", "Gayathri_09APR2025_Search Patient by Name In Smart Hospital"</td>
+<td></td>
+<td>20</td>
+<td>com.runner.RunnerClass@306cf3ea</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>54</td>
+<td>com.runner.RunnerClass@306cf3ea</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Manual prescription is accessible", "Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>21</td>
+<td>com.runner.RunnerClass@306cf3ea</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the added prescription is visible in the OPD section", "Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>22</td>
+<td>com.runner.RunnerClass@306cf3ea</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to submit prescription with missing fields", "Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>55</td>
+<td>com.runner.RunnerClass@306cf3ea</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the prescription feature by providing valid informations", "Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital"</td>
+<td></td>
+<td>23</td>
+<td>com.runner.RunnerClass@306cf3ea</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the day", "Gayathri_09APR2025_Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>54</td>
+<td>com.runner.RunnerClass@306cf3ea</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor creates a new appointment for a new patient", "Gayathri_09APR2025_Manage Appointments in Smart Hospital"</td>
+<td></td>
+<td>55</td>
+<td>com.runner.RunnerClass@306cf3ea</td></tr>
+<tr>
 <td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Doctor tries to add a new patient without entering the name", "Gayathri_09APR2025_Manage Appointments in Smart Hospital"</td>
 <td></td>
-<td>25</td>
+<td>54</td>
+<td>com.runner.RunnerClass@306cf3ea</td></tr>
+<tr>
+<td title='com.runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: com.runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add message in notice board in messaging section", "Gayathri_28APR2025_Messaging Feature Verification in Smart Hospital"</td>
+<td></td>
+<td>54</td>
 <td>com.runner.RunnerClass@306cf3ea</td></tr>
 </table><p>
 </body>
