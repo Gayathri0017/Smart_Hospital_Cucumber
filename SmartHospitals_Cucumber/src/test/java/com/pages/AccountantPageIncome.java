@@ -39,7 +39,7 @@ public class AccountantPageIncome {
     @FindBy(id = "toast-container")
     public WebElement errorNotification;
 
-    @FindBy(xpath = "(//*[@class=\" dt-body-right\"])[1]")
+    @FindBy(xpath = "//tr[contains(@class, 'odd')]/following-sibling :: tr[1] /*[@class=\" dt-body-right\"]")
     public WebElement tableValue;
 
     
