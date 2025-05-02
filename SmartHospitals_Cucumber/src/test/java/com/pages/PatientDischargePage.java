@@ -15,7 +15,7 @@ public class PatientDischargePage {
 	@FindBy(xpath = "//div[@id='overview']/div/div[1]/div[1]/h3")
 	public WebElement dischargePatientName ;
 	
-	@FindBy(xpath = "//*[@id=\"overview\"]/div/div[1]/div[1]/div/div/a[3]/i")
+	@FindBy(xpath = "//div[@id=\"overview\"]/div/div[1]/div[1]/div/div/a[3]/i")
 	public WebElement dischargeIcon ;
 	
 	@FindBy(name = "discharge_date")
@@ -27,7 +27,7 @@ public class PatientDischargePage {
 	@FindBy(id = "add_paymentbtn")
 	public WebElement dischargeSaveBtn ;
 	
-	@FindBy(xpath = "//*[@id=\"toast-container\"]/div/div/p")
+	@FindBy(xpath = "//div[@id=\"toast-container\"]/div/div/p")
 	public WebElement error ;
 	
 	@FindBy(xpath = "//div[@id='DataTables_Table_0_filter']/label/input")
