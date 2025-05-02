@@ -6,8 +6,12 @@
       <class name="com.runner.RunnerClass">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="1"/>
           <include name="tearDownClass"/>
+<<<<<<< HEAD
+          <include name="runScenario" invocation-numbers="1"/>
+=======
+          <include name="runScenario" invocation-numbers="0"/>
+>>>>>>> branch 'main' of https://github.com/Gayathri0017/Smart_Hospital_Cucumber.git
         </methods>
       </class> <!-- com.runner.RunnerClass -->
     </classes>
