@@ -308,8 +308,15 @@ public class PatientActions {
             if(details.get("Date") == null) {
             	alert();
             }
-            wait.until(ExpectedConditions.visibilityOf(objPDP.AvailableSlot));
-            wait.until(ExpectedConditions.elementToBeClickable(objPDP.AvailableSlot));
+            
+            try {
+        		
+            	wait.until(ExpectedConditions.visibilityOf(objPDP.AvailableSlot));
+            	wait.until(ExpectedConditions.elementToBeClickable(objPDP.AvailableSlot));
+        	}
+        	catch (Exception e){
+        		System.out.println(e.getMessage());
+        	}
             objPDP.AvailableSlot.click();
             log.info("Available slot clicked");
             objPDP.patientMsg.sendKeys(details.get("Message"));

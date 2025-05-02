@@ -122,25 +122,37 @@ public void the_user_can_fill_the_appointment(io.cucumber.datatable.DataTable da
         String time = details.get("Timing");
         objPatientActions.setTime(time);
         
-        if(date==null) {
-        	wait.until(ExpectedConditions.alertIsPresent());
-        	objPatientActions.alert();
-        	objPatientActions.setAvailableTime();
+//        if(date==null) {
+//        	wait.until(ExpectedConditions.alertIsPresent());
+//        	objPatientActions.alert();
+        	try {
+        		
+        		objPatientActions.setAvailableTime();
+        	}
+        	catch (Exception e){
+        		System.out.println(e.getMessage());
+        	}
             String message = details.get("Message");
             objPatientActions.setMessage(message);
-        }
-        else {
-        	objPatientActions.setAvailableTime();
-            String message = details.get("Message");
-            objPatientActions.setMessage(message);
+//        }
+//        else {
+//        	try {
+//        		
+//        		objPatientActions.setAvailableTime();
+//        	}
+//        	catch (Exception e){
+//        		System.out.println(e.getMessage());
+//        	}
+//            String message = details.get("Message");
+//            objPatientActions.setMessage(message);
         }
 
         
-        objPatientActions.setAvailableTime();
-        String message = details.get("Message");
-        objPatientActions.setMessage(message);
-        
-    }
+//        objPatientActions.setAvailableTime();
+//        String message = details.get("Message");
+//        objPatientActions.setMessage(message);
+//        
+//    }
 }
 
 

@@ -37,19 +37,19 @@ public class PatientDashboardPage {
 	@FindBy(css = "#slot_1")
 	public WebElement AvailableSlot ;
 	
-	@FindBy(xpath = "//*[@id='message']")
+	@FindBy(xpath = "//textarea[@id='message']")
 	public WebElement patientMsg ;
 	
 	@FindBy(id = "formaddbtn")
 	public WebElement formSubmit ;
 	
-	@FindBy(xpath = "//*[@id='toast-container']/div/div/p[1]")
+	@FindBy(xpath = "//div[@id='toast-container']/div/div/p[1]")
 	public WebElement FieldRequired ;
 	
 	@FindBy(xpath = "//aside[@id='alert2']/div/section/ul/li[1]//following-sibling::li[3]/a/span")
 	public WebElement ipd ;
 	
-	@FindBy(xpath = "//*[@id='toast-container']/div/div")
+	@FindBy(xpath = "//div[@id='toast-container']/div/div")
 	public WebElement successMsg ;
 	
 	@FindBy(css = "#myModal>div>div #formadd>div>div>.alert")
