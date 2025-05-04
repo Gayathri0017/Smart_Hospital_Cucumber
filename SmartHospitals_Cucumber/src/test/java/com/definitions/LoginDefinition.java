@@ -1,5 +1,7 @@
 package com.definitions;
 
+import org.testng.Assert;
+
 import com.actions.LoginActions;
 import com.utils.HelperClass;
 import io.cucumber.java.en.*;
@@ -32,16 +34,18 @@ public void user_leaves_the_field_empty(String string) {
        loginActions.enterPassword();
    }
 	}
-    @When("the user clicks the Sign In button")
-    public void the_user_clicks_the_sign_in_button() {
-        loginActions.clickSignIn();
-    }
-    @Then("the user should see the dashboard page for the {string} role")
-    public void the_user_should_see_the_dashboard_page_for_the_role(String role) {
-        assert loginActions.isDashboardDisplayed(role) : "Dashboard not displayed for role: " + role;
-    }
-    @Then("User should see an error message")
-    public void user_should_see_an_error_message() {
-        assert loginActions.isErrorDisplayed() : "Error message not displayed";
-    }
+@When("the user clicks the Sign In button")
+public void the_user_clicks_the_sign_in_button() {
+    loginActions.clickSignIn();
+}
+
+@Then("the user should see the dashboard page for the {string} role")
+public void the_user_should_see_the_dashboard_page_for_the_role(String role) {
+    Assert.assertTrue(loginActions.isDashboardDisplayed(role));
+}
+
+@Then("User should see an error message")
+public void user_should_see_an_error_message() {
+    Assert.assertTrue(loginActions.isErrorDisplayed());
+}
 }

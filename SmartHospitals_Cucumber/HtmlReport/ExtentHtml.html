@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 1, 2025 02:18:45 pm</span>
+			<span class='label blue darken-3 suite-start-time'>May 4, 2025 12:33:28 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -65,7 +64,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -77,12 +76,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@youtube</a></li>
-					<li><a href='#'>@twitter</a></li>
-					<li><a href='#'>@instagram</a></li>
-					<li><a href='#'>@linkedin</a></li>
-					<li><a href='#'>@facebook</a></li>
-					<li><a href='#'>@pinterest</a></li>
+					<li><a href='#'>@InvalidInput</a></li>
+					<li><a href='#'>@ValidInput</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -124,12 +119,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
-                    <span class='strong'>0</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>1</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
-                    1</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -142,12 +137,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='83%'>
-                    <span class='strong'>5</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>2</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='16%'>
-                    1</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -162,14 +157,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='88%'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
                     <span class='strong'>16</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
-                    1</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
-                    1</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -190,11 +185,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Verifying Social Media Links</span>
-						<span class='test-time'>May 1, 2025 02:18:46 pm</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-name'>Gowri_14APR2025_Accountant_Income_Functionalities</span>
+						<span class='test-time'>May 4, 2025 12:33:29 pm</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -206,29 +201,55 @@
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 18.455</span>
+	<span class='duration right label'>00 00 09.678</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Facebook Link</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Add New Income and Verify</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@facebook</span>
+				<span class='category label'>@ValidInput</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='14' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the application homepage</div>
+		<li test-id='6' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.launchApplication())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User launches Smart Hospital website</div>
 
 
 		</li>
-		<li test-id='21' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user click on the "Facebook" link</div>
+		<li test-id='9' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.selectRole(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user selects "Accountant" role</div>
 
 
 		</li>
-		<li test-id='27' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_facebook_page_title())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the correct Facebook page title</div>
+		<li test-id='11' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.clickSignIn())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Sign In</div>
+
+
+		</li>
+		<li test-id='12' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.navigateToIncome())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user navigates to the finance section and clicks on income</div>
+
+
+		</li>
+		<li test-id='15' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.clickAddIncome())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on Add Income</div>
+
+
+		</li>
+		<li test-id='17' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.enterIncomeDetailsFromDataTable(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters the following income details:</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>header</td><td>name</td><td>amount</td></tr><tr><td>Telephone Bill</td><td>Dr.S.Ramkumar</td><td>1500.00</td></tr></table></div>
+		</li>
+		<li test-id='18' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.clickSave())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the save button</div>
+
+
+		</li>
+		<li test-id='19' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.verifyIncomeAdded())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user verifies that the new income is added to the table</div>
 
 
 		</li>
@@ -236,162 +257,55 @@
 </div>
 <div class='scenario node' test-id='3' status='pass'>
 
-	<span class='duration right label'>00 00 18.501</span>
+	<span class='duration right label'>00 00 10.224</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Pinterest Link</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Add New Income with Invalid Data</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@pinterest</span>
+				<span class='category label'>@InvalidInput</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='18' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the application homepage</div>
+		<li test-id='7' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.launchApplication())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User launches Smart Hospital website</div>
 
 
 		</li>
-		<li test-id='22' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user click on the "Pinterest" link</div>
+		<li test-id='8' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.selectRole(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user selects "Accountant" role</div>
 
 
 		</li>
-		<li test-id='30' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_pinterest_page_title())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the correct Pinterest page title</div>
+		<li test-id='10' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.clickSignIn())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Sign In</div>
 
 
 		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='4' status='fail'>
-
-	<span class='duration right label'>00 00 38.740</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify Twitter Link</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@twitter</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='24' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the application homepage</div>
+		<li test-id='13' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.navigateToIncome())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user navigates to the finance section and clicks on income</div>
 
 
 		</li>
-		<li test-id='26' class='node when Fail' status='Fail'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When the user click on the "Twitter" link</div>
-
-
-					<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for js return document.readyState === 'complete' to be executable (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54555/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 641ca85cd5e9667beae091efbca1297c
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.SocialMediaVerificationAction.switchToNewTab(SocialMediaVerificationAction.java:67)
-	at com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(SocialMediaVerificationDefinition.java:49)
-	at ✽.the user click on the "Twitter" link(file:///D:/eclipse1/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/verifing_Social_media_link.feature:13)
-</textarea>
-		</li>
-		<li test-id='36' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_twitter_page_title())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then the user should see the correct Twitter page title</div>
-
-
-					<div class="node-step">Step skipped</div>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='5' status='pass'>
-
-	<span class='duration right label'>00 00 18.275</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Instagram Link</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@instagram</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='16' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the application homepage</div>
+		<li test-id='14' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.clickAddIncome())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks on Add Income</div>
 
 
 		</li>
-		<li test-id='20' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user click on the "Instagram" link</div>
+		<li test-id='16' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.enterIncomeDetailsFromDataTable(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters the following income details:</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>header</td><td>name</td><td>amount</td></tr><tr><td>Telephone Bill</td><td></td><td>100.00</td></tr><tr><td>Telephone Bill</td><td>hi</td><td>-52</td></tr><tr><td></td><td></td><td></td></tr></table></div>
+		</li>
+		<li test-id='21' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.clickSave())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the save button</div>
 
 
 		</li>
-		<li test-id='25' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_instagram_page_title())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the correct Instagram page title</div>
-
-
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='6' status='pass'>
-
-	<span class='duration right label'>00 00 20.665</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify YouTube Link</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@youtube</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='17' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the application homepage</div>
-
-
-		</li>
-		<li test-id='23' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user click on the "YouTube" link</div>
-
-
-		</li>
-		<li test-id='32' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_youtube_page_title())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the correct YouTube page title</div>
-
-
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='7' status='pass'>
-
-	<span class='duration right label'>00 00 20.942</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify LinkedIn Link</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@linkedin</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='15' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the application homepage</div>
-
-
-		</li>
-		<li test-id='19' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user click on the "LinkedIn" link</div>
-
-
-		</li>
-		<li test-id='34' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_linkedin_page_title())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the correct LinkedIn page title</div>
+		<li test-id='22' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.definitions.AccountantDefinitionIncome.verifyErrorNotification())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see an error notification</div>
 
 
 		</li>
@@ -441,7 +355,7 @@ Session ID: 641ca85cd5e9667beae091efbca1297c
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@youtube</span>
+						<span class='category-name'>@InvalidInput</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -463,8 +377,8 @@ Session ID: 641ca85cd5e9667beae091efbca1297c
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 1, 2025 02:18:46 pm</td>
-										<td class='linked' test-id='6'>Verify YouTube Link</td>
+										<td>May 4, 2025 12:33:29 pm</td>
+										<td class='linked' test-id='3'>Add New Income with Invalid Data</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -474,40 +388,7 @@ Session ID: 641ca85cd5e9667beae091efbca1297c
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@twitter</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 1, 2025 02:18:46 pm</td>
-										<td class='linked' test-id='4'>Verify Twitter Link</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@instagram</span>
+						<span class='category-name'>@ValidInput</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -529,107 +410,8 @@ Session ID: 641ca85cd5e9667beae091efbca1297c
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 1, 2025 02:18:46 pm</td>
-										<td class='linked' test-id='5'>Verify Instagram Link</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@linkedin</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 1, 2025 02:18:46 pm</td>
-										<td class='linked' test-id='7'>Verify LinkedIn Link</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@facebook</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 1, 2025 02:18:46 pm</td>
-										<td class='linked' test-id='2'>Verify Facebook Link</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@pinterest</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 1, 2025 02:18:46 pm</td>
-										<td class='linked' test-id='3'>Verify Pinterest Link</td>
+										<td>May 4, 2025 12:33:29 pm</td>
+										<td class='linked' test-id='2'>Add New Income and Verify</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -646,73 +428,7 @@ Session ID: 641ca85cd5e9667beae091efbca1297c
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.TimeoutException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 1, 2025 02:19:03 pm</td>
-										<td class='linked' test-id='26'>When the user click on the "Twitter" link</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for js return document.readyState === 'complete' to be executable (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.31.0', revision: '1ef9f18787*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54555/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 641ca85cd5e9667beae091efbca1297c
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.SocialMediaVerificationAction.switchToNewTab(SocialMediaVerificationAction.java:67)
-	at com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(SocialMediaVerificationDefinition.java:49)
-	at ✽.the user click on the "Twitter" link(file:///D:/eclipse1/Smart_Hospital_Cucumber/SmartHospitals_Cucumber/src/test/resources/Features/verifing_Social_media_link.feature:13)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -726,31 +442,31 @@ Session ID: 641ca85cd5e9667beae091efbca1297c
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>18</div>
+					<div class='panel-lead'>16</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 1, 2025 02:18:45 pm</div>
+					<div class='panel-lead'>May 4, 2025 12:33:28 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 1, 2025 02:19:25 pm</div>
+			 		<div class='panel-lead'>May 4, 2025 12:33:39 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 39.802</div>
+					<div class='panel-lead'>00 00 10.951</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -786,7 +502,7 @@ Session ID: 641ca85cd5e9667beae091efbca1297c
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@youtube</td>
+							<td>@InvalidInput</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -795,43 +511,7 @@ Session ID: 641ca85cd5e9667beae091efbca1297c
 							</td>
 						</tr>
 						<tr>
-							<td>@twitter</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@instagram</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@linkedin</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@facebook</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@pinterest</td>
+							<td>@ValidInput</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -851,34 +531,34 @@ Session ID: 641ca85cd5e9667beae091efbca1297c
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 6,
-				passChild: 5,
-				failChild: 1,
+				childCount: 2,
+				passChild: 2,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 18,
+				grandChildCount: 16,
 				passGrandChild: 16,
-				failGrandChild: 1,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 1,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Verifying Social Media Links":38.747
+			        "Gowri_14APR2025_Accountant_Income_Functionalities":10.229
 			};
 		</script>
 		
