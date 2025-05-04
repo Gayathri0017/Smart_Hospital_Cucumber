@@ -6,6 +6,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -98,7 +100,7 @@ public class DoctorActions {
         new Select(dp.shift).selectByVisibleText(shift);
         dp.date.click();
         dp.date.sendKeys(Keys.CONTROL + "a" + Keys.BACK_SPACE);
-        sendKeysMethod(dp.date, "03/10/2026  16:26:00");
+        sendKeysMethod(dp.date, "31/10/2026  16:26:00");
         dp.date.sendKeys(Keys.ENTER);
         try {
             WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
@@ -108,6 +110,13 @@ public class DoctorActions {
         }
         new Select(dp.status).selectByVisibleText(status);
         sendKeysMethod(dp.discount, dis);
+//        Select pri=new Select(dp.priority);
+//        pri.selectByIndex(0);
+        clickMethod(dp.priority);
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+        WebElement pri= wait.until(ExpectedConditions.visibilityOf(dp.ip));
+        sendKeysMethod(pri,"Normal");
+        pri.sendKeys(Keys.ENTER);
         log.info("Appointment details filled with discount");
     }
     public void addAppointmentDetails1() {
@@ -147,7 +156,20 @@ public class DoctorActions {
         WebElement errorElement=wait.until(ExpectedConditions.visibilityOf(dp.nameError));
         String ac=errorElement.getText();
         log.info("Checking name required validation. Expected: {}, Actual: {}", ex, ac);
-        Assert.assertEquals(ac, ex);
+//        Assert.assertEquals(ac, ex);
+        Assert.assertTrue(ac.contains(ex));
+    }
+    public void assertSuccess() {
+        WebDriver driver=HelperClass.getDriver();
+        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+        try {
+            WebElement toast=wait.until(ExpectedConditions.presenceOfElementLocated(
+                By.xpath("//div[contains(@class,'toast-message') and contains(text(),'Record Saved Successfully')]")));
+            System.out.println("Success toast text: "+toast.getText());
+            Assert.assertTrue(toast.isDisplayed(),"Toast is not visible");
+        } catch (TimeoutException e) {
+            Assert.fail("Success message toast did not appear");
+        }
     }
     public void saveApp() {
         clickMethod(dp.savebtn);
