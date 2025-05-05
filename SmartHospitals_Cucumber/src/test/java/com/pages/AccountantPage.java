@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class AccountantPage {
     private WebDriver driver;
 
-    @FindBy(xpath = " (//a[@class=\"btn btn-primary width50\"])[5]")
+    @FindBy(xpath = "(//*[@class=\"btn-group btn-group-justified\"])[3]/child::a[1]")
     public WebElement accountantRoleButton;
    
     @FindBy(xpath = "//*[@class=\"btn\"]")
@@ -20,7 +20,7 @@ public class AccountantPage {
     @FindBy(xpath = "(//*[@href=\"https://demo.smart-hospital.in/admin/admin/dashboard\"])[2]")
     public WebElement dashboard;
 
-    @FindBy(xpath = "/html/body/div[1]/div[1]/section/div[2]")
+    @FindBy(xpath = "//*[@class=\"content\"]/child :: div[2]")
     public WebElement summaryTable;
 
     @FindBy(xpath = "(//*[@class=\"info-box-content\"])[9]")
@@ -38,7 +38,7 @@ public class AccountantPage {
     @FindBy(xpath = "//*[@id=\"amount\"]")
     public WebElement expenseAmountField;
 
-    @FindBy(id = "addexpensebtn")
+    @FindBy(xpath = "//*[@class=\"pull-right\"]/child::button")
     public WebElement saveButton;
 
     @FindBy(xpath = "//*[@class=\"toast toast-success\"]")

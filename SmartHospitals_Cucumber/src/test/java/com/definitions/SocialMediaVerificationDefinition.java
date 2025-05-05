@@ -42,6 +42,9 @@ public class SocialMediaVerificationDefinition {
             case "front page":
                 actions.clickFrontPageLink();
                 break;
+            case "gmail":
+            	actions.clickGmailLink();
+            	break;
             default:
                 throw new IllegalArgumentException("Unknown link: " + linkName);
         }
@@ -75,9 +78,10 @@ public class SocialMediaVerificationDefinition {
             System.out.println("Current URL: " + currentUrl);
             System.out.println("Actual Title: " + actualTitle);
             
-            Assert.assertTrue(actualTitle.toLowerCase().contains("twitter") || 
-                           actualTitle.toLowerCase().contains("x.com"), 
-                "Expected title to contain 'Twitter' or 'X'. Actual title: " + actualTitle);
+            Assert.assertTrue(actualTitle.equalsIgnoreCase("X") || 
+                            currentUrl.contains("twitter.com") || 
+                            currentUrl.contains("x.com"),
+                "Expected title to be 'X' or URL to contain 'twitter.com/x.com'. Actual title: " + actualTitle);
         } finally {
             actions.closeCurrentTabAndSwitchBack();
         }
@@ -107,10 +111,9 @@ public class SocialMediaVerificationDefinition {
             
             System.out.println("Current URL: " + currentUrl);
             System.out.println("Actual Title: " + actualTitle);
-            
-            Assert.assertTrue(actualTitle.toLowerCase().contains("gmail") || 
-                           actualTitle.toLowerCase().contains("google accounts"), 
-                "Expected title to contain 'Gmail' or 'Google Accounts'. Actual title: " + actualTitle);
+            Assert.assertTrue(currentUrl.contains("mail.google.com") || 
+                            currentUrl.contains("accounts.google.com"),
+                "Expected Gmail or Google sign-in page. Actual URL: " + currentUrl);
         } finally {
             actions.closeCurrentTabAndSwitchBack();
         }

@@ -2,7 +2,7 @@ package com.definitions;
 
 import java.util.List;
 import java.util.Map;
-
+import org.junit.Assert;
 import com.actions.AccountantActionsIncome;
 
 import io.cucumber.datatable.DataTable;
@@ -74,9 +74,6 @@ public class AccountantDefinitionIncome {
     
     @Then("the user should see an error notification")
     public void verifyErrorNotification() {
-        if (!accountantActionsIncome.isErrorNotificationDisplayed()) {
-            throw new RuntimeException("Error notification not displayed after saving expense with invalid data");
-        }
-    }
-    
+        Assert.assertTrue("Error notification not displayed after saving expense with invalid data", accountantActionsIncome.isErrorNotificationDisplayed());
+    }    
 }

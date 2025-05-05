@@ -3,8 +3,6 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
-
-
    features = {"src\\test\\resources\\Features\\SearchFeature.feature",
 		   "src\\test\\resources\\Features\\MessageFeature.feature",
 		   "src\\test\\resources\\Features\\PrescriptionFeature.feature",
