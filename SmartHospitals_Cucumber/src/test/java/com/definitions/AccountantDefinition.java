@@ -1,5 +1,7 @@
 package com.definitions;
 
+import org.testng.Assert;
+
 import com.actions.AccountantActions;
 import com.pages.AccountantPage;
 import com.utils.HelperClass;
@@ -63,15 +65,11 @@ public class AccountantDefinition {
 
     @Then("need to see the asseart the success notifications")
     public void verifySuccessNotification() {
-        if (!accountantActions.isSuccessNotificationDisplayed()) {
-            throw new RuntimeException("Success notification not displayed after saving expense");
-        }
+        Assert.assertTrue(accountantActions.isSuccessNotificationDisplayed());
     }
 
     @Then("need to see the asseart the error notifications")
     public void verifyErrorNotification() {
-        if (!accountantActions.isErrorNotificationDisplayed()) {
-            throw new RuntimeException("Error notification not displayed after saving expense with invalid data");
-        }
+        Assert.assertTrue(accountantActions.isErrorNotificationDisplayed());
     }
 }

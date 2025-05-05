@@ -17,6 +17,11 @@ Feature: Gowri_29APR2025_Verifying_Social_Media_Links
   Scenario: Verify YouTube Link
     When the user click on the "YouTube" link
     Then the user should see the correct YouTube page title
+ 
+ 	@gmail
+  Scenario: Verify Gmail Link
+    When the user click on the "Gmail" link
+    Then the user should see the correct Gmail page title
 
   @linkedin
   Scenario: Verify LinkedIn Link
