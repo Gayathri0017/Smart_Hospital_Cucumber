@@ -1,5 +1,7 @@
 package com.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,6 +33,9 @@ public class SocialMediaVerificationPage {
 
     @FindBy(xpath = "//*[@href=\"https://demo.smart-hospital.in\"]")
     public WebElement frontPageLink;
+    
+    @FindBy(xpath = "(//*[@class=\"social\"])[1]//child::li")
+    public List<WebElement> socialMediaLinks;
 
     public SocialMediaVerificationPage(WebDriver driver) {
         this.driver = driver;

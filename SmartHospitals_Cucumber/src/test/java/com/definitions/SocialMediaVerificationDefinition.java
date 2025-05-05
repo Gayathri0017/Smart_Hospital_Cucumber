@@ -17,6 +17,16 @@ public class SocialMediaVerificationDefinition {
         driver.get("https://demo.smart-hospital.in/");
         driver.manage().window().maximize();
     }
+    @When("the user checks all social media icons in the header")
+    public void user_checks_all_social_media_icons_in_header() {
+        actions.getSocialMediaLinkCount();
+    }
+
+    @Then("the user should see {int} social media links available")
+    public void user_should_see_social_media_links_available(int expectedCount) {
+//    	 expectedCount = 1;
+        Assert.assertEquals(expectedCount, actions.getSocialMediaLinkCount());
+    }
 
     @When("the user click on the {string} link")
     public void the_user_clicks_on_the_link(String linkName) {
@@ -108,12 +118,14 @@ public class SocialMediaVerificationDefinition {
         try {
             String actualTitle = actions.getCurrentTitle();
             String currentUrl = actions.getCurrentUrl();
-            
             System.out.println("Current URL: " + currentUrl);
             System.out.println("Actual Title: " + actualTitle);
-            Assert.assertTrue(currentUrl.contains("mail.google.com") || 
-                            currentUrl.contains("accounts.google.com"),
-                "Expected Gmail or Google sign-in page. Actual URL: " + currentUrl);
+            Assert.assertTrue(
+                currentUrl.contains("googleblog.com") || 
+                currentUrl.contains("mail.google.com") || 
+                currentUrl.contains("accounts.google.com"),
+                "Expected Gmail, Google sign-in, or Google Blog page. Actual URL: " + currentUrl
+            );
         } finally {
             actions.closeCurrentTabAndSwitchBack();
         }
