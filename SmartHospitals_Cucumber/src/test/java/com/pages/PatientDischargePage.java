@@ -21,6 +21,9 @@ public class PatientDischargePage {
 	@FindBy(name = "discharge_date")
 	public WebElement dischargeDate ;
 	
+	@FindBy(xpath="(//div[@class='col-md-6'])[1]/div/label")
+	public WebElement dischargeDateText ;
+	
 	@FindBy(xpath = "//form[@id=\"patient_discharge\"]/div[2]/div[2]/div/select")
 	public WebElement dischargeStatus ;
 	

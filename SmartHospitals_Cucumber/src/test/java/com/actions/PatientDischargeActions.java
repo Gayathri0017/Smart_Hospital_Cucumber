@@ -4,8 +4,12 @@ import java.time.Duration;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.locators.RelativeLocator;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -69,9 +73,16 @@ public class PatientDischargeActions {
 
            wait.until(ExpectedConditions.visibilityOf(objPDP.dischargeDate));
            objPDP.dischargeDate.click();
+//    	wait.until(ExpectedConditions.visibilityOf(objPDP.dischargeDateText));
+//         WebElement dischargeDate = HelperClass.getDriver().findElement(RelativeLocator.with(By.tagName("input")).below(objPDP.dischargeDateText));
+//         dischargeDate.click();
+//         SearchContext shadowRoot = objPDP.dischargeDateText.getShadowRoot();
+//         WebElement dischargeDate = shadowRoot.findElement(RelativeLocator.with(By.xpath("(//div[@class='col-md-6'])[1]/div/label")).below(objPDP.dischargeDateText));
+//         dischargeDate.click();
            log.info("Discharge date field clicked");
 
     }
+    
     
     public void setDischargeStatus(String status) {		// providing the discharge status as normal or death or referal
 

@@ -12,6 +12,9 @@ public class PatientWorkflowPage {
 	@FindBy(xpath="//button[@class='btn']")
 	public WebElement signInBtn ;
 	
+	@FindBy(xpath = "//div[@class='form-bottom']/h3")
+	public WebElement userLoginText ;
+	
 	@FindBy(id = "email")
 	public WebElement email ;
 	
