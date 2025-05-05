@@ -7,7 +7,7 @@
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="14"/>
+          <include name="runScenario" invocation-numbers="0 1 12 14"/>
         </methods>
       </class> <!-- com.runner.RunnerClass -->
     </classes>
