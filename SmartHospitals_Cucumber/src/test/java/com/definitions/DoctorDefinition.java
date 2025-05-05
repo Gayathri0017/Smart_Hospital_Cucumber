@@ -54,7 +54,7 @@ public class DoctorDefinition {
     }
     @Then("Appointment should be created successfully")
     public void appointment_should_be_created_successfully() {
-       
+       doctor.assertSuccess();
     }
     @When("Doctor fills Expired time for appointment")
     public void doctor_fills_expired_time_for_appointment() throws InterruptedException {

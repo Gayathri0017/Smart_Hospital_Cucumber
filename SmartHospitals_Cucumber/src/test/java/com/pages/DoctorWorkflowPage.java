@@ -6,30 +6,30 @@ public class DoctorWorkflowPage {
 	public WebElement doctor;
 	@FindBy(xpath="//button[@class=\"btn\"]")
 	public WebElement signin;
-	@FindBy(xpath="(//li[@class=\"treeview \"]//span)[2]")
+	@FindBy(xpath="(//li[@class=\"treeview \"]//child::span)[2]")
 	public WebElement appointment;
-	@FindBy(xpath="//a[@class=\"btn btn-primary btn-sm addappointment\"]")
+	@FindBy(xpath="(//a[@class=\"btn btn-primary btn-sm\"]/preceding-sibling::a)[1]")
 	public WebElement addAppointment;
-	@FindBy(xpath="//a[@id=\"add\"]")
+	@FindBy(xpath="//div/child::a[@id=\"add\"]")
 	public WebElement addpatient;
-	@FindBy(xpath="//input[@id=\"name\"]")
+	@FindBy(xpath="//div[@class=\"form-group\"]/child::input[@id=\"name\"]")
 	public WebElement pName;
-	@FindBy(xpath="//input[@id=\"age_year\"]")
+	@FindBy(xpath="//input[@id=\"age_month\"]/preceding-sibling::input")
 	public WebElement year;
-	@FindBy(xpath="//input[@id=\"age_month\"]")
+	@FindBy(xpath="//input[@id=\"age_day\"]/preceding-sibling::input[1]")
 	public WebElement month;
-	@FindBy(xpath="//input[@id=\"age_day\"]")
+	@FindBy(xpath="//input[@id=\"age_month\"]/following::input")
 	public WebElement day;
-	@FindBy(id="addformgender")
+	@FindBy(xpath="//div[@class=\"form-group\"]/child::select[@id=\"addformgender\"]")
 	public WebElement gender;
-	@FindBy(xpath="//select[@name=\"blood_group\"]")
+	@FindBy(xpath="//div[@class=\"form-group\"]/child::select[@name=\"blood_group\"]")
 	public WebElement bloodGroup;
-	@FindBy(xpath="//input[@id=\"file\"]")
+	@FindBy(xpath="//input[@id=\"age_day\"]/following::input[1]")
 	public WebElement uploadPhoto;
-	@FindBy(xpath="//button[@id=\"formaddpabtn\"]")
+	@FindBy(xpath="//div[@class=\"pull-right\"]/child::button[@id=\"formaddpabtn\"]")
 	public WebElement saveBtn;
 	
-	@FindBy(xpath="//span[@id=\"select2-addpatient_id-container\"]")
+	@FindBy(xpath="(//span[@class=\"selection\"]/child::span)[1]")
 	public WebElement nameAfterAdd;
 	@FindBy(id="select2-doctorid-container")
 	public WebElement document;
@@ -39,21 +39,28 @@ public class DoctorWorkflowPage {
 	public WebElement status;
 	@FindBy(id="discount_percentage")
 	public WebElement discount;
-	@FindBy(xpath="//input[@id=\"datetimepicker\"]")
+	@FindBy(xpath="(//div[@class=\"col-md-3\"]/preceding-sibling::div[@class=\"col-sm-3\"])[4]/div/input")
 	public WebElement date;
-	@FindBy(id="slot")
+	@FindBy(id="(//div[@class=\"col-md-3\"]/child::div)[1]/select")
 	public WebElement slot;
 //	@FindBy(xpath="//button[@id=\"formaddbtn\"]")
 //	public WebElement save;
 	@FindBy(xpath="//button[@id=\"formaddbtn\"]")
 	public WebElement savebtn;
-	@FindBy(xpath="//select[@id=\"doctorid\"]")
+	@FindBy(xpath="(//div[@class=\"col-sm-3\"]/child::div)[1]/div/select")
 	public WebElement doc;
+	@FindBy(xpath="(//span[@class=\"selection\"]/child::span)[4]")
+	public WebElement priority;
+	@FindBy(xpath="//input[@class=\"select2-search__field\"]")
+	public WebElement ip;
 	
 	@FindBy(xpath="(//tr[@class=\"odd\"])[1]//a")
 	public WebElement patient;
 	@FindBy(xpath="//div[@class=\"toast-message\"]/p")
 	public WebElement nameError;
+	@FindBy(xpath="//div[@class=\"toast-message\"]/p")
+	public WebElement successmsg;
+	
 
 	@FindBy(xpath="//div[@class=\"btn-group bootstrap-select language\"]")
 	public WebElement lan;
