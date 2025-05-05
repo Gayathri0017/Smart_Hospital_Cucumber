@@ -42,7 +42,7 @@ public class DoctorDefinition {
     }
     @Then("Patient should be added successfully")
     public void patient_should_be_added_successfully() throws InterruptedException {
-        
+        doctor.addedPatient();;
     }
     @When("Doctor fills in appointment details")
     public void doctor_fills_in_appointment_details() {

@@ -40,6 +40,15 @@ public class MessageActions {
 		String act=mp.success.getText();
 		Assert.assertEquals(ex,act);
 	}
+	public void assertRequired(String exp) {
+		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+		WebElement successAlert= wait.until(ExpectedConditions.visibilityOf(mp.error));
+		String act=mp.error.getText();
+		Assert.assertEquals(exp,act);
+	}
+	public void delete() {
+		clickMethod(mp.del);
+	}
 	public void clickMethod(WebElement ele) {
 		JavascriptExecutor js=(JavascriptExecutor) HelperClass.getDriver();
 	    try {

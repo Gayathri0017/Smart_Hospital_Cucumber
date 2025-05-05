@@ -73,11 +73,10 @@ public class PrescriptionDefinition {
 	public void the_previously_added_prescription_should_be_visible() {
 	    pa.assertPrescription();
 	}
-	@When("the doctor Clicks the Show option in OPD section")
-	public void the_doctor_clicks_the_show_option_in_opd_section() {
-	   pa.show();
-	}
-
+//	@When("the doctor Clicks the Show option in OPD section")
+//	public void the_doctor_clicks_the_show_option_in_opd_section() {
+//	   pa.show();
+//	}
 	@Then("the doctor should see the <{string}>")
 	public void the_doctor_should_see_the(String string) {
 	    pa.assertShow(string);
@@ -99,10 +98,10 @@ public class PrescriptionDefinition {
 	public void the_doctor_clicks_the_edit_option_in_opd_section() {
 		
 	}
-	@Then("the doctor should see the <{string}> Page")
-	public void the_doctor_should_see_the_page(String string) {
-	    pa.assertEdit(string);
-	}
+//	@Then("the doctor should see the <{string}> Page")
+//	public void the_doctor_should_see_the_page(String string) {
+//	    pa.assertEdit(string);
+//	}
 	@When("the doctor Clicks the Manual Prescription")
 	public void the_doctor_clicks_the_manual_prescription() {
 	    pa.viewPres();

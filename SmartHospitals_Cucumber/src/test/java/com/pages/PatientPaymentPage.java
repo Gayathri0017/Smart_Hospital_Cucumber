@@ -23,7 +23,7 @@ public class PatientPaymentPage {
 	@FindBy(id = "submit-button")
 	public WebElement payNowBtn ;
 	
-	@FindBy(xpath ="//*[@id=\"Field-countryInput\"]")
+	@FindBy(xpath ="//select[@id='Field-countryInput']")
 	public WebElement country ;
 	
 	@FindBy(css ="#Field-numberInput")
@@ -35,7 +35,7 @@ public class PatientPaymentPage {
 	@FindBy(id = "Field-cvcInput")
 	public WebElement cvvNumber ;
 	
-	@FindBy(xpath = "//*[@id='toast-container']/div/div")
+	@FindBy(xpath = "//div[@id='toast-container']/div/div")
 	public WebElement invalidTxt ;
 	
 	@FindBy(id = "Field-numberError")
@@ -50,6 +50,6 @@ public class PatientPaymentPage {
 	@FindBy(xpath = "//iframe[contains(@src,'stripe.com')]")
 	public WebElement frame ;
 	
-	@FindBy(xpath = "/html/body/div[1]/div[1]/section[2]/div/div")
+	@FindBy(xpath = "//div[@class='row']/div")
 	public WebElement paymentSuccess ;
 }
