@@ -100,7 +100,7 @@ public class DoctorActions {
         new Select(dp.shift).selectByVisibleText(shift);
         dp.date.click();
         dp.date.sendKeys(Keys.CONTROL + "a" + Keys.BACK_SPACE);
-        sendKeysMethod(dp.date, "31/10/2026  16:26:00");
+        sendKeysMethod(dp.date, "07/05/2025 09:48 PM");
         dp.date.sendKeys(Keys.ENTER);
         try {
             WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
