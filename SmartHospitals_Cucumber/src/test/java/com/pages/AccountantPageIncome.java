@@ -24,22 +24,22 @@ public class AccountantPageIncome {
     @FindBy(xpath = "//*[@class=\"box-tools pull-right\"]/child :: a")
     public WebElement addIncomeButton;
 
-    @FindBy(id = "inc_head_id")
+    @FindBy(xpath = "//div[@class=\"form-group\"]/child::select")
     public WebElement incomeHeaderField;
 
-    @FindBy(id = "name")
+    @FindBy(xpath = "(//*[@class=\"form-control\"])[2]")
     public WebElement incomeNameField;
 
-    @FindBy(id = "amount")
+    @FindBy(xpath = "(//*[@class=\"form-control\"])[5]")
     public WebElement incomeAmountField;
 
-    @FindBy(id = "add_incomebtn")
+    @FindBy(xpath = "//*[@class=\"pull-right\"]/child::button")
     public WebElement saveButton;
     // //*[@id=\"toast-container\"]/div/div/p
     @FindBy(id = "toast-container")
     public WebElement errorNotification;
 
-    @FindBy(xpath = "(//*[@class=\" dt-body-right\"])[1]")
+    @FindBy(xpath = "//tr[contains(@class, 'odd')]/following-sibling :: tr[1] /*[@class=\" dt-body-right\"]")
     public WebElement tableValue;
 
     

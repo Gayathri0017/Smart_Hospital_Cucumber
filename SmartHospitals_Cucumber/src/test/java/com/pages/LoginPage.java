@@ -36,10 +36,10 @@ public class LoginPage {
     @FindBy(xpath = "//a[contains(text(),'Accountant')]")
     public WebElement accountant;
 
-    @FindBy(xpath = "//a[contains(text(),'Receptionist')]")
+    @FindBy(xpath = "(//*[@class=\"btn-group btn-group-justified\"])[3]/child::a[2]")
     public WebElement receptionist;
 
-    @FindBy(xpath = "//a[contains(text(),'Nurse')]")
+    @FindBy(xpath = "(//*[@class=\"btn-group btn-group-justified\"])[3]/child::a[3]")
     public WebElement nurse;
 
     @FindBy(css = "div.alert, div.error-message")

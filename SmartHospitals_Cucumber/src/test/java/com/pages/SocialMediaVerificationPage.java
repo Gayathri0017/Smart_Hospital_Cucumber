@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class SocialMediaVerificationPage {
     private WebDriver driver;
 
-    @FindBy(xpath = "//*[@href=\"https://www.facebook.com/login\"]")
+    @FindBy(xpath = "(//ul[@class=\"social\"])[1]//child::li[1]")
     public WebElement facebookLink;
 
     @FindBy(xpath = "//a[contains(@href, 'twitter.com')]")
@@ -17,7 +17,7 @@ public class SocialMediaVerificationPage {
     @FindBy(xpath = "//a[contains(@href, 'youtube.com')]")
     public WebElement youtubeLink;
 
-    @FindBy(xpath = "//a[contains(@href, 'gmail.com')]")
+    @FindBy(xpath = "(//*[@href=\"https://plus.google.com/people\"])[1]")
     public WebElement gmailLink;
 
     @FindBy(xpath = "//a[contains(@href, 'linkedin.com')]")
