@@ -83,7 +83,6 @@ public class PatientActions {
 
             wait.until(ExpectedConditions.visibilityOf(objPatientPage.email));
             objPatientPage.email.clear();
-            objPatientPage.email.sendKeys(Keys.CONTROL + "a" + Keys.BACK_SPACE);
             log.info("Blank username provided");
 
     }

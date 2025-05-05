@@ -1,0 +1,5 @@
+# Test Reports
+test-output/
+*.xml
+*.json
+*.html
