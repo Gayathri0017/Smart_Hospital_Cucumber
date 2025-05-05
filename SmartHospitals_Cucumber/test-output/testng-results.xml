@@ -1,59 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-04T12:33:28 IST" name="Default suite" finished-at="2025-05-04T12:33:40 IST" duration-ms="12330">
+  <suite started-at="2025-05-05T17:11:49 IST" name="Default suite" finished-at="2025-05-05T17:12:19 IST" duration-ms="30037">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-05-04T12:33:28 IST" name="Default test" finished-at="2025-05-04T12:33:40 IST" duration-ms="12330">
+    <test started-at="2025-05-05T17:11:49 IST" name="Default test" finished-at="2025-05-05T17:12:19 IST" duration-ms="30037">
       <class name="com.runner.RunnerClass">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-04T12:33:28 IST" name="setUpClass" finished-at="2025-05-04T12:33:28 IST" duration-ms="385" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-05T17:11:49 IST" name="setUpClass" finished-at="2025-05-05T17:11:50 IST" duration-ms="290" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@72a2312e]]>
+                <![CDATA[org.testng.TestRunner@3610f277]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-04T12:33:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-04T12:33:38 IST" duration-ms="9905" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-05T17:11:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T17:12:17 IST" duration-ms="26801" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Add New Income and Verify"]]>
+                <![CDATA["Verify Twitter Link"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Gowri_14APR2025_Accountant_Income_Functionalities"]]>
+                <![CDATA["Gowri_29APR2025_Verifying_Social_Media_Links"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-04T12:33:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-04T12:33:39 IST" duration-ms="10453" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-05T17:11:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T17:12:17 IST" duration-ms="27284" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Add New Income with Invalid Data"]]>
+                <![CDATA["Verify Pinterest Link"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Gowri_14APR2025_Accountant_Income_Functionalities"]]>
+                <![CDATA["Gowri_29APR2025_Verifying_Social_Media_Links"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-04T12:33:39 IST" name="tearDownClass" finished-at="2025-05-04T12:33:40 IST" duration-ms="1442" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-05T17:11:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T17:12:15 IST" duration-ms="25438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Instagram Link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Gowri_29APR2025_Verifying_Social_Media_Links"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-05T17:11:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T17:12:17 IST" duration-ms="27375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify YouTube Link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Gowri_29APR2025_Verifying_Social_Media_Links"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-05T17:11:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T17:12:17 IST" duration-ms="27513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Gmail Link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Gowri_29APR2025_Verifying_Social_Media_Links"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-05T17:11:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T17:12:18 IST" duration-ms="27790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify LinkedIn Link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Gowri_29APR2025_Verifying_Social_Media_Links"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-05T17:11:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T17:12:17 IST" duration-ms="27375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Facebook Link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Gowri_29APR2025_Verifying_Social_Media_Links"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-05T17:11:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-05T17:12:17 IST" duration-ms="27513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verifying the total count of social media links"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Gowri_29APR2025_Verifying_Social_Media_Links"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.RunnerClass@2cdd0d4b]" started-at="2025-05-05T17:12:18 IST" name="tearDownClass" finished-at="2025-05-05T17:12:19 IST" duration-ms="1920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
