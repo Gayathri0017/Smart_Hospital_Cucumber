@@ -3,14 +3,20 @@ package com.actions;
 import com.pages.AccountantPageIncome;
 import com.utils.HelperClass;
 
+import lombok.experimental.Helper;
+
 import java.time.Duration;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class AccountantActionsIncome {
     private WebDriver driver;
@@ -39,7 +45,54 @@ public class AccountantActionsIncome {
         wait.until(ExpectedConditions.elementToBeClickable(accountantPageIncome.financeSection)).click();
         log.info("Navigated to Finance section");
     }
+    
+//    public void listofamount()
+//    {
+//    	List<WebElement> names=HelperClass.getDriver().findElements(By.xpath("//table[@class=\"table table-hover table-striped table-bordered ajaxlist dataTable no-footer\"]//tr//td//a[@class=\"detail_popover\"]"));
+//    	for(WebElement list1:names)
+//    	{
+//    		System.out.println(list1.getText());
+//    	}
+//    }
+//    public void listofamount() {
+//        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+//
+//        List<WebElement> names = driver.findElements(By.xpath("//table[@class=\"table table-hover table-striped table-bordered ajaxlist dataTable no-footer\"]//tr//td//a[@class=\"detail_popover\"]"));
+//
+//        for (WebElement list1 : names) {
+//            wait.until(ExpectedConditions.visibilityOf(list1));
+//            System.out.println(list1.getText());
+//        }
+//    }
+    public void listofamount() throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+        By locator = By.xpath("//*[@id=\"DataTables_Table_0\"]/tbody/tr/td[1]/a");
 
+        List<WebElement> l1 = HelperClass.getDriver().findElements(locator);
+        System.out.println("count:" + l1.size());
+        for (int i = 0; i < l1.size(); i++) {
+        	wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            l1 = HelperClass.getDriver().findElements(locator); // Re-locate elements
+            WebElement list1 = l1.get(i);
+//            wait.until(ExpectedConditions.visibilityOf(list1));
+            System.out.println(list1.getText());
+        }
+    }
+//    public void listofamount() throws InterruptedException {
+//        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+//        By locator = By.xpath("//*[@id=\"DataTables_Table_0\"]/tbody/tr/td[1]/a");
+//
+//        List<WebElement> l1 = HelperClass.getDriver().findElements(locator);
+//        System.out.println("count:" + l1.size());
+//
+//        for (int i = 0; i < l1.size(); i++) {
+//            //HelperClass.getDriver().navigate().refresh();
+//            wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+//            WebElement list1 = locator.get(i);
+//            list1 = HelperClass.getDriver().findElement(locator);
+//            System.out.println(list1.getText());
+//        }
+//    }
     public void clickIncome() {
         wait.until(ExpectedConditions.elementToBeClickable(accountantPageIncome.incomeButton)).click();
         log.info("Clicked Income button");
@@ -62,16 +115,19 @@ public class AccountantActionsIncome {
         log.info("Clicked Save button");
     }
 
-    public void verifyIncomeAdded(String amount) {
+    public void verifyIncomeAdded(String name,String amount) {
+    	int num=1;
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+
+        
+    	WebElement a=HelperClass.getDriver().findElement(By.xpath("//table[@class=\"table table-hover table-striped table-bordered ajaxlist dataTable no-footer\"]//tr["+num+"]//td[6]"));
         try {
-            WebElement tableValueElement = wait.until(ExpectedConditions.visibilityOf(accountantPageIncome.tableValue));
+            WebElement tableValueElement = wait.until(ExpectedConditions.visibilityOf(a));
             String tableValueText = tableValueElement.getText();
-            if (!tableValueText.equals(amount)) {
-                log.error("Mismatch in income amount. Expected: " + amount + ", Found: " + tableValueText);
-                throw new AssertionError("The amount in the table does not match the given amount. Expected: " + amount + ", but found: " + tableValueText);
-            } else {
-                log.info("Income amount verified successfully: " + amount);
-            }
+            System.out.println(tableValueText);
+            Assert.assertEquals(tableValueText, amount);
+
+            log.info("Income amount verified successfully: " + amount);
         } catch (Exception e) {
             log.error("Error verifying income added", e);
             throw e;

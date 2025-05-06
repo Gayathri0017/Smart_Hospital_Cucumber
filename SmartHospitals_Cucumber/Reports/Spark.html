@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 30, 2025 11:08:36 am</span></a>
+<a href="#"><span class="badge badge-primary">May 7, 2025 03:33:26 am</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -71,7 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,31 +84,31 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Negative_Prescription_Validation</a><a class="dropdown-item" href="#">@ValidTest</a><a class="dropdown-item" href="#">@Validate_ManualPrescription_View</a><a class="dropdown-item" href="#">@Verify_Delete_Patient_Option</a><a class="dropdown-item" href="#">@InvalidTest</a><a class="dropdown-item" href="#">@Positive_Prescription_Validation</a><a class="dropdown-item" href="#">@Verify_Search</a><a class="dropdown-item" href="#">@Validate_Prescription_View</a><a class="dropdown-item" href="#">@Delete_patient</a>
+<a class="dropdown-item" href="#">@ValidInput</a><a class="dropdown-item" href="#">@gmail</a><a class="dropdown-item" href="#">@youtube</a><a class="dropdown-item" href="#">@InvalidUsername_And_Password</a><a class="dropdown-item" href="#">@allsocialmediacount</a><a class="dropdown-item" href="#">@twitter</a><a class="dropdown-item" href="#">@InvalidInput</a><a class="dropdown-item" href="#">@InvalidPassword</a><a class="dropdown-item" href="#">@facebook</a><a class="dropdown-item" href="#">@InvalidUserName</a><a class="dropdown-item" href="#">@linkedin</a><a class="dropdown-item" href="#">@pinterest</a><a class="dropdown-item" href="#">@instagram</a><a class="dropdown-item" href="#">@ValidLoginCredentials</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Gayathri_09APR2025_Manage Appointments in Smart Hospital</p>
+            <p class="name">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website</p>
             <p class="text-sm">
-              <span>11:08:37 am</span> / <span>00:00:55:149</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:33:27 am</span> / <span>00:01:38:054</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Gayathri_09APR2025_Manage Appointments in Smart Hospital</h5>
-<span class='badge badge-success'>04.30.2025 11:08:37 am</span>
-<span class='badge badge-danger'>04.30.2025 11:09:32 am</span>
-<span class='badge badge-default'>00:00:55:149</span>
+<h5 class="test-status text-fail">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website</h5>
+<span class='badge badge-success'>05.07.2025 3:33:27 am</span>
+<span class='badge badge-danger'>05.07.2025 3:35:05 am</span>
+<span class='badge badge-default'>00:01:38:054</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -116,327 +121,626 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Doctor creates a new appointment for a new patient</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Verify the Login with roles</div>
       </div>
     </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system()">
-                <span>Given Doctor is logged in to the Smart Hospital system</span>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>Verify the Login with roles</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>com.definitions.Hooks.setUp()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir 
+Host info: host: 'GOWRISANKAR', ip: '192.168.99.34'
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--incognito], binary: C:\Program Files\Google\Chr..., excludeSwitches: [enable-automation], extensions: [], prefs: {credentials_enable_service: false, download.default_directory: D:\eclipse1\Smart_Hospital_..., download.directory_upgrade: true, download.prompt_for_download: false, profile.password_manager_enabled: false, safebrowsing.enabled: true}, useAutomationExtension: false}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at com.utils.HelperClass.getDriver(HelperClass.java:30)
+	at com.definitions.Hooks.setUp(Hooks.java:17)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Given the user is on the login page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When the user selects the role "Accountant"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And the user clicks the Sign In button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then the user should see the dashboard page for the "Accountant" role</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="7"><span class="badge log fail-bg mr-2">Fail</span>Verify the Login with roles</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.the_user_navigate_to_the_appointment_section()">
-                <span>Given the User navigate to the appointment section</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Admin"</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_the_add_appointment_button()">
-                <span>When Doctor clicks the Add Appointment button</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
       <div>
       </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then the user should see the dashboard page for the "Admin" role</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.definitions.LoginDefinition.the_user_should_see_the_dashboard_page_for_the_role(LoginDefinition.java:44)
+	at ✽.the user should see the dashboard page for the "Admin" role(file:///D:/eclipse32/Smart_Hospital_Cucumber32/SmartHospitals_Cucumber/src/test/resources/Features/LoginFeature.feature:9)
+</textarea>
+      
+      </div>
+                  </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_on_new_patient_button()">
-                <span>And Doctor clicks on New Patient button</span>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>Verify the Login with roles</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_fills_in_patient_details()">
-                <span>And Doctor fills in patient details</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Super Admin"</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_the_save_button()">
-                <span>And Doctor clicks the save button</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
       <div>
       </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then the user should see the dashboard page for the "Super Admin" role</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.definitions.LoginDefinition.the_user_should_see_the_dashboard_page_for_the_role(LoginDefinition.java:44)
+	at ✽.the user should see the dashboard page for the "Super Admin" role(file:///D:/eclipse32/Smart_Hospital_Cucumber32/SmartHospitals_Cucumber/src/test/resources/Features/LoginFeature.feature:9)
+</textarea>
+      
+      </div>
+                  </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.patient_should_be_added_successfully()">
-                <span>Then Patient should be added successfully</span>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Verify the Login with roles</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_fills_in_appointment_details()">
-                <span>When Doctor fills in appointment details</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Receptionist"</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_on_save_button()">
-                <span>And Doctor clicks on save button</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.appointment_should_be_created_successfully()">
-                <span>Then Appointment should be created successfully</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see the dashboard page for the "Receptionist" role</span>
       <div>
       </div>
+                  </div>
               </div>
-          </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Verify the Login with roles</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Nurse"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see the dashboard page for the "Nurse" role</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>Verify the Login with roles</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Doctor"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see the dashboard page for the "Doctor" role</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="86"><span class="badge log fail-bg mr-2">Fail</span>Verify the Login with roles</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Radiologist"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then the user should see the dashboard page for the "Radiologist" role</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.definitions.LoginDefinition.the_user_should_see_the_dashboard_page_for_the_role(LoginDefinition.java:44)
+	at ✽.the user should see the dashboard page for the "Radiologist" role(file:///D:/eclipse32/Smart_Hospital_Cucumber32/SmartHospitals_Cucumber/src/test/resources/Features/LoginFeature.feature:9)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="91"><span class="badge log pass-bg mr-2">Pass</span>Attempt to login with missing username</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Receptionist"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User leaves the "username" field empty</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should see an error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="93"><span class="badge log pass-bg mr-2">Pass</span>Attempt to login with missing username</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Nurse"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User leaves the "username" field empty</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should see an error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="99"><span class="badge log pass-bg mr-2">Pass</span>Attempt to login with missing password</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Doctor"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User leaves the "password" field empty</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should see an error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="106"><span class="badge log pass-bg mr-2">Pass</span>Attempt to login with missing password</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Pharmacist"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User leaves the "password" field empty</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should see an error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="168"><span class="badge log pass-bg mr-2">Pass</span>Attempt to login with missing username and password</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Accountant"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User leaves the "both" field empty</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should see an error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
         </div>
   </div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Doctor tries to add a new patient without entering the year</div>
+        <div class="node" id="88"><span class="badge log pass-bg mr-2">Pass</span>Attempt to login with missing username</div>
       </div>
     </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system()">
-                <span>Given Doctor is logged in to the Smart Hospital system</span>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="89"><span class="badge log pass-bg mr-2">Pass</span>Attempt to login with missing username</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.the_user_navigate_to_the_appointment_section()">
-                <span>Given the User navigate to the appointment section</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Admin"</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_the_add_appointment_button()">
-                <span>When Doctor clicks the Add Appointment button</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User leaves the "username" field empty</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_on_new_patient_button()">
-                <span>And Doctor clicks on New Patient button</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_leaves_the_year_field_empty_in_patient_details()">
-                <span>And Doctor leaves the Year field empty in patient details</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should see an error message</span>
       <div>
       </div>
+                  </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_the_save_button()">
-                <span>And Doctor clicks the save button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.patient_creation_should_fail_and_show_message(java.lang.String)">
-                <span>Then Patient creation should fail and show "Year field is required" message</span>
-      <div>
-      </div>
-              </div>
-          </div>
+            </div>
         </div>
   </div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Doctor tries to add a new patient without entering the day</div>
+        <div class="node" id="96"><span class="badge log pass-bg mr-2">Pass</span>Attempt to login with missing password</div>
       </div>
     </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system()">
-                <span>Given Doctor is logged in to the Smart Hospital system</span>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="97"><span class="badge log pass-bg mr-2">Pass</span>Attempt to login with missing password</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.the_user_navigate_to_the_appointment_section()">
-                <span>Given the User navigate to the appointment section</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Super Admin"</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_the_add_appointment_button()">
-                <span>When Doctor clicks the Add Appointment button</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User leaves the "password" field empty</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_on_new_patient_button()">
-                <span>And Doctor clicks on New Patient button</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_leaves_the_day_field_empty_in_patient_details()">
-                <span>And Doctor leaves the Day field empty in patient details</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should see an error message</span>
       <div>
       </div>
+                  </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_the_save_button()">
-                <span>And Doctor clicks the save button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.patient_creation_should_fails_and_shows_message(java.lang.String)">
-                <span>Then Patient creation should fails and shows "Day field is required" message</span>
-      <div>
-      </div>
-              </div>
-          </div>
+            </div>
         </div>
   </div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Doctor tries to add a new patient without entering the Month</div>
+        <div class="node" id="108"><span class="badge log pass-bg mr-2">Pass</span>Attempt to login with missing username and password</div>
       </div>
     </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system()">
-                <span>Given Doctor is logged in to the Smart Hospital system</span>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="109"><span class="badge log pass-bg mr-2">Pass</span>Attempt to login with missing username and password</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.the_user_navigate_to_the_appointment_section()">
-                <span>Given the User navigate to the appointment section</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Pathologist"</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_the_add_appointment_button()">
-                <span>When Doctor clicks the Add Appointment button</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User leaves the "both" field empty</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_on_new_patient_button()">
-                <span>And Doctor clicks on New Patient button</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_leaves_the_month_field_empty_in_patient_details()">
-                <span>And Doctor leaves the Month field empty in patient details</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should see an error message</span>
       <div>
       </div>
+                  </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_the_save_button()">
-                <span>And Doctor clicks the save button</span>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="111"><span class="badge log pass-bg mr-2">Pass</span>Attempt to login with missing username and password</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the login page</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.patient_creation_should_fail_and_shows_message(java.lang.String)">
-                <span>Then Patient creation should fail and shows "Month field is required" message</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user selects the role "Radiologist"</span>
       <div>
       </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Doctor tries to add a new patient without entering the name</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system()">
-                <span>Given Doctor is logged in to the Smart Hospital system</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User leaves the "both" field empty</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.the_user_navigate_to_the_appointment_section()">
-                <span>Given the User navigate to the appointment section</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user clicks the Sign In button</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_the_add_appointment_button()">
-                <span>When Doctor clicks the Add Appointment button</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should see an error message</span>
       <div>
       </div>
+                  </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_on_new_patient_button()">
-                <span>And Doctor clicks on New Patient button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_leaves_the_name_field_empty_in_patient_details()">
-                <span>And Doctor leaves the Name field empty in patient details</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_the_save_button()">
-                <span>And Doctor clicks the save button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.patient_creation_should_fail_with_message(java.lang.String)">
-                <span>Then Patient creation should fail with "Name field is required" message</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>Doctor tries to create an appointment with an expired time slot</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system()">
-                <span>Given Doctor is logged in to the Smart Hospital system</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.the_user_navigate_to_the_appointment_section()">
-                <span>Given the User navigate to the appointment section</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_the_add_appointment_button()">
-                <span>When Doctor clicks the Add Appointment button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_on_new_patient_button()">
-                <span>And Doctor clicks on New Patient button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_fills_in_patient_details()">
-                <span>And Doctor fills in patient details</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_clicks_the_save_button()">
-                <span>And Doctor clicks the save button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.patient_should_be_added_successfully()">
-                <span>Then Patient should be added successfully</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_fills_expired_time_for_appointment()">
-                <span>When Doctor fills Expired time for appointment</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.appointment_creation_should_fail_with_message(java.lang.String)">
-                <span>Then Appointment creation should fail with "Appointment Time Is Expired" message</span>
-      <div>
-      </div>
-              </div>
-          </div>
+            </div>
         </div>
   </div>
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="fail" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital</p>
+            <p class="name">Gowri_11APR2025_Accountant_Dashboard_Functionalities</p>
             <p class="text-sm">
-              <span>11:08:37 am</span> / <span>00:01:17:122</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:33:27 am</span> / <span>00:01:13:730</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital</h5>
-<span class='badge badge-success'>04.30.2025 11:08:37 am</span>
-<span class='badge badge-danger'>04.30.2025 11:09:54 am</span>
-<span class='badge badge-default'>00:01:17:122</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<h5 class="test-status text-fail">Gowri_11APR2025_Accountant_Dashboard_Functionalities</h5>
+<span class='badge badge-success'>05.07.2025 3:33:27 am</span>
+<span class='badge badge-danger'>05.07.2025 3:34:41 am</span>
+<span class='badge badge-default'>00:01:13:730</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -448,47 +752,65 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Doctor tries to submit prescription with missing fields</div>
+        <div class="node" id="5"><span class="badge log fail-bg mr-2">Fail</span>Add New Expense with Invalid Data</div>
       </div>
     </div>
-        <div class="scenario_outline collapse">
+        <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>Doctor tries to submit prescription with missing fields</div>
+                  <div class="node" id="6"><span class="badge log fail-bg mr-2">Fail</span>Add New Expense with Invalid Data</div>
                 </div>
               </div>
-              <div class="card-body mt-3 collapse">
+              <div class="card-body mt-3 ">
                   <div class="step pass-bg">
-                    <span>Given Doctor is logged in to the Smart Hospital system</span>
+                    <span>Given User launches the Smart Hospital application</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When the Doctor Navigates to the OPD section</span>
+                    <span>When the user selects role "Accountant"</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And Clicks the Add Prescription</span>
+                    <span>And the user clicks the Sign In buttons</span>
       <div>
       </div>
                   </div>
-                  <div class="step pass-bg">
-                    <span>When the doctor fills the prescription form with:</span>
-      <div><table class='markup-table table '><tr><td>Medicine Category</td><td>Medicine</td><td>Dose</td><td>Dose Interval</td><td>Dose Duration</td></tr><tr><td>Syrup</td><td>Select</td><td>1 (CT)</td><td>Only one a day</td><td>Morning</td></tr></table>
-      </div>
+                  <div class="step fail-bg">
+                    <span>Then User should see the dashboard summary table</span>
       <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Clicks Save button</span>
-      <div>
+        <textarea disabled class="code-block">java.lang.RuntimeException: Dashboard summary table not visible after 15 seconds
+	at com.definitions.AccountantDefinition.verifySummaryTable(AccountantDefinition.java:33)
+	at ✽.User should see the dashboard summary table(file:///D:/eclipse32/Smart_Hospital_Cucumber32/SmartHospitals_Cucumber/src/test/resources/Features/AccountantFeatureExpenses.feature:6)
+</textarea>
+      
       </div>
                   </div>
-                  <div class="step pass-bg">
-                    <span>Then the system should show an error "Medicine field is required"</span>
-      <div>
+                  <div class="step skip-bg">
+                    <span>And then need enter to the Expenses</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then need click Add Expenses</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then need to give the Header as "Telephone Bill", name "Office Telephone Charges" and amount "-100.00"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And the user click the save</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then need to see the asseart the error notifications</span>
+      <div>Step skipped
       </div>
                   </div>
               </div>
@@ -496,109 +818,52 @@
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Doctor tries to submit prescription with missing fields</div>
+                  <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Add New Expense with Invalid Data</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given Doctor is logged in to the Smart Hospital system</span>
+                    <span>Given User launches the Smart Hospital application</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When the Doctor Navigates to the OPD section</span>
+                    <span>When the user selects role "Accountant"</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And Clicks the Add Prescription</span>
+                    <span>And the user clicks the Sign In buttons</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When the doctor fills the prescription form with:</span>
-      <div><table class='markup-table table '><tr><td>Medicine Category</td><td>Medicine</td><td>Dose</td><td>Dose Interval</td><td>Dose Duration</td></tr><tr><td>Select</td><td>Select</td><td>Select</td><td>Select</td><td>Select</td></tr></table>
-      </div>
+                    <span>Then User should see the dashboard summary table</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And Clicks Save button</span>
+                    <span>And then need enter to the Expenses</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then the system should show an error "Please select any one pathology, radiology or medicine details"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Doctor tries to submit prescription with missing fields</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given Doctor is logged in to the Smart Hospital system</span>
+                    <span>Then need click Add Expenses</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When the Doctor Navigates to the OPD section</span>
+                    <span>Then need to give the Header as "Telephone Bill", name "hi" and amount "-52"</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And Clicks the Add Prescription</span>
+                    <span>And the user click the save</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When the doctor fills the prescription form with:</span>
-      <div><table class='markup-table table '><tr><td>Medicine Category</td><td>Medicine</td><td>Dose</td><td>Dose Interval</td><td>Dose Duration</td></tr><tr><td>Syrup</td><td>Al</td><td>1</td><td>Select</td><td>Morning</td></tr></table>
-      </div>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Clicks Save button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the system should show an error "Dose Interval field is required"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="118"><span class="badge log pass-bg mr-2">Pass</span>Verify the Search of patient</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given Doctor is logged in to the Smart Hospital system</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the Doctor enters "TestXYZ123" in the search bar</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And clicks the search button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the system should Show the "No data available in table"</span>
+                    <span>Then need to see the asseart the error notifications</span>
       <div>
       </div>
                   </div>
@@ -609,149 +874,110 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="106"><span class="badge log pass-bg mr-2">Pass</span>Verify the added prescription is visible in the OPD section</div>
+        <div class="node" id="17"><span class="badge log fail-bg mr-2">Fail</span>Add New Expense and Verify</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system()">
-                <span>Given Doctor is logged in to the Smart Hospital system</span>
+              <div class="step pass-bg" title="com.definitions.AccountantDefinition.launchApplication()">
+                <span>Given User launches the Smart Hospital application</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_doctor_navigates_to_the_opd_section()">
-                <span>When the Doctor Navigates to the OPD section</span>
+              <div class="step pass-bg" title="com.definitions.AccountantDefinition.selectRole(java.lang.String)">
+                <span>When the user selects role "Accountant"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_doctor_clicks_the_view_prescription()">
-                <span>When the doctor Clicks the View Prescription</span>
+              <div class="step pass-bg" title="com.definitions.AccountantDefinition.clickSignIn()">
+                <span>And the user clicks the Sign In buttons</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_previously_added_prescription_should_be_visible()">
-                <span>Then the previously added prescription should be visible</span>
+              <div class="step pass-bg" title="com.definitions.AccountantDefinition.verifySummaryTable()">
+                <span>Then User should see the dashboard summary table</span>
       <div>
       </div>
               </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="108"><span class="badge log pass-bg mr-2">Pass</span>verify the prescription feature by providing valid informations</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system()">
-                <span>Given Doctor is logged in to the Smart Hospital system</span>
+              <div class="step pass-bg" title="com.definitions.AccountantDefinition.captureAndStoreData()">
+                <span>And User should capture and print the data from dashboard table section this should be stored in the excel for reference</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_doctor_navigates_to_the_opd_section()">
-                <span>When the Doctor Navigates to the OPD section</span>
+              <div class="step pass-bg" title="com.definitions.AccountantDefinition.navigateToExpenses()">
+                <span>And then need enter to the Expenses</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.clicks_the_add_prescription()">
-                <span>And Clicks the Add Prescription</span>
+              <div class="step fail-bg" title="com.definitions.AccountantDefinition.clickAddExpense()">
+                <span>Then need click Add Expenses</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@class="btn btn-primary btn-sm addexpense"]' (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.AccountantActions.clickAddExpenseButton(AccountantActions.java:63)
+	at com.definitions.AccountantDefinition.clickAddExpense(AccountantDefinition.java:50)
+	at ✽.need click Add Expenses(file:///D:/eclipse32/Smart_Hospital_Cucumber32/SmartHospitals_Cucumber/src/test/resources/Features/AccountantFeatureExpenses.feature:13)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class="btn btn-primary btn-sm addexpense"]"}
+  (Session info: chrome=135.0.7049.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [10dd5197e60701f028a33d7b2294569b, findElement {using=xpath, value=//*[@class="btn btn-primary btn-sm addexpense"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64924/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 10dd5197e60701f028a33d7b2294569b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 3 more
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_doctor_should_navigate_to_the_prescription_page()">
-                <span>Then the doctor should navigate to the Prescription Page</span>
-      <div>
+              <div class="step skip-bg" title="com.definitions.AccountantDefinition.addNewExpense(java.lang.String,java.lang.String,java.lang.String)">
+                <span>Then need to give the Header as "Telephone Bill", name "Office Telephone Charges" and amount "100.00"</span>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_doctor_fill_the_valid_details(io.cucumber.datatable.DataTable)">
-                <span>When the doctor Fill the valid Details:</span>
-      <div><table class='markup-table table '><tr><td>Finding Category</td><td>Medicine Category</td><td>Medicine</td><td>Dose Interval</td><td>Dose Duration</td></tr><tr><td>Syrup</td><td>Alprovit</td><td>1  (CT)</td><td>Only one a day</td><td>Morning</td></tr></table>
-      </div>
-      <div>
+              <div class="step skip-bg" title="com.definitions.AccountantDefinition.saveExpense()">
+                <span>And the user click the save</span>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.clicks_save_button()">
-                <span>And Clicks Save button</span>
-      <div>
+              <div class="step skip-bg" title="com.definitions.AccountantDefinition.verifySuccessNotification()">
+                <span>Then need to see the asseart the success notifications</span>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_prescription_should_be_added_in_opd_section()">
-                <span>Then the Prescription should be added in OPD Section</span>
-      <div>
+              <div class="step skip-bg" title="com.definitions.AccountantDefinition.verifySummaryTable()">
+                <span>Then User should see the dashboard summary table</span>
+      <div>Step skipped
       </div>
               </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="110"><span class="badge log pass-bg mr-2">Pass</span>Verify the Manual prescription is accessible</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system()">
-                <span>Given Doctor is logged in to the Smart Hospital system</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_doctor_navigates_to_the_opd_section()">
-                <span>When the Doctor Navigates to the OPD section</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_doctor_clicks_the_manual_prescription()">
-                <span>When the doctor Clicks the Manual Prescription</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_previously_added_manual_prescription_should_be_visible()">
-                <span>Then the previously added manual prescription should be visible</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="112"><span class="badge log pass-bg mr-2">Pass</span>Verify the added patient can be deleted in OPD section</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system()">
-                <span>Given Doctor is logged in to the Smart Hospital system</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_doctor_navigates_to_the_opd_section()">
-                <span>When the Doctor Navigates to the OPD section</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_doctor_clicks_the_show_option_in_opd_section()">
-                <span>When the doctor Clicks the Show option in OPD section</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_doctor_should_see_the(java.lang.String)">
-                <span>Then the doctor should see the <"Visit Details"></span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_doctor_clicks_delete_option_in_visit_details()">
-                <span>When the doctor clicks delete option in visit details</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.definitions.PrescriptionDefinition.the_patient_should_be_deleted_in_opd_section()">
-                <span>Then the patient should be deleted in OPD section</span>
-      <div>
+              <div class="step skip-bg" title="com.definitions.AccountantDefinition.captureAndStoreData()">
+                <span>And User should capture and print the data from dashboard table section this should be stored in the excel for reference</span>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -760,25 +986,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="14"
+        <li class="test-item"  status="fail" test-id="14"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Gayathri_28APR2025_Messaging Feature Verification in Smart Hospital</p>
+            <p class="name">Gowri_14APR2025_Accountant_Income_Functionalities</p>
             <p class="text-sm">
-              <span>11:08:37 am</span> / <span>00:00:54:002</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:33:27 am</span> / <span>00:00:50:086</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Gayathri_28APR2025_Messaging Feature Verification in Smart Hospital</h5>
-<span class='badge badge-success'>04.30.2025 11:08:37 am</span>
-<span class='badge badge-danger'>04.30.2025 11:09:31 am</span>
-<span class='badge badge-default'>00:00:54:002</span>
+<h5 class="test-status text-fail">Gowri_14APR2025_Accountant_Income_Functionalities</h5>
+<span class='badge badge-success'>05.07.2025 3:33:27 am</span>
+<span class='badge badge-danger'>05.07.2025 3:34:17 am</span>
+<span class='badge badge-default'>00:00:50:086</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -791,41 +1017,66 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Add message in notice board in messaging section</div>
+        <div class="node" id="15"><span class="badge log fail-bg mr-2">Fail</span>Add New Income and Verify</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="com.definitions.DoctorDefinition.doctor_is_logged_in_to_the_smart_hospital_system()">
-                <span>Given Doctor is logged in to the Smart Hospital system</span>
+              <div class="step pass-bg" title="com.definitions.AccountantDefinitionIncome.launchApplication()">
+                <span>Given User launches Smart Hospital website</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.MsgDefinition.the_doctor_navigates_to_the_messaging_section()">
-                <span>When the doctor navigates to the Messaging section</span>
+              <div class="step pass-bg" title="com.definitions.AccountantDefinitionIncome.selectRole(java.lang.String)">
+                <span>When the user selects "Accountant" role</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.MsgDefinition.the_doctor_clicks_the_post_new_message()">
-                <span>And the doctor clicks the Post New Message</span>
+              <div class="step pass-bg" title="com.definitions.AccountantDefinitionIncome.clickSignIn()">
+                <span>And the user clicks the Sign In</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.MsgDefinition.the_doctor_fills_the_required_fields(io.cucumber.datatable.DataTable)">
-                <span>And the doctor fills the required fields:</span>
-      <div><table class='markup-table table '><tr><td>Title</td><td>Message</td><td>Notice Date</td><td>Publish On</td><td>PostAction</td></tr><tr><td>Appointment Notice</td><td>New changes to appointment timings</td><td>23/09/2025</td><td>23/09/2025</td><td>Record Saved Successfully</td></tr></table>
-      </div>
+              <div class="step fail-bg" title="com.definitions.AccountantDefinitionIncome.navigateToIncome()">
+                <span>Then the user navigates to the finance section and clicks on income</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (e5316695c3fdaefab1bb87f19c6de290)] -> xpath: (//*[@href="https://demo.smart-hospital.in/admin/income"])[2]] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64920}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64920/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e5316695c3fdaefab1bb87f19c6de290
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.AccountantActionsIncome.clickIncome(AccountantActionsIncome.java:97)
+	at com.definitions.AccountantDefinitionIncome.navigateToIncome(AccountantDefinitionIncome.java:33)
+	at ✽.the user navigates to the finance section and clicks on income(file:///D:/eclipse32/Smart_Hospital_Cucumber32/SmartHospitals_Cucumber/src/test/resources/Features/AccountantFeatureIncome.feature:6)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.MsgDefinition.the_doctor_clicks_the_send_button()">
-                <span>And the doctor clicks the Send button</span>
-      <div>
+              <div class="step skip-bg" title="com.definitions.AccountantDefinitionIncome.clickAddIncome()">
+                <span>And the user clicks on Add Income</span>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="com.definitions.MsgDefinition.the_message_should_be_added_to_the_notice_board_and_displayed()">
-                <span>Then the message should be added to the Notice Board and displayed</span>
-      <div>
+              <div class="step skip-bg" title="com.definitions.AccountantDefinitionIncome.enterIncomeDetailsFromDataTable(io.cucumber.datatable.DataTable)">
+                <span>When the user enters the following income details:</span>
+      <div><table class='markup-table table '><tr><td>header</td><td>name</td><td>amount</td></tr><tr><td>Hospital charges</td><td>Dr.S.Harikumar</td><td>1500.00</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.definitions.AccountantDefinitionIncome.clickSave()">
+                <span>And the user clicks the save button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.definitions.AccountantDefinitionIncome.verifyIncomeAdded(io.cucumber.datatable.DataTable)">
+                <span>Then the user verifies that the new income is added to the table</span>
+      <div><table class='markup-table table '><tr><td>amount</td></tr><tr><td>1500.00</td></tr></table>
+      </div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -834,26 +1085,26 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="114"
+        <li class="test-item"  status="fail" test-id="170"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Gayathri_09APR2025_Search Patient by Name In Smart Hospital</p>
+            <p class="name">Gowri_29APR2025_Verifying_Social_Media_Links</p>
             <p class="text-sm">
-              <span>11:09:31 am</span> / <span>00:00:20:542</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:34:40 am</span> / <span>00:00:34:522</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Gayathri_09APR2025_Search Patient by Name In Smart Hospital</h5>
-<span class='badge badge-success'>04.30.2025 11:09:31 am</span>
-<span class='badge badge-danger'>04.30.2025 11:09:52 am</span>
-<span class='badge badge-default'>00:00:20:542</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=114</span>
+<h5 class="test-status text-fail">Gowri_29APR2025_Verifying_Social_Media_Links</h5>
+<span class='badge badge-success'>05.07.2025 3:34:40 am</span>
+<span class='badge badge-danger'>05.07.2025 3:35:15 am</span>
+<span class='badge badge-default'>00:00:34:522</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=170</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -865,82 +1116,230 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="115"><span class="badge log pass-bg mr-2">Pass</span>Verify the Search of patient</div>
+        <div class="node" id="171"><span class="badge log pass-bg mr-2">Pass</span>Verifying the total count of social media links</div>
       </div>
     </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="116"><span class="badge log pass-bg mr-2">Pass</span>Verify the Search of patient</div>
-                </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage()">
+                <span>Given the user is on the application homepage</span>
+      <div>
+      </div>
               </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given Doctor is logged in to the Smart Hospital system</span>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.user_checks_all_social_media_icons_in_header()">
+                <span>When the user checks all social media icons in the header</span>
       <div>
       </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the Doctor enters "Ellie Groves" in the search bar</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And clicks the search button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the system should Show the "Ellie Groves"</span>
-      <div>
-      </div>
-                  </div>
               </div>
-            </div>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.user_should_see_social_media_links_available(int)">
+                <span>Then the user should see 7 social media links available</span>
+      <div>
+      </div>
+              </div>
+          </div>
         </div>
   </div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="120"><span class="badge log pass-bg mr-2">Pass</span>Verify that a searched patient can be deleted</div>
+        <div class="node" id="175"><span class="badge log pass-bg mr-2">Pass</span>Verify Facebook Link</div>
       </div>
     </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="121"><span class="badge log pass-bg mr-2">Pass</span>Verify that a searched patient can be deleted</div>
-                </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage()">
+                <span>Given the user is on the application homepage</span>
+      <div>
+      </div>
               </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given Doctor is logged in to the Smart Hospital system</span>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(java.lang.String)">
+                <span>When the user click on the "Facebook" link</span>
       <div>
       </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When the Doctor enters "Ellie Groves" in the search bar</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And clicks the search button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And selects the patient and clicks "Delete Selected"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the patient should no longer appear in the searched list</span>
-      <div>
-      </div>
-                  </div>
               </div>
-            </div>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_facebook_page_title()">
+                <span>Then the user should see the correct Facebook page title</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="179"><span class="badge log fail-bg mr-2">Fail</span>Verify Twitter Link</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage()">
+                <span>Given the user is on the application homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(java.lang.String)">
+                <span>When the user click on the "Twitter" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_twitter_page_title()">
+                <span>Then the user should see the correct Twitter page title</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.actions.SocialMediaVerificationAction$$Lambda/0x000001f8cd4d3290@1be26496 (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.117, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\GOWRIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49387}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49387/devtoo..., se:cdpVersion: 135.0.7049.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6409dfc2a963784a5e3169ffbdfec361
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.SocialMediaVerificationAction.getCurrentTitle(SocialMediaVerificationAction.java:79)
+	at com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_twitter_page_title(SocialMediaVerificationDefinition.java:85)
+	at ✽.the user should see the correct Twitter page title(file:///D:/eclipse32/Smart_Hospital_Cucumber32/SmartHospitals_Cucumber/src/test/resources/Features/verifing_Social_media_link.feature:19)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="181"><span class="badge log fail-bg mr-2">Fail</span>Verify YouTube Link</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage()">
+                <span>Given the user is on the application homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(java.lang.String)">
+                <span>When the user click on the "YouTube" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_youtube_page_title()">
+                <span>Then the user should see the correct YouTube page title</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Expected title to contain 'YouTube'. Actual title: accounts.google.com expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_youtube_page_title(SocialMediaVerificationDefinition.java:109)
+	at ✽.the user should see the correct YouTube page title(file:///D:/eclipse32/Smart_Hospital_Cucumber32/SmartHospitals_Cucumber/src/test/resources/Features/verifing_Social_media_link.feature:24)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="183"><span class="badge log pass-bg mr-2">Pass</span>Verify Gmail Link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage()">
+                <span>Given the user is on the application homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(java.lang.String)">
+                <span>When the user click on the "Gmail" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_gmail_page_title()">
+                <span>Then the user should see the correct Gmail page title</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="185"><span class="badge log pass-bg mr-2">Pass</span>Verify LinkedIn Link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage()">
+                <span>Given the user is on the application homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(java.lang.String)">
+                <span>When the user click on the "LinkedIn" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_linkedin_page_title()">
+                <span>Then the user should see the correct LinkedIn page title</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="187"><span class="badge log pass-bg mr-2">Pass</span>Verify Instagram Link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage()">
+                <span>Given the user is on the application homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(java.lang.String)">
+                <span>When the user click on the "Instagram" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_instagram_page_title()">
+                <span>Then the user should see the correct Instagram page title</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="189"><span class="badge log pass-bg mr-2">Pass</span>Verify Pinterest Link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_is_on_the_application_homepage()">
+                <span>Given the user is on the application homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_clicks_on_the_link(java.lang.String)">
+                <span>When the user click on the "Pinterest" link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.definitions.SocialMediaVerificationDefinition.the_user_should_see_the_correct_pinterest_page_title()">
+                <span>Then the user should see the correct Pinterest page title</span>
+      <div>
+      </div>
+              </div>
+          </div>
         </div>
   </div>
 </div>
@@ -955,26 +1354,154 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">9</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@Negative_Prescription_Validation</p>
+<p class="name">org.openqa.selenium.SessionNotCreatedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.SessionNotCreatedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:33:27 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>com.definitions.Hooks.setUp()</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Verify the Login with roles.com.definitions.Hooks.setUp()</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.RuntimeException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.RuntimeException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:33:47 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='49'>Then User should see the dashboard summary table</a>
+<div class="">
+<span class="badge badge-default">Gowri_11APR2025_Accountant_Dashboard_Functionalities.Add New Expense with Invalid Data.Then User should see the dashboard summary table</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:33:59 am</td>
+<td>
+<a href="#" class="linked" test-id='14' id='74'>Then the user navigates to the finance section and clicks on income</a>
+<div class="">
+<span class="badge badge-default">Gowri_14APR2025_Accountant_Income_Functionalities.Add New Income and Verify.Then the user navigates to the finance section and clicks on income</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:34:01 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='78'>Then need click Add Expenses</a>
+<div class="">
+<span class="badge badge-default">Gowri_11APR2025_Accountant_Dashboard_Functionalities.Add New Expense and Verify.Then need click Add Expenses</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:34:53 am</td>
+<td>
+<a href="#" class="linked" test-id='170' id='204'>Then the user should see the correct Twitter page title</a>
+<div class="">
+<span class="badge badge-default">Gowri_29APR2025_Verifying_Social_Media_Links.Verify Twitter Link.Then the user should see the correct Twitter page title</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
 <p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Negative_Prescription_Validation</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -985,43 +1512,105 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:37 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:33:52 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='5'>Doctor tries to submit prescription with missing fields</a>
+<a href="#" class="linked" test-id='1' id='58'>Then the user should see the dashboard page for the "Admin" role</a>
 <div class="">
-<span class="badge badge-default">Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital.Doctor tries to submit prescription with missing fields</span>
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Verify the Login with roles.Then the user should see the dashboard page for the "Admin" role</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:37 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:33:55 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='10'>Doctor tries to submit prescription with missing fields</a>
+<a href="#" class="linked" test-id='1' id='68'>Then the user should see the dashboard page for the "Super Admin" role</a>
 <div class="">
-<span class="badge badge-default">Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital.Doctor tries to submit prescription with missing fields</span>
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Verify the Login with roles.Then the user should see the dashboard page for the "Super Admin" role</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:37 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:34:33 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='17'>Doctor tries to submit prescription with missing fields</a>
+<a href="#" class="linked" test-id='1' id='150'>Then the user should see the dashboard page for the "Radiologist" role</a>
 <div class="">
-<span class="badge badge-default">Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital.Doctor tries to submit prescription with missing fields</span>
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Verify the Login with roles.Then the user should see the dashboard page for the "Radiologist" role</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:09:31 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:35:04 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='118'>Verify the Search of patient</a>
+<a href="#" class="linked" test-id='170' id='222'>Then the user should see the correct YouTube page title</a>
 <div class="">
-<span class="badge badge-default">Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital.Verify the Search of patient</span>
+<span class="badge badge-default">Gowri_29APR2025_Verifying_Social_Media_Links.Verify YouTube Link.Then the user should see the correct YouTube page title</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">14</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@ValidInput</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ValidInput</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:33:27 am</td>
+<td>
+<a href="#" class="linked" test-id='14' id='15'>Add New Income and Verify</a>
+<div class="">
+<span class="badge badge-default">Gowri_14APR2025_Accountant_Income_Functionalities.Add New Income and Verify</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:33:27 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='17'>Add New Expense and Verify</a>
+<div class="">
+<span class="badge badge-default">Gowri_11APR2025_Accountant_Dashboard_Functionalities.Add New Expense and Verify</span>
 </div>
 </td>
 </tr>
@@ -1034,12 +1623,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@ValidTest</p>
+<p class="name">@gmail</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@ValidTest</h4>
+<h4>@gmail</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1053,11 +1642,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:37 am</td>
+<td>03:34:42 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Doctor creates a new appointment for a new patient</a>
+<a href="#" class="linked" test-id='170' id='183'>Verify Gmail Link</a>
 <div class="">
-<span class="badge badge-default">Gayathri_09APR2025_Manage Appointments in Smart Hospital.Doctor creates a new appointment for a new patient</span>
+<span class="badge badge-default">Gowri_29APR2025_Verifying_Social_Media_Links.Verify Gmail Link</span>
 </div>
 </td>
 </tr>
@@ -1068,15 +1657,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@Validate_ManualPrescription_View</p>
+<p class="name">@youtube</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Validate_ManualPrescription_View</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@youtube</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1087,161 +1676,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:09:31 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:34:42 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='110'>Verify the Manual prescription is accessible</a>
+<a href="#" class="linked" test-id='170' id='181'>Verify YouTube Link</a>
 <div class="">
-<span class="badge badge-default">Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital.Verify the Manual prescription is accessible</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Verify_Delete_Patient_Option</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Verify_Delete_Patient_Option</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:09:31 am</td>
-<td>
-<a href="#" class="linked" test-id='3' id='112'>Verify the added patient can be deleted in OPD section</a>
-<div class="">
-<span class="badge badge-default">Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital.Verify the added patient can be deleted in OPD section</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>5</span>
-</span>
-<p class="name">@InvalidTest</p>
-<p class="duration text-sm">5 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@InvalidTest</h4>
-<span status="pass" class='badge log pass-bg'>5 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:37 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='6'>Doctor tries to add a new patient without entering the year</a>
-<div class="">
-<span class="badge badge-default">Gayathri_09APR2025_Manage Appointments in Smart Hospital.Doctor tries to add a new patient without entering the year</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:37 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='8'>Doctor tries to add a new patient without entering the day</a>
-<div class="">
-<span class="badge badge-default">Gayathri_09APR2025_Manage Appointments in Smart Hospital.Doctor tries to add a new patient without entering the day</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:37 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>Doctor tries to add a new patient without entering the Month</a>
-<div class="">
-<span class="badge badge-default">Gayathri_09APR2025_Manage Appointments in Smart Hospital.Doctor tries to add a new patient without entering the Month</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:37 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='20'>Doctor tries to add a new patient without entering the name</a>
-<div class="">
-<span class="badge badge-default">Gayathri_09APR2025_Manage Appointments in Smart Hospital.Doctor tries to add a new patient without entering the name</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:37 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='23'>Doctor tries to create an appointment with an expired time slot</a>
-<div class="">
-<span class="badge badge-default">Gayathri_09APR2025_Manage Appointments in Smart Hospital.Doctor tries to create an appointment with an expired time slot</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Positive_Prescription_Validation</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Positive_Prescription_Validation</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:09:31 am</td>
-<td>
-<a href="#" class="linked" test-id='3' id='108'>verify the prescription feature by providing valid informations</a>
-<div class="">
-<span class="badge badge-default">Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital.verify the prescription feature by providing valid informations</span>
+<span class="badge badge-default">Gowri_29APR2025_Verifying_Social_Media_Links.Verify YouTube Link</span>
 </div>
 </td>
 </tr>
@@ -1254,12 +1695,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>3</span>
 </span>
-<p class="name">@Verify_Search</p>
+<p class="name">@InvalidUsername_And_Password</p>
 <p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Verify_Search</h4>
+<h4>@InvalidUsername_And_Password</h4>
 <span status="pass" class='badge log pass-bg'>3 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1273,31 +1714,31 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:37 am</td>
+<td>03:34:17 am</td>
 <td>
-<a href="#" class="linked" test-id='14' id='15'>Add message in notice board in messaging section</a>
+<a href="#" class="linked" test-id='1' id='109'>Attempt to login with missing username and password</a>
 <div class="">
-<span class="badge badge-default">Gayathri_28APR2025_Messaging Feature Verification in Smart Hospital.Add message in notice board in messaging section</span>
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Attempt to login with missing username and password</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:09:31 am</td>
+<td>03:34:17 am</td>
 <td>
-<a href="#" class="linked" test-id='114' id='116'>Verify the Search of patient</a>
+<a href="#" class="linked" test-id='1' id='111'>Attempt to login with missing username and password</a>
 <div class="">
-<span class="badge badge-default">Gayathri_09APR2025_Search Patient by Name In Smart Hospital.Verify the Search of patient</span>
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Attempt to login with missing username and password</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:09:31 am</td>
+<td>03:34:40 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='118'>Verify the Search of patient</a>
+<a href="#" class="linked" test-id='1' id='168'>Attempt to login with missing username and password</a>
 <div class="">
-<span class="badge badge-default">Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital.Verify the Search of patient</span>
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Attempt to login with missing username and password</span>
 </div>
 </td>
 </tr>
@@ -1310,12 +1751,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@Validate_Prescription_View</p>
+<p class="name">@allsocialmediacount</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Validate_Prescription_View</h4>
+<h4>@allsocialmediacount</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1329,11 +1770,151 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:09:31 am</td>
+<td>03:34:40 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='106'>Verify the added prescription is visible in the OPD section</a>
+<a href="#" class="linked" test-id='170' id='171'>Verifying the total count of social media links</a>
 <div class="">
-<span class="badge badge-default">Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital.Verify the added prescription is visible in the OPD section</span>
+<span class="badge badge-default">Gowri_29APR2025_Verifying_Social_Media_Links.Verifying the total count of social media links</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@twitter</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@twitter</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:34:42 am</td>
+<td>
+<a href="#" class="linked" test-id='170' id='179'>Verify Twitter Link</a>
+<div class="">
+<span class="badge badge-default">Gowri_29APR2025_Verifying_Social_Media_Links.Verify Twitter Link</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@InvalidInput</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@InvalidInput</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:33:27 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='6'>Add New Expense with Invalid Data</a>
+<div class="">
+<span class="badge badge-default">Gowri_11APR2025_Accountant_Dashboard_Functionalities.Add New Expense with Invalid Data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:33:27 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='16'>Add New Expense with Invalid Data</a>
+<div class="">
+<span class="badge badge-default">Gowri_11APR2025_Accountant_Dashboard_Functionalities.Add New Expense with Invalid Data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@InvalidPassword</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@InvalidPassword</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:34:15 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='97'>Attempt to login with missing password</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Attempt to login with missing password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:34:16 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='99'>Attempt to login with missing password</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Attempt to login with missing password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:34:17 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>Attempt to login with missing password</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Attempt to login with missing password</span>
 </div>
 </td>
 </tr>
@@ -1346,12 +1927,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@Delete_patient</p>
+<p class="name">@facebook</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Delete_patient</h4>
+<h4>@facebook</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1365,11 +1946,283 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:09:32 am</td>
+<td>03:34:41 am</td>
 <td>
-<a href="#" class="linked" test-id='114' id='121'>Verify that a searched patient can be deleted</a>
+<a href="#" class="linked" test-id='170' id='175'>Verify Facebook Link</a>
 <div class="">
-<span class="badge badge-default">Gayathri_09APR2025_Search Patient by Name In Smart Hospital.Verify that a searched patient can be deleted</span>
+<span class="badge badge-default">Gowri_29APR2025_Verifying_Social_Media_Links.Verify Facebook Link</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@InvalidUserName</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@InvalidUserName</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:34:12 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='89'>Attempt to login with missing username</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Attempt to login with missing username</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:34:12 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='91'>Attempt to login with missing username</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Attempt to login with missing username</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:34:13 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='93'>Attempt to login with missing username</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Attempt to login with missing username</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@linkedin</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@linkedin</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:34:42 am</td>
+<td>
+<a href="#" class="linked" test-id='170' id='185'>Verify LinkedIn Link</a>
+<div class="">
+<span class="badge badge-default">Gowri_29APR2025_Verifying_Social_Media_Links.Verify LinkedIn Link</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@pinterest</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@pinterest</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:34:44 am</td>
+<td>
+<a href="#" class="linked" test-id='170' id='189'>Verify Pinterest Link</a>
+<div class="">
+<span class="badge badge-default">Gowri_29APR2025_Verifying_Social_Media_Links.Verify Pinterest Link</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@instagram</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@instagram</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:34:42 am</td>
+<td>
+<a href="#" class="linked" test-id='170' id='187'>Verify Instagram Link</a>
+<div class="">
+<span class="badge badge-default">Gowri_29APR2025_Verifying_Social_Media_Links.Verify Instagram Link</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">@ValidLoginCredentials</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ValidLoginCredentials</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:33:27 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Verify the Login with roles</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Verify the Login with roles</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:33:27 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Verify the Login with roles</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Verify the Login with roles</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:33:27 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Verify the Login with roles</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Verify the Login with roles</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:33:27 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Verify the Login with roles</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Verify the Login with roles</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:33:27 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Verify the Login with roles</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Verify the Login with roles</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:33:27 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>Verify the Login with roles</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Verify the Login with roles</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:34:12 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='86'>Verify the Login with roles</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Verify the Login with roles</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:34:13 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='93'>Attempt to login with missing username</a>
+<div class="">
+<span class="badge badge-default">Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website.Attempt to login with missing username</span>
 </div>
 </td>
 </tr>
@@ -1390,25 +2243,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 30, 2025 11:08:36 am</h3>
+<h3>May 7, 2025 03:33:26 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 30, 2025 11:09:54 am</h3>
+<h3>May 7, 2025 03:35:15 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>4</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>4</h3>
 </div></div>
 </div>
 </div>
@@ -1424,12 +2277,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>4</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>4</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -1447,9 +2300,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>17</b> scenarios passed</small></div>
+<div><small data-tooltip='67%'><b>19</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='32%'><b>9</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -1467,10 +2320,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>105</b> steps passed</small></div>
+<div><small data-tooltip='80%'><b>109</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='6%'><b>9</b> steps failed,
+<b>18</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -1486,7 +2339,7 @@
 </div></div>
 <script>
 var timeline = {
-"Gayathri_09APR2025_Manage Appointments in Smart Hospital":55.149,"Gayathri_13APR2025_Doctor add Prescription for the Feature in Smart Hospital":77.122,"Gayathri_28APR2025_Messaging Feature Verification in Smart Hospital":54.002,"Gayathri_09APR2025_Search Patient by Name In Smart Hospital":20.542
+"Gowri_09APR2025_Login_functionality_for_the Smart_Hospital_website":98.054,"Gowri_11APR2025_Accountant_Dashboard_Functionalities":73.73,"Gowri_14APR2025_Accountant_Income_Functionalities":50.086,"Gowri_29APR2025_Verifying_Social_Media_Links":34.522
 };
 </script>
 <div class="row">
@@ -1496,15 +2349,15 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@Negative_Prescription_Validation</td>
-<td>4</td>
+<td>@ValidInput</td>
+<td>0</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
-<td>@ValidTest</td>
+<td>@gmail</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1512,39 +2365,15 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@Validate_ManualPrescription_View</td>
+<td>@youtube</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
-<td>@Verify_Delete_Patient_Option</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@InvalidTest</td>
-<td>5</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@Positive_Prescription_Validation</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@Verify_Search</td>
+<td>@InvalidUsername_And_Password</td>
 <td>3</td>
 <td>0</td>
 <td>0</td>
@@ -1552,7 +2381,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@Validate_Prescription_View</td>
+<td>@allsocialmediacount</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1560,12 +2389,76 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@Delete_patient</td>
+<td>@twitter</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@InvalidInput</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@InvalidPassword</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@facebook</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
+</tr>
+<tr>
+<td>@InvalidUserName</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@linkedin</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@pinterest</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@instagram</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ValidLoginCredentials</td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
 </tr>
 </tbody>
 </table></div>
@@ -1594,21 +2487,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 4,
-failParent: 0,
+passParent: 0,
+failParent: 4,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 17,
-failChild: 0,
+passChild: 19,
+failChild: 9,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 105,
-failGrandChild: 0,
+passGrandChild: 109,
+failGrandChild: 9,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 18,
 infoGrandChild: 0,
 eventsCount: 5,
 };

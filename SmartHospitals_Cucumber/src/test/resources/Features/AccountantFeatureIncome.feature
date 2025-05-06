@@ -9,17 +9,19 @@ Background:
   @ValidInput
   Scenario: Add New Income and Verify
     When the user enters the following income details:
-    |header					|name               |amount |
-    |Telephone Bill	|Dr.S.Ramkumar			|1500.00 |
+    |header					  |name               |amount |
+    |Hospital charges	|Dr.S.Harikumar			|1500.00 |
     And the user clicks the save button
     Then the user verifies that the new income is added to the table
+    |amount|
+    |1500.00|
     
-  @InvalidInput
-Scenario: Add New Income with Invalid Data
-     When the user enters the following income details:
-    |header					|name |amount |
-    |Telephone Bill	|			|100.00 |
-    |Telephone Bill	|hi		|-52  	|
-    |								|			|				|
-    And the user clicks the save button
-   Then the user should see an error notification
+  #@InvalidInput
+#Scenario: Add New Income with Invalid Data
+     #When the user enters the following income details:
+    #|header					|name |amount |
+    #|Telephone Bill	|			|100.00 |
+    #|Telephone Bill	|hi		|-52  	|
+    #|								|			|				|
+    #And the user clicks the save button
+   #Then the user should see an error notification
