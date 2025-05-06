@@ -41,6 +41,8 @@ public class AccountantPageIncome {
 
     @FindBy(xpath = "//tr[contains(@class, 'odd')]/following-sibling :: tr[1] /*[@class=\" dt-body-right\"]")
     public WebElement tableValue;
+    
+    
 
     
     public AccountantPageIncome(WebDriver driver) {
