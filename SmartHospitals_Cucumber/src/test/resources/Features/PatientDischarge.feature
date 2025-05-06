@@ -27,3 +27,12 @@ Background:
 	And the Doctor clicks the discharge button
 	Then the Doctor provides discharge date and status as "Normal"
 	And the Doctor should save the Discharge status
+
+	@WithCaseId
+	Scenario: Doctor discharging the patient by case ID
+	When the Doctor provides the case Id in search field
+	|caseID		|
+	|6290			|
+	Then the Doctor provides the discharge details
+	|DischargeStatus	| 
+	|Normal						|
