@@ -8,6 +8,7 @@ import java.util.Set;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -321,5 +322,39 @@ public class PatientActions {
             objPDP.patientMsg.sendKeys(details.get("Message"));
             log.info("Message field provided from Excel : " + details.get("Message"));
 
+    }
+    
+    public void clickDownloadCenter() {
+    	objPDP.downloadCenter.click();
+    	
+    }
+
+    public void ContentList(String content) {
+        List<WebElement> contentList = HelperClass.getDriver().findElements(By.xpath("//div[@id='DataTables_Table_0_wrapper']/table/tbody/tr/td[1]"));
+        int i = 1;
+        for (WebElement c : contentList) {
+            if (c.getText().contains(content)) {
+                List<WebElement> data = HelperClass.getDriver().findElements(By.xpath("//div[@id='DataTables_Table_0_wrapper']/table/tbody/tr[" + i + "]/td"));
+                int j = 0;
+                for (WebElement d : data) {
+                    switch (j) {
+                        case 0:
+                            System.out.println("Title : " + d.getText());
+                            break;
+                        case 1:
+                            System.out.println("Share Date : " + d.getText());
+                            break;
+                        case 2:
+                            System.out.println("Valid upto : " + d.getText());
+                            break;
+                        case 3:
+                            System.out.println("Shared By : " + d.getText());
+                            break;
+                    }
+                    j++;
+                }
+            }
+            i++; 
+        }
     }
 }
