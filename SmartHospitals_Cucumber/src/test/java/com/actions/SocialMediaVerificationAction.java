@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.WebElement;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.List;
 
 public class SocialMediaVerificationAction {
     private WebDriver driver;
@@ -19,6 +20,12 @@ public class SocialMediaVerificationAction {
         this.mainWindowHandle = driver.getWindowHandle();
     }
 
+    public int getSocialMediaLinkCount() {
+        List<WebElement> links = socialMediaPage.socialMediaLinks;
+        
+        return links.size();
+    }
+    
     public void clickFacebookLink() {
         clickSocialMediaLink(socialMediaPage.facebookLink);
     }
