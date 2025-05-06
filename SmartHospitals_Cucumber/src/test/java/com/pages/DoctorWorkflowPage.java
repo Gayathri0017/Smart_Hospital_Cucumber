@@ -29,7 +29,7 @@ public class DoctorWorkflowPage {
 	@FindBy(xpath="//div[@class=\"pull-right\"]/child::button[@id=\"formaddpabtn\"]")
 	public WebElement saveBtn;
 	
-	@FindBy(xpath="(//span[@class=\"selection\"]/child::span)[1]")
+	@FindBy(xpath="//span[@class=\"select2-selection select2-selection--single\"]/child::span")
 	public WebElement nameAfterAdd;
 	@FindBy(id="select2-doctorid-container")
 	public WebElement document;
