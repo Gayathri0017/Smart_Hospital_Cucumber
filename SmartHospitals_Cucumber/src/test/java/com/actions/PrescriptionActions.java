@@ -1,8 +1,6 @@
 package com.actions;
-
 import java.time.Duration;
 import java.util.List;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -107,14 +105,13 @@ public void assertinvalid(String ex) {
 		throw e;
 	}
 }
-public void assertPrescription(){
+public void assertPrescription(String name){
 	WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
     wait.until(ExpectedConditions.visibilityOf(pp.textPres));
-	String act=pp.textPres.getText();
-	String ex="Prescription";
-	System.out.println("Expected: " + ex);
+	String act=pp.verifyView.getText();
+	System.out.println("Expected: " + name);
 	System.out.println("Actual: " + act);
-	Assert.assertTrue(act.contains(ex));
+	Assert.assertTrue(act.contains(name));
 }
 public void assertManual(){
 	WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
@@ -126,19 +123,18 @@ public void assertManual(){
 	Assert.assertTrue(act.contains(ex));
 }
 public void view(String patientName) {
-	int c=1;
     WebDriver driver = HelperClass.getDriver();
-    List<WebElement> rows=driver.findElements(By.xpath("//table[@id='DataTables_Table_1']//tr/td[2]"));
-    for (WebElement row:rows){
-    	c++;
-        if (row.getText().contains(patientName)){
-            WebElement viewBtn=row.findElement(By.xpath("//table[@id='DataTables_Table_1']//tr[\" + c + \"]/td[9]/div/a[2]"));
+    List<WebElement> rows=driver.findElements(By.xpath("//table[@id='DataTables_Table_1']//tbody/tr"));
+    for (WebElement row : rows) {
+        WebElement name=row.findElement(By.xpath("./td[2]"));
+        if (name.getText().contains(patientName)) {
+            WebElement viewBtn=row.findElement(By.xpath("./td[9]/div/a[2]"));
             viewBtn.click();
-            log.info("Clicked View for patient: "+patientName);
+            log.info("Clicked View for patient: " + patientName);
             return;
         }
     }
-    log.error("Patient name not found:" + patientName);
+    log.error("Patient name not found: " + patientName);
 }
 //public void show() {
 //	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));

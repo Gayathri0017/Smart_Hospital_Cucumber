@@ -44,4 +44,6 @@ public class PrescriptionPage {
 	public WebElement manualP;
 	@FindBy(xpath="(//h4[text()='Prescription'])[2]")
 	public WebElement verifyManual;
+	@FindBy(xpath="//table[@class=\"printablea4\"]//tr[2]/td[1]")
+	public WebElement verifyView;
 }
