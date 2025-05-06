@@ -1,6 +1,7 @@
 package com.actions;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -8,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -101,7 +103,6 @@ public void assertinvalid(String ex) {
 	System.out.println("Actual: " + act);
 	Assert.assertTrue(act.contains(ex));
 	}catch(Exception e) {
-		//Assert.fail(e.getMessage());
 		System.out.println(e.getMessage());
 		throw e;
 	}
@@ -124,11 +125,20 @@ public void assertManual(){
 	System.out.println("Actual: " + act);
 	Assert.assertTrue(act.contains(ex));
 }
-public void view() {
-	String patientName = "Gaurav Shrivastava";
-	WebElement viewBtn = HelperClass.getDriver().findElement(By.xpath("//table[@id='DataTables_Table_1']//tr[td[contains(text(),'" + patientName + "')]]//a[contains(@title, 'View Prescription')]"));
-	viewBtn.click();
-	log.info("Clicked View");
+public void view(String patientName) {
+	int c=1;
+    WebDriver driver = HelperClass.getDriver();
+    List<WebElement> rows=driver.findElements(By.xpath("//table[@id='DataTables_Table_1']//tr/td[2]"));
+    for (WebElement row:rows){
+    	c++;
+        if (row.getText().contains(patientName)){
+            WebElement viewBtn=row.findElement(By.xpath("//table[@id='DataTables_Table_1']//tr[\" + c + \"]/td[9]/div/a[2]"));
+            viewBtn.click();
+            log.info("Clicked View for patient: "+patientName);
+            return;
+        }
+    }
+    log.error("Patient name not found:" + patientName);
 }
 //public void show() {
 //	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));

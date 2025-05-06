@@ -59,15 +59,9 @@ public class PrescriptionDefinition {
 	public void the_doctor_clicks_the_edit_option() throws InterruptedException {
 	    pa.edit();
 	}
-	@When("the doctor Clicks the View Prescription")
-	public void the_doctor_clicks_the_view_prescription() throws InterruptedException{
-		try {
-		HelperClass.getDriver().navigate().refresh();
-		Thread.sleep(3000);
-	    pa.view();
-		}catch(Exception e) {
-			System.out.println("Prescrition not got added:"+e.getMessage());
-		}
+	@When("the doctor Clicks the View Prescription {string}")
+	public void the_doctor_clicks_the_view_prescription(String string) {
+	   pa.view(string);
 	}
 	@Then("the previously added prescription should be visible")
 	public void the_previously_added_prescription_should_be_visible() {
