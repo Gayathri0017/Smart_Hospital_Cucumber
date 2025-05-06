@@ -19,6 +19,9 @@ public class PatientDashboardPage {
 	@FindBy(xpath = "//section[@class='content']/div/div[2]/div/div/div/a")
 	public WebElement addAppointment ;
 	
+	@FindBy(xpath = "//aside[@id='alert2']/div/section/ul/li[1]//following-sibling::li[10]/a/span")
+	public WebElement downloadCenter ;
+	
 	@FindBy(name = "date")
 	public WebElement date ;
 	
