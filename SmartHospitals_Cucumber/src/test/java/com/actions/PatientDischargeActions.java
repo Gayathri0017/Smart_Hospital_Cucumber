@@ -1,6 +1,7 @@
 package com.actions;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -46,8 +47,22 @@ public class PatientDischargeActions {
     public void setCaseId(String id) throws InterruptedException {		// providing the case id of the patient to discharge 
 
            wait.until(ExpectedConditions.elementToBeClickable(objPDP.searchField));
-           objPDP.searchField.sendKeys(id );
+//           objPDP.searchField.sendKeys(id );
 //           Thread.sleep(3000);
+           List<WebElement> caseid = HelperClass.getDriver().findElements(By.xpath("//table[@id='DataTables_Table_0']/tbody/tr/td[2]"));
+           int i = 1 ;
+           for (WebElement c : caseid) {
+        	   System.out.println(c.getText());
+        	   if(c.getText().contains(id)) {
+        		   WebElement data = HelperClass.getDriver().findElement(By.xpath("//table[@id='DataTables_Table_0']/tbody/tr[" + i + "]/td[1]"));
+//        		   for(WebElement d: data ) {
+//        			   d.click();
+//        		   }
+        		   data.click();
+        		   break;
+        		   }
+        	   i++;
+           }
            log.info("Case ID passsed : ", id);
 
     }
@@ -64,6 +79,7 @@ public class PatientDischargeActions {
     public void ClickDischargeBtn() {
 
            wait.until(ExpectedConditions.visibilityOf(objPDP.dischargeIcon));
+           wait.until(ExpectedConditions.elementToBeClickable(objPDP.dischargeIcon));
            objPDP.dischargeIcon.click();
            log.info("Discharge button clicked");
 

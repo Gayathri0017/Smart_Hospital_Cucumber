@@ -12,6 +12,7 @@ import io.cucumber.java.en.When;
 public class PrescriptionDefinition {
 	DoctorActions doctor = new DoctorActions();
 	PrescriptionActions pa=new PrescriptionActions();
+	String name=null;
 	@When("the Doctor Navigates to the OPD section")
 	public void the_doctor_navigates_to_the_opd_section() throws InterruptedException {
 	   pa.OPDSection();
@@ -59,19 +60,15 @@ public class PrescriptionDefinition {
 	public void the_doctor_clicks_the_edit_option() throws InterruptedException {
 	    pa.edit();
 	}
-	@When("the doctor Clicks the View Prescription")
-	public void the_doctor_clicks_the_view_prescription() throws InterruptedException{
-		try {
-		HelperClass.getDriver().navigate().refresh();
-		Thread.sleep(3000);
-	    pa.view();
-		}catch(Exception e) {
-			System.out.println("Prescrition not got added:"+e.getMessage());
-		}
+	@When("the doctor Clicks the View Prescription {string}")
+	public void the_doctor_clicks_the_view_prescription(String string) throws InterruptedException {
+	   name=string;
+	   pa.view(string);
+	   Thread.sleep(3000);
 	}
 	@Then("the previously added prescription should be visible")
 	public void the_previously_added_prescription_should_be_visible() {
-	    pa.assertPrescription();
+	    pa.assertPrescription(name);
 	}
 //	@When("the doctor Clicks the Show option in OPD section")
 //	public void the_doctor_clicks_the_show_option_in_opd_section() {

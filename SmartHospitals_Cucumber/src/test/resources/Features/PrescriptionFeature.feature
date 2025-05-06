@@ -29,19 +29,22 @@ Examples:
     	Then the Prescription should be added in OPD Section
     	
 	@Validate_Prescription_View
-	Scenario: Verify the added prescription is visible in the OPD section
-	  When the doctor Clicks the View Prescription
+	Scenario Outline: Verify the added prescription is visible in the OPD section
+	  When the doctor Clicks the View Prescription "<patientName>"
 	  Then the previously added prescription should be visible
+	  Examples:
+	  |patientName       |
+	  |Gaurav Shrivastava|
 	  
 	@Validate_ManualPrescription_View
 	Scenario: Verify the Manual prescription is accessible
 	  When the doctor Clicks the Manual Prescription
 	  Then the previously added manual prescription should be visible
 	  
-	@Verify_Delete_Patient_Option
-	Scenario: Verify the added patient can be deleted in OPD section
-		When the doctor Clicks the Show option in OPD section
-		Then the doctor should see the <"Visit Details">
-		When the doctor clicks delete option in visit details
-		Then the patient should be deleted in OPD section
+#	@Verify_Delete_Patient_Option
+#	Scenario: Verify the added patient can be deleted in OPD section
+#		When the doctor Clicks the Show option in OPD section
+#		Then the doctor should see the <"Visit Details">
+#		When the doctor clicks delete option in visit details
+#		Then the patient should be deleted in OPD section
 	

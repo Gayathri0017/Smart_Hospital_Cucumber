@@ -141,15 +141,10 @@ public class DoctorActions {
     public void addedPatient() {
         String expected=reader.getCellData("Sheet1", 0, 0);
         WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-        try {
-            WebElement patientElement=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//tr[@class='odd'])[1]//a")));
-            String actual=patientElement.getText();
-            Assert.assertTrue(actual.contains(expected));
-        } catch (StaleElementReferenceException e) {
-            WebElement patientElement = HelperClass.getDriver().findElement(By.xpath("(//tr[@class='odd'])[1]//a"));
-            String actualName = patientElement.getText();
-            Assert.assertTrue(actualName.contains(expected));
-        }
+        wait.until(ExpectedConditions.visibilityOf(dp.nameAfterAdd));
+        String act=dp.nameAfterAdd.getText();
+        System.out.println("Expected: "+expected+"\nActual: "+act);
+        Assert.assertTrue(act.contains(expected));
     }
     public void nameRequired(String ex) {
         WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
