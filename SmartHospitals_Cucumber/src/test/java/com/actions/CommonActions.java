@@ -9,6 +9,6 @@ public class CommonActions {
 	
 	public void ClickFun(WebElement element) {
 		JavascriptExecutor js =  (JavascriptExecutor)HelperClass.getDriver();
-		js.executeScript("argument[0].click()", element);
+		js.executeScript("arguments[0].click()", element);
 	}
 }
