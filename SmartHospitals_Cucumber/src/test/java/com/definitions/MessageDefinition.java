@@ -1,10 +1,8 @@
 package com.definitions;
 import java.util.List;
 import java.util.Map;
-
 import com.actions.MessageActions;
 import com.utils.HelperClass;
-
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 public class MessageDefinition {
@@ -56,6 +54,6 @@ public class MessageDefinition {
 	}
 	@Then("the message should be successfully deleted from notice board")
 	public void the_message_should_be_successfully_deleted_from_notice_board() {
-	   
+	   //pass
 	}
 }

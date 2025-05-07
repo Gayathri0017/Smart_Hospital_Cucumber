@@ -5,7 +5,6 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import com.actions.DoctorActions;
 import com.utils.HelperClass;
 import io.cucumber.java.en.Given;
@@ -16,9 +15,7 @@ public class DoctorDefinition {
     @Given("Doctor is logged in to the Smart Hospital system")
     public void doctor_is_logged_in_to_the_smart_hospital_system() throws InterruptedException {
         doctor.login();
-       // Thread.sleep(3000);
         doctor.english();
-       //Thread.sleep(3000);
     }
     @Given("the User navigate to the appointment section")
     public void the_user_navigate_to_the_appointment_section() {
@@ -58,7 +55,6 @@ public class DoctorDefinition {
     }
     @When("Doctor fills Expired time for appointment")
     public void doctor_fills_expired_time_for_appointment() throws InterruptedException {
-    	//Thread.sleep(1000);
         doctor.addAppointmentDetails1();
     }
     @Then("Appointment creation should fail with {string} message")
