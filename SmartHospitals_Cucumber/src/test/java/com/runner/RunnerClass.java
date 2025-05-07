@@ -9,7 +9,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 		   "src\\test\\resources\\Features\\PatientDetails.feature",
 		   "src\\test\\resources\\Features\\PatientDischarge.feature",
 		   "src\\test\\resources\\Features\\StaffDirectory.feature",
-		   "src\\test\\resources\\Features\\PatientContent.feature"},
+		   "src\\test\\resources\\Features\\PatientPayment.feature"},
     glue = {"com.definitions", "com.utils"},
     plugin = {"pretty","json:target/cucumber-reports/reports.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
     monochrome = true,
