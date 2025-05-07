@@ -16,12 +16,12 @@ Background:
     |amount|
     |1500.00|
     
-  #@InvalidInput
-#Scenario: Add New Income with Invalid Data
-     #When the user enters the following income details:
-    #|header					|name |amount |
-    #|Telephone Bill	|			|100.00 |
-    #|Telephone Bill	|hi		|-52  	|
-    #|								|			|				|
-    #And the user clicks the save button
-   #Then the user should see an error notification
+  @InvalidInput
+Scenario: Add New Income with Invalid Data
+     When the user enters the following income details:
+    |header					|name |amount |
+    |Telephone Bill	|			|100.00 |
+    |Telephone Bill	|hi		|-52  	|
+    |								|			|				|
+    And the user clicks the save button
+   Then the user should see an error notification
