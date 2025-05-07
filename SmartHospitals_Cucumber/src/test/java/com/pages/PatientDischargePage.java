@@ -15,7 +15,7 @@ public class PatientDischargePage {
 	@FindBy(xpath = "//div[@id='overview']/div/div[1]/div[1]/h3")
 	public WebElement dischargePatientName ;
 	
-	@FindBy(xpath = "//div[@id=\"overview\"]/div/div[1]/div[1]/div/div/a[3]/i")
+	@FindBy(xpath = "//div[@id='overview']/div/div[1]/div[1]/div/div/a[3]/i")
 	public WebElement dischargeIcon ;
 	
 	@FindBy(name = "discharge_date")
