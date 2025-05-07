@@ -1,13 +1,9 @@
 package com.definitions;
 import java.time.Duration;
-
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-
 import com.actions.SearchActions;
 import com.utils.HelperClass;
-
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 public class SearchDefinition {

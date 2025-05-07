@@ -110,8 +110,6 @@ public class DoctorActions {
         }
         new Select(dp.status).selectByVisibleText(status);
         sendKeysMethod(dp.discount, dis);
-//        Select pri=new Select(dp.priority);
-//        pri.selectByIndex(0);
         clickMethod(dp.priority);
         WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
         WebElement pri= wait.until(ExpectedConditions.visibilityOf(dp.ip));
@@ -151,7 +149,6 @@ public class DoctorActions {
         WebElement errorElement=wait.until(ExpectedConditions.visibilityOf(dp.nameError));
         String ac=errorElement.getText();
         log.info("Checking name required validation. Expected: {}, Actual: {}", ex, ac);
-//        Assert.assertEquals(ac, ex);
         Assert.assertTrue(ac.contains(ex));
     }
     public void assertSuccess() {

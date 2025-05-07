@@ -43,8 +43,6 @@ public class DoctorWorkflowPage {
 	public WebElement date;
 	@FindBy(id="(//div[@class=\"col-md-3\"]/child::div)[1]/select")
 	public WebElement slot;
-//	@FindBy(xpath="//button[@id=\"formaddbtn\"]")
-//	public WebElement save;
 	@FindBy(xpath="//button[@id=\"formaddbtn\"]")
 	public WebElement savebtn;
 	@FindBy(xpath="(//div[@class=\"col-sm-3\"]/child::div)[1]/div/select")
