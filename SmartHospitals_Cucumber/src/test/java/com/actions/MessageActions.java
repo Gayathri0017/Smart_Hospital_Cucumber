@@ -34,13 +34,13 @@ public class MessageActions {
 	}
 	public void assertPost(String ex) {
 		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-		WebElement successAlert = wait.until(ExpectedConditions.visibilityOf(mp.success));
+		wait.until(ExpectedConditions.visibilityOf(mp.success));
 		String act=mp.success.getText();
 		Assert.assertEquals(ex,act);
 	}
 	public void assertRequired(String exp) {
 		WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-		WebElement successAlert= wait.until(ExpectedConditions.visibilityOf(mp.error));
+		wait.until(ExpectedConditions.visibilityOf(mp.error));
 		String act=mp.error.getText();
 		Assert.assertEquals(exp,act);
 	}
