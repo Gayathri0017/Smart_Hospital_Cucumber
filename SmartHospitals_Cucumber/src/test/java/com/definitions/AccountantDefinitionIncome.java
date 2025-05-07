@@ -10,6 +10,7 @@ import io.cucumber.java.en.*;
 
 public class AccountantDefinitionIncome {
     private AccountantActionsIncome accountantActionsIncome;
+    
 
     @Given("User launches Smart Hospital website")
     public void launchApplication() {
@@ -58,7 +59,7 @@ public class AccountantDefinitionIncome {
     @Then("the user enters the Header as {string}, name as {string}, and amount as {string}")
     public void enterIncomeDetails(String header, String name, String amount) {
         accountantActionsIncome.enterIncomeDetails(header, name, amount);
-        int amt=Integer.parseInt(amount);
+        Integer.parseInt(amount);
     }
     
     @Then("the user clicks the save button")
@@ -67,9 +68,16 @@ public class AccountantDefinitionIncome {
     }
 
     @Then("the user verifies that the new income is added to the table")
-    public void verifyIncomeAdded() {
-        String amount = "200.00"; 
-        accountantActionsIncome.verifyIncomeAdded(amount);
+    public void verifyIncomeAdded(DataTable dataTable) throws InterruptedException {
+    	String name=null,amount=null;
+    	
+    	accountantActionsIncome.listofamount();
+    	List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+    	for (Map<String, String> row : data) {
+    		name=row.get("name");
+    	    amount=row.get("amount");
+    	}
+        accountantActionsIncome.verifyIncomeAdded(name,amount);
     }
     
     @Then("the user should see an error notification")
