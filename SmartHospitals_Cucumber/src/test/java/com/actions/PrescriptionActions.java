@@ -29,24 +29,23 @@ public void selectFindingCategory(String s) {
     wait.until(ExpectedConditions.elementToBeClickable(pp.medicineCat)).click();
     wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
     pp.search.sendKeys(Keys.ENTER);
-    log.info("Finding category selected="+s);
+    log.info("Finding category selected={}", s);
 }
 public void selectMedicineCategory(String s) {
     wait.until(ExpectedConditions.elementToBeClickable(pp.medicineName)).click();
     wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
     pp.search.sendKeys(Keys.ENTER);
-    log.info("Medicine category selected="+s);
+    log.info("Medicine category selected={}",s);
 }
 public void selectMedicine(String s) {
     try {
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
         WebElement dropdown = wait.until(ExpectedConditions.elementToBeClickable(pp.dose));
         dropdown.click();
         WebElement searchBox = wait.until(ExpectedConditions.visibilityOf(pp.search));
         searchBox.clear();
         searchBox.sendKeys(s);
         searchBox.sendKeys(Keys.ENTER);
-        log.info("Medicine selected="+s);
+        log.info("Medicine selected={}",s);
     } catch (Exception e) {
         System.out.println(e.getMessage());
     }
@@ -56,13 +55,13 @@ public void selectDoseInterval(String s) {
     wait.until(ExpectedConditions.elementToBeClickable(pp.doseInterval)).click();
     wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
     pp.search.sendKeys(Keys.ENTER);
-    log.info("Dose interval selected="+s);
+    log.info("Dose interval selected={}",s);
 }
 public void selectDoseDuration(String s) {
     wait.until(ExpectedConditions.elementToBeClickable(pp.doseDuration)).click();
     wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
     pp.search.sendKeys(Keys.ENTER);
-    log.info("Dose duration selected="+s);
+    log.info("Dose duration selected={}",s);
 }
 public void OPDSection() {
 	clickMethod(pp.opd);
@@ -72,21 +71,17 @@ public void addPres(){
 	clickMethod(pp.addPrescription);
 	log.info("Clicked Add Prescription");
 }
-public void assertPP() throws InterruptedException {
-	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+public void assertPP(){
     wait.until(ExpectedConditions.visibilityOf(pp.text));
 	String ex="Add Prescription";
 	String act=pp.text.getText();
 	Assert.assertEquals(ex, act);
-//	pp.addMedicine.click();
-//	Thread.sleep(1000);
 }
 public void save(){
 	clickMethod(pp.save);
 	log.info("Clicked Save");
 }
 public void edit() {
-	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
     wait.until(ExpectedConditions.visibilityOf(pp.edit));
 	clickMethod(pp.edit);
 }
@@ -94,7 +89,6 @@ WebDriverWait w= new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(1
 JavascriptExecutor js=(JavascriptExecutor) HelperClass.getDriver();
 public void assertinvalid(String ex) {
 	try {
-	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
     wait.until(ExpectedConditions.visibilityOf(pp.errorMsg));
 	String act=pp.errorMsg.getText();
 	System.out.println("Expected: " + ex);
@@ -106,7 +100,6 @@ public void assertinvalid(String ex) {
 	}
 }
 public void assertPrescription(String name){
-	WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
     wait.until(ExpectedConditions.visibilityOf(pp.textPres));
 	String act=pp.verifyView.getText();
 	System.out.println("Expected: " + name);
@@ -114,7 +107,6 @@ public void assertPrescription(String name){
 	Assert.assertTrue(act.contains(name));
 }
 public void assertManual(){
-	WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
     wait.until(ExpectedConditions.visibilityOf(pp.verifyManual));
 	String act=pp.verifyManual.getText();
 	String ex="Prescription";
@@ -130,19 +122,13 @@ public void view(String patientName) {
         if (name.getText().contains(patientName)) {
             WebElement viewBtn=row.findElement(By.xpath("./td[9]/div/a[2]"));
             viewBtn.click();
-            log.info("Clicked View for patient: " + patientName);
+            log.info("Clicked View for patient: {}",patientName);
             return;
         }
     }
-    log.error("Patient name not found: " + patientName);
+    log.error("Patient name not found:{}",patientName);
 }
-//public void show() {
-//	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-//	wait.until(ExpectedConditions.visibilityOf(pp.show));
-//	clickMethod(pp.show);
-//}
 public void assertShow(String ex) {
-	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 	wait.until(ExpectedConditions.visibilityOf(pp.showText));
 	String act=pp.showText.getText();
 	Assert.assertEquals(ex,act);
@@ -151,14 +137,7 @@ public void delete(){
 	clickMethod(pp.delete);
 	log.info("Clicked Delete");
 }
-//public void assertEdit(String ex) {
-//	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-//	wait.until(ExpectedConditions.visibilityOf(pp.editText));
-//	String act=pp.editText.getText();
-//	Assert.assertEquals(ex,act);
-//}
 public void editClick() {
-	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 	wait.until(ExpectedConditions.elementToBeClickable(pp.edit));
 	clickMethod(pp.edit);
 }

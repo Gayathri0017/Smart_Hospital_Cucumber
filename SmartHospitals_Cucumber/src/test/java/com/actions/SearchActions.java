@@ -17,7 +17,7 @@ public class SearchActions {
 		PageFactory.initElements(HelperClass.getDriver(), sp);
 	}
 	public void search(String name) {
-		logger.info("Entering search text: "+name);
+		logger.info("Entering search text:{}",name);
 		sendKeysMethod(sp.searchBar,name);
 		logger.info("Searched the patient name");
 	}
@@ -31,13 +31,13 @@ public class SearchActions {
 			WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.visibilityOf(sp.error));
 			String act=sp.error.getText();
-			logger.info("Expected: "+exp+", Actual: "+act);
+			logger.info("Expected: {}, Actual: {}", exp, act);
 			Assert.assertTrue(act.contains(exp));
 		}else {
 			WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.visibilityOf(sp.name));
 			String act=sp.name.getText();
-			logger.info("Expected: "+exp+", Actual: "+act);
+			logger.info("Expected: {}, Actual: {}", exp, act);
 			Assert.assertTrue(act.contains(exp));
 		}
 	}

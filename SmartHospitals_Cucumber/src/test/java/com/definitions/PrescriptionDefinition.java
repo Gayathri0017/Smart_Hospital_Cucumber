@@ -1,12 +1,9 @@
 package com.definitions;
 import java.util.List;
 import java.util.Map;
-
 import com.actions.DoctorActions;
 import com.actions.PrescriptionActions;
 import com.utils.HelperClass;
-
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 public class PrescriptionDefinition {
@@ -41,7 +38,7 @@ public class PrescriptionDefinition {
 	}
 	@Then("the Prescription should be added in OPD Section")
 	public void the_prescription_should_be_added_in_opd_section() {
-	    
+	    //pass
 	}
 	@When("the doctor fills the prescription form with:")
 	public void the_doctor_fills_the_prescription_form_with(io.cucumber.datatable.DataTable dataTable) throws InterruptedException { 
@@ -64,16 +61,11 @@ public class PrescriptionDefinition {
 	public void the_doctor_clicks_the_view_prescription(String string) throws InterruptedException {
 	   name=string;
 	   pa.view(string);
-	   Thread.sleep(3000);
 	}
 	@Then("the previously added prescription should be visible")
 	public void the_previously_added_prescription_should_be_visible() {
 	    pa.assertPrescription(name);
 	}
-//	@When("the doctor Clicks the Show option in OPD section")
-//	public void the_doctor_clicks_the_show_option_in_opd_section() {
-//	   pa.show();
-//	}
 	@Then("the doctor should see the <{string}>")
 	public void the_doctor_should_see_the(String string) {
 	    pa.assertShow(string);
@@ -87,18 +79,6 @@ public class PrescriptionDefinition {
 		   System.out.println(e.getMessage());
 	   }
 	}
-	@Then("the patient should be deleted in OPD section")
-	public void the_patient_should_be_deleted_in_opd_section() {
-	    
-	}
-	@Then("the doctor Clicks the edit option in OPD section")
-	public void the_doctor_clicks_the_edit_option_in_opd_section() {
-		
-	}
-//	@Then("the doctor should see the <{string}> Page")
-//	public void the_doctor_should_see_the_page(String string) {
-//	    pa.assertEdit(string);
-//	}
 	@When("the doctor Clicks the Manual Prescription")
 	public void the_doctor_clicks_the_manual_prescription() {
 	    pa.viewPres();
