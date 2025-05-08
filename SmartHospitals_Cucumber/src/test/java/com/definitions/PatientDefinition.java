@@ -1,6 +1,5 @@
 package com.definitions;                                                                                        
-                                                                                                                
-import static org.testng.Assert.assertListContains;
+                                                     
 
 import java.time.Duration;
 import java.util.List;
@@ -8,7 +7,6 @@ import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;                                                                                       
                                                                                                                 
@@ -122,9 +120,7 @@ public void the_user_can_fill_the_appointment(io.cucumber.datatable.DataTable da
         String time = details.get("Timing");
         objPatientActions.setTime(time);
         
-//        if(date==null) {
-//        	wait.until(ExpectedConditions.alertIsPresent());
-//        	objPatientActions.alert();
+
         	try {
         		
         		objPatientActions.setAvailableTime();
@@ -134,25 +130,10 @@ public void the_user_can_fill_the_appointment(io.cucumber.datatable.DataTable da
         	}
             String message = details.get("Message");
             objPatientActions.setMessage(message);
-//        }
-//        else {
-//        	try {
-//        		
-//        		objPatientActions.setAvailableTime();
-//        	}
-//        	catch (Exception e){
-//        		System.out.println(e.getMessage());
-//        	}
-//            String message = details.get("Message");
-//            objPatientActions.setMessage(message);
+
         }
 
-        
-//        objPatientActions.setAvailableTime();
-//        String message = details.get("Message");
-//        objPatientActions.setMessage(message);
-//        
-//    }
+
 }
 
 

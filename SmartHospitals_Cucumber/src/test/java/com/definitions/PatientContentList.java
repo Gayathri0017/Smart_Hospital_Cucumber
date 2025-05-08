@@ -21,10 +21,12 @@ public class PatientContentList {
 	@When("the User is able to click the download center option")
 	public void the_user_is_able_to_click_the_download_center_option() {
 		objPatientActions.clickDownloadCenter();
+		log.info("Download Center is clicked ");
 	}
 
 	@Then("the User is able to visible the content list for {string}")
 	public void the_user_is_able_to_visible_the_content_list_for(String content) {
 		objPatientActions.ContentList(content);
+		log.info("content passed successfully :%s",content);
 	}
 }

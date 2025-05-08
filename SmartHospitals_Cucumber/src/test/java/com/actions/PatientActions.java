@@ -71,6 +71,7 @@ public class PatientActions {
             Set<String> Allwindows = HelperClass.getDriver().getWindowHandles();
             Iterator<String> it = Allwindows.iterator();
             String mainWindow = it.next();
+            System.out.println(mainWindow);
             String childWindow = it.next();
             HelperClass.getDriver().switchTo().window(childWindow);
             log.info("Driver window switched");
@@ -153,7 +154,7 @@ public class PatientActions {
             if (specialist != null && !specialist.isEmpty()) {// Select the specialist from the dropdown
                 Select selectSpecialist = new Select(specialistDropdown);
                 selectSpecialist.selectByVisibleText(specialist);
-                log.info("Specialist field provided: " + specialist);
+                log.info(String.format("Specialist field provided: %s", specialist));
             } else {
                 log.info("Specialist field is empty or null");
             }
@@ -194,7 +195,6 @@ public class PatientActions {
 
             wait.until(ExpectedConditions.visibilityOf(objPDP.AvailableSlot));
             wait.until(ExpectedConditions.elementToBeClickable(objPDP.AvailableSlot));
-//            objPDP.AvailableSlot.click();
             Actions act = new Actions(HelperClass.getDriver());
             act.scrollToElement(objPDP.AvailableSlot).click();
             act.click(objPDP.AvailableSlot);
@@ -247,7 +247,7 @@ public class PatientActions {
             if (details.get("Date") != null && !details.get("Date").isEmpty()) {
                 objPDP.date.click();
                 objPDP.date.sendKeys(details.get("Date"));
-                log.info("Date field provided from Excel\nDate:" + details.get("Date"));
+                log.info(String.format("Date field provided from Excel\nDate:%s", details.get("Date") ));
             } else {
                 objPDP.date.clear();
             }
@@ -259,7 +259,7 @@ public class PatientActions {
             for (WebElement Sname : specialist) {
                 if (Sname.getText().contains(specialistName)) {
                     Sname.click();
-                    log.info("Specialist selected from dropdown : " + Sname.getText());
+                    log.info(String.format("Specialist selected from dropdown : %s " , Sname.getText()));
                     break;
                 }
             }
@@ -271,7 +271,7 @@ public class PatientActions {
             for (WebElement Dname : doctor) {
                 if (Dname.getText().contains(doctorName)) {
                     Dname.click();
-                    log.info("Doctor selected from dropdown : " + Dname.getText());
+                    log.info("Doctor selected from dropdown : %s" , Dname.getText());
                     break;
                 }
             }
@@ -283,7 +283,7 @@ public class PatientActions {
             for (WebElement shift : time) {
                 if (shift.getText().contains(timing)) {
                     shift.click();
-                    log.info("Timing shift selected from dropdown : " + shift.getText());
+                    log.info("Timing shift selected from dropdown :%s " , shift.getText());
                     break;
                 }
             }
@@ -297,7 +297,7 @@ public class PatientActions {
                 if (timeSlot.getText().contains(slot)) {
                     timeSlot.click();
                     objPDP.slot.click();
-                    log.info("Slot selected from dropdown : " + timeSlot.getText());
+                    log.info("Slot selected from dropdown :%s" , timeSlot.getText());
                     break;
                 }
             }
@@ -317,7 +317,7 @@ public class PatientActions {
             objPDP.AvailableSlot.click();
             log.info("Available slot clicked");
             objPDP.patientMsg.sendKeys(details.get("Message"));
-            log.info("Message field provided from Excel : " + details.get("Message"));
+            log.info("Message field provided from Excel : %s" , details.get("Message"));
 
     }
     
