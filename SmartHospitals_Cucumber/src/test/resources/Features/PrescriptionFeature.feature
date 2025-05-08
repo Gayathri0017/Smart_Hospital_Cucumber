@@ -12,10 +12,9 @@ Background:
 	  Then the system should show an error "<ErrorMessage>"
 
 Examples:
-  | Category| Medicine | Dose     | Interval        | Duration | ErrorMessage                                                    |
+  | Category| Medicine | Dose     | Interval        | Duration | ErrorMessage                                                   |
   | Select  | Select   | Select   |  Select         | Select   | Please select any one pathology, radiology or medicine details |
   | Syrup   | Al       | 1        |  Select         | Morning  | Dose Interval field is required                                |
-  #| Syrup   | Alprovit | Select   | Only one a day  | Morning  | Dosage field is required                                       |
   | Syrup   | Select   | 1 (CT)   | Only one a day  | Morning  | Medicine field is required                                     |
   
   @Positive_Prescription_Validation
@@ -40,11 +39,3 @@ Examples:
 	Scenario: Verify the Manual prescription is accessible
 	  When the doctor Clicks the Manual Prescription
 	  Then the previously added manual prescription should be visible
-	  
-#	@Verify_Delete_Patient_Option
-#	Scenario: Verify the added patient can be deleted in OPD section
-#		When the doctor Clicks the Show option in OPD section
-#		Then the doctor should see the <"Visit Details">
-#		When the doctor clicks delete option in visit details
-#		Then the patient should be deleted in OPD section
-	

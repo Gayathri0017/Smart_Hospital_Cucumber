@@ -78,8 +78,6 @@ public void assertPP() throws InterruptedException {
 	String ex="Add Prescription";
 	String act=pp.text.getText();
 	Assert.assertEquals(ex, act);
-//	pp.addMedicine.click();
-//	Thread.sleep(1000);
 }
 public void save(){
 	clickMethod(pp.save);
@@ -136,11 +134,6 @@ public void view(String patientName) {
     }
     log.error("Patient name not found: " + patientName);
 }
-//public void show() {
-//	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-//	wait.until(ExpectedConditions.visibilityOf(pp.show));
-//	clickMethod(pp.show);
-//}
 public void assertShow(String ex) {
 	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 	wait.until(ExpectedConditions.visibilityOf(pp.showText));
@@ -151,12 +144,6 @@ public void delete(){
 	clickMethod(pp.delete);
 	log.info("Clicked Delete");
 }
-//public void assertEdit(String ex) {
-//	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-//	wait.until(ExpectedConditions.visibilityOf(pp.editText));
-//	String act=pp.editText.getText();
-//	Assert.assertEquals(ex,act);
-//}
 public void editClick() {
 	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 	wait.until(ExpectedConditions.elementToBeClickable(pp.edit));
