@@ -44,23 +44,18 @@ public class PatientDischargeActions {
     public void setCaseId(String id) throws InterruptedException {		// providing the case id of the patient to discharge 
 
            wait.until(ExpectedConditions.elementToBeClickable(objPDP.searchField));
-//           objPDP.searchField.sendKeys(id );
-//           Thread.sleep(3000);
            List<WebElement> caseid = HelperClass.getDriver().findElements(By.xpath("//table[@id='DataTables_Table_0']/tbody/tr/td[2]"));
            int i = 1 ;
            for (WebElement c : caseid) {
         	   System.out.println(c.getText());
         	   if(c.getText().contains(id)) {
         		   WebElement data = HelperClass.getDriver().findElement(By.xpath("//table[@id='DataTables_Table_0']/tbody/tr[" + i + "]/td[1]"));
-//        		   for(WebElement d: data ) {
-//        			   d.click();
-//        		   }
         		   data.click();
         		   break;
         		   }
         	   i++;
            }
-           log.info("Case ID passsed : ", id);
+           log.info("Case ID passsed : %s", id);
 
     }
     
@@ -68,7 +63,7 @@ public class PatientDischargeActions {
 
            wait.until(ExpectedConditions.visibilityOf(objPDP.dischargePatientName));
            String patientId = objPDP.dischargePatientName.getText();
-           log.info("Retrieved patient ID: ", patientId);
+           log.info("Retrieved patient ID: %s", patientId);
            return patientId;
 
     }
@@ -86,12 +81,7 @@ public class PatientDischargeActions {
 
            wait.until(ExpectedConditions.visibilityOf(objPDP.dischargeDate));
            objPDP.dischargeDate.click();
-//    	wait.until(ExpectedConditions.visibilityOf(objPDP.dischargeDateText));
-//         WebElement dischargeDate = HelperClass.getDriver().findElement(RelativeLocator.with(By.tagName("input")).below(objPDP.dischargeDateText));
-//         dischargeDate.click();
-//         SearchContext shadowRoot = objPDP.dischargeDateText.getShadowRoot();
-//         WebElement dischargeDate = shadowRoot.findElement(RelativeLocator.with(By.xpath("(//div[@class='col-md-6'])[1]/div/label")).below(objPDP.dischargeDateText));
-//         dischargeDate.click();
+
            log.info("Discharge date field clicked");
 
     }
@@ -101,7 +91,7 @@ public class PatientDischargeActions {
 
            wait.until(ExpectedConditions.visibilityOf(objPDP.dischargeStatus));
            objPDP.dischargeStatus.sendKeys(status);
-           log.info("Discharge status set to: {}", status);
+           log.info("Discharge status set to:%s", status);
 
     }
     

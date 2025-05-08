@@ -56,7 +56,7 @@ public class PatientPaymentPageActions {
         
             wait.until(ExpectedConditions.visibilityOf(objPPP.paymentText));
             String paymentText = objPPP.paymentText.getText();
-            log.info("Payment text retrieved: ", paymentText);
+            log.info("Payment text retrieved:%s", paymentText);
             return paymentText;
         
     }
@@ -104,7 +104,7 @@ public class PatientPaymentPageActions {
        
             wait.until(ExpectedConditions.visibilityOf(objPPP.invalidCardNumber));
             String invalidCardNumber = objPPP.invalidCardNumber.getText();
-            log.info("Invalid card number text retrieved: ", invalidCardNumber);
+            log.info("Invalid card number text retrieved:%s", invalidCardNumber);
             return invalidCardNumber;
         
     }
@@ -114,7 +114,7 @@ public class PatientPaymentPageActions {
             wait.until(ExpectedConditions.elementToBeClickable(objPPP.country));
             Select selectCountry = new Select(objPPP.country);
             selectCountry.selectByVisibleText(country);
-            log.info("Country :", country);
+            log.info("Country :%s", country);
 
     }
 
@@ -126,10 +126,10 @@ public class PatientPaymentPageActions {
                 act.moveToElement(objPPP.cardNumber).click().perform();
                 JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
                  js.executeScript("arguments[0].value = arguments[1];", objPPP.cardNumber, cardnumber);
-                 log.info("Card number passed : ", cardnumber);
+                 log.info("Card number passed :%s ", cardnumber);
         	}
         	else {
-        		log.error("Card number is invalid : "+cardnumber);
+        		log.error("Card number is invalid :%s ",cardnumber);
         	}
 
     }
@@ -138,7 +138,7 @@ public class PatientPaymentPageActions {
 
             wait.until(ExpectedConditions.elementToBeClickable(objPPP.cardExpiryNumber));
             objPPP.cardExpiryNumber.sendKeys(expiryNumber);
-            log.info("Card expiry number passed : ", expiryNumber);
+            log.info("Card expiry number passed :%s", expiryNumber);
 
     }
 
@@ -147,7 +147,7 @@ public class PatientPaymentPageActions {
             wait.until(ExpectedConditions.elementToBeClickable(objPPP.cvvNumber));
             objPPP.cvvNumber.clear();
             objPPP.cvvNumber.sendKeys(cvv);
-            log.info("CVV passed : ", cvv);
+            log.info("CVV passed :%s ", cvv);
 
     }
 
@@ -155,7 +155,7 @@ public class PatientPaymentPageActions {
        
             wait.until(ExpectedConditions.visibilityOf(objPPP.invalidTxt));
             String invalidNumberTxt = objPPP.invalidTxt.getText();
-            log.info("Invalid number text retrieved : ", invalidNumberTxt);
+            log.info("Invalid number text retrieved :%s ", invalidNumberTxt);
             return invalidNumberTxt;
         
     }
@@ -164,7 +164,7 @@ public class PatientPaymentPageActions {
         
             wait.until(ExpectedConditions.visibilityOf(objPPP.invalidCardDate));
             String invalidCardDate = objPPP.invalidCardDate.getText();
-            log.info("Invalid card date text retrieved : ", invalidCardDate);
+            log.info("Invalid card date text retrieved :%s ", invalidCardDate);
             return invalidCardDate;
         
     }
@@ -173,7 +173,7 @@ public class PatientPaymentPageActions {
         
             wait.until(ExpectedConditions.visibilityOf(objPPP.invalidCvv));
             String invalidCvv = objPPP.invalidCvv.getText();
-            log.info("Invalid CVV text retrieved : ", invalidCvv);
+            log.info("Invalid CVV text retrieved :%s ", invalidCvv);
             return invalidCvv;
         
     }
@@ -182,7 +182,7 @@ public class PatientPaymentPageActions {
        
             wait.until(ExpectedConditions.visibilityOf(objPPP.paymentSuccess));
             String paymentSuccessText = objPPP.paymentSuccess.getText();
-            log.info("Payment success text retrieved : ", paymentSuccessText);
+            log.info("Payment success text retrieved :%s ", paymentSuccessText);
             return paymentSuccessText;
         
     }

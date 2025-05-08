@@ -38,11 +38,5 @@ public class StaffDirectoryActions {
 		}
 		
 	}
-	
-//	public void getRole() {
-//		List<WebElement> role = objSD.role;
-//		for(WebElement r:role) {
-//			System.out.println("Role : "+r.getText());
-//		}
-//	}
+
 }

@@ -26,6 +26,7 @@ public class PatientDetailsDefinitions {
 		System.out.println("Phone : "+objPDA.getPhone());
 		System.out.println("Address : "+objPDA.getAddress());
 		System.out.println("Guardian Name : "+objPDA.getGuardianName());
+		log.info("Details of the patient dispalyed");
 	}
 
 	
