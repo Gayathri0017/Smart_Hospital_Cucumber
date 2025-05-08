@@ -34,7 +34,8 @@ public class AccountantActions {
 
     public void selectRole(String role) {
         wait.until(ExpectedConditions.elementToBeClickable(accountantPage.accountantRoleButton)).click();
-        log.info("Selected role: " + role);
+        log.info("Selected role: {}", role);
+
     }
 
     public void clickSignIn() {
@@ -46,7 +47,7 @@ public class AccountantActions {
         try {
             accountantPage.dashboard.click();
             boolean displayed = wait.until(ExpectedConditions.visibilityOf(accountantPage.summaryTable)).isDisplayed();
-            log.info("Summary table displayed: " + displayed);
+            log.info("Summary table displayed: " , displayed);
             return displayed;
         } catch (Exception e) {
             log.error("Summary table not displayed", e);
@@ -68,20 +69,20 @@ public class AccountantActions {
         wait.until(ExpectedConditions.visibilityOf(accountantPage.expenseHeaderDropdown));
         Select dropdown = new Select(accountantPage.expenseHeaderDropdown);
         dropdown.selectByVisibleText(header);
-        log.info("Selected Expense Header: " + header);
+        log.info("Selected Expense Header: " , header);
     }
 
     public void enterExpenseName(String name) {
     	//JavascriptExecutor obj = (JavascriptExecutor) HelperClass.getDriver() ;
     	//obj.executeScript("aruguments[0].value=aruguments[1];", accountantPage.expenseNameField,name);
     	accountantPage.expenseNameField.sendKeys(name);
-        log.info("Entered Expense Name: " + name);
+        log.info("Entered Expense Name: " , name);
     }
 
     public void enterExpenseAmount(String amount) {
         accountantPage.expenseAmountField.clear();
         accountantPage.expenseAmountField.sendKeys(amount);
-        log.info("Entered Expense Amount: " + amount);
+        log.info("Entered Expense Amount: " , amount);
     }
 
     public void clickSaveButton() {
@@ -92,7 +93,7 @@ public class AccountantActions {
     public boolean isSuccessNotificationDisplayed() {
         try {
             boolean displayed = wait.until(ExpectedConditions.visibilityOf(accountantPage.successNotification)).isDisplayed();
-            log.info("Success notification displayed: " + displayed);
+            log.info("Success notification displayed: " , displayed);
             return displayed;
         } catch (Exception e) {
             log.error("Success notification not displayed", e);
@@ -119,7 +120,7 @@ public class AccountantActions {
     public boolean isErrorNotificationDisplayed() {
         try {
             boolean displayed = wait.until(ExpectedConditions.visibilityOf(accountantPage.errorNotification)).isDisplayed();
-            log.info("Error notification displayed: " + displayed);
+            log.info("Error notification displayed: " , displayed);
             return displayed;
         } catch (Exception e) {
             log.error("Error notification not displayed", e);
