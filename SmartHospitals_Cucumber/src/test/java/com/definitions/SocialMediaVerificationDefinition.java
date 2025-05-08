@@ -24,7 +24,6 @@ public class SocialMediaVerificationDefinition {
 
     @Then("the user should see {int} social media links available")
     public void user_should_see_social_media_links_available(int expectedCount) {
-//    	 expectedCount = 1;
         Assert.assertEquals(expectedCount, actions.getSocialMediaLinkCount());
     }
 

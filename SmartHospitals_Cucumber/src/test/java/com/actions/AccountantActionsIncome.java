@@ -33,7 +33,7 @@ public class AccountantActionsIncome {
 
     public void selectRole(String role) {
         wait.until(ExpectedConditions.elementToBeClickable(accountantPageIncome.accountantRoleButton)).click();
-        log.info("Selected role: " + role);
+        log.info("Selected role: " , role);
     }
 
     public void clickSignIn() {
@@ -46,24 +46,6 @@ public class AccountantActionsIncome {
         log.info("Navigated to Finance section");
     }
     
-//    public void listofamount()
-//    {
-//    	List<WebElement> names=HelperClass.getDriver().findElements(By.xpath("//table[@class=\"table table-hover table-striped table-bordered ajaxlist dataTable no-footer\"]//tr//td//a[@class=\"detail_popover\"]"));
-//    	for(WebElement list1:names)
-//    	{
-//    		System.out.println(list1.getText());
-//    	}
-//    }
-//    public void listofamount() {
-//        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-//
-//        List<WebElement> names = driver.findElements(By.xpath("//table[@class=\"table table-hover table-striped table-bordered ajaxlist dataTable no-footer\"]//tr//td//a[@class=\"detail_popover\"]"));
-//
-//        for (WebElement list1 : names) {
-//            wait.until(ExpectedConditions.visibilityOf(list1));
-//            System.out.println(list1.getText());
-//        }
-//    }
     public void listofamount() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
         By locator = By.xpath("//*[@id=\"DataTables_Table_0\"]/tbody/tr/td[1]/a");
@@ -72,27 +54,13 @@ public class AccountantActionsIncome {
         System.out.println("count:" + l1.size());
         for (int i = 0; i < l1.size(); i++) {
         	wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-            l1 = HelperClass.getDriver().findElements(locator); // Re-locate elements
+            l1 = HelperClass.getDriver().findElements(locator); 
             WebElement list1 = l1.get(i);
-//            wait.until(ExpectedConditions.visibilityOf(list1));
+
             System.out.println(list1.getText());
         }
     }
-//    public void listofamount() throws InterruptedException {
-//        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-//        By locator = By.xpath("//*[@id=\"DataTables_Table_0\"]/tbody/tr/td[1]/a");
-//
-//        List<WebElement> l1 = HelperClass.getDriver().findElements(locator);
-//        System.out.println("count:" + l1.size());
-//
-//        for (int i = 0; i < l1.size(); i++) {
-//            //HelperClass.getDriver().navigate().refresh();
-//            wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-//            WebElement list1 = locator.get(i);
-//            list1 = HelperClass.getDriver().findElement(locator);
-//            System.out.println(list1.getText());
-//        }
-//    }
+
     public void clickIncome() {
         wait.until(ExpectedConditions.elementToBeClickable(accountantPageIncome.incomeButton)).click();
         log.info("Clicked Income button");
@@ -107,7 +75,8 @@ public class AccountantActionsIncome {
         accountantPageIncome.incomeHeaderField.sendKeys(header);
         accountantPageIncome.incomeNameField.sendKeys(name);
         accountantPageIncome.incomeAmountField.sendKeys(amount);
-        log.info("Entered income details - Header: " + header + ", Name: " + name + ", Amount: " + amount);
+        log.info("Entered income details - Header: {}, Name: {}, Amount: {}", header, name, amount);
+
     }
 
     public void clickSave() {
@@ -115,19 +84,20 @@ public class AccountantActionsIncome {
         log.info("Clicked Save button");
     }
 
-    public void verifyIncomeAdded(String name,String amount) {
+    public void verifyIncomeAdded(String amount) {
     	int num=1;
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+    	WebDriverWait explicitWait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+
 
         
     	WebElement a=HelperClass.getDriver().findElement(By.xpath("//table[@class=\"table table-hover table-striped table-bordered ajaxlist dataTable no-footer\"]//tr["+num+"]//td[6]"));
         try {
-            WebElement tableValueElement = wait.until(ExpectedConditions.visibilityOf(a));
+            WebElement tableValueElement = explicitWait.until(ExpectedConditions.visibilityOf(a));
             String tableValueText = tableValueElement.getText();
             System.out.println(tableValueText);
             Assert.assertEquals(tableValueText, amount);
 
-            log.info("Income amount verified successfully: " + amount);
+            log.info("Income amount verified successfully: " , amount);
         } catch (Exception e) {
             log.error("Error verifying income added", e);
             throw e;
@@ -137,7 +107,7 @@ public class AccountantActionsIncome {
     public boolean isErrorNotificationDisplayed() {
         try {
             boolean displayed = wait.until(ExpectedConditions.visibilityOf(accountantPageIncome.errorNotification)).isDisplayed();
-            log.info("Error notification displayed: " + displayed);
+            log.info("Error notification displayed: " , displayed);
             return displayed;
         } catch (Exception e) {
             log.error("Error notification not displayed", e);

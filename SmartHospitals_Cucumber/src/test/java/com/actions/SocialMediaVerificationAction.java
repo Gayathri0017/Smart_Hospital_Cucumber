@@ -76,10 +76,11 @@ public class SocialMediaVerificationAction {
 
     public String getCurrentTitle() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        return wait.until(driver -> {
-            String title = driver.getTitle();
+        return wait.until(webDriver -> {
+            String title = webDriver.getTitle();
             return !title.isEmpty() ? title : null;
         });
+
     }
 
     public String getCurrentUrl() {
