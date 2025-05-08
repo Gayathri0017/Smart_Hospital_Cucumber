@@ -3,7 +3,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
-
+//full feature will be running as per the feature.
    features = {"src\\test\\resources\\Features"},
    
     glue = {"com.definitions", "com.utils"},
