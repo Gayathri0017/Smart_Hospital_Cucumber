@@ -85,8 +85,9 @@ public class DoctorActions {
     }
     public void assertPatient() throws InterruptedException {
         String name=reader.getCellData("Sheet1", 0, 0);
+        WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(dp.nameAfterAdd));
         String actual=dp.nameAfterAdd.getText();
-        Thread.sleep(3000);
         log.info("Verifying added patient name");
         Assert.assertTrue(actual.contains(name));
     }
@@ -106,7 +107,8 @@ public class DoctorActions {
             WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
             WebElement slotDd = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("slot")));
             new Select(slotDd).selectByVisibleText(slot);
-        } catch (StaleElementReferenceException e) {
+        }catch (StaleElementReferenceException e) {
+        	System.out.print(e.getMessage());
         }
         new Select(dp.status).selectByVisibleText(status);
         sendKeysMethod(dp.discount, dis);
