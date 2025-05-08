@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class AccountantPage {
-    private WebDriver driver;
 
     @FindBy(xpath = "(//*[@class=\"btn-group btn-group-justified\"])[3]/child::a[1]")
     public WebElement accountantRoleButton;
@@ -46,6 +45,8 @@ public class AccountantPage {
 
     @FindBy(xpath = "//*[@id=\"toast-container\"]/div/div")
     public WebElement errorNotification;
+
+	private WebDriver driver;
 
     public AccountantPage(WebDriver driver) {
         this.driver = driver;

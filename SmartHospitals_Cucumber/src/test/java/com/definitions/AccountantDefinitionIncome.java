@@ -77,7 +77,7 @@ public class AccountantDefinitionIncome {
     		name=row.get("name");
     	    amount=row.get("amount");
     	}
-        accountantActionsIncome.verifyIncomeAdded(name,amount);
+        accountantActionsIncome.verifyIncomeAdded(amount);
     }
     
     @Then("the user should see an error notification")

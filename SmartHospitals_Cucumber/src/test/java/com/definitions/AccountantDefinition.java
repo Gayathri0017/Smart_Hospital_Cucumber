@@ -9,7 +9,6 @@ import io.cucumber.java.en.*;
 
 public class AccountantDefinition {
     private AccountantActions accountantActions;
-    private AccountantPage accountantPage;
     private String excelFilePath = "target/dashboard_data.xlsx";
 
     @Given("User launches the Smart Hospital application")
