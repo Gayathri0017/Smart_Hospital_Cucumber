@@ -83,7 +83,7 @@ public class DoctorActions {
         clickMethod(dp.saveBtn);
         log.info("Clicked Save Patient button");
     }
-    public void assertPatient() throws InterruptedException {
+    public void assertPatient(){
         String name=reader.getCellData("Sheet1", 0, 0);
         WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(dp.nameAfterAdd));
