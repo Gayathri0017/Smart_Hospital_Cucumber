@@ -11,7 +11,7 @@ public class PrescriptionDefinition {
 	PrescriptionActions pa=new PrescriptionActions();
 	String name=null;
 	@When("the Doctor Navigates to the OPD section")
-	public void the_doctor_navigates_to_the_opd_section() throws InterruptedException {
+	public void the_doctor_navigates_to_the_opd_section(){
 	   pa.OPDSection();
 	}
 	@When("Clicks the Add Prescription")
@@ -19,11 +19,11 @@ public class PrescriptionDefinition {
 	    pa.addPres();
 	}
 	@Then("the doctor should navigate to the Prescription Page")
-	public void the_doctor_should_navigate_to_the_prescription_page() throws InterruptedException {
+	public void the_doctor_should_navigate_to_the_prescription_page(){
 	    pa.assertPP();
 	}
 	@When("the doctor Fill the valid Details:")
-	public void the_doctor_fill_the_valid_details(io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
+	public void the_doctor_fill_the_valid_details(io.cucumber.datatable.DataTable dataTable){
 		List<Map<String, String>> rows = dataTable.asMaps(String.class, String.class);
 	    Map<String, String> row = rows.get(0);
 	    pa.selectFindingCategory(row.get("Finding Category"));
@@ -41,7 +41,7 @@ public class PrescriptionDefinition {
 	    //pass
 	}
 	@When("the doctor fills the prescription form with:")
-	public void the_doctor_fills_the_prescription_form_with(io.cucumber.datatable.DataTable dataTable) throws InterruptedException { 
+	public void the_doctor_fills_the_prescription_form_with(io.cucumber.datatable.DataTable dataTable){ 
 		Map<String, String> data = dataTable.asMaps().get(0);
 		    pa.selectFindingCategory(data.get("Medicine Category"));
 		    pa.selectMedicineCategory(data.get("Medicine"));
@@ -50,15 +50,15 @@ public class PrescriptionDefinition {
 		    pa.selectDoseDuration(data.get("Dose Duration"));
 	}
 	@Then("the system should show an error {string}")
-	public void the_system_should_show_an_error(String string) throws InterruptedException {
+	public void the_system_should_show_an_error(String string){
 	   pa.assertinvalid(string);
 	}
 	@When("the doctor clicks the edit option")
-	public void the_doctor_clicks_the_edit_option() throws InterruptedException {
+	public void the_doctor_clicks_the_edit_option(){
 	    pa.edit();
 	}
 	@When("the doctor Clicks the View Prescription {string}")
-	public void the_doctor_clicks_the_view_prescription(String string) throws InterruptedException {
+	public void the_doctor_clicks_the_view_prescription(String string){
 	   name=string;
 	   pa.view(string);
 	}

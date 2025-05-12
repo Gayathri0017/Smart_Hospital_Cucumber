@@ -13,7 +13,7 @@ import io.cucumber.java.en.When;
 public class DoctorDefinition {
     DoctorActions doctor = new DoctorActions();
     @Given("Doctor is logged in to the Smart Hospital system")
-    public void doctor_is_logged_in_to_the_smart_hospital_system() throws InterruptedException {
+    public void doctor_is_logged_in_to_the_smart_hospital_system(){
         doctor.login();
         doctor.english();
     }
@@ -34,11 +34,11 @@ public class DoctorDefinition {
         doctor.addPatientDetails();
     }
     @When("Doctor clicks the save button")
-    public void doctor_clicks_the_save_button() throws InterruptedException {
+    public void doctor_clicks_the_save_button(){
         doctor.save();
     }
     @Then("Patient should be added successfully")
-    public void patient_should_be_added_successfully() throws InterruptedException {
+    public void patient_should_be_added_successfully(){
          doctor.addedPatient();
     }
     @When("Doctor fills in appointment details")
@@ -54,7 +54,7 @@ public class DoctorDefinition {
        doctor.assertSuccess();
     }
     @When("Doctor fills Expired time for appointment")
-    public void doctor_fills_expired_time_for_appointment() throws InterruptedException {
+    public void doctor_fills_expired_time_for_appointment(){
         doctor.addAppointmentDetails1();
     }
     @Then("Appointment creation should fail with {string} message")
