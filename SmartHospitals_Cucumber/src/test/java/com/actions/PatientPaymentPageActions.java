@@ -68,7 +68,7 @@ public class PatientPaymentPageActions {
             if (!objPPP.amount.getAttribute("value").equals("0")) {
                 amount = objPPP.amount.getAttribute("value");
             }
-            log.info("Payment amount retrieved: ", amount);
+            log.info("Payment amount retrieved:%s", amount);
             return amount;
         
     }
@@ -82,8 +82,6 @@ public class PatientPaymentPageActions {
     }
 
     public void ClickpayNowBtn() {
-
-            WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
             WebElement payNowButton = wait.until(ExpectedConditions.elementToBeClickable(objPPP.payNowBtn));
 
             JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();

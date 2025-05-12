@@ -41,7 +41,7 @@ public class PatientDischargeActions {
 
     }
     
-    public void setCaseId(String id) throws InterruptedException {		// providing the case id of the patient to discharge 
+    public void setCaseId(String id) {		// providing the case id of the patient to discharge 
 
            wait.until(ExpectedConditions.elementToBeClickable(objPDP.searchField));
            List<WebElement> caseid = HelperClass.getDriver().findElements(By.xpath("//table[@id='DataTables_Table_0']/tbody/tr/td[2]"));

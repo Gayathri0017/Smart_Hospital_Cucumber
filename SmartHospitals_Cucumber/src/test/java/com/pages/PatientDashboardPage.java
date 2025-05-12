@@ -1,6 +1,5 @@
 package com.pages;
 
-import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -38,7 +37,7 @@ public class PatientDashboardPage {
 	public WebElement slot ;
 	
 	@FindBy(css = "#slot_1")
-	public WebElement AvailableSlot ;
+	public WebElement availableSlot ;
 	
 	@FindBy(xpath = "//textarea[@id='message']")
 	public WebElement patientMsg ;
@@ -47,7 +46,7 @@ public class PatientDashboardPage {
 	public WebElement formSubmit ;
 	
 	@FindBy(xpath = "//div[@id='toast-container']/div/div/p[1]")
-	public WebElement FieldRequired ;
+	public WebElement fieldRequired ;
 	
 	@FindBy(xpath = "//aside[@id='alert2']/div/section/ul/li[1]//following-sibling::li[3]/a/span")
 	public WebElement ipd ;

@@ -6,7 +6,6 @@ import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -36,7 +35,7 @@ public class PatientPaymentDefinitions {
 	}
 	
 	@Then("the User provide the card details")
-	public void the_user_provide_the_card_details(io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
+	public void the_user_provide_the_card_details(io.cucumber.datatable.DataTable dataTable){
 		objPPPA.switchFrame();
 
 			
@@ -57,7 +56,7 @@ public class PatientPaymentDefinitions {
 	}
 	
 	@Then("the User clicks pay now button")
-	public void the_user_clicks_pay_now_button() throws InterruptedException {
+	public void the_user_clicks_pay_now_button() {
 		HelperClass.getDriver().switchTo().defaultContent();
 		objPPPA.ClickpayNowBtn();
 	}
