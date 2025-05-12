@@ -3,15 +3,12 @@ package com.actions;
 import com.pages.AccountantPageIncome;
 import com.utils.HelperClass;
 
-import lombok.experimental.Helper;
-
 import java.time.Duration;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -46,7 +43,7 @@ public class AccountantActionsIncome {
         log.info("Navigated to Finance section");
     }
     
-    public void listofamount() throws InterruptedException {
+    public void listofamount() {
         WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
         By locator = By.xpath("//*[@id=\"DataTables_Table_0\"]/tbody/tr/td[1]/a");
 
