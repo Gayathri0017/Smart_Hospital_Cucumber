@@ -46,7 +46,7 @@ public class AccountantActions {
         try {
             accountantPage.dashboard.click();
             boolean displayed = wait.until(ExpectedConditions.visibilityOf(accountantPage.summaryTable)).isDisplayed();
-            log.info("Summary table displayed: " , displayed);
+            log.info("Summary table displayed: %s" , displayed);
             return displayed;
         } catch (Exception e) {
             log.error("Summary table not displayed", e);
@@ -68,18 +68,18 @@ public class AccountantActions {
         wait.until(ExpectedConditions.visibilityOf(accountantPage.expenseHeaderDropdown));
         Select dropdown = new Select(accountantPage.expenseHeaderDropdown);
         dropdown.selectByVisibleText(header);
-        log.info("Selected Expense Header: " , header);
+        log.info("Selected Expense Header: %s" , header);
     }
 
     public void enterExpenseName(String name) {
     	accountantPage.expenseNameField.sendKeys(name);
-        log.info("Entered Expense Name: " , name);
+        log.info("Entered Expense Name: %s" , name);
     }
 
     public void enterExpenseAmount(String amount) {
         accountantPage.expenseAmountField.clear();
         accountantPage.expenseAmountField.sendKeys(amount);
-        log.info("Entered Expense Amount: " , amount);
+        log.info("Entered Expense Amount: %s" , amount);
     }
 
     public void clickSaveButton() {
@@ -90,7 +90,7 @@ public class AccountantActions {
     public boolean isSuccessNotificationDisplayed() {
         try {
             boolean displayed = wait.until(ExpectedConditions.visibilityOf(accountantPage.successNotification)).isDisplayed();
-            log.info("Success notification displayed: " , displayed);
+            log.info("Success notification displayed: %s" , displayed);
             return displayed;
         } catch (Exception e) {
             log.error("Success notification not displayed", e);
@@ -117,7 +117,7 @@ public class AccountantActions {
     public boolean isErrorNotificationDisplayed() {
         try {
             boolean displayed = wait.until(ExpectedConditions.visibilityOf(accountantPage.errorNotification)).isDisplayed();
-            log.info("Error notification displayed: " , displayed);
+            log.info("Error notification displayed: %s" , displayed);
             return displayed;
         } catch (Exception e) {
             log.error("Error notification not displayed", e);
@@ -132,7 +132,7 @@ public class AccountantActions {
             log.info("Captured dashboard table data");
             System.out.println(tableData);
             ExcelWriter.writeTableData(filePath, "DashboardData", convertTableDataToRows(tableData), true);
-            log.info("Stored dashboard table data to Excel at: " + filePath);
+            log.info("Stored dashboard table data to Excel at: %s" , filePath);
         } catch (Exception e) {
             log.error("Failed to capture and store table data", e);
             throw new RuntimeException("Failed to capture and store table data: " + e.getMessage(), e);
