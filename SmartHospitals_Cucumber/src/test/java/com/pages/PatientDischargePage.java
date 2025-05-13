@@ -37,5 +37,5 @@ public class PatientDischargePage {
 	public WebElement searchField ;
 	
 	@FindBy(xpath = "//tr[@class='odd']/td/div")
-	public WebElement NodataAvailable ;
+	public WebElement nodataAvailable ;
 }
