@@ -69,7 +69,7 @@ public void the_doctor_able_to_see_the_error(String error) {
 
 
 @When("the Doctor provides the case Id in search field")
-public void the_doctor_provides_the_case_id_in_search_field(io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
+public void the_doctor_provides_the_case_id_in_search_field(io.cucumber.datatable.DataTable dataTable) {
     List<Map<String , String>> caseiD = dataTable.asMaps(String.class , String.class);
     for(Map<String , String> Id : caseiD) {
     	objPDA.setCaseId(Id.get("caseID"));
