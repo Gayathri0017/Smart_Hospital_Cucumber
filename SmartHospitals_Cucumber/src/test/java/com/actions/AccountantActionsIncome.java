@@ -30,7 +30,7 @@ public class AccountantActionsIncome {
 
     public void selectRole(String role) {
         wait.until(ExpectedConditions.elementToBeClickable(accountantPageIncome.accountantRoleButton)).click();
-        log.info("Selected role: " , role);
+        log.info("Selected role: %s" , role);
     }
 
     public void clickSignIn() {
@@ -94,7 +94,7 @@ public class AccountantActionsIncome {
             System.out.println(tableValueText);
             Assert.assertEquals(tableValueText, amount);
 
-            log.info("Income amount verified successfully: " , amount);
+            log.info("Income amount verified successfully: %s" , amount);
         } catch (Exception e) {
             log.error("Error verifying income added", e);
             throw e;
@@ -104,7 +104,7 @@ public class AccountantActionsIncome {
     public boolean isErrorNotificationDisplayed() {
         try {
             boolean displayed = wait.until(ExpectedConditions.visibilityOf(accountantPageIncome.errorNotification)).isDisplayed();
-            log.info("Error notification displayed: " , displayed);
+            log.info("Error notification displayed: %s" , displayed);
             return displayed;
         } catch (Exception e) {
             log.error("Error notification not displayed", e);
