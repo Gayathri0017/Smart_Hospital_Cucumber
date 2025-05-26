@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.utils.HelperClass;
+
 public class AccountantPage {
 
     @FindBy(xpath = "(//*[@class=\"btn-group btn-group-justified\"])[3]/child::a[1]")
@@ -46,10 +48,8 @@ public class AccountantPage {
     @FindBy(xpath = "//*[@id=\"toast-container\"]/div/div")
     public WebElement errorNotification;
 
-	private WebDriver driver;
-
     public AccountantPage(WebDriver driver) {
-        this.driver = driver;
+        driver = HelperClass.getDriver();
         PageFactory.initElements(driver, this);
     }
 }

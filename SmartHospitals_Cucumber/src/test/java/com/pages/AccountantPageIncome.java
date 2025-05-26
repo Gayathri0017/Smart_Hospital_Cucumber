@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.utils.HelperClass;
+
 public class AccountantPageIncome {
     private WebDriver driver;
 
@@ -46,12 +48,8 @@ public class AccountantPageIncome {
 
     
     public AccountantPageIncome(WebDriver driver) {
-        this.driver = driver;
+        driver = HelperClass.getDriver();
         PageFactory.initElements(driver, this);
     }
 
-	public By AccountantRoleButton() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }
