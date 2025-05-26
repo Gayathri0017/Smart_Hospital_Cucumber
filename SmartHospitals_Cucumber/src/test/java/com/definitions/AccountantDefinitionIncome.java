@@ -68,13 +68,12 @@ public class AccountantDefinitionIncome {
     }
 
     @Then("the user verifies that the new income is added to the table")
-    public void verifyIncomeAdded(DataTable dataTable) throws InterruptedException {
-    	String name=null,amount=null;
+    public void verifyIncomeAdded(DataTable dataTable) {
+    	String amount=null;
     	
     	accountantActionsIncome.listofamount();
     	List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
-    	for (Map<String, String> row : data) {
-    		name=row.get("name");
+    	for (Map<String, String> row : data) { 
     	    amount=row.get("amount");
     	}
         accountantActionsIncome.verifyIncomeAdded(amount);

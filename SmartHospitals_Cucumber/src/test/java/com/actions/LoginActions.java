@@ -21,7 +21,7 @@ public class LoginActions {
         logger.info("Initialized LoginPage and WebDriverWait");
     }
     public void selectRole(String role) {
-        logger.info("Selecting role: ",role);
+        logger.info("Selecting role: %s"+role);
         wait.until(ExpectedConditions.elementToBeClickable(loginPage.signInButton));
         switch (role.toLowerCase()) {
             case "super admin":
@@ -52,8 +52,8 @@ public class LoginActions {
                 loginPage.nurse.click();
                 break;
             default:
-                logger.error("Invalid role provided: ",role);
-                throw new IllegalArgumentException("Invalid role: "+role);
+                logger.error("Invalid role provided: %s"+role);
+                throw new IllegalArgumentException("Invalid role: %s"+role);
         }
     }
     public void enterUsername() {
@@ -75,7 +75,7 @@ public class LoginActions {
     }
     public boolean isDashboardDisplayed(String role) {
         String name=null;
-        logger.info("Checking dashboard for role: ",role);
+        logger.info("Checking dashboard for role: %s"+role);
         try {
             if (role.equalsIgnoreCase("Pharmacist") || role.equalsIgnoreCase("Pathologist") || role.equalsIgnoreCase("Radiologist")) {
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class=\"dropdown-toggle\"]")));
@@ -93,14 +93,13 @@ public class LoginActions {
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class=\"dropdown-toggle\"]")));
                 WebElement profileLink=HelperClass.getDriver().findElement(By.xpath("//*[@class=\"dropdown-toggle\"]"));
                 profileLink.click();
-//new wait added 
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class=\"sstopuser-test\"]/child::h5")));
                 WebElement roleNameElement=HelperClass.getDriver().findElement(By.xpath("//*[@class=\"sstopuser-test\"]/child::h5"));
                 name=roleNameElement.getText();
             }
             return name.contains(role);
         } catch (Exception e) {
-            logger.error("Error while verifying dashboard role: ",e.getMessage(), e);
+            logger.error("Error while verifying dashboard role: %s"+e.getMessage(), e);
             e.printStackTrace();
             return false;
         }
@@ -109,7 +108,7 @@ public class LoginActions {
         try {
             return loginPage.errorMessage.isDisplayed();
         } catch (Exception e) {
-            logger.warn("Login error message not found: ",e.getMessage());
+            logger.warn("Login error message not found: %s"+e.getMessage());
             return false;
         }
     }

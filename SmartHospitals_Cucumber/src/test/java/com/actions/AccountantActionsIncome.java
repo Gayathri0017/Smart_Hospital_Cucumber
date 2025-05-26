@@ -44,7 +44,7 @@ public class AccountantActionsIncome {
     }
     
     public void listofamount() {
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
+        wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
         By locator = By.xpath("//*[@id=\"DataTables_Table_0\"]/tbody/tr/td[1]/a");
 
         List<WebElement> l1 = HelperClass.getDriver().findElements(locator);
