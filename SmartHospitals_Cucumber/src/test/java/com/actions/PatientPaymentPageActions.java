@@ -65,8 +65,8 @@ public class PatientPaymentPageActions {
         
             wait.until(ExpectedConditions.visibilityOf(objPPP.amount));
             String amount = null;
-            if (!objPPP.amount.getAttribute("value").equals("0")) {
-                amount = objPPP.amount.getAttribute("value");
+            if (!objPPP.amount.getDomAttribute("value").equals("0")) {
+                amount = objPPP.amount.getDomAttribute("value");
             }
             log.info("Payment amount retrieved:%s", amount);
             return amount;

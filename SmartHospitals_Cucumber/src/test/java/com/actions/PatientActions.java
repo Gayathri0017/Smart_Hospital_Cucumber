@@ -247,7 +247,7 @@ public class PatientActions {
             if (details.get("Date") != null && !details.get("Date").isEmpty()) {
                 objPDP.date.click();
                 objPDP.date.sendKeys(details.get("Date"));
-                log.info(String.format("Date field provided from Excel \n Date:%s", details.get("Date") ));
+                log.info(String.format("Date field provided from Excel%nDate: %s", details.get("Date")));
             } else {
                 objPDP.date.clear();
             }
