@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SocialMediaVerificationPage {
-    private WebDriver driver;
+import com.utils.HelperClass;
 
+public class SocialMediaVerificationPage {
     @FindBy(xpath = "(//ul[@class=\"social\"])[1]//child::li[1]")
     public WebElement facebookLink;
 
@@ -38,7 +38,7 @@ public class SocialMediaVerificationPage {
     public List<WebElement> socialMediaLinks;
 
     public SocialMediaVerificationPage(WebDriver driver) {
-        this.driver = driver;
+        driver = HelperClass.getDriver();
         PageFactory.initElements(driver, this);
     }
 }

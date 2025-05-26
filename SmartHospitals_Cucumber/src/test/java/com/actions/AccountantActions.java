@@ -1,3 +1,4 @@
+
 package com.actions;
 
 import com.pages.AccountantPage;
@@ -33,7 +34,7 @@ public class AccountantActions {
 
     public void selectRole(String role) {
         wait.until(ExpectedConditions.elementToBeClickable(accountantPage.accountantRoleButton)).click();
-        log.info("Selected role: {}", role);
+        log.info("Selected role: %s"+ role);
 
     }
 
@@ -46,10 +47,10 @@ public class AccountantActions {
         try {
             accountantPage.dashboard.click();
             boolean displayed = wait.until(ExpectedConditions.visibilityOf(accountantPage.summaryTable)).isDisplayed();
-            log.info("Summary table displayed: %s" , displayed);
+            log.info("Summary table displayed: %s" + displayed);
             return displayed;
         } catch (Exception e) {
-            log.error("Summary table not displayed", e);
+            log.error("Summary table not displayed %s"+ e);
             return false;
         }
     }
@@ -110,7 +111,7 @@ public class AccountantActions {
             }
         }
 
-        log.info("Converted table data to rows with " + rows.size() + " entries");
+        log.info("Converted table data to rows with {} entries", rows.size());
         return rows;
     }
 
