@@ -20,7 +20,7 @@ public class MessageDefinition {
 	public void the_doctor_fills_the_required_fields(io.cucumber.datatable.DataTable dataTable) {
 	    List<Map<String, String>> rows = dataTable.asMaps(String.class, String.class);
 	    for (Map<String, String> row : rows) {
-	        String title = sanitize(row.get("Title"));
+	        String title=sanitize(row.get("Title"));
 	        String message = sanitize(row.get("Message"));
 	        String date = sanitize(row.get("Notice Date"));
 	        String publishOn = sanitize(row.get("Publish On"));

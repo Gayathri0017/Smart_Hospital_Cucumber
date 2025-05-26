@@ -25,7 +25,6 @@ public void verifyLinks(){
                 System.out.println("Broken Link: "+href + " -Code: " + code + "-"+message);
                 bl++;
             } else {
-                System.out.println("Valid Link: "+href + " - Code: " + code);
                 vl++;
             }
         } catch (Exception e) {
