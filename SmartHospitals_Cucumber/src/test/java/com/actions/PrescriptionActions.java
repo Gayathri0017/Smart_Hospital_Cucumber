@@ -28,13 +28,13 @@ WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSecon
 public void selectFindingCategory(String s) {
     wait.until(ExpectedConditions.elementToBeClickable(pp.medicineCat)).click();
     wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
-    pp.search.sendKeys(Keys.ENTER);
+    pp.search.sendKeys("\n");
     log.info("Finding category selected={}", s);
 }
 public void selectMedicineCategory(String s) {
     wait.until(ExpectedConditions.elementToBeClickable(pp.medicineName)).click();
     wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
-    pp.search.sendKeys(Keys.ENTER);
+    pp.search.sendKeys("\n");
     log.info("Medicine category selected={}",s);
 }
 public void selectMedicine(String s) {
@@ -44,7 +44,7 @@ public void selectMedicine(String s) {
         WebElement searchBox = wait.until(ExpectedConditions.visibilityOf(pp.search));
         searchBox.clear();
         searchBox.sendKeys(s);
-        searchBox.sendKeys(Keys.ENTER);
+        searchBox.sendKeys("\n");
         log.info("Medicine selected={}",s);
     } catch (Exception e) {
         System.out.println(e.getMessage());
@@ -54,13 +54,13 @@ public void selectMedicine(String s) {
 public void selectDoseInterval(String s) {
     wait.until(ExpectedConditions.elementToBeClickable(pp.doseInterval)).click();
     wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
-    pp.search.sendKeys(Keys.ENTER);
+    pp.search.sendKeys("\n");
     log.info("Dose interval selected={}",s);
 }
 public void selectDoseDuration(String s) {
     wait.until(ExpectedConditions.elementToBeClickable(pp.doseDuration)).click();
     wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
-    pp.search.sendKeys(Keys.ENTER);
+    pp.search.sendKeys("\n");
     log.info("Dose duration selected={}",s);
 }
 public void OPDSection() {

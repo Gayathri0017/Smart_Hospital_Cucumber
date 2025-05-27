@@ -102,7 +102,8 @@ public class DoctorActions {
         dp.date.click();
         dp.date.sendKeys(Keys.CONTROL + "a" + Keys.BACK_SPACE);
         sendKeysMethod(dp.date, "07/05/2025 09:48 PM");
-        dp.date.sendKeys(Keys.ENTER);
+//        dp.date.sendKeys(Keys.ENTER);
+        dp.date.sendKeys("\n");
         try {
             WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
             WebElement slotDd = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("slot")));
@@ -116,7 +117,7 @@ public class DoctorActions {
         WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
         WebElement pri= wait.until(ExpectedConditions.visibilityOf(dp.ip));
         sendKeysMethod(pri,"Normal");
-        pri.sendKeys(Keys.ENTER);
+        pri.sendKeys("\n");
         log.info("Appointment details filled with discount");
     }
     public void addAppointmentDetails1() {
@@ -128,7 +129,7 @@ public class DoctorActions {
         dp.date.click();
         dp.date.sendKeys(Keys.CONTROL + "a" + Keys.BACK_SPACE);
         sendKeysMethod(dp.date, "04/06/2024 12:00 AM");
-        dp.date.sendKeys(Keys.ENTER);
+        dp.date.sendKeys("\n");
         try {
             WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
             WebElement fresh=wait.until(ExpectedConditions.refreshed(
