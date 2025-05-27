@@ -15,7 +15,7 @@ public class PrescriptionDefinition {
 	   pa.OPDSection();
 	}
 	@When("Clicks the Add Prescription")
-	public void clicks_the_add_prescription() throws InterruptedException {
+	public void clicks_the_add_prescription(){
 	    pa.addPres();
 	}
 	@Then("the doctor should navigate to the Prescription Page")
