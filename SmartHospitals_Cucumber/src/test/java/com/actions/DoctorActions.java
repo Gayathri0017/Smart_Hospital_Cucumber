@@ -4,6 +4,7 @@ import java.time.Duration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
@@ -44,8 +45,8 @@ public class DoctorActions {
         clickMethod(dp.appointment);
         log.info("Navigated to Appointment section");
     }
-    public void addAppointment() {
-        clickMethod(dp.addAppointment);
+    public void addAppointment(){
+    	ClickFun(dp.addAppointment);
         log.info("Clicked on Add Appointment");
     }
     //Add Patient Details
@@ -99,44 +100,48 @@ public class DoctorActions {
         String dis=reader.getCellData("Sheet1", 0, 12);
         new Select(dp.doc).selectByIndex(1);
         new Select(dp.shift).selectByVisibleText(shift);
-        dp.date.click();
+        ClickFun(dp.date);
         dp.date.sendKeys(Keys.CONTROL + "a" + Keys.BACK_SPACE);
         sendKeysMethod(dp.date, "07/05/2025 09:48 PM");
-//        dp.date.sendKeys(Keys.ENTER);
         dp.date.sendKeys("\n");
         try {
             WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
             WebElement slotDd = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("slot")));
             new Select(slotDd).selectByVisibleText(slot);
-        }catch (StaleElementReferenceException e) {
-        	System.out.print(e.getMessage());
+        } catch (StaleElementReferenceException e) {
+            System.out.print(e.getMessage());
         }
         new Select(dp.status).selectByVisibleText(status);
         sendKeysMethod(dp.discount, dis);
-        clickMethod(dp.priority);
-        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-        WebElement pri= wait.until(ExpectedConditions.visibilityOf(dp.ip));
-        sendKeysMethod(pri,"Normal");
+        WebDriver driver = HelperClass.getDriver();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(dp.priority));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", dp.priority);
+        WebElement pri = wait.until(ExpectedConditions.visibilityOf(dp.ip));
+        sendKeysMethod(pri, "Normal");
         pri.sendKeys("\n");
         log.info("Appointment details filled with discount");
     }
     public void addAppointmentDetails1() {
-        log.info("Filling appointment details from Excel");
-        String shift=reader.getCellData("Sheet1", 1, 8);
-        String slot=reader.getCellData("Sheet1", 1, 10);
+        log.info("Filling appointment details from Excel (Expired Date)");
+        String shift = reader.getCellData("Sheet1", 1, 8);
+        String slot = reader.getCellData("Sheet1", 1, 10);
         new Select(dp.doc).selectByIndex(1);
         new Select(dp.shift).selectByVisibleText(shift);
-        dp.date.click();
-        dp.date.sendKeys(Keys.CONTROL + "a" + Keys.BACK_SPACE);
-        sendKeysMethod(dp.date, "04/06/2024 12:00 AM");
-        dp.date.sendKeys("\n");
+        String expiredDate="04/06/2024 12:00 AM";
+        WebDriver driver=HelperClass.getDriver();
+        JavascriptExecutor js=(JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", dp.date);
+        js.executeScript("arguments[0].value=arguments[1];", dp.date, expiredDate);
+        dp.date.sendKeys(Keys.TAB);
+        log.info("Expired date set to: " + expiredDate);
         try {
-            WebDriverWait wait=new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-            WebElement fresh=wait.until(ExpectedConditions.refreshed(
-            ExpectedConditions.presenceOfElementLocated(By.id("slot"))));
+            WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebElement fresh = wait.until(ExpectedConditions.refreshed(
+                ExpectedConditions.presenceOfElementLocated(By.id("slot"))));
             new Select(fresh).selectByVisibleText(slot);
         } catch (StaleElementReferenceException e) {
-        	System.out.println(e.getMessage());
+            System.out.println("StaleElementReferenceException: " + e.getMessage());
         }
     }
     public void addedPatient() {
@@ -170,8 +175,13 @@ public class DoctorActions {
         log.info("Clicked Save Appointment button");
     }
     public void clickMethod(WebElement ele) {
-        ele.click();
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(ele)).click();
     }
+    public void ClickFun(WebElement element) {
+		JavascriptExecutor js =  (JavascriptExecutor)HelperClass.getDriver();
+		js.executeScript("arguments[0].click()", element);
+	}
     public void sendKeysMethod(WebElement ele, String str) {
         ele.sendKeys(str);
     }
