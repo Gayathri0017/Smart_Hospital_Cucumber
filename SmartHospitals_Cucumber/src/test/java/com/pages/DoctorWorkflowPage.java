@@ -8,7 +8,8 @@ public class DoctorWorkflowPage {
 	public WebElement signin;
 	@FindBy(xpath="(//li[@class=\"treeview \"]//child::span)[2]")
 	public WebElement appointment;
-	@FindBy(xpath="(//a[@class=\"btn btn-primary btn-sm\"]/preceding-sibling::a)[1]")
+	//a[@class='btn btn-primary btn-sm addappointment']
+	@FindBy(xpath="//a[@class='btn btn-primary btn-sm addappointment']")
 	public WebElement addAppointment;
 	@FindBy(xpath="//div/child::a[@id=\"add\"]")
 	public WebElement addpatient;
@@ -39,7 +40,8 @@ public class DoctorWorkflowPage {
 	public WebElement status;
 	@FindBy(id="discount_percentage")
 	public WebElement discount;
-	@FindBy(xpath="(//div[@class=\"col-md-3\"]/preceding-sibling::div[@class=\"col-sm-3\"])[4]/div/input")
+	//(//div[@class=\"col-md-3\"]/preceding-sibling::div[@class=\"col-sm-3\"])[4]/div/input
+	@FindBy(xpath="//input[@name='date']")
 	public WebElement date;
 	@FindBy(id="(//div[@class=\"col-md-3\"]/child::div)[1]/select")
 	public WebElement slot;
