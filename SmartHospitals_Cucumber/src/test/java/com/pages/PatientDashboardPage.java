@@ -24,7 +24,7 @@ public class PatientDashboardPage {
 	@FindBy(xpath = "(//div[@class='form-group'])[1]/input")
 	public WebElement date ;
 	
-	@FindBy(id = "specialist")
+	@FindBy(xpath = "(//div[@class='form-group'])[2]/div/select")
 	public WebElement specialist ;
 	
 	@FindBy(id = "doctor")
@@ -36,7 +36,7 @@ public class PatientDashboardPage {
 	@FindBy(id = "shift_id")
 	public WebElement slot ;
 	
-	@FindBy(css = "#slot_1")
+	@FindBy(xpath = "//div[@id='slot']/span[2]")
 	public WebElement availableSlot ;
 	
 	@FindBy(xpath = "(//div[@class='form-group'])[7]/textarea")

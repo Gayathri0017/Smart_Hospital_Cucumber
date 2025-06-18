@@ -164,8 +164,10 @@ public class PatientActions {
 
 
     public void setDoctor(String doctor) {		//choosing the concern doctor for the appointment
-
+    	
+    		wait.until(ExpectedConditions.visibilityOf(objPDP.doctor));
             wait.until(ExpectedConditions.elementToBeClickable(objPDP.doctor));
+            ((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();", objPDP.doctor);
             Select selectDoctor = new Select(objPDP.doctor);
             selectDoctor.selectByVisibleText(doctor);
             log.info("Doctor field provided");

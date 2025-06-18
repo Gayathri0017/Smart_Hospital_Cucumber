@@ -3,6 +3,7 @@ package com.actions;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -22,7 +23,9 @@ public class StaffDirectoryActions {
 	
 	public void ClickHR() {
 		wait.until(ExpectedConditions.visibilityOf(objSD.hr));
-		objSD.hr.click();
+		((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].scrollIntoView(true);", objSD.hr);
+		((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();", objSD.hr);
+//		objSD.hr.click();
 	}
 	
 	public void ClickListView() {
