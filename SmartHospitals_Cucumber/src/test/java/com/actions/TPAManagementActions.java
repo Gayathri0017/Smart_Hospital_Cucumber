@@ -19,7 +19,7 @@ public class TPAManagementActions {
     private WebDriverWait wait;
     private TPAManagementPage tpaManagementPage;
     private static final Logger log = LogManager.getLogger(TPAManagementActions.class);
-
+  //constructor
     public TPAManagementActions() {
         this.driver = HelperClass.getDriver();
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -69,6 +69,7 @@ public class TPAManagementActions {
             return false;
         }
     }
+//Printing the TPAManagerName
     public void printTPAManagerNames() {
         try {
             List<WebElement> managerNames = wait.until(ExpectedConditions.visibilityOfAllElements(tpaManagementPage.tpaManagerNamesLocator));

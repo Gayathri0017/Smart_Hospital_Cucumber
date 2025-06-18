@@ -1,4 +1,4 @@
-Feature: TPA Management
+Feature: Gowri_26MAY2025_TPA_Management
 
   Background: 
     Given Users launches the Smart Hospital application
