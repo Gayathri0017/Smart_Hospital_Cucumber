@@ -9,6 +9,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
     plugin = {"pretty","json:target/cucumber-reports/reports.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
     monochrome = true,
     dryRun = false
+    //tags= "@invalid"
 )
 public class RunnerClass extends AbstractTestNGCucumberTests {
 	    @Override
