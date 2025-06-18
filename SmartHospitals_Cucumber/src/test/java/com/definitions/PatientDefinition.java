@@ -120,6 +120,9 @@ public void the_user_can_fill_the_appointment(io.cucumber.datatable.DataTable da
         String time = details.get("Timing");
         objPatientActions.setTime(time);
         
+        if (date == null) {
+        	objPatientActions.alert();
+        }
 
         	try {
         		

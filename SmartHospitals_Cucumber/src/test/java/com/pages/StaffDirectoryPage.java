@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class StaffDirectoryPage {
-	@FindBy(xpath = "//section[@id='sibe-box']/ul[2]/li[13]")
+	@FindBy(xpath = "//section[@id='sibe-box']/ul[2]/li[11]/a")
 	public WebElement hr ;
 	
 	@FindBy(xpath = "//section[@class='content']/div/div/div/div[3]/div[2]/ul/li[1]/following-sibling::li/a")
