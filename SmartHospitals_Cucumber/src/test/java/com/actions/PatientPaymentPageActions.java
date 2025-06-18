@@ -39,7 +39,8 @@ public class PatientPaymentPageActions {
     public void ClickPayment() {
 
             wait.until(ExpectedConditions.visibilityOf(objPPP.payment));
-            objPPP.payment.click();
+            ((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();", objPPP.payment);
+//            objPPP.payment.click();
             log.info("Payment button clicked");
 
     }

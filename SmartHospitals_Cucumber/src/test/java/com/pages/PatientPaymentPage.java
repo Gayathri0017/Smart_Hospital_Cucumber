@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class PatientPaymentPage {
 	
-	@FindBy(xpath = "//div[@id='tabs']/div[1]/div[1]//following-sibling::div[1]/div/ul/li[10]//preceding-sibling::li[1]/a")
+	@FindBy(xpath = "(//ul[@class='nav nav-tabs navheader navlistscroll']//li//following-sibling::li[8]/a)[1]")
 	public WebElement payment ;
 	
 	@FindBy(xpath = "//div[@id='payment']/div[1]/div/button")
