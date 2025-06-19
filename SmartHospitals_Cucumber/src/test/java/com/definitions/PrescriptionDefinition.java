@@ -23,7 +23,7 @@ public class PrescriptionDefinition {
 	    pa.assertPP();
 	}
 	@When("the doctor Fill the valid Details:")
-	public void the_doctor_fill_the_valid_details(io.cucumber.datatable.DataTable dataTable){
+	public void the_doctor_fill_the_valid_details(io.cucumber.datatable.DataTable dataTable) throws InterruptedException{
 		List<Map<String, String>> rows = dataTable.asMaps(String.class, String.class);
 	    Map<String, String> row = rows.get(0);
 	    pa.selectFindingCategory(row.get("Finding Category"));
@@ -41,7 +41,7 @@ public class PrescriptionDefinition {
 	    //pass
 	}
 	@When("the doctor fills the prescription form with:")
-	public void the_doctor_fills_the_prescription_form_with(io.cucumber.datatable.DataTable dataTable){ 
+	public void the_doctor_fills_the_prescription_form_with(io.cucumber.datatable.DataTable dataTable) throws InterruptedException{ 
 		Map<String, String> data = dataTable.asMaps().get(0);
 		    pa.selectFindingCategory(data.get("Medicine Category"));
 		    pa.selectMedicineCategory(data.get("Medicine"));
