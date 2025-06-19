@@ -1,6 +1,12 @@
 package com.definitions;
+import java.time.Duration;
 import java.util.List;
 import java.util.Map;
+
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.actions.MessageActions;
 import com.utils.HelperClass;
 import io.cucumber.java.en.Then;
@@ -48,10 +54,21 @@ public class MessageDefinition {
 	public void the_doctor_clicks_the_delete_icon_of_the_message() {
 	   ma.delete();
 	}
+//	@When("the doctor accepts the alert to confirm delete")
+//	public void the_doctor_accepts_the_alert_to_confirm_delete() {
+//	   HelperClass.getDriver().switchTo().alert().accept();
+//	}
 	@When("the doctor accepts the alert to confirm delete")
 	public void the_doctor_accepts_the_alert_to_confirm_delete() {
-	   HelperClass.getDriver().switchTo().alert().accept();
+	    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(5));
+	    try {
+	        wait.until(ExpectedConditions.alertIsPresent());
+	        HelperClass.getDriver().switchTo().alert().accept();
+	    } catch (TimeoutException e) {
+	        System.out.println("❌ Alert was not present in time. Possible reasons: delete click failed or alert didn't trigger.");
+	    }
 	}
+
 	@Then("the message should be successfully deleted from notice board")
 	public void the_message_should_be_successfully_deleted_from_notice_board() {
 	   //pass
