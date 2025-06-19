@@ -23,6 +23,12 @@ public class MessageActions {
 	    clickMethod(mp.postNew);
 	    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 	    wait.until(ExpectedConditions.visibilityOf(mp.title));
+	    try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	public void msgFilling(String tit,String date,String postOn,String msg){
 		try {
