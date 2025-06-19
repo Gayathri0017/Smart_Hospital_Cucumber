@@ -2,6 +2,7 @@ package com.actions;
 import java.time.Duration;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,7 +24,13 @@ public class MessageActions {
 	    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
 	    wait.until(ExpectedConditions.visibilityOf(mp.title));
 	}
-	public void msgFilling(String tit,String date,String postOn,String msg) {
+	public void msgFilling(String tit,String date,String postOn,String msg){
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		sendKeysMethod(mp.title,tit);
 		sendKeysMethod(mp.date,date);
 		sendKeysMethod(mp.publishDate,postOn);
@@ -47,7 +54,13 @@ public class MessageActions {
 		Assert.assertEquals(exp,act);
 	}
 	public void delete() {
-		clickMethod(mp.del);
+	    clickMethod(mp.del);
+	    try {
+	        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(5));
+	        wait.until(ExpectedConditions.alertIsPresent());
+	    } catch (TimeoutException e) {
+	        System.out.println("Alert did not appear after delete click.");
+	    }
 	}
 	public void clickMethod(WebElement ele) {
 		JavascriptExecutor js=(JavascriptExecutor) HelperClass.getDriver();
