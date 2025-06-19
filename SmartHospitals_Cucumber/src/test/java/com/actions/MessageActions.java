@@ -19,7 +19,9 @@ public class MessageActions {
 		clickMethod(mp.msg);
 	}
 	public void post() {
-		clickMethod(mp.postNew);
+	    clickMethod(mp.postNew);
+	    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.visibilityOf(mp.title));
 	}
 	public void msgFilling(String tit,String date,String postOn,String msg) {
 		sendKeysMethod(mp.title,tit);
@@ -59,7 +61,11 @@ public class MessageActions {
 	        System.out.println("Click failed: " + e.getMessage());
 	    }
 	}
-    public void sendKeysMethod(WebElement ele, String str) {
-        ele.sendKeys(str);
-    }
+	public void sendKeysMethod(WebElement ele, String str) {
+	    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.visibilityOf(ele));
+	    wait.until(ExpectedConditions.elementToBeClickable(ele));
+	    ele.clear();
+	    ele.sendKeys(str);
+	}
 }
