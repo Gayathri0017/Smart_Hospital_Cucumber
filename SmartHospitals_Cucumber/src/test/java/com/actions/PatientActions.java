@@ -208,11 +208,16 @@ public class PatientActions {
     }
     
     public void alert() {
-    	if(wait.until(ExpectedConditions.alertIsPresent()) != null) {
-        	
-        	HelperClass.getDriver().switchTo().alert().accept();
+        try {
+            if (wait.until(ExpectedConditions.alertIsPresent()) != null) {
+                HelperClass.getDriver().switchTo().alert().accept();
+                System.out.println("Alert was present and accepted.");
+            }
+        } catch (Exception e) {
+            System.out.println("No alert present.");
         }
     }
+
     public void setMessage(String message) {		// providing the message as details of the patient condition
 
     	wait.until(ExpectedConditions.elementToBeClickable(objPDP.patientMsg));

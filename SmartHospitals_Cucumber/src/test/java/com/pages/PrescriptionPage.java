@@ -8,19 +8,25 @@ public class PrescriptionPage {
 	public WebElement addPrescription;
 	@FindBy(xpath="(//input[@class=\"select2-search__field\"])[1]")
 	public WebElement catogory;
-	@FindBy(xpath="//a[@class=\"btn btn-info add-record addplus-xs\"]")
+	@FindBy(xpath="//a[@class='btn btn-info add-record addplus-xs']")
 	public WebElement addMedicine;
-	@FindBy(xpath="(//span[@class=\"select2-selection__arrow\"])[5]")
+//	(//span[@class="select2-selection__arrow"])[5]]
+//	@FindBy(xpath="(//span[@class=\"select2-selection__arrow\"])[5]")
+	@FindBy(xpath="(//span[@class='select2-selection__rendered'])[5]")
 	public WebElement medicineCat;
-	@FindBy(xpath="(//span[@class=\"select2-selection__arrow\"])[6]")
+//	@FindBy(xpath="(//span[@class=\"select2-selection__arrow\"])[6]")
+	@FindBy(xpath="(//span[@class='select2-selection__rendered'])[6]")
 	public WebElement medicineName;
-	@FindBy(xpath="(//span[@class=\"select2-selection__arrow\"])[7]")
+//	@FindBy(xpath="(//span[@class=\"select2-selection__arrow\"])[7]")
+	@FindBy(xpath="(//span[@class='select2-selection__rendered'])[7]")
 	public WebElement dose;
-	@FindBy(xpath="(//span[@class=\"select2-selection__arrow\"])[8]")
+//	@FindBy(xpath="(//span[@class=\"select2-selection__arrow\"])[8]")
+	@FindBy(xpath="(//span[@class='select2-selection__rendered'])[8]")
 	public WebElement doseInterval;
-	@FindBy(xpath="(//span[@class=\"select2-selection__arrow\"])[9]")
+//	@FindBy(xpath="(//span[@class=\"select2-selection__arrow\"])[9]")
+	@FindBy(xpath="(//span[@class='select2-selection__rendered'])[9]")
 	public WebElement doseDuration;
-	@FindBy(xpath="(//button[@class=\"btn btn-info\"])[2]")
+	@FindBy(xpath="(//button[@class='btn btn-info'])[2]")
 	public WebElement save;
 	@FindBy(xpath="//input[@class=\"filestyle2 form-control\"]")
 	public WebElement file;
