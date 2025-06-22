@@ -14,8 +14,8 @@ public class PrescriptionPage {
 //	@FindBy(xpath="(//span[@class=\"select2-selection__arrow\"])[5]")
 	@FindBy(xpath="(//span[@class='select2-selection__rendered'])[5]")
 	public WebElement medicineCat;
-//	@FindBy(xpath="(//span[@class=\"select2-selection__arrow\"])[6]")
-	@FindBy(xpath="(//span[@class='select2-selection__rendered'])[6]")
+	@FindBy(xpath="(//span[@class='select2-selection__arrow'])[6]")
+//	@FindBy(xpath="(//span[@class='select2-selection__rendered'])[6]")
 	public WebElement medicineName;
 //	@FindBy(xpath="(//span[@class=\"select2-selection__arrow\"])[7]")
 	@FindBy(xpath="(//span[@class='select2-selection__rendered'])[7]")
