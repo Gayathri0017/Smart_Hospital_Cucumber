@@ -23,7 +23,7 @@ public PrescriptionActions() {
 	this.pp=new PrescriptionPage();
 	PageFactory.initElements(HelperClass.getDriver(),pp);
 }
-WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(15));
 //Select catogory 
 public void selectFindingCategory(String s) throws InterruptedException {
 	// Not best practice, but helpful for debugging
