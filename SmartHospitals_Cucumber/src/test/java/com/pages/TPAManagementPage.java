@@ -15,13 +15,13 @@ public class TPAManagementPage {
     public WebElement signInButton;
     @FindBy(xpath = "//h2[contains(text(),'Accountant Dashboard')]")
     public WebElement dashboardTitle;
-    @FindBy(xpath = "(//*[@href=\"#\"])[2]")
+    @FindBy(xpath = "//*[@class=\"treeview active\"]//a")
     public WebElement dashboard;
-    @FindBy(xpath = "//*[@class=\"content\"]/child :: div[2]")
+    @FindBy(xpath = "//*[@class=\"content\"]")
     public WebElement summaryTable;
-    @FindBy(xpath = "(//*[@class=\"treeview \"])[12]//a")
+    @FindBy(xpath = "(//*[@class=\\\"treeview \\\"])[12]//a")
     public WebElement tpaManagementMenu;
-    @FindBy(xpath = "((//*[@class=\"box-body\"])[1]//child::div[2])[1]")
+    @FindBy(xpath = "//*[@class=\"box-body\"]")
     public WebElement tpaManagerName;
     @FindBy(xpath = "//*[@role=\"row\"]//td[1]")
     public List<WebElement> tpaManagerNamesLocator;
