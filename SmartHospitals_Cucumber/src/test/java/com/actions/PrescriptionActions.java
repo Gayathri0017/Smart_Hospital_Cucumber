@@ -89,11 +89,34 @@ public void selectMedicine(String s) {
     }
 }
 
+//public void selectDoseInterval(String s) {
+//    wait.until(ExpectedConditions.elementToBeClickable(pp.doseInterval)).click();
+//    wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
+//    pp.search.sendKeys("\n");
+//    log.info("Dose interval selected={}",s);
+//}
+
 public void selectDoseInterval(String s) {
-    wait.until(ExpectedConditions.elementToBeClickable(pp.doseInterval)).click();
-    wait.until(ExpectedConditions.visibilityOf(pp.search)).sendKeys(s);
-    pp.search.sendKeys("\n");
-    log.info("Dose interval selected={}",s);
+    WebDriver driver = HelperClass.getDriver();
+    WebElement element = wait.until(ExpectedConditions.visibilityOf(pp.doseInterval));
+    try {
+        js.executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
+        Thread.sleep(500);
+        wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+    } catch (ElementClickInterceptedException e) {
+        log.warn("Click intercepted on Dose Interval dropdown, using JavaScript click.");
+        js.executeScript("arguments[0].click();", element);
+    } catch (Exception e) {
+        log.error("Exception while clicking Dose Interval dropdown: {}", e.getMessage());
+    }
+    try {
+        WebElement searchBox = wait.until(ExpectedConditions.visibilityOf(pp.search));
+        searchBox.sendKeys(s);
+        searchBox.sendKeys("\n");
+        log.info("Dose interval selected={}", s);
+    } catch (Exception e) {
+        log.error("Failed to send dose interval value '{}': {}", s, e.getMessage());
+    }
 }
 public void selectDoseDuration(String s) {
     wait.until(ExpectedConditions.elementToBeClickable(pp.doseDuration)).click();
