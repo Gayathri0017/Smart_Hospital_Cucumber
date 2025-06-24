@@ -12,6 +12,7 @@ features = {"src\\test\\resources\\Features\\PatientAppointment.feature",
 		   "src\\test\\resources\\Features\\PatientLogin.feature",
 		   "src\\test\\resources\\Features\\StaffDirectory.feature"
 		   },
+
     glue = {"com.definitions", "com.utils"},
     plugin = {"pretty","json:target/cucumber-reports/reports.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
     monochrome = true,
