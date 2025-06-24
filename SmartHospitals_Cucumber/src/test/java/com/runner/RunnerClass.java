@@ -3,14 +3,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
-features = {"src\\test\\resources\\Features\\PatientAppointment.feature",
-		   "src\\test\\resources\\Features\\PatientCharge.feature",
-		   "src\\test\\resources\\Features\\PatientContent.feature",
-		   "src\\test\\resources\\Features\\PatientDetails.feature",
-		   "src\\test\\resources\\Features\\PatientDetails.feature",
-		   "src\\test\\resources\\Features\\PatientLogin.feature",
-		   "src\\test\\resources\\Features\\PatientLogin.feature",
-		   "src\\test\\resources\\Features\\StaffDirectory.feature"
+features = {"src\\test\\resources\\Features"
 		   },
 
     glue = {"com.definitions", "com.utils"},
