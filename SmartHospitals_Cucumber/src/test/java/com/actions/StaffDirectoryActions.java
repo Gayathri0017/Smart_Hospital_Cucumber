@@ -23,6 +23,7 @@ public class StaffDirectoryActions {
 	
 	public void ClickHR() {
 		wait.until(ExpectedConditions.visibilityOf(objSD.hr));
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(objSD.hr));
 		((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].scrollIntoView(true);", objSD.hr);
 		((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();", objSD.hr);
 //		objSD.hr.click();
