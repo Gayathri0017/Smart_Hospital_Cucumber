@@ -31,6 +31,9 @@ public class HelperClass {
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             driver.manage().window().maximize();
             driver.get("https://demo.smart-hospital.in/site/login");
+            
+            driver.manage().deleteAllCookies();
+            
             drivers.put(threadName, driver);
         }
         return drivers.get(threadName);
