@@ -28,12 +28,12 @@ public class HelperClass {
 
             
             WebDriver driver = new ChromeDriver(options);
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-            driver.manage().window().maximize();
-            driver.get("https://demo.smart-hospital.in/site/login");
             
             driver.manage().deleteAllCookies();
             
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            driver.manage().window().maximize();
+            driver.get("https://demo.smart-hospital.in/site/login");
             drivers.put(threadName, driver);
         }
         return drivers.get(threadName);
