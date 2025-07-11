@@ -120,6 +120,9 @@ public void the_user_can_fill_the_appointment(io.cucumber.datatable.DataTable da
         String time = details.get("Timing");
         objPatientActions.setTime(time);
         
+        if (date == null) {
+        	objPatientActions.alert();
+        }
 
         	try {
         		
@@ -164,13 +167,15 @@ public void the_user_is_able_see_the_success_message(String successMsg) {
 		Assert.assertTrue(objPatientActions.getSuccessMsg().contains(successMsg));
 		System.out.println(objPatientActions.getSuccessMsg());
 	}catch (Exception e) {
-		log.error("Assert gets failed in success message ");
+		log.info("Assert gets failed in success message ");
+//		log.error("Assert gets failed in success message ");
 		try {
 			Assert.assertTrue(objPatientActions.getAppointmentnotAvail().contains("Appointment not available, Please try after some time."));
 			System.out.println(objPatientActions.getAppointmentnotAvail());
 		}
 		catch(Exception ex) {
-			log.error("Assert gets failed due to appointment booking");
+			log.info("Assert gets failed due to appointment booking");
+//			log.error("Assert gets failed due to appointment booking");
 			throw e;
 		}
 	}

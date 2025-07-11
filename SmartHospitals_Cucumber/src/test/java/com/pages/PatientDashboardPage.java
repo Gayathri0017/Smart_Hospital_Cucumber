@@ -21,10 +21,10 @@ public class PatientDashboardPage {
 	@FindBy(xpath = "//aside[@id='alert2']/div/section/ul/li[1]//following-sibling::li[10]/a/span")
 	public WebElement downloadCenter ;
 	
-	@FindBy(name = "date")
+	@FindBy(xpath = "(//div[@class='form-group'])[1]/input")
 	public WebElement date ;
 	
-	@FindBy(id = "specialist")
+	@FindBy(xpath = "(//div[@class='form-group'])[2]/div/select")
 	public WebElement specialist ;
 	
 	@FindBy(id = "doctor")
@@ -36,10 +36,10 @@ public class PatientDashboardPage {
 	@FindBy(id = "shift_id")
 	public WebElement slot ;
 	
-	@FindBy(css = "#slot_1")
+	@FindBy(xpath = "//div[@id='slot']/span[2]")
 	public WebElement availableSlot ;
 	
-	@FindBy(xpath = "//textarea[@id='message']")
+	@FindBy(xpath = "(//div[@class='form-group'])[7]/textarea")
 	public WebElement patientMsg ;
 	
 	@FindBy(id = "formaddbtn")

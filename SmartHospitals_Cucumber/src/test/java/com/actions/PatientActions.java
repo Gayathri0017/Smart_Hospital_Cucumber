@@ -134,7 +134,8 @@ public class PatientActions {
             wait.until(ExpectedConditions.visibilityOf(objPDP.date));
             wait.until(ExpectedConditions.elementToBeClickable(objPDP.date));
             if (date != null && !date.isEmpty()) {
-                objPDP.date.click();
+            	((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();", objPDP.date);
+//                objPDP.date.click();
                 objPDP.date.sendKeys(date);
             } else {
                 objPDP.date.clear();
@@ -163,8 +164,10 @@ public class PatientActions {
 
 
     public void setDoctor(String doctor) {		//choosing the concern doctor for the appointment
-
+    	
+    		wait.until(ExpectedConditions.visibilityOf(objPDP.doctor));
             wait.until(ExpectedConditions.elementToBeClickable(objPDP.doctor));
+            ((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();", objPDP.doctor);
             Select selectDoctor = new Select(objPDP.doctor);
             selectDoctor.selectByVisibleText(doctor);
             log.info("Doctor field provided");
@@ -183,7 +186,8 @@ public class PatientActions {
     public void setTime(String slot) {		//selecting the slot timing 
 
             wait.until(ExpectedConditions.visibilityOf(objPDP.slot));
-            objPDP.slot.click();
+            ((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();", objPDP.slot);
+//            objPDP.slot.click();
             Select selectSlot = new Select(objPDP.slot);
             selectSlot.selectByVisibleText(slot);
             log.info("Slot provided");
@@ -204,17 +208,23 @@ public class PatientActions {
     }
     
     public void alert() {
-    	if(wait.until(ExpectedConditions.alertIsPresent()) != null) {
-        	
-        	HelperClass.getDriver().switchTo().alert().accept();
+        try {
+            if (wait.until(ExpectedConditions.alertIsPresent()) != null) {
+                HelperClass.getDriver().switchTo().alert().accept();
+                System.out.println("Alert was present and accepted.");
+            }
+        } catch (Exception e) {
+            System.out.println("No alert present.");
         }
     }
+
     public void setMessage(String message) {		// providing the message as details of the patient condition
 
     	wait.until(ExpectedConditions.elementToBeClickable(objPDP.patientMsg));
     	Actions act = new Actions(HelperClass.getDriver());
     	act.scrollToElement(objPDP.patientMsg).click();
-    	objPDP.patientMsg.click();
+    	((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();", objPDP.patientMsg);
+//    	objPDP.patientMsg.click();
             if (message != null && !message.isEmpty()) {
                 objPDP.patientMsg.sendKeys(message);
             } else {
@@ -245,7 +255,8 @@ public class PatientActions {
             wait.until(ExpectedConditions.visibilityOf(objPDP.date));
             wait.until(ExpectedConditions.elementToBeClickable(objPDP.date));
             if (details.get("Date") != null && !details.get("Date").isEmpty()) {
-                objPDP.date.click();
+//                objPDP.date.click();
+            	((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();", objPDP.date);
                 objPDP.date.sendKeys(details.get("Date"));
                 log.info(String.format("Date field provided from Excel%nDate: %s", details.get("Date")));
             } else {
@@ -290,7 +301,8 @@ public class PatientActions {
 
             String slot = details.get("Slot");
             wait.until(ExpectedConditions.visibilityOf(objPDP.slot));
-            objPDP.slot.click();
+            ((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();", objPDP.slot);
+//            objPDP.slot.click();
             Select selectSlot = new Select(objPDP.slot);
             List<WebElement> slotTiming = selectSlot.getOptions();
             for (WebElement timeSlot : slotTiming) {
@@ -314,7 +326,8 @@ public class PatientActions {
         	catch (Exception e){
         		System.out.println(e.getMessage());
         	}
-            objPDP.availableSlot.click();
+            ((JavascriptExecutor) HelperClass.getDriver()).executeScript("arguments[0].click();", objPDP.availableSlot);
+//            objPDP.availableSlot.click();
             log.info("Available slot clicked");
             objPDP.patientMsg.sendKeys(details.get("Message"));
             log.info("Message field provided from Excel : %s" , details.get("Message"));

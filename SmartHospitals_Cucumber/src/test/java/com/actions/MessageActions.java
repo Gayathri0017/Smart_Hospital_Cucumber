@@ -2,6 +2,7 @@ package com.actions;
 import java.time.Duration;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -19,9 +20,23 @@ public class MessageActions {
 		clickMethod(mp.msg);
 	}
 	public void post() {
-		clickMethod(mp.postNew);
+	    clickMethod(mp.postNew);
+	    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.visibilityOf(mp.title));
+	    try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
-	public void msgFilling(String tit,String date,String postOn,String msg) {
+	public void msgFilling(String tit,String date,String postOn,String msg){
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		sendKeysMethod(mp.title,tit);
 		sendKeysMethod(mp.date,date);
 		sendKeysMethod(mp.publishDate,postOn);
@@ -45,7 +60,13 @@ public class MessageActions {
 		Assert.assertEquals(exp,act);
 	}
 	public void delete() {
-		clickMethod(mp.del);
+	    clickMethod(mp.del);
+	    try {
+	        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(5));
+	        wait.until(ExpectedConditions.alertIsPresent());
+	    } catch (TimeoutException e) {
+	        System.out.println("Alert did not appear after delete click.");
+	    }
 	}
 	public void clickMethod(WebElement ele) {
 		JavascriptExecutor js=(JavascriptExecutor) HelperClass.getDriver();
@@ -59,7 +80,11 @@ public class MessageActions {
 	        System.out.println("Click failed: " + e.getMessage());
 	    }
 	}
-    public void sendKeysMethod(WebElement ele, String str) {
-        ele.sendKeys(str);
-    }
+	public void sendKeysMethod(WebElement ele, String str) {
+	    WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.visibilityOf(ele));
+	    wait.until(ExpectedConditions.elementToBeClickable(ele));
+	    ele.clear();
+	    ele.sendKeys(str);
+	}
 }
