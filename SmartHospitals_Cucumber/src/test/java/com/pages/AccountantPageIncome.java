@@ -1,6 +1,5 @@
 package com.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,18 +8,17 @@ import org.openqa.selenium.support.PageFactory;
 import com.utils.HelperClass;
 
 public class AccountantPageIncome {
-    private WebDriver driver;
 
     @FindBy(xpath = "//a[contains(text(),'Accountant')]")
     public WebElement accountantRoleButton;
    
     @FindBy(xpath = "//*[@class=\"btn\"]")
     public WebElement signInButton;
+    
+//    @FindBy(xpath = "")
+//    public WebElement financeSection;
 
-    @FindBy(xpath = "(//*[@href=\"https://demo.smart-hospital.in/admin/patient/search\"])[2]")
-    public WebElement financeSection;
-
-    @FindBy(xpath = "(//*[@href=\"https://demo.smart-hospital.in/admin/income\"])[2]")
+    @FindBy(xpath = "//span[contains(text(), 'General Income')]/ancestor::a")
     public WebElement incomeButton;
 
     @FindBy(xpath = "//*[@class=\"box-tools pull-right\"]/child :: a")
