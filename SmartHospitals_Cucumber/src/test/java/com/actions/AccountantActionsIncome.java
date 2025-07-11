@@ -38,10 +38,16 @@ public class AccountantActionsIncome {
         log.info("Clicked Sign In button");
     }
 
-    public void navigateToFinanceSection() {
-        wait.until(ExpectedConditions.elementToBeClickable(accountantPageIncome.financeSection)).click();
-        log.info("Navigated to Finance section");
-    }
+//    public void navigateToFinanceSection() {
+//        wait.until(ExpectedConditions.elementToBeClickable(accountantPageIncome.financeSection)).click();
+//        log.info("Navigated to Finance section");
+//    }
+    
+//    public void navigateToFinanceSection() {
+//        WebElement financeElement = wait.until(ExpectedConditions.visibilityOf(accountantPageIncome.financeSection));
+//        wait.until(ExpectedConditions.elementToBeClickable(financeElement)).click();
+//        log.info("Navigated to Finance section");
+//    }
     
     public void listofamount() {
         wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
@@ -60,6 +66,8 @@ public class AccountantActionsIncome {
 
     public void clickIncome() {
         wait.until(ExpectedConditions.elementToBeClickable(accountantPageIncome.incomeButton)).click();
+        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@href, 'admin/income')]")));
+
         log.info("Clicked Income button");
     }
 

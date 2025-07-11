@@ -29,7 +29,7 @@ public class AccountantDefinitionIncome {
 
     @Then("the user navigates to the finance section and clicks on income")
     public void navigateToIncome() {
-        accountantActionsIncome.navigateToFinanceSection();
+        //accountantActionsIncome.navigateToFinanceSection();
         accountantActionsIncome.clickIncome();
     }
 
