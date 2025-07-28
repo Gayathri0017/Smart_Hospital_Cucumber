@@ -11,7 +11,7 @@ Scenario: Add New Expense and Verify
 And User should capture and print the data from dashboard table section this should be stored in the excel for reference
     And then need enter to the Expenses
     Then need click Add Expenses
-    Then need to give the Header as "Telephone Bill", name "Office Telephone Charges" and amount "100.00"
+    Then need to give the Header as "Vehicle Stand Charges", name "Office Telephone Charges" and amount "100.00"
     And the user click the save
     Then need to see the asseart the success notifications
     Then User should see the dashboard summary table
@@ -26,6 +26,6 @@ Scenario Outline: Add New Expense with Invalid Data
     Then need to see the asseart the error notifications
 
     Examples:
-      |header          |name                     |amount       |
-      |Telephone Bill  |Office Telephone Charges |-100.00      |
-      |Telephone Bill  |hi                       |-52|
+      |header                 |name                     |amount       |
+      |Vehicle Stand Charges  |Office Telephone Charges |-100.00      |
+      |Vehicle Stand Charges  |hi                       |-52|

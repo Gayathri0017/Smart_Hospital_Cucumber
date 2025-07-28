@@ -1,4 +1,5 @@
 Feature: Gowri_14APR2025_Accountant_Income_Functionalities
+
 Background:
     Given User launches Smart Hospital website
     When the user selects "Accountant" role
@@ -10,11 +11,11 @@ Background:
   Scenario: Add New Income and Verify
     When the user enters the following income details:
     |header					  |name               |amount |
-    |Hospital charges	|Dr.S.Harikumar			|1500.00 |
+    |Hospital charges	|Dr.S.Harikumar			|200.00 |
     And the user clicks the save button
     Then the user verifies that the new income is added to the table
     |amount|
-    |1500.00|
+    |200.00|
     
   @InvalidInput
 Scenario: Add New Income with Invalid Data
