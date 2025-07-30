@@ -31,11 +31,7 @@
 </dependency>
 <!-- https://mvnrepository.com/artifact/junit/junit -->
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-<dependency>
-    <groupId>net.masterthought</groupId>
-    <artifactId>cucumber-reporting</artifactId>
-    <version>5.7.4</version>
-</dependency>
+
 <dependency>
         <groupId>net.masterthought</groupId>
         <artifactId>cucumber-reporting</artifactId>
@@ -51,12 +47,6 @@
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.1.2</version>
-</dependency>
-<dependency>
-    <groupId>org.projectlombok</groupId>
-    <artifactId>lombok</artifactId>
-    <version>1.18.32</version>
-    <scope>provided</scope>
 </dependency>
 <dependency>
     <groupId>commons-io</groupId>
