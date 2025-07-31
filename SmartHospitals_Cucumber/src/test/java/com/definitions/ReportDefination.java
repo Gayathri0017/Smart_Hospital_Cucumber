@@ -22,9 +22,7 @@ public class ReportDefination {
 
     @Then("User should see the dashboard summary table for report feature")
     public void verifyDashboard() {
-        tpa.isSummaryTableDisplayed();
-        
-    }
+        tpa.isSummaryTableDisplayed();}
 
     @When("the user clicks the Report menu")
     public void reportMenu() { reports.clickReportMenu(); }
@@ -44,5 +42,10 @@ public class ReportDefination {
     @Then("the user should see the total amount")
     public void seeTableList() {
         reports.getTotalTable();
+    }
+    
+    @Then("the user should see the {string}")
+    public void seeErrorText(String expectedMessage) {
+        reports.seeErrorText(expectedMessage);
     }
 }

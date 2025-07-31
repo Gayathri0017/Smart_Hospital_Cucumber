@@ -25,6 +25,9 @@ public class ReportPage {
 	@FindBy(xpath = "//table[@id='DataTables_Table_0']/tbody")
 	public WebElement tablelist;
 
+	@FindBy(xpath = "//*[@id=\"error_search_type\"]")
+	public WebElement ErrorText;
+	
     public ReportPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }

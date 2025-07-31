@@ -7,7 +7,7 @@ Background:
     Then User should see the dashboard summary table for report feature
 
 
-  @All_Finance_Reports_view
+  @valid_All_Finance_Reports_view
   Scenario Outline: View Report for Finance 
   When the user clicks the Report menu
   And the user navigates to the Finance group
@@ -29,3 +29,12 @@ Background:
   |This Year     |
   |Last Year     |
   |Period        |  
+  
+@invalid_Finance_Report_NoDuration
+Scenario: Attempt to view Finance Report without selecting a time duration
+  When the user clicks the Report menu
+  And the user navigates to the Finance group
+  And the user clicks on the Reports
+  And the user clicks the Search button
+  Then the user should see the "Time Duration field is required"
+  
